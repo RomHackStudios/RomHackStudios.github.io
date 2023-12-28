@@ -18,7 +18,7 @@ Thank you for choosing Pokemon Emerald Crest! We are excited to offer you the op
 Early Access 
 {: .label .label-yellow }
 
-[Early Access v1.0.9.4](https://download1501.mediafire.com/tvqc7a205cvgxNIhA49PzwvZQh-SsfsouneamnbRp7YoemdjvytOeHNrUYr1lVptenY7kO6M-e-mthflHLwhAxNEvd7ofm5_kST5BlWs8YLt75gnCwj-XMYEuGFBXGdrmCl2gBQTNuWcATu76UJE4yVFHYjHUfmpTd_xr1yf6vZG/3as7j3alkjwrqxq/Crest_v1.0.9.4+EA.zip){: .btn .btn-purple .mr-2 }
+[Early Access v1.0.9.6](https://ko-fi.com/api/file-upload/484d933e-6f36-4408-8920-56dae307e624/download?transactionId=db0e36ab-a6c3-4e56-9b78-cc148c39b9fe){: .btn .btn-purple .mr-2 }
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4829462676030982"
      crossorigin="anonymous"></script>
