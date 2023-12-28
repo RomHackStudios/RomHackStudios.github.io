@@ -21,7 +21,7 @@ Early Access
 [Early Access v1.0.9.6](https://ko-fi.com/api/file-upload/484d933e-6f36-4408-8920-56dae307e624/download?transactionId=db0e36ab-a6c3-4e56-9b78-cc148c39b9fe){: .btn .btn-purple .mr-2 }
 
 {: .warning }
-> This update will break your old save files and does not grantutee any support for future EA releases.
+> This update will break your old save files and does not guarantee any support for future EA releases.
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4829462676030982"
      crossorigin="anonymous"></script>
@@ -38,7 +38,7 @@ Early Access
 ```
 What's New:
 - Added Dynamax [does not include Gigantamaxing]
-- Added room for storing 30 mons in the PC
+- Added room for storing 30 more mons in the PC
 ```
 
 {: .warning }
