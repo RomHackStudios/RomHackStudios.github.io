@@ -20,6 +20,9 @@ Early Access
 
 [Early Access v1.0.9.6](https://ko-fi.com/api/file-upload/484d933e-6f36-4408-8920-56dae307e624/download?transactionId=db0e36ab-a6c3-4e56-9b78-cc148c39b9fe){: .btn .btn-purple .mr-2 }
 
+{: .warning }
+> This update will break your old save files and doesn't grantutee support for future EA releases.
+
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4829462676030982"
      crossorigin="anonymous"></script>
 <!-- RHS EA 1 -->
@@ -33,14 +36,9 @@ Early Access
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 ```
-What's Hot:
-- DexNav in Dark Caves: Explore dark caves with the full functionality of DexNav – no more stumbling in the dark!
-- Battle Bling: Bugs? Squashed! Weak Armor, multi-hit moves – all fixed up for an ultra-smooth, jaw-dropping battle experience. Plus, snazzy move animations for that extra pizzazz!
-- Glamorous Sprite Makeovers: Rabsca, Rellor, and the rest of the Gen 9 Pokémon just got a dazzling makeover! Brace yourselves for jaw-dropping, fresh new looks!
-- Level Up Your Strategy with 'Zero to Hero': Unveiling the Zero to Hero ability – it's a game-changer for your strategic toolbox!
-
-- More Thrills Await:
-- Mystery Gifts & Portals Unveiled: Bid farewell to those glitchy Hoopa portals! We've got new Mystery Gift codes and turbo-charged portal handling for an adventure without hiccups.
+What's New:
+- Added Dynamax [does not include Gigantamaxing]
+- Added room for storing 30 mons in the PC
 ```
 
 {: .warning }
