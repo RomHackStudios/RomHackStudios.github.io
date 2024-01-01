@@ -977,9 +977,20 @@
 <body>
   <h1>Spotlight Event Generator</h1>
   <label for="pokemonDropdown">Select a Pokémon:</label>
-  <select id="pokemonDropdown"></select>
+  <input type="text" id="pokemonSearchBox" placeholder="Search Pokémon..." style="padding: 8px; font-size: 16px; margin-bottom: 10px;"><br><select id="pokemonDropdown"></select>
   <br>
   <button onclick="generateCode()">Generate Code</button>
   <p id="generatedCode"></p>
+
+<script>
+  document.getElementById('pokemonSearchBox').addEventListener('input', function(e) {
+    var searchValue = e.target.value.toLowerCase();
+    var options = document.getElementById('pokemonDropdown').options;
+    for (var i = 0; i < options.length; i++) {
+      var optionText = options[i].text.toLowerCase();
+      options[i].style.display = optionText.includes(searchValue) ? 'block' : 'none';
+    }
+  });
+</script>
 </body>
 </html>
