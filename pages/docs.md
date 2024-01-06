@@ -153,7 +153,6 @@ Misc:
   PETALBURG_WOODS,
   RUSTURF_TUNNEL
 ```
-</details>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4829462676030982"
      crossorigin="anonymous"></script>
 <ins class="adsbygoogle"
