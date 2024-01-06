@@ -18,7 +18,7 @@ nav_exclude: true
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
-<iframe src="https://romhackstudios.github.io/pages/html/data/evo-gen.html" width="100%" height="400px" frameBorder="0" style="border: 0;"></iframe>
+<iframe src="https://romhackstudios.github.io/pages/html/data/evo-gen.html" width="100%" height="500px" frameBorder="0" style="border: 0;"></iframe>
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4829462676030982"
      crossorigin="anonymous"></script>
