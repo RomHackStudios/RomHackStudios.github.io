@@ -60,6 +60,31 @@ The Hoenn region has 34 different routes, which are passages permitting Trainers
 The Hoenn region is unique and famous for its tropical-like environments. The region does not feature a true mountain range like in Sinnoh and other regions. Hoenn introduced many new natural environments including a volcano, a jungle, a beach, a desert, and many more. The Hoenn region also introduced the idea of routes with differing weather, including constant rainfall, thunderstorms, falling ash, and rays of sunlight.
 
 ---
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4829462676030982"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-4829462676030982"
+     data-ad-slot="4072891190"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<iframe src="https://romhackstudios.github.io/pages/html/docs-gen.html" width="100%" height="400px" frameBorder="0" style="border: 0;"></iframe>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4829462676030982"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-4829462676030982"
+     data-ad-slot="4072891190"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ### Settlements 
 <details open markdown="block">
