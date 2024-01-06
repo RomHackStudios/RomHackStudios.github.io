@@ -8,21 +8,17 @@
       background-color: #27262b;
       color: #ffffff;
     }
-
     h1 {
       text-align: center;
     }
-
     label {
       font-weight: bold;
     }
-
     input[type="text"] {
       margin-bottom: 20px;
       width: 100%;
       padding: 5px;
     }
-
     table {
       border-collapse: collapse;
       width: 100%;
@@ -30,23 +26,19 @@
       border: 1px solid #ffffff;
       margin-bottom: 20px;
     }
-
     th, td {
       text-align: left;
       padding: 10px;
     }
-
     th {
       background-color: #27262b;
       color: #ffffff;
     }
-
     td {
       background-color: #1d1c20;
       color: #ffffff;
       border-bottom: 1px solid #ffffff;
     }
-
     .pokemon-image {
       width: 40px;
       height: 40px;
@@ -58,11 +50,9 @@
       table {
         font-size: 14px;
       }
-
       td, th {
         padding: 5px;
       }
-
       .pokemon-image {
         width: 30px;
         height: 30px;
@@ -70,124 +60,145 @@
     }
   </style>
 </head>
-</head>
 <body>
   <div>
     <label for="searchInput">Search:</label>
-    <input type="text" id="searchInput" />
-    <button onclick="searchPokemonEncounters()">Search</button>
+    <input type="text" id="searchInput" oninput="searchEncounters()" />
   </div>
 
   <div id="encounterData"></div>
 
   <script>
+    // Fetch the JSON data
+    fetch('wild_encounter_data.json')
+      .then(response => response.json())
+      .then(data => {
+        // Store the encounter data
+        const encounterData = data.wild_encounter_groups;
+
+        // Render the encounter data
+        renderEncounterData(encounterData);
+      });
+
     async function fetchPokemonData(url) {
       try {
         const response = await fetch(url);
-        const data = await response.json();
-        return data;
-      } catch (error) {
-        console.error('Error fetching Pokemon data:', error);
-        return null;
-      }
-    }
-
-    async function fetchPokemonSprite(speciesName) {
-      const url = `https://pokeapi.co/api/v2/pokemon-species/${speciesName.toLowerCase()}`;
-      const pokemonData = await fetchPokemonData(url);
-      if (pokemonData && pokemonData.varieties && pokemonData.varieties.length > 0) {
-        const varietyURL = pokemonData.varieties[0].pokemon.url;
-        const varietyData = await fetchPokemonData(varietyURL);
-        if (varietyData && varietyData.sprites && varietyData.sprites.front_default) {
-          return varietyData.sprites.front_default;
-        }
-      }
-      return null;
+	@@ -115,118 +106,88 @@
     }
 
     function renderEncounterData(data) {
+      const encounterGroups = data;
       const encounterDataDiv = document.getElementById('encounterData');
-      encounterDataDiv.innerHTML = ''; // Clear previous results
 
-      data.forEach(group => {
+      // Clear previous results
+      encounterDataDiv.innerHTML = '';
+
+      // Process the encounter groups
+      encounterGroups.forEach(group => {
         const encounters = group.encounters;
 
+        // Create a table for each map's encounters
         encounters.forEach(async encounter => {
           const table = document.createElement('table');
 
+          // Create the table header
           const header = document.createElement('th');
           const mapName = encounter.map.replace('MAP_', '');
           header.textContent = `Encounters for ${mapName}`;
           header.colSpan = 4;
           table.appendChild(header);
 
+          // Iterate over the encounter types (land, water, etc.)
           group.fields.forEach(async field => {
             const type = field.type;
             const encounterData = encounter[type];
 
             if (encounterData) {
-              encounterData.mons.forEach(async mon => {
+              // Iterate over the encounter mons
+              encounterData.mons.forEach(async (mon, index) => {
                 const speciesName = mon.species.replace('SPECIES_', '');
+                const encounterRate = field.encounter_rates[index];
 
-                if (speciesName.toLowerCase().includes(searchInput)) {
-                  const spriteURL = await fetchPokemonSprite(speciesName);
+                // Fetch the Pokémon sprite image
+                const spriteURL = await fetchPokemonSprite(speciesName);
 
-                  const detailsRow = document.createElement('tr');
+                // Create the table row for the encounter details
+                const detailsRow = document.createElement('tr');
 
-                  const imageCell = document.createElement('td');
-                  if (spriteURL) {
-                    const image = document.createElement('img');
-                    image.className = 'pokemon-image';
-                    image.src = spriteURL;
-                    image.alt = speciesName;
-                    imageCell.appendChild(image);
-                  }
-                  detailsRow.appendChild(imageCell);
-
-                  const pokemonCell = document.createElement('td');
-                  pokemonCell.textContent = speciesName;
-                  detailsRow.appendChild(pokemonCell);
-
-                  const levelsCell = document.createElement('td');
-                  levelsCell.textContent = `${mon.min_level}-${mon.max_level}`;
-                  detailsRow.appendChild(levelsCell);
-
-                  const rateCell = document.createElement('td');
-                  rateCell.textContent = `${field.encounter_rates}%`;
-                  detailsRow.appendChild(rateCell);
-
-                  table.appendChild(detailsRow);
+                // Create the image cell
+                const imageCell = document.createElement('td');
+                if (spriteURL) {
+                  const image = document.createElement('img');
+                  image.className = 'pokemon-image';
+                  image.src = spriteURL;
+                  image.alt = speciesName;
+                  imageCell.appendChild(image);
                 }
+                detailsRow.appendChild(imageCell);
+
+                // Create the Pokémon name cell
+                const pokemonCell = document.createElement('td');
+                pokemonCell.textContent = speciesName;
+                detailsRow.appendChild(pokemonCell);
+
+                // Create the levels cell
+                const levelsCell = document.createElement('td');
+                levelsCell.textContent = `${mon.min_level}-${mon.max_level}`;
+                detailsRow.appendChild(levelsCell);
+
+                // Create the rate cell
+                const rateCell = document.createElement('td');
+                rateCell.textContent = `${encounterRate}%`;
+                detailsRow.appendChild(rateCell);
+
+                // Append the details row to the table
+                table.appendChild(detailsRow);
               });
             }
           });
 
+          // Append the table to the encounter data div
           encounterDataDiv.appendChild(table);
         });
       });
     }
 
-    async function searchPokemonEncounters() {
+    function searchEncounters() {
       const searchInput = document.getElementById('searchInput').value.toLowerCase();
+      const encounterTables = document.querySelectorAll('#encounterData table');
 
-      fetch('wild_encounter_data.json')
-        .then(response => response.json())
-        .then(data => {
-          const encounterData = data.wild_encounter_groups;
+      encounterTables.forEach(table => {
+        const rows = table.getElementsByTagName('tr');
+        let hasMatch = false;
 
-          const filteredData = encounterData.map(group => {
-            const encounters = group.encounters.filter(encounter => {
-              const mons = encounter.land.mons.concat(encounter.water.mons);
-              return mons.some(mon => mon.species.toLowerCase().includes(searchInput));
-            });
+        for (let i = 2; i < rows.length; i++) {
+          const cells = rows[i].getElementsByTagName('td');
+          let matchFound = false;
 
-            if (encounters.length > 0) {
-              return { ...group, encounters };
+          for (let j = 1; j < cells.length; j++) {
+            const cellText = cells[j].textContent.toLowerCase();
+
+            if (cellText.includes(searchInput)) {
+              matchFound = true;
+              break;
             }
-          }).filter(Boolean);
+          }
 
-          renderEncounterData(filteredData);
-        });
+          if (matchFound) {
+            rows[i].style.display = '';
+            hasMatch = true;
+          } else {
+            rows[i].style.display = 'none';
+          }
+        }
+
+        // Show/hide the table based on search results
+        if (hasMatch) {
+          table.style.display = '';
+        } else {
+          table.style.display = 'none';
+        }
+      });
     }
   </script>
 </body>
