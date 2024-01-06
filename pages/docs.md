@@ -26,38 +26,17 @@ So grab your Pokeballs, pack your bags, and get ready to embark on an epic journ
 ---
 
 TABLE OF CONTENTS
+<details close markdown="block">
 {: .no_toc .text-delta }
 
 - TOC
 {:toc}
-
+</details>
 ---
 
 ## Hoenn Region
 
 The Hoenn Region was created after Primal Groudon and Primal Kyogre were formed. Primal Groudon raised the landmasses and Primal Kyogre filled the seas that would later become Hoenn. A meeting between these two caused a great battle for supremacy until it was quelled by Mega Rayquaza, sending Primal Groudon and Primal Kyogre into caverns where they rested until they were awakened many years later during the course of events in Generation III or Generation VI. The moving of the continents by Regigigas created Hoenn, and when Regigigas was sent to sleep in the Snowpoint Temple in Sinnoh, Regirock, Registeel, and Regice, the keys to awakening it, were sealed away in Hoenn.
-
----
-
-## Notable locations
-
-Hoenn has sixteen cities and towns, including a Pokémon League. Since the majority of the cities and towns of Hoenn are immersed into nature, there aren't many large cities comparable to Unova's Castelia City or Kalos's Lumiose City, with the largest city being Lilycove City/Mauville City.
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4829462676030982"
-     crossorigin="anonymous"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-4829462676030982"
-     data-ad-slot="4072891190"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
-The Hoenn region has 34 different routes, which are passages permitting Trainers to travel from one location to the next with relative ease. Much like Sinnoh after it, Hoenn's routes are numbered so that they don't follow sequence directly from previously-known regions' routes. Routes in Hoenn are numbered from 101 to 134. Compared to other regions, Hoenn features an abundance of sea routes. This gives the impression that the Hoenn region is half-water and half-land, which references the battle of Groudon and Kyogre.
-
-The Hoenn region is unique and famous for its tropical-like environments. The region does not feature a true mountain range like in Sinnoh and other regions. Hoenn introduced many new natural environments including a volcano, a jungle, a beach, a desert, and many more. The Hoenn region also introduced the idea of routes with differing weather, including constant rainfall, thunderstorms, falling ash, and rays of sunlight.
 
 ---
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4829462676030982"
