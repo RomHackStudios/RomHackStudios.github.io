@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Useful Docs</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #222;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      width: 400px;
+      text-align: center;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      background: linear-gradient(120deg, #2980b9, #2c3e50);
+      color: #fff;
+    }
+
+    h1 {
+      margin-bottom: 30px;
+      font-size: 28px;
+      letter-spacing: 1px;
+    }
+
+    .page-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    button {
+      padding: 12px 24px;
+      cursor: pointer;
+      background-color: transparent;
+      color: #fff;
+      border: 2px solid #fff;
+      border-radius: 30px;
+      font-size: 16px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #fff;
+      color: #3498db;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Useful Docs</h1>
+    <div class="page-links">
+      <button onclick="goToLevelUpPage()">Level Up Moves</button>
+      <button onclick="goToTeachableMovesPage()">Teachable Moves</button>
+      <button onclick="goToWildEncountersPage()">Wild Encounters</button>
+      <button onclick="goToEvolutionsPage()">Evolutions</button>
+    </div>
+  </div>
+
+  <script>
+    function goToLevelUpPage() {
+      window.location.href = 'https://romhackstudios.github.io/pages/html/moves.html';
+    }
+
+    function goToTeachableMovesPage() {
+      window.location.href = 'https://romhackstudios.github.io/pages/html/moves-tm.html';
+    }
+
+    function goToWildEncountersPage() {
+      window.location.href = 'https://romhackstudios.github.io/pages/wild-encounters.html';
+    }
+
+    function goToEvolutionsPage() {
+      window.location.href = 'https://romhackstudios.github.io/pages/html/evo.html';
+    }
+  </script>
+</body>
+</html>
