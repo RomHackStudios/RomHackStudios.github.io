@@ -76,6 +76,12 @@ The Hoenn region is unique and famous for its tropical-like environments. The re
 
 <iframe src="https://romhackstudios.github.io/pages/html/docs-gen.html" width="100%" height="400px" frameBorder="0" style="border: 0;"></iframe>
 
+[Latest Guide](https://docs.google.com/spreadsheets/d/1BOKr2H_lKFGSbEvJITSo9HCeUpjCGjAYieEPhCQtF1g/edit?usp=sharing)
+[Latest Wild Encounter List](https://cdn.discordapp.com/attachments/1040638131646500864/1168065193390120970/WildEncounters.txt?ex=6550687b&is=653df37b&hm=f06ffa534cf4989d07ae86def0fc6b0c726a2a3e4f372c9981bf9102b16577c4&)
+[Latest Wonder Trade List](https://cdn.discordapp.com/attachments/1177807544119459872/1181488528673214494/wonder_trade.txt?ex=65813df0&is=656ec8f0&hm=0aa77e01fb5aaa6747f0de9b5587fd1942b0fd4e8426f170d154799090495519&)
+[Latest Wild Boss List](https://cdn.discordapp.com/attachments/1040638131646500864/1161351583842443295/wild_boss.txt?ex=65a6b9f2&is=659444f2&hm=1074d942b5ebeb24a2666bab511de3ffda5f480c9b452712d63b5b5051a36a68&)
+[Latest Wild Boss Locations](https://docs.google.com/document/d/1tyS7H9FZlOAztLRRhKYWcGIApdGuym7jLjkYbSHUV5s/edit)
+
 # Frequently Asked Questions
 <details close markdown="block">
 
