@@ -197,43 +197,44 @@
       });
     }
 
-    function searchEncounters() {
-      const searchInput = document.getElementById('searchInput').value.toLowerCase();
-      const encounterTables = document.querySelectorAll('#encounterData table');
+function searchEncounters() {
+  const searchInput = document.getElementById('searchInput').value.trim().toLowerCase();
+  const encounterTables = document.querySelectorAll('#encounterData table');
 
-      encounterTables.forEach(table => {
-        const rows = table.getElementsByTagName('tr');
-        let hasMatch = false;
+  encounterTables.forEach(table => {
+    const rows = table.getElementsByTagName('tr');
+    let hasMatch = false;
 
-        for (let i = 2; i < rows.length; i++) {
-          const cells = rows[i].getElementsByTagName('td');
-          let matchFound = false;
+    for (let i = 2; i < rows.length; i++) {
+      const cells = rows[i].getElementsByTagName('td');
+      let matchFound = false;
 
-          for (let j = 1; j < cells.length; j++) {
-            const cellText = cells[j].textContent.toLowerCase();
+      for (let j = 1; j < cells.length; j++) {
+        const cellText = cells[j].textContent.toLowerCase();
 
-            if (cellText.includes(searchInput)) {
-              matchFound = true;
-              break;
-            }
-          }
-
-          if (matchFound) {
-            rows[i].style.display = '';
-            hasMatch = true;
-          } else {
-            rows[i].style.display = 'none';
-          }
+        if (cellText.includes(searchInput)) {
+          matchFound = true;
+          break;
         }
+      }
 
-        // Show/hide the table based on search results
-        if (hasMatch) {
-          table.style.display = '';
-        } else {
-          table.style.display = 'none';
-        }
-      });
+      if (matchFound) {
+        rows[i].style.display = '';
+        hasMatch = true;
+      } else {
+        rows[i].style.display = 'none';
+      }
     }
+
+    // Show/hide the table based on search results
+    if (hasMatch) {
+      table.style.display = '';
+    } else {
+      table.style.display = 'none';
+    }
+  });
+}
+
   </script>
 </body>
 </html>
