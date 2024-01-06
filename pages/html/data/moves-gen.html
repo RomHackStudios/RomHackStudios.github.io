@@ -9,13 +9,14 @@
       margin: 0;
       padding: 0;
       background-color: #222;
+      color: #fff;
     }
 
     .container {
       max-width: 600px;
       margin: 20px auto;
       text-align: center;
-      background-color: #222;
+      background-color: #333;
       padding: 20px;
       border-radius: 8px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -23,11 +24,12 @@
 
     input[type="text"] {
       padding: 10px;
-      width: 70%;
-      margin-right: 10px;
+      width: calc(70% - 5px);
+      margin-right: 5px;
       border-radius: 5px;
       border: 1px solid #ccc;
       font-size: 16px;
+      color: #333;
     }
 
     button {
@@ -47,17 +49,14 @@
     #movesList {
       margin-top: 20px;
       text-align: left;
-      color: #ffff;
     }
 
     h1 {
       margin-bottom: 20px;
-      color: #ffff;
     }
 
     h2 {
       margin-top: 20px;
-      color: #ffff;
     }
 
     ul {
@@ -68,13 +67,42 @@
     li {
       margin-bottom: 5px;
     }
+
+    .suggestions {
+      display: none;
+      position: absolute;
+      background-color: #444;
+      width: calc(68.5% + 5px);
+      margin-left: 14px;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      z-index: 1;
+      color: #fff;
+    }
+
+    .suggestions ul {
+      margin: 0;
+      padding: 0;
+    }
+
+    .suggestions li {
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    .suggestions li:hover {
+      background-color: #555;
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>Pokémon Level-Up Moves</h1>
-    <input type="text" id="pokemonInput" placeholder="Enter Pokémon name">
-    <button onclick="getMoves()">Get Moves</button>
+    <div style="display: flex; align-items: center; justify-content: center;">
+      <input type="text" id="pokemonInput" placeholder="Enter Pokémon name" oninput="showSuggestions()">
+      <div class="suggestions" id="suggestions"></div>
+      <button onclick="getMoves()">Get Moves</button>
+    </div>
     <div id="movesList"></div>
   </div>
 
@@ -19416,6 +19444,37 @@ const pokemonLevelUpMoves = {
     "91, SOLAR_BLADE,",
   ],
 };
+
+ function showSuggestions() {
+      const input = document.getElementById('pokemonInput');
+      const inputValue = input.value.toLowerCase();
+      const suggestions = document.getElementById('suggestions');
+
+      const filteredNames = Object.keys(pokemonLevelUpMoves).filter(name => name.toLowerCase().startsWith(inputValue));
+
+      if (inputValue === '') {
+        suggestions.style.display = 'none';
+        return;
+      }
+
+      if (filteredNames.length === 0) {
+        suggestions.style.display = 'none';
+        return;
+      }
+
+      suggestions.style.display = 'block';
+      suggestions.innerHTML = '';
+
+      filteredNames.forEach(name => {
+        const listItem = document.createElement('li');
+        listItem.textContent = name;
+        listItem.onclick = function () {
+          input.value = name;
+          suggestions.style.display = 'none';
+        };
+        suggestions.appendChild(listItem);
+      });
+    }
 
     function getMoves() {
       const inputElement = document.getElementById('pokemonInput');
