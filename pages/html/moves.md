@@ -1,6 +1,7 @@
 ---
 title: Level-Up Moves
 layout: page
+nav_exclude: true
 ---
 
 # Level-Up Moves
