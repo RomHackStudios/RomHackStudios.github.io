@@ -1,6 +1,7 @@
 ---
 title: Teachable Moveset
 layout: page
+nav_exclude: true
 ---
 # Teachable Moveset
 
