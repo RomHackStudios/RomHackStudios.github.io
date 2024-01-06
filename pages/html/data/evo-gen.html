@@ -99,7 +99,7 @@
     const pokemonEvolutions = {
 BULBASAUR: [{ method: "LEVEL", value: "16", target: "IVYSAUR" }],
   IVYSAUR: [{ method: "LEVEL", value: "32", target: "VENUSAUR" }],
-  "CHARMANDER": [{ method: "LEVEL", value: "16", target: "CHARMELEON" }],
+  CHARMANDER: [{ method: "LEVEL", value: "16", target: "CHARMELEON" }],
   CHARMELEON: [{ method: "LEVEL", value: "36", target: "CHARIZARD" }],
   SQUIRTLE: [{ method: "LEVEL", value: "16", target: "WARTORTLE" }],
   WARTORTLE: [{ method: "LEVEL", value: "36", target: "BLASTOISE" }],
@@ -114,7 +114,7 @@ BULBASAUR: [{ method: "LEVEL", value: "16", target: "IVYSAUR" }],
   EKANS: [{ method: "LEVEL", value: "22", target: "ARBOK" }],
   PIKACHU: [
     { method: "ITEM", value: "ITEM_THUNDER_STONE", target: "RAICHU" },
-    { method: "MAPSEC", value: "MAPSEC_NEW_MAUVILLE", target: "RAICHU-ALOLA" },
+    { method: "MAPSEC", value: "MAPSEC_NEW_MAUVILLE", target: "RAICHU_ALOLA" },
   ],
   SANDSHREW: [{ method: "LEVEL", value: "22", target: "SANDSLASH" }],
   NIDORAN_F: [{ method: "LEVEL", value: "16", target: "NIDORINA" }],
@@ -142,8 +142,8 @@ BULBASAUR: [{ method: "LEVEL", value: "16", target: "IVYSAUR" }],
   PSYDUCK: [{ method: "LEVEL", value: "33", target: "GOLDUCK" }],
   MANKEY: [{ method: "LEVEL", value: "28", target: "PRIMEAPE" }],
   GROWLITHE: [{ method: "ITEM", value: "ITEM_FIRE_STONE", target: "ARCANINE" }],
-  GROWLITHE-HISUI: [
-    { method: "ITEM", value: "ITEM_FIRE_STONE", target: "ARCANINE-HISUI" },
+  GROWLITHE_HISUI: [
+    { method: "ITEM", value: "ITEM_FIRE_STONE", target: "ARCANINE_HISUI" },
   ],
   POLIWAG: [{ method: "LEVEL", value: "25", target: "POLIWHIRL" }],
   POLIWHIRL: [
@@ -200,27 +200,27 @@ BULBASAUR: [{ method: "LEVEL", value: "16", target: "IVYSAUR" }],
   DROWZEE: [{ method: "LEVEL", value: "26", target: "HYPNO" }],
   KRABBY: [{ method: "LEVEL", value: "28", target: "KINGLER" }],
   VOLTORB: [{ method: "LEVEL", value: "30", target: "ELECTRODE" }],
-  VOLTORB-HISUI: [
-    { method: "ITEM", value: "ITEM_LEAF_STONE", target: "ELECTRODE-HISUI" },
+  VOLTORB_HISUI: [
+    { method: "ITEM", value: "ITEM_LEAF_STONE", target: "ELECTRODE_HISUI" },
   ],
   EXEGGCUTE: [
     { method: "ITEM", value: "ITEM_LEAF_STONE", target: "EXEGGUTOR" },
     {
       method: "SPECIFIC_MAP",
       value: "MAP_PETALBURG_WOODS",
-      target: "EXEGGUTOR-ALOLA",
+      target: "EXEGGUTOR_ALOLA",
     },
   ],
   CUBONE: [
     { method: "LEVEL", value: "28", target: "MAROWAK" },
-    { method: "LEVEL_NIGHT", value: "28", target: "MAROWAK-ALOLA" },
+    { method: "LEVEL_NIGHT", value: "28", target: "MAROWAK_ALOLA" },
   ],
 
   LICKITUNG: [{ method: "MOVE", value: "MOVE_ROLLOUT", target: "LICKILICKY" }],
 
   KOFFING: [
     { method: "LEVEL", value: "35", target: "WEEZING" },
-    { method: "LEVEL_NIGHT", value: "35", target: "WEEZING-GALAR" },
+    { method: "LEVEL_NIGHT", value: "35", target: "WEEZING_GALAR" },
   ],
   RHYHORN: [{ method: "LEVEL", value: "42", target: "RHYDON" }],
 
@@ -295,7 +295,7 @@ BULBASAUR: [{ method: "LEVEL", value: "16", target: "IVYSAUR" }],
   CYNDAQUIL: [{ method: "LEVEL", value: "14", target: "QUILAVA" }],
   QUILAVA: [
     { method: "LEVEL", value: "36", target: "TYPHLOSION" },
-    { method: "LEVEL_NIGHT", value: "36", target: "TYPHLOSION-HISUI" },
+    { method: "LEVEL_NIGHT", value: "36", target: "TYPHLOSION_HISUI" },
   ],
   TOTODILE: [{ method: "LEVEL", value: "18", target: "CROCONAW" }],
   CROCONAW: [{ method: "LEVEL", value: "30", target: "FERALIGATR" }],
@@ -517,7 +517,7 @@ BULBASAUR: [{ method: "LEVEL", value: "16", target: "IVYSAUR" }],
   BONSLY: [{ method: "MOVE", value: "MOVE_MIMIC", target: "SUDOWOODO" }],
   MIME_JR: [
     { method: "MOVE", value: "MOVE_MIMIC", target: "MR_MIME" },
-    { method: "LEVEL_NIGHT", value: "20", target: "MR_MIME-GALAR" },
+    { method: "LEVEL_NIGHT", value: "20", target: "MR_MIME_GALAR" },
   ],
   HAPPINY: [
     { method: "ITEM_HOLD_DAY", value: "ITEM_OVAL_STONE", target: "CHANSEY" },
@@ -547,7 +547,7 @@ BULBASAUR: [{ method: "LEVEL", value: "16", target: "IVYSAUR" }],
   OSHAWOTT: [{ method: "LEVEL", value: "17", target: "DEWOTT" }],
   DEWOTT: [
     { method: "LEVEL", value: "36", target: "SAMUROTT" },
-    { method: "LEVEL_NIGHT", value: "36", target: "SAMUROTT-HISUI" },
+    { method: "LEVEL_NIGHT", value: "36", target: "SAMUROTT_HISUI" },
   ],
   PATRAT: [{ method: "LEVEL", value: "20", target: "WATCHOG" }],
   LILLIPUP: [{ method: "LEVEL", value: "16", target: "HERDIER" }],
@@ -588,7 +588,7 @@ BULBASAUR: [{ method: "LEVEL", value: "16", target: "IVYSAUR" }],
     {
       method: "SPECIFIC_MAP",
       value: "MAP_ROUTE120",
-      target: "LILLIGANT-HISUI",
+      target: "LILLIGANT_HISUI",
     },
   ],
   SANDILE: [{ method: "LEVEL", value: "29", target: "KROKOROK" }],
@@ -601,7 +601,7 @@ BULBASAUR: [{ method: "LEVEL", value: "16", target: "IVYSAUR" }],
   ARCHEN: [{ method: "LEVEL", value: "37", target: "ARCHEOPS" }],
   TRUBBISH: [{ method: "LEVEL", value: "36", target: "GARBODOR" }],
   ZORUA: [{ method: "LEVEL", value: "30", target: "ZOROARK" }],
-  ZORUA-HISUI: [{ method: "LEVEL", value: "30", target: "ZOROARK-HISUI" }],
+  ZORUA_HISUI: [{ method: "LEVEL", value: "30", target: "ZOROARK_HISUI" }],
   MINCCINO: [{ method: "ITEM", value: "ITEM_SHINY_STONE", target: "CINCCINO" }],
   GOTHITA: [{ method: "LEVEL", value: "32", target: "GOTHORITA" }],
   GOTHORITA: [{ method: "LEVEL", value: "41", target: "GOTHITELLE" }],
@@ -644,7 +644,7 @@ BULBASAUR: [{ method: "LEVEL", value: "16", target: "IVYSAUR" }],
     {
       method: "SPECIFIC_MAP",
       value: "MAP_MT_PYRE_SUMMIT",
-      target: "BRAVIARY-HISUI",
+      target: "BRAVIARY_HISUI",
     },
   ],
   VULLABY: [{ method: "LEVEL", value: "54", target: "MANDIBUZZ" }],
@@ -695,11 +695,11 @@ BULBASAUR: [{ method: "LEVEL", value: "16", target: "IVYSAUR" }],
   AMAURA: [{ method: "LEVEL_NIGHT", value: "39", target: "AURORUS" }],
   GOOMY: [
     { method: "LEVEL", value: "40", target: "SLIGGOO" },
-    { method: "SPECIFIC_MAP", value: "MAP_ROUTE119", target: "SLIGGOO-HISUI" },
+    { method: "SPECIFIC_MAP", value: "MAP_ROUTE119", target: "SLIGGOO_HISUI" },
   ],
   SLIGGOO: [{ method: "LEVEL_RAIN", value: "50", target: "GOODRA" }],
-  SLIGGOO-HISUI: [
-    { method: "LEVEL_RAIN", value: "40", target: "GOODRA-HISUI" },
+  SLIGGOO_HISUI: [
+    { method: "LEVEL_RAIN", value: "40", target: "GOODRA_HISUI" },
   ],
   PHANTUMP: [
     { method: "TRADE", value: "0", target: "TREVENANT" },
@@ -714,7 +714,7 @@ BULBASAUR: [{ method: "LEVEL", value: "16", target: "IVYSAUR" }],
     {
       method: "SPECIFIC_MAP",
       value: "MAP_SHOAL_CAVE_LOW_TIDE_ICE_ROOM",
-      target: "AVALUGG-HISUI",
+      target: "AVALUGG_HISUI",
     },
   ],
   NOIBAT: [{ method: "LEVEL", value: "48", target: "NOIVERN" }],
@@ -722,7 +722,7 @@ BULBASAUR: [{ method: "LEVEL", value: "16", target: "IVYSAUR" }],
   ROWLET: [{ method: "LEVEL", value: "17", target: "DARTRIX" }],
   DARTRIX: [
     { method: "LEVEL", value: "34", target: "DECIDUEYE" },
-    { method: "LEVEL_NIGHT", value: "34", target: "DECIDUEYE-HISUI" },
+    { method: "LEVEL_NIGHT", value: "34", target: "DECIDUEYE_HISUI" },
   ],
   LITTEN: [{ method: "LEVEL", value: "17", target: "TORRACAT" }],
   TORRACAT: [{ method: "LEVEL", value: "34", target: "INCINEROAR" }],
@@ -905,51 +905,51 @@ BULBASAUR: [{ method: "LEVEL", value: "16", target: "IVYSAUR" }],
   ARCTIBAX: [{ method: "LEVEL", value: "54", target: "BAXCALIBUR" }],
   GIMMIGHOUL: [{ method: "LEVEL", value: "42", target: "GHOLDENGO" }],
 
-  RATTATA-ALOLA: [
-    { method: "LEVEL_NIGHT", value: "20", target: "RATICATE-ALOLA" },
+  RATTATA_ALOLA: [
+    { method: "LEVEL_NIGHT", value: "20", target: "RATICATE_ALOLA" },
   ],
-  SANDSHREW-ALOLA: [
-    { method: "ITEM", value: "ITEM_ICE_STONE", target: "SANDSLASH-ALOLA" },
+  SANDSHREW_ALOLA: [
+    { method: "ITEM", value: "ITEM_ICE_STONE", target: "SANDSLASH_ALOLA" },
   ],
-  VULPIX-ALOLA: [
-    { method: "ITEM", value: "ITEM_ICE_STONE", target: "NINETALES-ALOLA" },
+  VULPIX_ALOLA: [
+    { method: "ITEM", value: "ITEM_ICE_STONE", target: "NINETALES_ALOLA" },
   ],
-  DIGLETT-ALOLA: [{ method: "LEVEL", value: "26", target: "DUGTRIO-ALOLA" }],
-  MEOWTH-ALOLA: [
-    { method: "FRIENDSHIP", value: "28", target: "PERSIAN-ALOLA" },
+  DIGLETT_ALOLA: [{ method: "LEVEL", value: "26", target: "DUGTRIO_ALOLA" }],
+  MEOWTH_ALOLA: [
+    { method: "FRIENDSHIP", value: "28", target: "PERSIAN_ALOLA" },
   ],
-  GEODUDE-ALOLA: [{ method: "LEVEL", value: "25", target: "GRAVELER-ALOLA" }],
-  GRAVELER-ALOLA: [
-    { method: "TRADE", value: "0", target: "GOLEM-ALOLA" },
-    { method: "ITEM", value: "ITEM_LINKING_CORD", target: "GOLEM-ALOLA" },
+  GEODUDE_ALOLA: [{ method: "LEVEL", value: "25", target: "GRAVELER_ALOLA" }],
+  GRAVELER_ALOLA: [
+    { method: "TRADE", value: "0", target: "GOLEM_ALOLA" },
+    { method: "ITEM", value: "ITEM_LINKING_CORD", target: "GOLEM_ALOLA" },
   ],
-  GRIMER-ALOLA: [{ method: "LEVEL", value: "38", target: "MUK-ALOLA" }],
+  GRIMER_ALOLA: [{ method: "LEVEL", value: "38", target: "MUK_ALOLA" }],
 
-  MEOWTH-GALAR: [{ method: "LEVEL", value: "28", target: "PERRSERKER" }],
+  MEOWTH_GALAR: [{ method: "LEVEL", value: "28", target: "PERRSERKER" }],
 
-  PONYTA-GALAR: [{ method: "LEVEL", value: "40", target: "RAPIDASH-GALAR" }],
-  SLOWPOKE-GALAR: [
-    { method: "ITEM", value: "ITEM-GALARICA_CUFF", target: "SLOWBRO-GALAR" },
-    { method: "ITEM", value: "ITEM-GALARICA_WREATH", target: "SLOWKING-GALAR" },
+  PONYTA_GALAR: [{ method: "LEVEL", value: "40", target: "RAPIDASH_GALAR" }],
+  SLOWPOKE_GALAR: [
+    { method: "ITEM", value: "ITEM_GALARICA_CUFF", target: "SLOWBRO_GALAR" },
+    { method: "ITEM", value: "ITEM_GALARICA_WREATH", target: "SLOWKING_GALAR" },
   ],
 
-  FARFETCHD-GALAR: [
+  FARFETCHD_GALAR: [
     { method: "CRITICAL_HITS", value: "3", target: "SIRFETCHD" },
   ],
-  MR_MIME-GALAR: [{ method: "LEVEL", value: "42", target: "MR_RIME" }],
-  CORSOLA-GALAR: [{ method: "LEVEL", value: "38", target: "CURSOLA" }],
-  ZIGZAGOON-GALAR: [{ method: "LEVEL", value: "20", target: "LINOONE-GALAR" }],
-  LINOONE-GALAR: [{ method: "LEVEL_NIGHT", value: "35", target: "OBSTAGOON" }],
-  DARUMAKA-GALAR: [
-    { method: "ITEM", value: "ITEM_ICE_STONE", target: "DARMANITAN-GALAR" },
+  MR_MIME_GALAR: [{ method: "LEVEL", value: "42", target: "MR_RIME" }],
+  CORSOLA_GALAR: [{ method: "LEVEL", value: "38", target: "CURSOLA" }],
+  ZIGZAGOON_GALAR: [{ method: "LEVEL", value: "20", target: "LINOONE_GALAR" }],
+  LINOONE_GALAR: [{ method: "LEVEL_NIGHT", value: "35", target: "OBSTAGOON" }],
+  DARUMAKA_GALAR: [
+    { method: "ITEM", value: "ITEM_ICE_STONE", target: "DARMANITAN_GALAR" },
   ],
-  YAMASK-GALAR: [
+  YAMASK_GALAR: [
     { method: "SCRIPT_TRIGGER_DMG", value: "49", target: "RUNERIGUS" },
   ],
 
-  ZIGZAGOON-GALAR: [{ method: "LEVEL", value: "20", target: "LINOONE-GALAR" }],
-  DARUMAKA-GALAR: [
-    { method: "ITEM", value: "ITEM_ICE_STONE", target: "DARMANITAN-GALAR" },
+  ZIGZAGOON_GALAR: [{ method: "LEVEL", value: "20", target: "LINOONE_GALAR" }],
+  DARUMAKA_GALAR: [
+    { method: "ITEM", value: "ITEM_ICE_STONE", target: "DARMANITAN_GALAR" },
   ],
 
   BURMY_SANDY_CLOAK: [
@@ -1046,15 +1046,15 @@ BULBASAUR: [{ method: "LEVEL", value: "16", target: "IVYSAUR" }],
     { method: "LEVEL_MALE", value: "30", target: "BASCULEGION" },
     { method: "LEVEL_FEMALE", value: "30", target: "BASCULEGION_FEMALE" },
   ],
-  QWILFISH-HISUI: [
+  QWILFISH_HISUI: [
     { method: "MOVE", value: "MOVE_BARB_BARRAGE", target: "OVERQWIL" },
   ],
-  SNEASEL-HISUI: [
+  SNEASEL_HISUI: [
     { method: "ITEM_DAY", value: "ITEM_RAZOR_CLAW", target: "SNEASLER" },
     { method: "ITEM_HOLD_DAY", value: "ITEM_RAZOR_CLAW", target: "SNEASLER" },
   ],
 
-  WOOPER-PALDEA: [{ method: "LEVEL", value: "20", target: "CLODSIRE" }],
+  WOOPER_PALDEA: [{ method: "LEVEL", value: "20", target: "CLODSIRE" }],
   GIRAFARIG: [{ method: "MOVE", value: "MOVE_TWIN_BEAM", target: "FARIGIRAF" }],
   PRIMEAPE: [{ method: "LEVEL", value: "35", target: "ANNIHILAPE" }],
   DUNSPARCE: [
