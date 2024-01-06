@@ -63,102 +63,91 @@
 <body>
   <div>
     <label for="searchInput">Search:</label>
-    <input type="text" id="searchInput" oninput="searchEncounters()" />
+    <input type="text" id="searchInput" oninput="debounce(searchEncounters, 300)" />
   </div>
 
   <div id="encounterData"></div>
 
   <script>
-    // Fetch the JSON data
-    fetch('wild_encounter_data.json')
-      .then(response => response.json())
-      .then(data => {
-        // Store the encounter data
-        const encounterData = data.wild_encounter_groups;
+    let allEncountersData = {};
 
-        // Render the encounter data
-        renderEncounterData(encounterData);
-      });
-
-    async function fetchPokemonData(url) {
+    async function fetchData() {
       try {
-        const response = await fetch(url);
-	@@ -115,118 +106,88 @@
+        const response = await fetch('wild_encounter_data.json');
+        const data = await response.json();
+        allEncountersData = data.wild_encounter_groups;
+        renderEncounterData();
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
     }
 
-    function renderEncounterData(data) {
-      const encounterGroups = data;
-      const encounterDataDiv = document.getElementById('encounterData');
+   async function fetchPokemonSprite(speciesName) {
+  try {
+    const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${speciesName.toLowerCase()}`);
+    const data = await response.json();
+    return data.sprites.front_default;
+  } catch (error) {
+    console.error('Error fetching Pokemon sprite:', error);
+    return null;
+  }
+}
 
-      // Clear previous results
+
+    function renderEncounterData() {
+      const encounterDataDiv = document.getElementById('encounterData');
       encounterDataDiv.innerHTML = '';
 
-      // Process the encounter groups
-      encounterGroups.forEach(group => {
+      allEncountersData.forEach(group => {
         const encounters = group.encounters;
-
-        // Create a table for each map's encounters
-        encounters.forEach(async encounter => {
+        encounters.forEach(encounter => {
           const table = document.createElement('table');
-
-          // Create the table header
           const header = document.createElement('th');
           const mapName = encounter.map.replace('MAP_', '');
           header.textContent = `Encounters for ${mapName}`;
           header.colSpan = 4;
           table.appendChild(header);
 
-          // Iterate over the encounter types (land, water, etc.)
-          group.fields.forEach(async field => {
+          group.fields.forEach(field => {
             const type = field.type;
             const encounterData = encounter[type];
-
             if (encounterData) {
-              // Iterate over the encounter mons
-              encounterData.mons.forEach(async (mon, index) => {
-                const speciesName = mon.species.replace('SPECIES_', '');
-                const encounterRate = field.encounter_rates[index];
-
-                // Fetch the Pokémon sprite image
-                const spriteURL = await fetchPokemonSprite(speciesName);
-
-                // Create the table row for the encounter details
+              const detailsRows = encounterData.mons.map(async (mon, index) => {
                 const detailsRow = document.createElement('tr');
-
-                // Create the image cell
+                const spriteURL = await fetchPokemonSprite(mon.species.replace('SPECIES_', ''));
                 const imageCell = document.createElement('td');
                 if (spriteURL) {
                   const image = document.createElement('img');
                   image.className = 'pokemon-image';
                   image.src = spriteURL;
-                  image.alt = speciesName;
+                  image.alt = mon.species.replace('SPECIES_', '');
                   imageCell.appendChild(image);
                 }
                 detailsRow.appendChild(imageCell);
 
-                // Create the Pokémon name cell
                 const pokemonCell = document.createElement('td');
-                pokemonCell.textContent = speciesName;
+                pokemonCell.textContent = mon.species.replace('SPECIES_', '');
                 detailsRow.appendChild(pokemonCell);
 
-                // Create the levels cell
                 const levelsCell = document.createElement('td');
                 levelsCell.textContent = `${mon.min_level}-${mon.max_level}`;
                 detailsRow.appendChild(levelsCell);
 
-                // Create the rate cell
                 const rateCell = document.createElement('td');
-                rateCell.textContent = `${encounterRate}%`;
+                rateCell.textContent = `${field.encounter_rates[index]}%`;
                 detailsRow.appendChild(rateCell);
 
-                // Append the details row to the table
-                table.appendChild(detailsRow);
+                return detailsRow;
+              });
+
+              Promise.all(detailsRows).then(rows => {
+                rows.forEach(row => {
+                  table.appendChild(row);
+                });
+                encounterDataDiv.appendChild(table);
               });
             }
           });
-
-          // Append the table to the encounter data div
-          encounterDataDiv.appendChild(table);
         });
       });
     }
@@ -192,7 +181,6 @@
           }
         }
 
-        // Show/hide the table based on search results
         if (hasMatch) {
           table.style.display = '';
         } else {
@@ -200,6 +188,20 @@
         }
       });
     }
+
+    function debounce(func, timeout) {
+      let timer;
+      return function () {
+        const context = this;
+        const args = arguments;
+        clearTimeout(timer);
+        timer = setTimeout(() => {
+          func.apply(context, args);
+        }, timeout);
+      };
+    }
+
+    fetchData(); // Fetch data on page load
   </script>
 </body>
 </html>
