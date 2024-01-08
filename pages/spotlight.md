@@ -6,7 +6,7 @@ nav_order: 5
 
 # Spotlight Events
 
-![Adobe_Express_20240106_1019310_1](https://github.com/RomHackStudios/RomHackStudios.github.io/assets/109757010/a7465c7d-f1df-4955-aa39-ad533b5d0bd5)
+![Adobe_Express_20240106_1015070_1](https://github.com/RomHackStudios/RomHackStudios.github.io/assets/109757010/153360a1-e42e-47f3-b121-e7bd655599af)
 
 - Currently, only the base evo Pokemon are available, i.e., you can generate spotlight events for Pichu and not for Pikachu or Raichu.
 - Regional forms aren't available, so are mythical and legendaries but they will be unlocked on special events [you won't have to update your game for them]
