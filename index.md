@@ -100,7 +100,7 @@ New Release
 Bug Fix
 {: .label .label-yellow }
 
-[Latest v1.0.9.5](https://ko-fi.com/api/file-upload/8e521c9b-fa14-43dd-ac80-5346fa6a1580/download?transactionId=273d83f4-d83d-47a2-bad7-5f73a917dfc3){: .btn .btn-purple .mr-2 } [v1.0.9.6 EA](https://romhackstudios.github.io/pages/early-access.html){: .btn .btn-blue }
+[Stable v1.0.9.6](https://ko-fi.com/api/file-upload/6d070dd6-e164-4d12-a544-70c2e662a1ae/download?transactionId=764d582c-8863-4c9f-aad4-939ebf89561a){: .btn .btn-purple .mr-2 } [v1.0.9.6 EA](https://romhackstudios.github.io/pages/early-access.html){: .btn .btn-blue }
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4829462676030982"
      crossorigin="anonymous"></script>
@@ -117,35 +117,17 @@ Bug Fix
 ```
 What's New!
 
-- Create custom Spotlight Events
-- Mr. Kip now supports auto-generating mystery gift codes
-- Made the prefect IVs option give 6 prefect IVs instead of 3
-- Updated some PLA mons abilities
-- Added some Teal Mask (DLC) items and data
-- Made time-based evolutions match DNS  
-- Added some Gen 9 moves
-  - Triple Arrow
-  - Take Heart
-  - Infernal Parade
-  - Axe Kick
-  - Collision Course
-  - Spin Out
-  - Make It Rain
-- Fixed lati's being shiny only outside of battle
-- Fixed mints removing shinyness
-
-**__Fixes and Updates from EA versions__**
-- Made Hoopa summoning legends easier
-- Fixed mints changing gender
-- Fixed Include Legendary option
+- Added Teal Mask (DLC) mons
+- Fixed fossil generation
+- Fixed hyper training
+- Fixed aqua hideout wormhole
+- Updated wild encounters
 - Updated some Gen 9 sprites
-- Made Dexnav usable in dark caves
-- Added Zero to hero ability
-- Fixed a visual bug where the HP turns 0/1
-- Fixed Hyper Training
-- Fixed many moves and abilities
-- Updated gen 9 sprites 
-- Added new mystery gifts
+- Made finding portals easier
+- And many more minor bug fixes and improvements
+
+If a wormhole is spawned talking to Hoopa will take you near it.
+*note: you need to beat the game for Hoopa to teleport you to the spawn location.
 ```
 
 ### Previous Releases
