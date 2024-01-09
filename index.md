@@ -100,7 +100,7 @@ New Release
 Bug Fix
 {: .label .label-yellow }
 
-[Stable v1.0.9.6](https://ko-fi.com/api/file-upload/6d070dd6-e164-4d12-a544-70c2e662a1ae/download?transactionId=764d582c-8863-4c9f-aad4-939ebf89561a){: .btn .btn-purple .mr-2 } [v1.0.9.6 EA](https://romhackstudios.github.io/pages/early-access.html){: .btn .btn-blue }
+[Stable v1.0.9.6](https://ko-fi.com/api/file-upload/8d669361-7c5d-4891-b2bd-0934dd2b222e/download?transactionId=1bfe8fd8-d20f-429c-97f7-c42aaaaa7ab7){: .btn .btn-purple .mr-2 } [v1.0.9.6 EA](https://romhackstudios.github.io/pages/early-access.html){: .btn .btn-blue }
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4829462676030982"
      crossorigin="anonymous"></script>
