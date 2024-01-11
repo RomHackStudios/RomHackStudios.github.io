@@ -100,7 +100,7 @@ New Release
 Bug Fix
 {: .label .label-yellow }
 
-[Stable v1.0.9.6](https://ko-fi.com/api/file-upload/8d669361-7c5d-4891-b2bd-0934dd2b222e/download?transactionId=1bfe8fd8-d20f-429c-97f7-c42aaaaa7ab7){: .btn .btn-purple .mr-2 } [v1.0.9.6 EA](https://romhackstudios.github.io/pages/early-access.html){: .btn .btn-blue }
+[Stable v1.0.9.6.1](https://ko-fi.com/api/file-upload/e4534e7d-86ef-4e74-80c6-9f8d4a5b88c9/download?transactionId=17e2e697-565d-4859-aae7-6711953e3c35){: .btn .btn-purple .mr-2 } [v1.0.9.6 EA](https://romhackstudios.github.io/pages/early-access.html){: .btn .btn-blue }
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4829462676030982"
      crossorigin="anonymous"></script>
@@ -115,7 +115,17 @@ Bug Fix
 </script>
 
 ```
-What's New!
+What's New! + v1.0.9.6.1
+
+- Fixed issue where starters become ????
+- Fixed issue where the randomizer turns off
+- Fixed issue that causes accidental deletion of Pokémon in boxes by pressing B to place them on top of each other.
+- Fixed shiny Pokémon not being generated
+- Fixed Duraludon sprite
+- Fixed the issue where dex removed registered Pokémon
+- Changed Shelmet and Karrablast to trade evo
+- Changed Spotlight Pokémon into Event Pokémon
+- And a few more minor fixes and updates
 
 - Added Teal Mask (DLC) mons
 - Fixed fossil generation
