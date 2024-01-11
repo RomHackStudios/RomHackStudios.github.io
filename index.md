@@ -10,7 +10,7 @@ image: /v1.0.9.png
 Thank you for choosing Pokemon Emerald Crest! You can download the latest version of the game below.
 
 <p align="center">
-<img src="https://media.discordapp.net/attachments/1080910082285502534/1177453359385542686/Adobe_Express_20231124_0904290_1.png?ex=65728fe4&is=65601ae4&hm=0ff19710acd5e00a7c821bebf5fc7108f85b7750fae2e4d8027b9e4e62e3ff07&" />
+<img src="https://media.discordapp.net/attachments/1095737480109633536/1195063488033345706/Adobe_Express_20240111_2324020_1.png?ex=65b2a09a&is=65a02b9a&hm=08730e042ce1aa31486bd40c28f5b79e6b676219e4883d871af53aa11de0e1b9&" />
 </p>
 
 [Create Spotlight Events](https://romhackstudios.github.io/pages/spotlight.html){: .btn .btn-green } [Docs](https://romhackstudios.github.io/pages/docs.html){: .btn .btn-purple }
