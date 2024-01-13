@@ -12,6 +12,8 @@ nav_order: 5
 - Regional forms aren't available, so are mythical and legendaries but they will be unlocked on special events [you won't have to update your game for them]
 - Starting from gen 2 each gen is unlocked with the number of badges you have obtained!
 
+![new spotlight](https://cdn.discordapp.com/attachments/1179999589856718879/1195708660207341618/Adobe_Express_20240113_1803230_1.png?ex=65b4f977&is=65a28477&hm=a46f9971a157ad0ffbdb05768a7415bc28758473ba21afb0b3cb9ff02c5023bd&)
+
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4829462676030982"
      crossorigin="anonymous"></script>
 <!-- spotlight -->
