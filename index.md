@@ -100,7 +100,7 @@ New Release
 Bug Fix
 {: .label .label-yellow }
 
-[Stable v1.0.9.6.1](https://ko-fi.com/api/file-upload/e4534e7d-86ef-4e74-80c6-9f8d4a5b88c9/download?transactionId=17e2e697-565d-4859-aae7-6711953e3c35){: .btn .btn-purple .mr-2 } [v1.0.9.6 EA](https://romhackstudios.github.io/pages/early-access.html){: .btn .btn-blue }
+[Stable v1.0.9.6.2](https://ko-fi.com/api/file-upload/894c6dd2-2ee7-496f-aaf6-c6107d624b35/download?transactionId=57f05637-6520-419f-b23a-00841857ae09){: .btn .btn-purple .mr-2 } [v1.0.9.6 EA](https://romhackstudios.github.io/pages/early-access.html){: .btn .btn-blue }
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4829462676030982"
      crossorigin="anonymous"></script>
@@ -115,29 +115,22 @@ Bug Fix
 </script>
 
 ```
-What's New! + v1.0.9.6.1
+What's New!
 
-- Fixed issue where starters become ????
-- Fixed issue where the randomizer turns off
-- Fixed issue that causes accidental deletion of Pokémon in boxes by pressing B to place them on top of each other.
-- Fixed shiny Pokémon not being generated
-- Fixed Duraludon sprite
-- Fixed the issue where dex removed registered Pokémon
-- Changed Shelmet and Karrablast to trade evo
-- Changed Spotlight Pokémon into Event Pokémon
-- And a few more minor fixes and updates
-
-- Added Teal Mask (DLC) mons
-- Fixed fossil generation
-- Fixed hyper training
-- Fixed aqua hideout wormhole
-- Updated wild encounters
-- Updated some Gen 9 sprites
-- Made finding portals easier
+- Fixed some move descriptions
+- Fixed perfect IVs
+- Updated Hoopa portals
+- Fixed Hoopa not teleporting player
+- Fixed Roxanne battle after Brawly in open world mode
+- Fixed the Swords of Justice puzzle resetting
+- Fixed Ancient Tomb opening before it should
+- Fixed Following Pokemon and textbox staying stuck on screen after receiving the bike from Rydel.
+- Cry fixes
+- Added teal mask cries
+- Unlocked Ogerpon Shiny
+- Added shiny sprite for Magearna
 - And many more minor bug fixes and improvements
 
-If a wormhole is spawned talking to Hoopa will take you near it.
-*note: you need to beat the game for Hoopa to teleport you to the spawn location.
 ```
 
 ### Previous Releases
