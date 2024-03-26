@@ -100,7 +100,7 @@ New Release
 Bug Fix
 {: .label .label-yellow }
 
-[Stable v1.0.9.6.2](https://ko-fi.com/api/file-upload/894c6dd2-2ee7-496f-aaf6-c6107d624b35/download?transactionId=57f05637-6520-419f-b23a-00841857ae09){: .btn .btn-purple .mr-2 } [v1.0.9.6 EA](https://romhackstudios.github.io/pages/early-access.html){: .btn .btn-blue }
+[Stable v1.0.9.6.3](https://ko-fi.com/api/file-upload/7c608b13-60e8-458b-b19f-a4abb2c0c9f7/download?transactionId=97b68c68-4d4f-428e-8bdd-f891eaac717c){: .btn .btn-purple .mr-2 } [v1.0.9.6 EA](https://romhackstudios.github.io/pages/early-access.html){: .btn .btn-blue }
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4829462676030982"
      crossorigin="anonymous"></script>
@@ -117,19 +117,12 @@ Bug Fix
 ```
 What's New!
 
-- Fixed some move descriptions
-- Fixed perfect IVs
-- Updated Hoopa portals
-- Fixed Hoopa not teleporting player
-- Fixed Roxanne battle after Brawly in open world mode
-- Fixed the Swords of Justice puzzle resetting
-- Fixed Ancient Tomb opening before it should
-- Fixed Following Pokemon and textbox staying stuck on screen after receiving the bike from Rydel.
-- Cry fixes
-- Added teal mask cries
-- Unlocked Ogerpon Shiny
-- Added shiny sprite for Magearna
-- And many more minor bug fixes and improvements
+- Fixed Rapid Spin not increasing speed
+- Fixed Gimmighoul Roaming form not evolving
+- Fixed Hoopa Portal Teleporting into a Wall
+- Fixed Claw Fossil not regenerating
+- Fixed OW Bosses freezing
+- And a few more minor bug fixes and improvements
 
 ```
 
