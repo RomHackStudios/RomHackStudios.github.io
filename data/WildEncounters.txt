@@ -1,0 +1,3529 @@
+Route101_LandMons
+
+     2, 2, SPECIES_SKIDDO,
+     2, 2, SPECIES_BLIPBUG,
+     2, 2, SPECIES_CATERPIE,
+     3, 3, SPECIES_GRUBBIN,
+     3, 3, SPECIES_BUNEARY,
+     3, 3, SPECIES_LECHONK,
+     3, 3, SPECIES_TAROUNTULA,
+     3, 3, SPECIES_HOOTHOOT,
+     2, 2, SPECIES_ZIGZAGOON,
+     2, 2, SPECIES_PAWMI,
+     3, 3, SPECIES_GROOKEY,
+     3, 3, SPECIES_ZIGZAGOON_GALARIAN,
+
+
+Route101_LandMonsInfo =  20, gRoute101_LandMons 
+
+Route101_HiddenMons
+
+     3, 5, SPECIES_PICHU_SPIKY_EARED,
+     3, 5, SPECIES_WEEDLE,
+     3, 5, SPECIES_DIGLETT,
+
+
+Route101_HiddenMonsInfo =  0, gRoute101_HiddenMons 
+
+Route102_LandMons
+
+     3, 6, SPECIES_SKWOVET,
+     4, 6, SPECIES_ROOKIDEE,
+     4, 7, SPECIES_CHEWTLE,
+     5, 7, SPECIES_YAMPER,
+     5, 6, SPECIES_PURRLOIN,
+     5, 7, SPECIES_WOOLOO,
+     5, 7, SPECIES_RALTS,
+     3, 3, SPECIES_NICKIT,
+     4, 4, SPECIES_TADBULB,
+     4, 4, SPECIES_FIDOUGH,
+     4, 4, SPECIES_ABSOL,
+     3, 3, SPECIES_SUNKERN,
+
+
+Route102_LandMonsInfo =  20, gRoute102_LandMons 
+Route102_WaterMons
+
+     20, 30, SPECIES_MAGIKARP,
+     10, 20, SPECIES_CORPHISH,
+     30, 35, SPECIES_SEAKING,
+     5, 10, SPECIES_ARROKUDA,
+     20, 30, SPECIES_GOLDEEN,
+
+
+Route102_WaterMonsInfo =  4, gRoute102_WaterMons 
+Route102_FishingMons
+
+     5, 10, SPECIES_MAGIKARP,
+     5, 10, SPECIES_FEEBAS,
+     10, 15, SPECIES_CHEWTLE,
+     10, 14, SPECIES_ARROKUDA,
+     10, 14, SPECIES_CORPHISH,
+     11, 13, SPECIES_WISHIWASHI,
+     9, 13, SPECIES_OCTILLERY,
+     10, 15, SPECIES_SEAKING,
+     4, 13, SPECIES_MAGIKARP,
+     12, 18, SPECIES_QWILFISH_HISUIAN,
+
+
+Route102_FishingMonsInfo =  30, gRoute102_FishingMons 
+
+Route102_HiddenMons
+
+     3, 5, SPECIES_TOXEL,
+     3, 5, SPECIES_TURTWIG,
+     3, 5, SPECIES_DITTO,
+
+
+Route102_HiddenMonsInfo =  0, gRoute102_HiddenMons 
+
+Route103_LandMons
+
+     2, 5, SPECIES_WOOPER_PALDEAN,
+     3, 4, SPECIES_PANCHAM,
+     3, 3, SPECIES_BOUNSWEET,
+     4, 4, SPECIES_POLIWAG,
+     2, 2, SPECIES_ZORUA_HISUIAN,
+     3, 3, SPECIES_STUFFUL,
+     3, 3, SPECIES_TYROGUE,
+     4, 4, SPECIES_GOSSIFLEUR,
+     3, 3, SPECIES_APPLIN,
+     3, 3, SPECIES_BELLSPROUT,
+     2, 2, SPECIES_POOCHYENA,
+     4, 4, SPECIES_FOMANTIS,
+
+
+Route103_LandMonsInfo =  20, gRoute103_LandMons 
+Route103_WaterMons
+
+     5, 35, SPECIES_KRABBY,
+     10, 30, SPECIES_LUVDISC,
+     15, 25, SPECIES_WISHIWASHI,
+     25, 30, SPECIES_PELIPPER,
+     25, 30, SPECIES_GYARADOS,
+
+
+Route103_WaterMonsInfo =  4, gRoute103_WaterMons 
+Route103_FishingMons
+
+     5, 10, SPECIES_MAGIKARP,
+     5, 10, SPECIES_KRABBY,
+     10, 30, SPECIES_WISHIWASHI,
+     10, 30, SPECIES_TENTACOOL,
+     10, 30, SPECIES_WAILMER,
+     30, 35, SPECIES_SHARPEDO,
+     30, 35, SPECIES_TYMPOLE,
+     25, 30, SPECIES_FRILLISH,
+     35, 40, SPECIES_SKRELP,
+     40, 45, SPECIES_DEWPIDER,
+
+
+Route103_FishingMonsInfo =  30, gRoute103_FishingMons 
+
+Route103_HiddenMons
+
+     3, 5, SPECIES_RIOLU,
+     3, 5, SPECIES_LEDYBA,
+     3, 5, SPECIES_MUDKIP,
+
+
+Route103_HiddenMonsInfo =  0, gRoute103_HiddenMons 
+
+Route104_LandMons
+
+     4, 4, SPECIES_FLAMIGO,
+     4, 4, SPECIES_ESPURR,
+     5, 5, SPECIES_NUZLEAF,
+     5, 5, SPECIES_SWIRLIX,
+     4, 4, SPECIES_WATTREL,
+     5, 5, SPECIES_DEWPIDER,
+     4, 4, SPECIES_PETILIL,
+     5, 5, SPECIES_SHROOMISH,
+     4, 4, SPECIES_TREECKO,
+     4, 4, SPECIES_FARFETCHD_GALARIAN,
+     3, 3, SPECIES_FROAKIE,
+     5, 5, SPECIES_CYNDAQUIL,
+
+
+Route104_LandMonsInfo =  20, gRoute104_LandMons 
+Route104_WaterMons
+
+     10, 30, SPECIES_TATSUGIRI,
+     15, 25, SPECIES_WINGULL,
+     15, 25, SPECIES_QWILFISH,
+     25, 30, SPECIES_MANTYKE,
+     25, 30, SPECIES_JELLICENT,
+
+
+Route104_WaterMonsInfo =  4, gRoute104_WaterMons 
+Route104_FishingMons
+
+     5, 10, SPECIES_WOOPER,
+     5, 10, SPECIES_TATSUGIRI_DROOPY,
+     10, 30, SPECIES_BARBOACH,
+     10, 30, SPECIES_GOLDEEN,
+     10, 30, SPECIES_TATSUGIRI_STRETCHY,
+     25, 30, SPECIES_WISHIWASHI,
+     30, 35, SPECIES_WISHIWASHI_SCHOOL,
+     20, 25, SPECIES_BASCULIN,
+     35, 40, SPECIES_BASCULIN_BLUE_STRIPED,
+     40, 45, SPECIES_DHELMISE,
+
+
+Route104_FishingMonsInfo =  30, gRoute104_FishingMons 
+
+Route104_HiddenMons
+
+     3, 5, SPECIES_DUNSPARCE,
+     3, 5, SPECIES_EEVEE,
+     3, 5, SPECIES_SCORBUNNY,
+
+
+Route104_HiddenMonsInfo =  0, gRoute104_HiddenMons 
+
+Route105_WaterMons
+
+     5, 35, SPECIES_BRUXISH,
+     10, 30, SPECIES_BASCULIN,
+     15, 25, SPECIES_QUAXLY,
+     25, 30, SPECIES_ARAQUANID,
+     25, 30, SPECIES_WISHIWASHI_SCHOOL,
+
+
+Route105_WaterMonsInfo =  4, gRoute105_WaterMons 
+Route105_FishingMons
+
+     5, 10, SPECIES_CLAUNCHER,
+     5, 10, SPECIES_ALOMOMOLA,
+     10, 30, SPECIES_FRILLISH,
+     10, 30, SPECIES_DUCKLETT,
+     10, 30, SPECIES_TIRTOUGA,
+     25, 30, SPECIES_PALPITOAD,
+     30, 35, SPECIES_PANPOUR,
+     20, 25, SPECIES_FINNEON,
+     35, 40, SPECIES_LUVDISC,
+     40, 45, SPECIES_BUIZEL,
+
+
+Route105_FishingMonsInfo =  30, gRoute105_FishingMons 
+
+Route105_HiddenMons
+
+     22, 30, SPECIES_SEEL,
+     32, 35, SPECIES_FEAROW,
+     16, 32, SPECIES_ARBOK,
+
+
+Route105_HiddenMonsInfo =  1, gRoute105_HiddenMons 
+
+Route110_LandMons
+
+     12, 12, SPECIES_TADBULB,
+     12, 12, SPECIES_MAREEP,
+     12, 12, SPECIES_TOEDSCOOL,
+     13, 13, SPECIES_PIKACHU,
+     13, 13, SPECIES_BLITZLE,
+     13, 13, SPECIES_EXEGGCUTE,
+     13, 13, SPECIES_WIGLETT,
+     13, 13, SPECIES_MORPEKO,
+     12, 12, SPECIES_WATTREL,
+     12, 12, SPECIES_CAPSAKID,
+     12, 12, SPECIES_PLUSLE,
+     13, 13, SPECIES_MIME_JR,
+
+
+Route110_LandMonsInfo =  20, gRoute110_LandMons 
+Route110_WaterMons
+
+     5, 35, SPECIES_DUCKLETT,
+     10, 30, SPECIES_ARROKUDA,
+     15, 25, SPECIES_WINGULL,
+     30, 31, SPECIES_LUVDISC,
+     35, 38, SPECIES_SWANNA,
+
+
+Route110_WaterMonsInfo =  4, gRoute110_WaterMons 
+Route110_FishingMons
+
+     5, 10, SPECIES_MAGIKARP,
+     5, 10, SPECIES_TENTACOOL,
+     10, 30, SPECIES_MAGIKARP,
+     10, 30, SPECIES_TENTACOOL,
+     10, 30, SPECIES_CORPHISH,
+     25, 30, SPECIES_CLAUNCHER,
+     30, 35, SPECIES_ARAQUANID,
+     20, 25, SPECIES_WAILMER,
+     35, 40, SPECIES_WAILMER,
+     40, 45, SPECIES_WOOPER,
+
+
+Route110_FishingMonsInfo =  30, gRoute110_FishingMons 
+
+Route110_HiddenMons
+
+     8, 14, SPECIES_UNOWN,
+     8, 14, SPECIES_SHELMET,
+     8, 14, SPECIES_KARRABLAST,
+
+
+Route110_HiddenMonsInfo =  0, gRoute110_HiddenMons 
+
+Route111_LandMons
+
+     20, 20, SPECIES_HIPPOPOTAS,
+     20, 20, SPECIES_SANDILE,
+     21, 21, SPECIES_TRAPINCH,
+     21, 21, SPECIES_MARACTUS,
+     19, 19, SPECIES_MUDBRAY,
+     21, 21, SPECIES_BALTOY,
+     19, 19, SPECIES_RELLOR,
+     19, 19, SPECIES_NACLI,
+     20, 20, SPECIES_DIGLETT_ALOLAN,
+     20, 20, SPECIES_CACNEA,
+     22, 22, SPECIES_KLAWF,
+     22, 22, SPECIES_GIBLE,
+
+
+Route111_LandMonsInfo =  10, gRoute111_LandMons 
+Route111_WaterMons
+
+     20, 30, SPECIES_WOOPER,
+     10, 20, SPECIES_WOOPER,
+     30, 35, SPECIES_WOOPER,
+     5, 10, SPECIES_WOOPER,
+     20, 30, SPECIES_WOOPER,
+
+
+Route111_WaterMonsInfo =  4, gRoute111_WaterMons 
+Route111_RockSmashMons
+
+     10, 15, SPECIES_GEODUDE_ALOLAN,
+     5, 10, SPECIES_DIGLETT,
+     15, 20, SPECIES_SHUCKLE,
+     15, 20, SPECIES_DWEBBLE,
+     15, 20, SPECIES_GEODUDE,
+
+
+Route111_RockSmashMonsInfo =  20, gRoute111_RockSmashMons 
+Route111_FishingMons
+
+     5, 10, SPECIES_MAGIKARP,
+     4, 10, SPECIES_GOLDEEN,
+     10, 30, SPECIES_MAGIKARP,
+     10, 30, SPECIES_GOLDEEN,
+     10, 30, SPECIES_GOLDEEN,
+     25, 30, SPECIES_GOLDUCK,
+     30, 35, SPECIES_BARBOACH,
+     20, 25, SPECIES_SQUIRTLE,
+     35, 40, SPECIES_CLAMPERL,
+     40, 45, SPECIES_BARBOACH,
+
+
+Route111_FishingMonsInfo =  30, gRoute111_FishingMons 
+
+Route111_HiddenMons
+
+     19, 22, SPECIES_GLIGAR,
+     19, 22, SPECIES_ORICORIO,
+     19, 23, SPECIES_VIVILLON_SUN,
+
+
+Route111_HiddenMonsInfo =  0, gRoute111_HiddenMons 
+
+Route112_LandMons
+
+     15, 15, SPECIES_DARUMAKA,
+     15, 15, SPECIES_HOUNDOUR,
+     15, 15, SPECIES_PANSEAR,
+     14, 14, SPECIES_DARUMAKA,
+     14, 14, SPECIES_FLETCHINDER,
+     14, 14, SPECIES_LITLEO,
+     16, 16, SPECIES_ORICORIO,
+     16, 16, SPECIES_GROWLITHE,
+     17, 17, SPECIES_DARUMAKA,
+     16, 16, SPECIES_PONYTA,
+     16, 16, SPECIES_CHARCADET,
+     16, 16, SPECIES_CYNDAQUIL,
+
+
+Route112_LandMonsInfo =  20, gRoute112_LandMons 
+
+Route112_HiddenMons
+
+     15, 16, SPECIES_TURTONATOR,
+     15, 16, SPECIES_MAGMAR,
+     15, 16, SPECIES_SCOVILLAIN,
+
+
+Route112_HiddenMonsInfo =  0, gRoute112_HiddenMons 
+
+Route113_LandMons
+
+     15, 15, SPECIES_PONYTA,
+     15, 15, SPECIES_HONEDGE,
+     15, 15, SPECIES_SPINDA,
+     14, 14, SPECIES_SPINDA,
+     14, 14, SPECIES_DURANT,
+     15, 15, SPECIES_FLETCHINDER,
+     16, 16, SPECIES_LITLEO,
+     16, 16, SPECIES_BUNNELBY,
+     16, 16, SPECIES_CARKOL,
+     16, 16, SPECIES_SKARMORY,
+     16, 16, SPECIES_CUFANT,
+     16, 16, SPECIES_GRIMER,
+
+
+Route113_LandMonsInfo =  20, gRoute113_LandMons 
+
+Route113_HiddenMons
+
+     10, 12, SPECIES_GROWLITHE_HISUIAN,
+     10, 12, SPECIES_SALANDIT,
+     10, 12, SPECIES_SENTRET,
+
+
+Route113_HiddenMonsInfo =  0, gRoute113_HiddenMons 
+
+Route114_LandMons
+
+     16, 16, SPECIES_SWABLU,
+     16, 16, SPECIES_LOTAD,
+     17, 17, SPECIES_SWABLU,
+     15, 15, SPECIES_SWABLU,
+     15, 15, SPECIES_TAUROS_PALDEAN_AQUA_BREED,
+     16, 16, SPECIES_LOMBRE,
+     16, 16, SPECIES_COTTONEE,
+     18, 18, SPECIES_CRUSTLE,
+     17, 17, SPECIES_SEVIPER,
+     15, 15, SPECIES_VIVILLON_HIGH_PLAINS,
+     17, 17, SPECIES_AMOONGUSS,
+     15, 15, SPECIES_CHANSEY,
+
+
+Route114_LandMonsInfo =  20, gRoute114_LandMons 
+Route114_WaterMons
+
+     20, 30, SPECIES_MARILL,
+     10, 20, SPECIES_MARILL,
+     30, 35, SPECIES_MARILL,
+     5, 10, SPECIES_MARILL,
+     20, 30, SPECIES_GOLDEEN,
+
+
+Route114_WaterMonsInfo =  4, gRoute114_WaterMons 
+Route114_RockSmashMons
+
+     10, 15, SPECIES_GEODUDE,
+     5, 10, SPECIES_GEODUDE,
+     15, 20, SPECIES_GEODUDE,
+     15, 20, SPECIES_GEODUDE,
+     15, 20, SPECIES_GEODUDE,
+
+
+Route114_RockSmashMonsInfo =  20, gRoute114_RockSmashMons 
+Route114_FishingMons
+
+     5, 10, SPECIES_MAGIKARP,
+     5, 10, SPECIES_GOLDEEN,
+     10, 30, SPECIES_MAGIKARP,
+     10, 30, SPECIES_GOLDEEN,
+     10, 30, SPECIES_BARBOACH,
+     25, 30, SPECIES_BARBOACH,
+     30, 35, SPECIES_BARBOACH,
+     20, 25, SPECIES_BARBOACH,
+     35, 40, SPECIES_BARBOACH,
+     40, 45, SPECIES_BARBOACH,
+
+
+Route114_FishingMonsInfo =  30, gRoute114_FishingMons 
+
+Route114_HiddenMons
+
+     3, 5, SPECIES_HOPPIP,
+     3, 5, SPECIES_TANGELA,
+     3, 5, SPECIES_MELTAN,
+
+
+Route114_HiddenMonsInfo =  0, gRoute114_HiddenMons 
+
+Route116_LandMons
+
+     6, 6, SPECIES_SHINX,
+     6, 6, SPECIES_PACHIRISU,
+     6, 6, SPECIES_DRIFLOON,
+     7, 7, SPECIES_MUNCHLAX,
+     7, 7, SPECIES_VIVILLON_MEADOW,
+     6, 6, SPECIES_FLETCHLING,
+     7, 7, SPECIES_STARLY,
+     8, 8, SPECIES_PAWMI,
+     7, 7, SPECIES_CHATOT,
+     8, 8, SPECIES_QUAXLY,
+     7, 7, SPECIES_RIOLU,
+     8, 8, SPECIES_TINKATINK,
+
+
+Route116_LandMonsInfo =  20, gRoute116_LandMons 
+
+Route116_HiddenMons
+
+     25, 26, SPECIES_FURFROU_HEART_TRIM,
+     26, 26, SPECIES_FURFROU_KABUKI_TRIM,
+     26, 26, SPECIES_FURFROU_LA_REINE_TRIM,
+
+
+Route116_HiddenMonsInfo =  0, gRoute116_HiddenMons 
+
+Route117_LandMons
+
+     13, 13, SPECIES_SMOLIV,
+     13, 13, SPECIES_ODDISH,
+     14, 15, SPECIES_BUDEW,
+     14, 14, SPECIES_TADBULB,
+     13, 13, SPECIES_SQUAWKABILLY,
+     13, 13, SPECIES_MASCHIFF,
+     13, 13, SPECIES_AIPOM,
+     13, 13, SPECIES_ILLUMISE,
+     14, 14, SPECIES_FIDOUGH,
+     14, 14, SPECIES_TANDEMAUS,
+     13, 13, SPECIES_VOLBEAT,
+     13, 13, SPECIES_PICHU,
+
+
+Route117_LandMonsInfo =  20, gRoute117_LandMons 
+Route117_WaterMons
+
+     20, 30, SPECIES_AZURILL,
+     10, 20, SPECIES_TOTODILE,
+     30, 35, SPECIES_MARILL,
+     5, 10, SPECIES_MARILL,
+     20, 30, SPECIES_GOLDEEN,
+
+
+Route117_WaterMonsInfo =  4, gRoute117_WaterMons 
+Route117_FishingMons
+
+     5, 10, SPECIES_MAGIKARP,
+     5, 10, SPECIES_GOLDEEN,
+     10, 30, SPECIES_MAGIKARP,
+     10, 30, SPECIES_GOLDEEN,
+     10, 30, SPECIES_CORPHISH,
+     25, 30, SPECIES_CORPHISH,
+     30, 35, SPECIES_CORPHISH,
+     20, 25, SPECIES_CORPHISH,
+     35, 40, SPECIES_CORPHISH,
+     40, 45, SPECIES_DONDOZO,
+
+
+Route117_FishingMonsInfo =  30, gRoute117_FishingMons 
+
+Route117_HiddenMons
+
+     25, 26, SPECIES_FURFROU_MATRON_TRIM,
+     26, 26, SPECIES_FURFROU_PHARAOH_TRIM,
+     26, 26, SPECIES_FURFROU_STAR_TRIM,
+
+
+Route117_HiddenMonsInfo =  0, gRoute117_HiddenMons 
+
+Route118_LandMons
+
+     26, 26, SPECIES_WUGTRIO,
+     24, 24, SPECIES_TINKATUFF,
+     35, 36, SPECIES_OBSTAGOON,
+     26, 26, SPECIES_MEOWTH,
+     26, 26, SPECIES_LINOONE_GALARIAN,
+     26, 26, SPECIES_MANECTRIC,
+     25, 25, SPECIES_PERSIAN,
+     25, 25, SPECIES_DEDENNE,
+     26, 26, SPECIES_FALINKS,
+     26, 26, SPECIES_DIGGERSBY,
+     27, 27, SPECIES_INKAY,
+     25, 25, SPECIES_ELECTRODE_HISUIAN,
+
+
+Route118_LandMonsInfo =  20, gRoute118_LandMons 
+Route118_WaterMons
+
+     5, 35, SPECIES_TENTACOOL,
+     10, 30, SPECIES_WINGULL,
+     15, 25, SPECIES_WINGULL,
+     25, 30, SPECIES_PELIPPER,
+     25, 30, SPECIES_PELIPPER,
+
+
+Route118_WaterMonsInfo =  4, gRoute118_WaterMons 
+Route118_FishingMons
+
+     5, 10, SPECIES_MAGIKARP,
+     5, 10, SPECIES_TENTACOOL,
+     10, 30, SPECIES_MAGIKARP,
+     10, 30, SPECIES_TENTACOOL,
+     10, 30, SPECIES_CARVANHA,
+     30, 35, SPECIES_SHARPEDO,
+     30, 35, SPECIES_CARVANHA,
+     20, 25, SPECIES_CARVANHA,
+     35, 40, SPECIES_CARVANHA,
+     40, 45, SPECIES_CARVANHA,
+
+
+Route118_FishingMonsInfo =  30, gRoute118_FishingMons 
+
+Route118_HiddenMons
+
+     25, 26, SPECIES_DEERLING_SUMMER,
+     26, 26, SPECIES_DEERLING_WINTER,
+     34, 35, SPECIES_SAWSBUCK_WINTER,
+
+
+Route118_HiddenMonsInfo =  0, gRoute118_HiddenMons 
+
+Route124_WaterMons
+
+     5, 35, SPECIES_DUCKLETT,
+     10, 30, SPECIES_FRILLISH,
+     15, 25, SPECIES_CLAUNCHER,
+     25, 30, SPECIES_MAREANIE,
+     25, 30, SPECIES_BRUXISH,
+
+
+Route124_WaterMonsInfo =  4, gRoute124_WaterMons 
+Route124_FishingMons
+
+     5, 10, SPECIES_MAGIKARP,
+     5, 10, SPECIES_TENTACOOL,
+     10, 30, SPECIES_MAGIKARP,
+     10, 30, SPECIES_TENTACOOL,
+     10, 30, SPECIES_WAILMER,
+     30, 35, SPECIES_SHARPEDO,
+     30, 35, SPECIES_WAILMER,
+     25, 30, SPECIES_WAILMER,
+     35, 40, SPECIES_WAILMER,
+     40, 45, SPECIES_WAILMER,
+
+
+Route124_FishingMonsInfo =  30, gRoute124_FishingMons 
+
+
+PetalburgWoods_LandMons
+
+     5, 8, SPECIES_SCATTERBUG,
+     5, 5, SPECIES_CUTIEFLY,
+     5, 5, SPECIES_BURMY,
+     6, 6, SPECIES_PHANTUMP,
+     5, 5, SPECIES_LARVESTA,
+     5, 5, SPECIES_SHUCKLE,
+     6, 6, SPECIES_SKORUPI,
+     6, 6, SPECIES_SIZZLIPEDE,
+     5, 5, SPECIES_SEWADDLE,
+     5, 5, SPECIES_SPINARAK,
+     6, 6, SPECIES_PINSIR,
+     7, 9, SPECIES_SCYTHER,
+
+
+PetalburgWoods_LandMonsInfo =  20, gPetalburgWoods_LandMons 
+
+PetalburgWoods_HiddenMons
+
+     3, 5, SPECIES_CLEFFA,
+     3, 5, SPECIES_VENONAT,
+     3, 5, SPECIES_MANKEY,
+
+
+PetalburgWoods_HiddenMonsInfo =  0, gPetalburgWoods_HiddenMons 
+
+RusturfTunnel_LandMons
+
+     6, 6, SPECIES_ROLYCOLY,
+     7, 7, SPECIES_IMPIDIMP,
+     6, 6, SPECIES_RATTATA_ALOLAN,
+     7, 7, SPECIES_ROCKRUFF,
+     7, 7, SPECIES_BONSLY,
+     7, 6, SPECIES_SPRIGATITO,
+     5, 5, SPECIES_ROGGENROLA,
+     8, 8, SPECIES_DIGLETT,
+     5, 5, SPECIES_PARAS,
+     8, 8, SPECIES_DRILBUR,
+     5, 5, SPECIES_LARVITAR,
+     8, 8, SPECIES_DEINO,
+
+
+RusturfTunnel_LandMonsInfo =  10, gRusturfTunnel_LandMons 
+
+
+GraniteCave_1F_LandMons
+
+     7, 7, SPECIES_NOIBAT,
+     8, 8, SPECIES_CARKOL,
+     7, 7, SPECIES_CARBINK,
+     8, 8, SPECIES_CUBONE,
+     9, 9, SPECIES_KANGASKHAN,
+     8, 8, SPECIES_WOOBAT,
+     10, 10, SPECIES_CHEWTLE,
+     6, 3, SPECIES_PATRAT,
+     7, 7, SPECIES_GLIGAR,
+     8, 8, SPECIES_RATTATA,
+     6, 6, SPECIES_GEODUDE_ALOLAN,
+     9, 9, SPECIES_RIOLU,
+
+
+GraniteCave_1F_LandMonsInfo =  10, gGraniteCave_1F_LandMons 
+
+
+GraniteCave_B1F_LandMons
+
+     9, 9, SPECIES_NOIBAT,
+     10, 10, SPECIES_CARKOL,
+     9, 9, SPECIES_CARBINK,
+     11, 11, SPECIES_ARON,
+     10, 10, SPECIES_JANGMO_O,
+     9, 9, SPECIES_WOOBAT,
+     10, 10, SPECIES_PATRAT,
+     11, 11, SPECIES_GLIGAR,
+     10, 10, SPECIES_RATTATA_ALOLAN,
+     10, 10, SPECIES_SABLEYE,
+     9, 9, SPECIES_ONIX,
+     11, 11, SPECIES_CHESPIN,
+
+
+GraniteCave_B1F_LandMonsInfo =  10, gGraniteCave_B1F_LandMons 
+
+
+MtPyre_1F_LandMons
+
+     27, 27, SPECIES_GASTLY,
+     28, 28, SPECIES_DUSKULL,
+     26, 26, SPECIES_BANETTE,
+     25, 25, SPECIES_MISDREAVUS,
+     29, 29, SPECIES_FROSLASS,
+     24, 24, SPECIES_YAMASK,
+     23, 23, SPECIES_LITWICK,
+     22, 22, SPECIES_MIMIKYU,
+     29, 29, SPECIES_SINISTEA,
+     24, 24, SPECIES_GREAVARD,
+     29, 29, SPECIES_HAUNTER,
+     24, 24, SPECIES_DREEPY,
+
+
+MtPyre_1F_LandMonsInfo =  10, gMtPyre_1F_LandMons 
+
+MtPyre_1F_HiddenMons
+
+     5, 5, SPECIES_BRAMBLIN,
+     5, 5, SPECIES_GIMMIGHOUL,
+     5, 5, SPECIES_NYMBLE,
+
+
+MtPyre_1F_HiddenMonsInfo =  0, gMtPyre_1F_HiddenMons 
+
+VictoryRoad_1F_LandMons
+
+     40, 40, SPECIES_LUXIO,
+     40, 40, SPECIES_ROSERADE,
+     40, 40, SPECIES_RAMPARDOS,
+     40, 40, SPECIES_BLISSEY,
+     36, 36, SPECIES_STOUTLAND,
+     36, 36, SPECIES_MUDSDALE,
+     38, 38, SPECIES_GOLEM,
+     38, 38, SPECIES_GLISCOR,
+     36, 36, SPECIES_PILOSWINE,
+     36, 36, SPECIES_PUPITAR,
+     36, 36, SPECIES_TORTERRA,
+     48, 50, SPECIES_GARCHOMP,
+
+
+VictoryRoad_1F_LandMonsInfo =  10, gVictoryRoad_1F_LandMons 
+
+
+SafariZone_South_LandMons
+
+     25, 25, SPECIES_ODDISH,
+     27, 27, SPECIES_ODDISH,
+     25, 25, SPECIES_GIRAFARIG,
+     27, 27, SPECIES_GIRAFARIG,
+     25, 25, SPECIES_NATU,
+     25, 25, SPECIES_DODUO,
+     25, 25, SPECIES_GLOOM,
+     27, 27, SPECIES_WOBBUFFET,
+     25, 25, SPECIES_PIKACHU,
+     27, 27, SPECIES_WOBBUFFET,
+     27, 27, SPECIES_PIKACHU,
+     29, 29, SPECIES_WOBBUFFET,
+
+
+SafariZone_South_LandMonsInfo =  25, gSafariZone_South_LandMons 
+
+
+Underwater_Route126_WaterMons
+
+     20, 30, SPECIES_FRILLISH,
+     20, 30, SPECIES_ALOMOMOLA,
+     30, 35, SPECIES_TIRTOUGA,
+     30, 35, SPECIES_CHINCHOU,
+     30, 35, SPECIES_HUNTAIL,
+
+
+Underwater_Route126_WaterMonsInfo =  4, gUnderwater_Route126_WaterMons 
+
+
+AbandonedShip_Rooms_B1F_WaterMons
+
+     5, 35, SPECIES_TENTACOOL,
+     5, 35, SPECIES_TENTACOOL,
+     5, 35, SPECIES_TENTACOOL,
+     5, 35, SPECIES_TENTACOOL,
+     30, 35, SPECIES_TENTACRUEL,
+
+
+AbandonedShip_Rooms_B1F_WaterMonsInfo =  4, gAbandonedShip_Rooms_B1F_WaterMons 
+AbandonedShip_Rooms_B1F_FishingMons
+
+     5, 10, SPECIES_MAGIKARP,
+     5, 10, SPECIES_TENTACOOL,
+     10, 30, SPECIES_MAGIKARP,
+     10, 30, SPECIES_TENTACOOL,
+     10, 30, SPECIES_TENTACOOL,
+     25, 30, SPECIES_TENTACOOL,
+     30, 35, SPECIES_TENTACOOL,
+     30, 35, SPECIES_TENTACRUEL,
+     25, 30, SPECIES_TENTACRUEL,
+     20, 25, SPECIES_TENTACRUEL,
+
+
+AbandonedShip_Rooms_B1F_FishingMonsInfo =  20, gAbandonedShip_Rooms_B1F_FishingMons 
+
+
+GraniteCave_B2F_LandMons
+
+     10, 10, SPECIES_GOOMY,
+     11, 11, SPECIES_CARBINK,
+     18, 19, SPECIES_CARKOL,
+     11, 11, SPECIES_ROLYCOLY,
+     12, 12, SPECIES_CHEWTLE,
+     12, 13, SPECIES_ABRA,
+     10, 10, SPECIES_PATRAT,
+     11, 11, SPECIES_KANGASKHAN,
+     12, 12, SPECIES_ONIX,
+     10, 10, SPECIES_AXEW,
+     12, 12, SPECIES_BELDUM,
+     5, 10, SPECIES_MINIOR,
+
+
+GraniteCave_B2F_LandMonsInfo =  10, gGraniteCave_B2F_LandMons 
+GraniteCave_B2F_RockSmashMons
+
+     10, 15, SPECIES_GEODUDE,
+     10, 20, SPECIES_NOSEPASS,
+     5, 10, SPECIES_GEODUDE_ALOLAN,
+     15, 20, SPECIES_SHUCKLE,
+     15, 20, SPECIES_LARVITAR,
+
+
+GraniteCave_B2F_RockSmashMonsInfo =  20, gGraniteCave_B2F_RockSmashMons 
+
+
+FieryPath_LandMons
+
+     15, 15, SPECIES_DARUMAKA,
+     15, 15, SPECIES_HEATMOR,
+     16, 16, SPECIES_LITLEO,
+     15, 15, SPECIES_MACHOP,
+     15, 15, SPECIES_TORKOAL,
+     15, 15, SPECIES_SLUGMA,
+     16, 16, SPECIES_PANSEAR,
+     16, 16, SPECIES_MACHOP,
+     14, 14, SPECIES_PIGNITE,
+     16, 16, SPECIES_TORKOAL,
+     14, 14, SPECIES_DREEPY,
+     14, 14, SPECIES_CHARMANDER,
+
+
+FieryPath_LandMonsInfo =  10, gFieryPath_LandMons 
+
+
+MeteorFalls_B1F_2R_LandMons
+
+     33, 33, SPECIES_NOIBAT,
+     35, 35, SPECIES_SWOOBAT,
+     30, 30, SPECIES_SWOOBAT,
+     35, 35, SPECIES_SOLROCK,
+     35, 35, SPECIES_SWOOBAT,
+     37, 37, SPECIES_MABOSSTIFF,
+     25, 25, SPECIES_SWOOBAT,
+     39, 39, SPECIES_KLAWF,
+     38, 38, SPECIES_NOIBAT,
+     40, 40, SPECIES_TOEDSCRUEL,
+     38, 38, SPECIES_NOIBAT,
+     40, 40, SPECIES_NOIBAT,
+
+
+MeteorFalls_B1F_2R_LandMonsInfo =  10, gMeteorFalls_B1F_2R_LandMons 
+MeteorFalls_B1F_2R_WaterMons
+
+     30, 35, SPECIES_NOIBAT,
+     30, 35, SPECIES_NOIBAT,
+     25, 35, SPECIES_SOLROCK,
+     15, 25, SPECIES_SOLROCK,
+     5, 15, SPECIES_SOLROCK,
+
+
+MeteorFalls_B1F_2R_WaterMonsInfo =  4, gMeteorFalls_B1F_2R_WaterMons 
+MeteorFalls_B1F_2R_FishingMons
+
+     5, 10, SPECIES_MAGIKARP,
+     5, 10, SPECIES_GOLDEEN,
+     10, 30, SPECIES_MAGIKARP,
+     10, 30, SPECIES_GOLDEEN,
+     10, 30, SPECIES_BARBOACH,
+     25, 30, SPECIES_BARBOACH,
+     30, 35, SPECIES_BARBOACH,
+     30, 35, SPECIES_WHISCASH,
+     35, 40, SPECIES_WHISCASH,
+     40, 45, SPECIES_WHISCASH,
+
+
+MeteorFalls_B1F_2R_FishingMonsInfo =  30, gMeteorFalls_B1F_2R_FishingMons 
+
+
+JaggedPass_LandMons
+
+     21, 21, SPECIES_GROWLITHE,
+     21, 21, SPECIES_HOUNDOUR,
+     21, 21, SPECIES_HITMONLEE,
+     20, 20, SPECIES_HITMONCHAN,
+     20, 20, SPECIES_SLUGMA,
+     20, 20, SPECIES_HEATMOR,
+     21, 21, SPECIES_FLETCHINDER,
+     22, 22, SPECIES_LITLEO,
+     22, 22, SPECIES_NUMEL,
+     22, 22, SPECIES_SPOINK,
+     22, 22, SPECIES_NUMEL,
+     22, 22, SPECIES_SPOINK,
+
+
+JaggedPass_LandMonsInfo =  20, gJaggedPass_LandMons 
+
+JaggedPass_HiddenMons
+
+     5, 5, SPECIES_CHARCADET,
+     5, 5, SPECIES_FUECOCO,
+     5, 5, SPECIES_TAUROS_PALDEAN_BLAZE_BREED,
+
+
+JaggedPass_HiddenMonsInfo =  0, gJaggedPass_HiddenMons 
+
+Route106_WaterMons
+
+     5, 35, SPECIES_INKAY,
+     10, 30, SPECIES_GOLDEEN,
+     15, 25, SPECIES_QWILFISH_HISUIAN,
+     25, 30, SPECIES_MALAMAR,
+     25, 30, SPECIES_CLOBBOPUS,
+
+
+Route106_WaterMonsInfo =  4, gRoute106_WaterMons 
+Route106_FishingMons
+
+     5, 10, SPECIES_GOLDEEN,
+     5, 10, SPECIES_BASCULIN,
+     10, 30, SPECIES_CLOBBOPUS,
+     10, 30, SPECIES_PSYDUCK,
+     10, 30, SPECIES_WAILMER,
+     25, 30, SPECIES_SHELLDER,
+     30, 35, SPECIES_ALOMOMOLA,
+     20, 25, SPECIES_ARROKUDA,
+     35, 40, SPECIES_AZURILL,
+     40, 45, SPECIES_GYARADOS,
+
+
+Route106_FishingMonsInfo =  30, gRoute106_FishingMons 
+
+Route106_HiddenMons
+
+     20, 28, SPECIES_DRATINI,
+     20, 28, SPECIES_AZUMARILL,
+     20, 28, SPECIES_PIDGEOTTO,
+
+
+Route106_HiddenMonsInfo =  1, gRoute106_HiddenMons 
+
+Route107_WaterMons
+
+     5, 35, SPECIES_HORSEA,
+     10, 30, SPECIES_REMORAID,
+     15, 25, SPECIES_ARROKUDA,
+     26, 30, SPECIES_BARRASKEWDA,
+     5, 12, SPECIES_POPPLIO,
+
+
+Route107_WaterMonsInfo =  4, gRoute107_WaterMons 
+Route107_FishingMons
+
+     5, 10, SPECIES_MAGIKARP,
+     5, 10, SPECIES_GOLDEEN,
+     10, 30, SPECIES_TENTACOOL,
+     10, 30, SPECIES_BASCULIN,
+     10, 30, SPECIES_CLOBBOPUS,
+     25, 30, SPECIES_SHELLDER,
+     30, 35, SPECIES_ALOMOMOLA,
+     20, 25, SPECIES_WAILMER,
+     35, 40, SPECIES_ARROKUDA,
+     40, 45, SPECIES_MALAMAR,
+
+
+Route107_FishingMonsInfo =  30, gRoute107_FishingMons 
+
+
+Route108_WaterMons
+
+     5, 35, SPECIES_TENTACOOL,
+     10, 30, SPECIES_WINGULL,
+     15, 25, SPECIES_WINGULL,
+     25, 30, SPECIES_PELIPPER,
+     25, 30, SPECIES_PELIPPER,
+
+
+Route108_WaterMonsInfo =  4, gRoute108_WaterMons 
+Route108_FishingMons
+
+     5, 10, SPECIES_MAGIKARP,
+     5, 10, SPECIES_TENTACOOL,
+     10, 30, SPECIES_MAGIKARP,
+     10, 30, SPECIES_TENTACOOL,
+     10, 30, SPECIES_WAILMER,
+     25, 30, SPECIES_WAILMER,
+     30, 35, SPECIES_WAILMER,
+     20, 25, SPECIES_WAILMER,
+     35, 40, SPECIES_WAILMER,
+     40, 45, SPECIES_WAILMER,
+
+
+Route108_FishingMonsInfo =  30, gRoute108_FishingMons 
+
+
+Route109_WaterMons
+
+     5, 35, SPECIES_DUCKLETT,
+     10, 30, SPECIES_BRIONNE,
+     15, 25, SPECIES_BRUXISH,
+     25, 30, SPECIES_CRAMORANT,
+     25, 30, SPECIES_ARCTOVISH,
+
+
+Route109_WaterMonsInfo =  4, gRoute109_WaterMons 
+Route109_FishingMons
+
+     5, 10, SPECIES_ARROKUDA,
+     5, 10, SPECIES_WISHIWASHI,
+     10, 30, SPECIES_MAGIKARP,
+     10, 30, SPECIES_TENTACOOL,
+     10, 30, SPECIES_WAILMER,
+     14, 15, SPECIES_SOBBLE,
+     30, 34, SPECIES_PYUKUMUKU,
+     20, 25, SPECIES_WIMPOD,
+     29, 36, SPECIES_CLAUNCHER,
+     40, 45, SPECIES_CLAWITZER,
+
+
+Route109_FishingMonsInfo =  30, gRoute109_FishingMons 
+
+Route109_HiddenMons
+
+     8, 14, SPECIES_SOBBLE,
+     8, 14, SPECIES_OSHAWOTT,
+     37, 40, SPECIES_CLAWITZER,
+
+
+Route109_HiddenMonsInfo =  1, gRoute109_HiddenMons 
+
+Route115_LandMons
+
+     23, 23, SPECIES_RATTATA_ALOLAN,
+     23, 23, SPECIES_AUDINO,
+     25, 25, SPECIES_SANDSHREW_ALOLAN,
+     24, 24, SPECIES_VULPIX_ALOLAN,
+     25, 25, SPECIES_MEOWTH_ALOLAN,
+     25, 25, SPECIES_BONSLY,
+     25, 26, SPECIES_GRIMER_ALOLAN,
+     25, 26, SPECIES_GEODUDE_ALOLAN,
+     28, 29, SPECIES_CHERUBI,
+     24, 24, SPECIES_DROWZEE,
+     22, 28, SPECIES_FLORAGATO,
+     24, 26, SPECIES_GABITE,
+
+
+Route115_LandMonsInfo =  20, gRoute115_LandMons 
+Route115_WaterMons
+
+     30, 35, SPECIES_CRAWDAUNT,
+     30, 35, SPECIES_KINGLER,
+     16, 25, SPECIES_WARTORTLE,
+     25, 30, SPECIES_CLAUNCHER,
+     30, 35, SPECIES_SHARPEDO,
+
+
+Route115_WaterMonsInfo =  4, gRoute115_WaterMons 
+Route115_FishingMons
+
+     5, 10, SPECIES_CARVANHA,
+     5, 10, SPECIES_BARBOACH,
+     10, 30, SPECIES_CORPHISH,
+     10, 30, SPECIES_SHELLOS,
+     10, 30, SPECIES_FINNEON,
+     25, 30, SPECIES_LUMINEON,
+     30, 35, SPECIES_TIRTOUGA,
+     20, 25, SPECIES_WAILMER,
+     35, 40, SPECIES_CLAWITZER,
+     25, 28, SPECIES_WIMPOD,
+
+
+Route115_FishingMonsInfo =  30, gRoute115_FishingMons 
+
+Route115_HiddenMons
+
+     25, 26, SPECIES_FURFROU_DANDY_TRIM,
+     26, 26, SPECIES_FURFROU_DEBUTANTE_TRIM,
+     26, 26, SPECIES_FURFROU_DIAMOND_TRIM,
+
+
+Route115_HiddenMonsInfo =  0, gRoute115_HiddenMons 
+
+NewMauville_Inside_LandMons
+
+     24, 24, SPECIES_PIKACHU,
+     24, 24, SPECIES_VOLTORB_HISUIAN,
+     25, 25, SPECIES_BOLTUND,
+     25, 25, SPECIES_MAGNEMITE,
+     23, 23, SPECIES_ELECTRIKE,
+     23, 23, SPECIES_ELEKID,
+     26, 26, SPECIES_LUXIO,
+     27, 28, SPECIES_ZEBSTRIKA,
+     22, 22, SPECIES_VOLTORB,
+     22, 22, SPECIES_MAGNETON,
+     26, 26, SPECIES_ELECTRODE,
+     26, 26, SPECIES_ROTOM,
+
+
+NewMauville_Inside_LandMonsInfo =  10, gNewMauville_Inside_LandMons 
+
+
+Route119_LandMons
+
+     25, 25, SPECIES_ZIGZAGOON_GALARIAN,
+     25, 25, SPECIES_LINOONE_GALARIAN,
+     27, 27, SPECIES_WATCHOG,
+     26, 26, SPECIES_PINSIR,
+     35, 35, SPECIES_SPIDOPS,
+     26, 26, SPECIES_YANMA,
+     27, 27, SPECIES_BIBAREL,
+     24, 24, SPECIES_PINECO,
+     25, 24, SPECIES_SCYTHER,
+     26, 26, SPECIES_DOLLIV,
+     27, 27, SPECIES_TRUMBEAK,
+     25, 25, SPECIES_AMBIPOM,
+
+
+Route119_LandMonsInfo =  15, gRoute119_LandMons 
+Route119_WaterMons
+
+     5, 35, SPECIES_TENTACOOL,
+     10, 30, SPECIES_WINGULL,
+     15, 25, SPECIES_WINGULL,
+     25, 30, SPECIES_PELIPPER,
+     25, 30, SPECIES_PELIPPER,
+
+
+Route119_WaterMonsInfo =  4, gRoute119_WaterMons 
+Route119_FishingMons
+
+     5, 10, SPECIES_MAGIKARP,
+     5, 10, SPECIES_TENTACOOL,
+     10, 30, SPECIES_MAGIKARP,
+     10, 30, SPECIES_BARBOACH,
+     10, 30, SPECIES_CARVANHA,
+     25, 30, SPECIES_CARVANHA,
+     30, 35, SPECIES_CARVANHA,
+     20, 25, SPECIES_CARVANHA,
+     35, 40, SPECIES_CARVANHA,
+     40, 45, SPECIES_WHISCASH,
+
+
+Route119_FishingMonsInfo =  30, gRoute119_FishingMons 
+
+Route119_HiddenMons
+
+     15, 15, SPECIES_SHROODLE,
+     14, 15, SPECIES_FLITTLE,
+     15, 15, SPECIES_SQUAWKABILLY_BLUE_PLUMAGE,
+
+
+Route119_HiddenMonsInfo =  0, gRoute119_HiddenMons 
+
+Route120_LandMons
+
+     25, 25, SPECIES_YANMA,
+     25, 25, SPECIES_MIGHTYENA,
+     27, 27, SPECIES_KADABRA,
+     25, 25, SPECIES_ARBOK,
+     25, 25, SPECIES_BEAUTIFLY,
+     26, 26, SPECIES_BUTTERFREE,
+     27, 27, SPECIES_SILICOBRA,
+     27, 27, SPECIES_VIVILLON_JUNGLE,
+     25, 25, SPECIES_ACCELGOR,
+     27, 27, SPECIES_PIKACHU,
+     25, 25, SPECIES_KLEFKI,
+     25, 25, SPECIES_MACHOKE,
+
+
+Route120_LandMonsInfo =  20, gRoute120_LandMons 
+Route120_WaterMons
+
+     20, 30, SPECIES_MAGIKARP,
+     10, 20, SPECIES_ARROKUDA,
+     30, 35, SPECIES_MARILL,
+     5, 10, SPECIES_MARILL,
+     20, 30, SPECIES_GOLDEEN,
+
+
+Route120_WaterMonsInfo =  4, gRoute120_WaterMons 
+Route120_FishingMons
+
+     5, 10, SPECIES_MAGIKARP,
+     5, 10, SPECIES_GOLDEEN,
+     10, 30, SPECIES_MAGIKARP,
+     10, 30, SPECIES_GOLDEEN,
+     10, 30, SPECIES_BARBOACH,
+     25, 30, SPECIES_BARBOACH,
+     30, 35, SPECIES_ARROKUDA,
+     20, 25, SPECIES_BARBOACH,
+     35, 40, SPECIES_WISHIWASHI,
+     40, 45, SPECIES_WISHIWASHI_SCHOOL,
+
+
+Route120_FishingMonsInfo =  30, gRoute120_FishingMons 
+
+Route120_HiddenMons
+
+     26, 26, SPECIES_DACHSBUN,
+     20, 22, SPECIES_BRAMBLIN,
+     22, 24, SPECIES_PAWMO,
+
+
+Route120_HiddenMonsInfo =  0, gRoute120_HiddenMons 
+
+Route121_LandMons
+
+     26, 26, SPECIES_MASCHIFF,
+     26, 26, SPECIES_SHUPPET,
+     26, 26, SPECIES_HAUNTER,
+     28, 28, SPECIES_GREAVARD,
+     28, 28, SPECIES_MIGHTYENA,
+     26, 26, SPECIES_MISMAGIUS,
+     28, 28, SPECIES_ORICORIO,
+     28, 28, SPECIES_GLOOM,
+     26, 26, SPECIES_PUMPKABOO,
+     34, 34, SPECIES_BELLOSSOM,
+     28, 28, SPECIES_BRONZONG,
+     25, 25, SPECIES_DREEPY,
+
+
+Route121_LandMonsInfo =  20, gRoute121_LandMons 
+Route121_WaterMons
+
+     5, 35, SPECIES_FRILLISH,
+     10, 30, SPECIES_DRIFLOON,
+     15, 25, SPECIES_WINGULL,
+     25, 30, SPECIES_PELIPPER,
+     25, 30, SPECIES_PELIPPER,
+
+
+Route121_WaterMonsInfo =  4, gRoute121_WaterMons 
+Route121_FishingMons
+
+     5, 10, SPECIES_MAGIKARP,
+     5, 10, SPECIES_TENTACOOL,
+     10, 30, SPECIES_MAGIKARP,
+     10, 30, SPECIES_TENTACOOL,
+     10, 30, SPECIES_WAILMER,
+     25, 30, SPECIES_WAILMER,
+     30, 35, SPECIES_WAILMER,
+     20, 25, SPECIES_WAILMER,
+     35, 40, SPECIES_WAILMER,
+     40, 45, SPECIES_WAILMER,
+
+
+Route121_FishingMonsInfo =  30, gRoute121_FishingMons 
+
+Route121_HiddenMons
+
+     20, 25, SPECIES_SQUAWKABILLY_YELLOW_PLUMAGE,
+     20, 25, SPECIES_SQUAWKABILLY_WHITE_PLUMAGE,
+     20, 25, SPECIES_KILOWATTREL,
+
+
+Route121_HiddenMonsInfo =  0, gRoute121_HiddenMons 
+
+Route122_WaterMons
+
+     5, 35, SPECIES_WISHIWASHI,
+     10, 30, SPECIES_SWANNA,
+     15, 25, SPECIES_VELUZA,
+     25, 30, SPECIES_GYARADOS,
+     25, 30, SPECIES_PELIPPER,
+
+
+Route122_WaterMonsInfo =  4, gRoute122_WaterMons 
+Route122_FishingMons
+
+     5, 10, SPECIES_MAGIKARP,
+     5, 10, SPECIES_TENTACOOL,
+     10, 30, SPECIES_MAGIKARP,
+     10, 30, SPECIES_TENTACOOL,
+     10, 30, SPECIES_WAILMER,
+     30, 35, SPECIES_SHARPEDO,
+     30, 35, SPECIES_WAILMER,
+     25, 30, SPECIES_WAILMER,
+     35, 40, SPECIES_WAILMER,
+     40, 45, SPECIES_WAILMER,
+
+
+Route122_FishingMonsInfo =  30, gRoute122_FishingMons 
+
+
+Route123_LandMons
+
+     26, 26, SPECIES_TAUROS_PALDEAN,
+     26, 26, SPECIES_PACHIRISU,
+     26, 26, SPECIES_BLITZLE,
+     28, 28, SPECIES_EMOLGA,
+     28, 28, SPECIES_JOLTIK,
+     26, 26, SPECIES_HELIOPTILE,
+     28, 28, SPECIES_DEDENNE,
+     28, 28, SPECIES_VIKAVOLT,
+     26, 26, SPECIES_SCOLIPEDE,
+     27, 27, SPECIES_TOGEDEMARU,
+     28, 28, SPECIES_BOLTUND,
+     25, 25, SPECIES_MAGNEZONE,
+
+
+Route123_LandMonsInfo =  20, gRoute123_LandMons 
+Route123_WaterMons
+
+     5, 35, SPECIES_TYNAMO,
+     10, 30, SPECIES_DUCKLETT,
+     15, 25, SPECIES_WAILMER,
+     25, 30, SPECIES_TENTACOOL,
+     25, 30, SPECIES_TENTACRUEL,
+
+
+Route123_WaterMonsInfo =  4, gRoute123_WaterMons 
+Route123_FishingMons
+
+     5, 10, SPECIES_MAGIKARP,
+     5, 10, SPECIES_TENTACOOL,
+     10, 30, SPECIES_MAGIKARP,
+     10, 30, SPECIES_TENTACOOL,
+     10, 30, SPECIES_WAILMER,
+     25, 30, SPECIES_WAILMER,
+     30, 35, SPECIES_WAILMER,
+     20, 25, SPECIES_WAILMER,
+     35, 40, SPECIES_WAILMER,
+     40, 45, SPECIES_WAILMER,
+
+
+Route123_FishingMonsInfo =  30, gRoute123_FishingMons 
+
+
+MtPyre_2F_LandMons
+
+     27, 27, SPECIES_GASTLY,
+     28, 28, SPECIES_GREAVARD,
+     26, 26, SPECIES_BANETTE,
+     25, 25, SPECIES_MISDREAVUS,
+     29, 29, SPECIES_FROSLASS,
+     24, 24, SPECIES_YAMASK,
+     23, 23, SPECIES_LITWICK,
+     22, 22, SPECIES_MIMIKYU,
+     29, 29, SPECIES_SINISTEA,
+     24, 24, SPECIES_SHUPPET,
+     29, 29, SPECIES_HAUNTER,
+     24, 24, SPECIES_DREEPY,
+
+
+MtPyre_2F_LandMonsInfo =  10, gMtPyre_2F_LandMons 
+
+
+MtPyre_3F_LandMons
+
+     27, 27, SPECIES_GASTLY,
+     28, 28, SPECIES_DUSKULL,
+     26, 26, SPECIES_BANETTE,
+     25, 25, SPECIES_MISDREAVUS,
+     29, 29, SPECIES_FROSLASS,
+     24, 24, SPECIES_YAMASK,
+     23, 23, SPECIES_LITWICK,
+     22, 22, SPECIES_MIMIKYU,
+     29, 29, SPECIES_GREAVARD,
+     24, 24, SPECIES_SHUPPET,
+     29, 29, SPECIES_HAUNTER,
+     24, 24, SPECIES_DREEPY,
+
+
+MtPyre_3F_LandMonsInfo =  10, gMtPyre_3F_LandMons 
+
+
+MtPyre_4F_LandMons
+
+     27, 27, SPECIES_GASTLY,
+     28, 28, SPECIES_DUSKULL,
+     26, 26, SPECIES_BANETTE,
+     25, 25, SPECIES_MISDREAVUS,
+     29, 29, SPECIES_FROSLASS,
+     24, 24, SPECIES_YAMASK,
+     23, 23, SPECIES_LITWICK,
+     22, 22, SPECIES_GREAVARD,
+     29, 29, SPECIES_SINISTEA,
+     24, 24, SPECIES_SHUPPET,
+     29, 29, SPECIES_HAUNTER,
+     24, 24, SPECIES_DREEPY,
+
+
+MtPyre_4F_LandMonsInfo =  10, gMtPyre_4F_LandMons 
+
+
+MtPyre_5F_LandMons
+
+     27, 27, SPECIES_GASTLY,
+     28, 28, SPECIES_DUSKULL,
+     26, 26, SPECIES_BANETTE,
+     25, 25, SPECIES_MISDREAVUS,
+     29, 29, SPECIES_FROSLASS,
+     24, 24, SPECIES_GREAVARD,
+     23, 23, SPECIES_LITWICK,
+     22, 22, SPECIES_MIMIKYU,
+     29, 29, SPECIES_SINISTEA,
+     24, 24, SPECIES_SHUPPET,
+     29, 29, SPECIES_HAUNTER,
+     24, 24, SPECIES_DREEPY,
+
+
+MtPyre_5F_LandMonsInfo =  10, gMtPyre_5F_LandMons 
+
+
+MtPyre_6F_LandMons
+
+     27, 27, SPECIES_GASTLY,
+     28, 28, SPECIES_DUSKULL,
+     26, 26, SPECIES_BANETTE,
+     25, 25, SPECIES_MISDREAVUS,
+     29, 29, SPECIES_FROSLASS,
+     24, 24, SPECIES_YAMASK,
+     23, 23, SPECIES_LITWICK,
+     22, 22, SPECIES_MIMIKYU,
+     29, 29, SPECIES_SINISTEA,
+     24, 24, SPECIES_SHUPPET,
+     29, 29, SPECIES_HAUNTER,
+     30, 32, SPECIES_HOUNDSTONE,
+
+
+MtPyre_6F_LandMonsInfo =  10, gMtPyre_6F_LandMons 
+
+
+MtPyre_Exterior_LandMons
+
+     27, 27, SPECIES_MAROWAK_ALOLAN,
+     28, 28, SPECIES_DUSKULL,
+     26, 26, SPECIES_VIVILLON_HIGH_PLAINS,
+     25, 25, SPECIES_MISDREAVUS,
+     29, 29, SPECIES_FROSLASS,
+     24, 24, SPECIES_WYRDEER,
+     23, 23, SPECIES_VULLABY,
+     22, 22, SPECIES_MIMIKYU,
+     29, 29, SPECIES_GOLETT,
+     24, 24, SPECIES_ROTOM,
+     29, 29, SPECIES_SPIRITOMB,
+     24, 24, SPECIES_DREEPY,
+
+
+MtPyre_Exterior_LandMonsInfo =  10, gMtPyre_Exterior_LandMons 
+
+
+MtPyre_Summit_LandMons
+
+     27, 27, SPECIES_MAROWAK_ALOLAN,
+     28, 28, SPECIES_DUSKULL,
+     26, 26, SPECIES_VIVILLON_HIGH_PLAINS,
+     25, 25, SPECIES_MISDREAVUS,
+     29, 29, SPECIES_FROSLASS,
+     24, 24, SPECIES_WYRDEER,
+     23, 23, SPECIES_VULLABY,
+     22, 22, SPECIES_MIMIKYU,
+     29, 29, SPECIES_GOLETT,
+     24, 24, SPECIES_ROTOM,
+     29, 29, SPECIES_SPIRITOMB,
+     24, 24, SPECIES_RUFFLET,
+
+
+MtPyre_Summit_LandMonsInfo =  10, gMtPyre_Summit_LandMons 
+
+
+GraniteCave_StevensRoom_LandMons
+
+     7, 7, SPECIES_BAGON,
+     8, 8, SPECIES_MACHOP,
+     7, 7, SPECIES_CRANIDOS,
+     8, 8, SPECIES_WOOBAT,
+     9, 9, SPECIES_ROGGENROLA,
+     8, 8, SPECIES_ROCKRUFF,
+     10, 10, SPECIES_MINIOR,
+     6, 6, SPECIES_CHEWTLE,
+     7, 7, SPECIES_ROLYCOLY,
+     8, 8, SPECIES_BONSLY,
+     7, 7, SPECIES_SHIELDON,
+     8, 8, SPECIES_LARVITAR,
+
+
+GraniteCave_StevensRoom_LandMonsInfo =  10, gGraniteCave_StevensRoom_LandMons 
+
+GraniteCave_StevensRoom_HiddenMons
+
+     3, 5, SPECIES_NIDORAN_F,
+     3, 5, SPECIES_NIDORAN_M,
+     3, 5, SPECIES_VULPIX,
+
+
+GraniteCave_StevensRoom_HiddenMonsInfo =  0, gGraniteCave_StevensRoom_HiddenMons 
+
+Route125_WaterMons
+
+     5, 35, SPECIES_ARROKUDA,
+     10, 30, SPECIES_CRAMORANT,
+     15, 25, SPECIES_WISHIWASHI_SCHOOL,
+     25, 30, SPECIES_JELLICENT,
+     25, 30, SPECIES_PELIPPER,
+
+
+Route125_WaterMonsInfo =  4, gRoute125_WaterMons 
+Route125_FishingMons
+
+     5, 10, SPECIES_MAGIKARP,
+     5, 10, SPECIES_TENTACOOL,
+     10, 30, SPECIES_MAGIKARP,
+     10, 30, SPECIES_TENTACOOL,
+     10, 30, SPECIES_WAILMER,
+     30, 35, SPECIES_SHARPEDO,
+     30, 35, SPECIES_WAILMER,
+     25, 30, SPECIES_WAILMER,
+     35, 40, SPECIES_WAILMER,
+     40, 45, SPECIES_WAILMER,
+
+
+Route125_FishingMonsInfo =  30, gRoute125_FishingMons 
+
+
+Route126_WaterMons
+
+     34, 35, SPECIES_DEWGONG,
+     10, 30, SPECIES_SPHEAL,
+     15, 25, SPECIES_CRABRAWLER,
+     25, 30, SPECIES_TENTACRUEL,
+     25, 30, SPECIES_PELIPPER,
+
+
+Route126_WaterMonsInfo =  4, gRoute126_WaterMons 
+Route126_FishingMons
+
+     5, 10, SPECIES_MAGIKARP,
+     5, 10, SPECIES_TENTACOOL,
+     10, 30, SPECIES_MAGIKARP,
+     10, 30, SPECIES_TENTACOOL,
+     10, 30, SPECIES_WAILMER,
+     30, 35, SPECIES_SHARPEDO,
+     30, 35, SPECIES_WAILMER,
+     25, 30, SPECIES_WAILMER,
+     35, 40, SPECIES_WAILMER,
+     40, 45, SPECIES_WAILMER,
+
+
+Route126_FishingMonsInfo =  30, gRoute126_FishingMons 
+
+
+Route127_WaterMons
+
+     5, 35, SPECIES_EISCUE,
+     33, 33, SPECIES_SWANNA,
+     15, 25, SPECIES_DUCKLETT,
+     25, 30, SPECIES_PELIPPER,
+     25, 30, SPECIES_PELIPPER,
+
+
+Route127_WaterMonsInfo =  4, gRoute127_WaterMons 
+Route127_FishingMons
+
+     5, 10, SPECIES_MAGIKARP,
+     5, 10, SPECIES_TENTACOOL,
+     10, 30, SPECIES_MAGIKARP,
+     10, 30, SPECIES_TENTACOOL,
+     10, 30, SPECIES_WAILMER,
+     30, 35, SPECIES_SHARPEDO,
+     30, 35, SPECIES_WAILMER,
+     25, 30, SPECIES_WAILMER,
+     35, 40, SPECIES_WAILMER,
+     40, 45, SPECIES_WAILMER,
+
+
+Route127_FishingMonsInfo =  30, gRoute127_FishingMons 
+
+
+Route128_WaterMons
+
+     5, 35, SPECIES_CLOYSTER,
+     10, 30, SPECIES_CLOBBOPUS,
+     15, 25, SPECIES_LAPRAS,
+     25, 30, SPECIES_CLAUNCHER,
+     25, 30, SPECIES_TENTACRUEL,
+
+
+Route128_WaterMonsInfo =  4, gRoute128_WaterMons 
+Route128_FishingMons
+
+     5, 10, SPECIES_MAGIKARP,
+     5, 10, SPECIES_TENTACOOL,
+     10, 30, SPECIES_MAGIKARP,
+     10, 30, SPECIES_LUVDISC,
+     10, 30, SPECIES_WAILMER,
+     30, 35, SPECIES_LUVDISC,
+     30, 35, SPECIES_WAILMER,
+     30, 35, SPECIES_CORSOLA,
+     35, 40, SPECIES_WAILMER,
+     40, 45, SPECIES_WAILMER,
+
+
+Route128_FishingMonsInfo =  30, gRoute128_FishingMons 
+
+
+Route129_WaterMons
+
+     5, 35, SPECIES_CLOBBOPUS,
+     10, 30, SPECIES_WINGULL,
+     15, 25, SPECIES_WINGULL,
+     25, 30, SPECIES_PELIPPER,
+     40, 41, SPECIES_WAILORD,
+
+
+Route129_WaterMonsInfo =  4, gRoute129_WaterMons 
+Route129_FishingMons
+
+     5, 10, SPECIES_MAGIKARP,
+     5, 10, SPECIES_TENTACOOL,
+     10, 30, SPECIES_MAGIKARP,
+     10, 30, SPECIES_TENTACOOL,
+     10, 30, SPECIES_WAILMER,
+     30, 35, SPECIES_SHARPEDO,
+     30, 35, SPECIES_WAILMER,
+     25, 30, SPECIES_WAILMER,
+     35, 40, SPECIES_WAILMER,
+     40, 45, SPECIES_WAILMER,
+
+
+Route129_FishingMonsInfo =  30, gRoute129_FishingMons 
+
+
+Route130_LandMons
+
+     3, 35, SPECIES_CHARCADET,
+     20, 35, SPECIES_ORTHWORM,
+     20, 25, SPECIES_GIMMIGHOUL,
+     52, 55, SPECIES_KINGAMBIT,
+     40, 40, SPECIES_IRON_TREADS,
+     40, 45, SPECIES_IRON_BUNDLE,
+     40, 40, SPECIES_IRON_HANDS,
+     40, 50, SPECIES_IRON_JUGULIS,
+     40, 50, SPECIES_IRON_MOTH,
+     40, 50, SPECIES_IRON_THORNS,
+     40, 50, SPECIES_ROARING_MOON,
+     35, 40, SPECIES_IRON_VALIANT,
+
+
+Route130_LandMonsInfo =  20, gRoute130_LandMons 
+Route130_WaterMons
+
+     5, 35, SPECIES_TENTACOOL,
+     10, 30, SPECIES_WINGULL,
+     15, 25, SPECIES_WINGULL,
+     25, 30, SPECIES_PELIPPER,
+     25, 30, SPECIES_PELIPPER,
+
+
+Route130_WaterMonsInfo =  4, gRoute130_WaterMons 
+Route130_FishingMons
+
+     5, 10, SPECIES_MAGIKARP,
+     5, 10, SPECIES_TENTACOOL,
+     10, 30, SPECIES_MAGIKARP,
+     10, 30, SPECIES_TENTACOOL,
+     10, 30, SPECIES_WAILMER,
+     30, 35, SPECIES_SHARPEDO,
+     30, 35, SPECIES_WAILMER,
+     25, 30, SPECIES_WAILMER,
+     35, 40, SPECIES_WAILMER,
+     40, 45, SPECIES_WAILMER,
+
+
+Route130_FishingMonsInfo =  30, gRoute130_FishingMons 
+
+Route130_HiddenMons
+
+     30, 40, SPECIES_GREAT_TUSK,
+     30, 40, SPECIES_SCREAM_TAIL,
+     30, 40, SPECIES_BRUTE_BONNET,
+
+
+Route130_HiddenMonsInfo =  0, gRoute130_HiddenMons 
+
+Route131_WaterMons
+
+     5, 35, SPECIES_EISCUE_NOICE_FACE,
+     10, 30, SPECIES_WINGULL,
+     15, 25, SPECIES_WINGULL,
+     25, 30, SPECIES_WAILMER,
+     40, 43, SPECIES_WAILORD,
+
+
+Route131_WaterMonsInfo =  4, gRoute131_WaterMons 
+Route131_FishingMons
+
+     5, 10, SPECIES_MAGIKARP,
+     5, 10, SPECIES_TENTACOOL,
+     10, 30, SPECIES_MAGIKARP,
+     10, 30, SPECIES_TENTACOOL,
+     10, 30, SPECIES_WAILMER,
+     30, 35, SPECIES_SHARPEDO,
+     30, 35, SPECIES_WAILMER,
+     25, 30, SPECIES_WAILMER,
+     35, 40, SPECIES_WAILMER,
+     40, 45, SPECIES_WAILMER,
+
+
+Route131_FishingMonsInfo =  30, gRoute131_FishingMons 
+
+
+Route132_WaterMons
+
+     5, 35, SPECIES_TENTACOOL,
+     10, 30, SPECIES_WINGULL,
+     15, 25, SPECIES_WINGULL,
+     25, 30, SPECIES_PELIPPER,
+     25, 30, SPECIES_PELIPPER,
+
+
+Route132_WaterMonsInfo =  4, gRoute132_WaterMons 
+Route132_FishingMons
+
+     5, 10, SPECIES_MAGIKARP,
+     5, 10, SPECIES_TENTACOOL,
+     10, 30, SPECIES_MAGIKARP,
+     10, 30, SPECIES_TENTACOOL,
+     10, 30, SPECIES_WAILMER,
+     30, 35, SPECIES_SHARPEDO,
+     30, 35, SPECIES_WAILMER,
+     25, 30, SPECIES_HORSEA,
+     35, 40, SPECIES_WAILMER,
+     40, 45, SPECIES_WAILMER,
+
+
+Route132_FishingMonsInfo =  30, gRoute132_FishingMons 
+
+
+Route133_WaterMons
+
+     5, 35, SPECIES_TENTACOOL,
+     10, 30, SPECIES_WINGULL,
+     15, 25, SPECIES_SWANNA,
+     25, 30, SPECIES_WAILMER,
+     25, 30, SPECIES_TENTACRUEL,
+
+
+Route133_WaterMonsInfo =  4, gRoute133_WaterMons 
+Route133_FishingMons
+
+     5, 10, SPECIES_MAGIKARP,
+     5, 10, SPECIES_TENTACOOL,
+     10, 30, SPECIES_MAGIKARP,
+     10, 30, SPECIES_TENTACOOL,
+     10, 30, SPECIES_WAILMER,
+     30, 35, SPECIES_SHARPEDO,
+     30, 35, SPECIES_WAILMER,
+     25, 30, SPECIES_HORSEA,
+     35, 40, SPECIES_WAILMER,
+     40, 45, SPECIES_WAILMER,
+
+
+Route133_FishingMonsInfo =  30, gRoute133_FishingMons 
+
+
+Route134_WaterMons
+
+     5, 35, SPECIES_CARVANHA,
+     10, 30, SPECIES_GOLDEEN,
+     15, 25, SPECIES_MAGIKARP,
+     25, 30, SPECIES_SHARPEDO,
+     25, 30, SPECIES_WAILMER,
+
+
+Route134_WaterMonsInfo =  4, gRoute134_WaterMons 
+Route134_FishingMons
+
+     5, 10, SPECIES_MAGIKARP,
+     5, 10, SPECIES_TENTACOOL,
+     10, 30, SPECIES_MAGIKARP,
+     10, 30, SPECIES_TENTACOOL,
+     10, 30, SPECIES_WAILMER,
+     30, 35, SPECIES_SHARPEDO,
+     30, 35, SPECIES_WAILMER,
+     25, 30, SPECIES_HORSEA,
+     35, 40, SPECIES_WAILMER,
+     40, 45, SPECIES_WAILMER,
+
+
+Route134_FishingMonsInfo =  30, gRoute134_FishingMons 
+
+
+AbandonedShip_HiddenFloorCorridors_WaterMons
+
+     5, 35, SPECIES_TENTACOOL,
+     5, 35, SPECIES_TENTACOOL,
+     5, 35, SPECIES_TENTACOOL,
+     5, 35, SPECIES_TENTACOOL,
+     30, 35, SPECIES_TENTACRUEL,
+
+
+AbandonedShip_HiddenFloorCorridors_WaterMonsInfo =  4, gAbandonedShip_HiddenFloorCorridors_WaterMons 
+AbandonedShip_HiddenFloorCorridors_FishingMons
+
+     5, 10, SPECIES_MAGIKARP,
+     5, 10, SPECIES_TENTACOOL,
+     10, 30, SPECIES_MAGIKARP,
+     10, 30, SPECIES_TENTACOOL,
+     10, 30, SPECIES_TENTACOOL,
+     25, 30, SPECIES_TENTACOOL,
+     30, 35, SPECIES_TENTACOOL,
+     30, 35, SPECIES_TENTACRUEL,
+     25, 30, SPECIES_TENTACRUEL,
+     20, 25, SPECIES_TENTACRUEL,
+
+
+AbandonedShip_HiddenFloorCorridors_FishingMonsInfo =  20, gAbandonedShip_HiddenFloorCorridors_FishingMons 
+
+
+SeafloorCavern_Room1_LandMons
+
+     30, 30, SPECIES_ZUBAT,
+     31, 31, SPECIES_ZUBAT,
+     32, 32, SPECIES_ZUBAT,
+     33, 33, SPECIES_ZUBAT,
+     28, 28, SPECIES_ZUBAT,
+     29, 29, SPECIES_ZUBAT,
+     34, 34, SPECIES_ZUBAT,
+     35, 35, SPECIES_ZUBAT,
+     34, 34, SPECIES_NOIBAT,
+     35, 35, SPECIES_NOIBAT,
+     33, 33, SPECIES_NOIBAT,
+     36, 36, SPECIES_NOIBAT,
+
+
+SeafloorCavern_Room1_LandMonsInfo =  4, gSeafloorCavern_Room1_LandMons 
+
+
+SeafloorCavern_Room2_LandMons
+
+     30, 30, SPECIES_ZUBAT,
+     31, 31, SPECIES_ZUBAT,
+     32, 32, SPECIES_ZUBAT,
+     33, 33, SPECIES_ZUBAT,
+     28, 28, SPECIES_ZUBAT,
+     29, 29, SPECIES_ZUBAT,
+     34, 34, SPECIES_ZUBAT,
+     35, 35, SPECIES_ZUBAT,
+     34, 34, SPECIES_NOIBAT,
+     35, 35, SPECIES_NOIBAT,
+     33, 33, SPECIES_NOIBAT,
+     36, 36, SPECIES_NOIBAT,
+
+
+SeafloorCavern_Room2_LandMonsInfo =  4, gSeafloorCavern_Room2_LandMons 
+
+
+SeafloorCavern_Room3_LandMons
+
+     30, 30, SPECIES_ZUBAT,
+     31, 31, SPECIES_ZUBAT,
+     32, 32, SPECIES_ZUBAT,
+     33, 33, SPECIES_ZUBAT,
+     28, 28, SPECIES_ZUBAT,
+     29, 29, SPECIES_ZUBAT,
+     34, 34, SPECIES_ZUBAT,
+     35, 35, SPECIES_ZUBAT,
+     34, 34, SPECIES_NOIBAT,
+     35, 35, SPECIES_NOIBAT,
+     33, 33, SPECIES_NOIBAT,
+     36, 36, SPECIES_NOIBAT,
+
+
+SeafloorCavern_Room3_LandMonsInfo =  4, gSeafloorCavern_Room3_LandMons 
+
+
+SeafloorCavern_Room4_LandMons
+
+     30, 30, SPECIES_ZUBAT,
+     31, 31, SPECIES_ZUBAT,
+     32, 32, SPECIES_ZUBAT,
+     33, 33, SPECIES_ZUBAT,
+     28, 28, SPECIES_ZUBAT,
+     29, 29, SPECIES_ZUBAT,
+     34, 34, SPECIES_ZUBAT,
+     35, 35, SPECIES_ZUBAT,
+     34, 34, SPECIES_NOIBAT,
+     35, 35, SPECIES_NOIBAT,
+     33, 33, SPECIES_NOIBAT,
+     36, 36, SPECIES_NOIBAT,
+
+
+SeafloorCavern_Room4_LandMonsInfo =  4, gSeafloorCavern_Room4_LandMons 
+
+
+SeafloorCavern_Room5_LandMons
+
+     30, 30, SPECIES_ZUBAT,
+     31, 31, SPECIES_ZUBAT,
+     32, 32, SPECIES_ZUBAT,
+     33, 33, SPECIES_ZUBAT,
+     28, 28, SPECIES_ZUBAT,
+     29, 29, SPECIES_ZUBAT,
+     34, 34, SPECIES_ZUBAT,
+     35, 35, SPECIES_ZUBAT,
+     34, 34, SPECIES_NOIBAT,
+     35, 35, SPECIES_NOIBAT,
+     33, 33, SPECIES_NOIBAT,
+     36, 36, SPECIES_NOIBAT,
+
+
+SeafloorCavern_Room5_LandMonsInfo =  4, gSeafloorCavern_Room5_LandMons 
+
+
+SeafloorCavern_Room6_LandMons
+
+     30, 30, SPECIES_ZUBAT,
+     31, 31, SPECIES_ZUBAT,
+     32, 32, SPECIES_ZUBAT,
+     33, 33, SPECIES_ZUBAT,
+     28, 28, SPECIES_ZUBAT,
+     29, 29, SPECIES_ZUBAT,
+     34, 34, SPECIES_ZUBAT,
+     35, 35, SPECIES_ZUBAT,
+     34, 34, SPECIES_NOIBAT,
+     35, 35, SPECIES_NOIBAT,
+     33, 33, SPECIES_NOIBAT,
+     36, 36, SPECIES_NOIBAT,
+
+
+SeafloorCavern_Room6_LandMonsInfo =  4, gSeafloorCavern_Room6_LandMons 
+SeafloorCavern_Room6_WaterMons
+
+     5, 35, SPECIES_TENTACOOL,
+     5, 35, SPECIES_ZUBAT,
+     30, 35, SPECIES_ZUBAT,
+     30, 35, SPECIES_NOIBAT,
+     30, 35, SPECIES_NOIBAT,
+
+
+SeafloorCavern_Room6_WaterMonsInfo =  4, gSeafloorCavern_Room6_WaterMons 
+SeafloorCavern_Room6_FishingMons
+
+     5, 10, SPECIES_MAGIKARP,
+     5, 10, SPECIES_TENTACOOL,
+     10, 30, SPECIES_MAGIKARP,
+     10, 30, SPECIES_TENTACOOL,
+     10, 30, SPECIES_WAILMER,
+     25, 30, SPECIES_WAILMER,
+     30, 35, SPECIES_WAILMER,
+     20, 25, SPECIES_WAILMER,
+     35, 40, SPECIES_WAILMER,
+     40, 45, SPECIES_WAILMER,
+
+
+SeafloorCavern_Room6_FishingMonsInfo =  10, gSeafloorCavern_Room6_FishingMons 
+
+
+SeafloorCavern_Room7_LandMons
+
+     30, 30, SPECIES_ZUBAT,
+     31, 31, SPECIES_ZUBAT,
+     32, 32, SPECIES_ZUBAT,
+     33, 33, SPECIES_ZUBAT,
+     28, 28, SPECIES_ZUBAT,
+     29, 29, SPECIES_ZUBAT,
+     34, 34, SPECIES_ZUBAT,
+     35, 35, SPECIES_ZUBAT,
+     34, 34, SPECIES_NOIBAT,
+     35, 35, SPECIES_NOIBAT,
+     33, 33, SPECIES_NOIBAT,
+     36, 36, SPECIES_NOIBAT,
+
+
+SeafloorCavern_Room7_LandMonsInfo =  4, gSeafloorCavern_Room7_LandMons 
+SeafloorCavern_Room7_WaterMons
+
+     5, 35, SPECIES_TENTACOOL,
+     5, 35, SPECIES_ZUBAT,
+     30, 35, SPECIES_ZUBAT,
+     30, 35, SPECIES_NOIBAT,
+     30, 35, SPECIES_NOIBAT,
+
+
+SeafloorCavern_Room7_WaterMonsInfo =  4, gSeafloorCavern_Room7_WaterMons 
+SeafloorCavern_Room7_FishingMons
+
+     5, 10, SPECIES_MAGIKARP,
+     5, 10, SPECIES_TENTACOOL,
+     10, 30, SPECIES_MAGIKARP,
+     10, 30, SPECIES_TENTACOOL,
+     10, 30, SPECIES_WAILMER,
+     25, 30, SPECIES_WAILMER,
+     30, 35, SPECIES_WAILMER,
+     20, 25, SPECIES_WAILMER,
+     35, 40, SPECIES_WAILMER,
+     40, 45, SPECIES_WAILMER,
+
+
+SeafloorCavern_Room7_FishingMonsInfo =  10, gSeafloorCavern_Room7_FishingMons 
+
+
+SeafloorCavern_Room8_LandMons
+
+     30, 30, SPECIES_ZUBAT,
+     31, 31, SPECIES_ZUBAT,
+     32, 32, SPECIES_ZUBAT,
+     33, 33, SPECIES_ZUBAT,
+     28, 28, SPECIES_ZUBAT,
+     29, 29, SPECIES_ZUBAT,
+     34, 34, SPECIES_ZUBAT,
+     35, 35, SPECIES_ZUBAT,
+     34, 34, SPECIES_NOIBAT,
+     35, 35, SPECIES_NOIBAT,
+     33, 33, SPECIES_NOIBAT,
+     36, 36, SPECIES_NOIBAT,
+
+
+SeafloorCavern_Room8_LandMonsInfo =  4, gSeafloorCavern_Room8_LandMons 
+
+
+SeafloorCavern_Entrance_WaterMons
+
+     5, 35, SPECIES_TENTACOOL,
+     5, 35, SPECIES_ZUBAT,
+     30, 35, SPECIES_ZUBAT,
+     30, 35, SPECIES_NOIBAT,
+     30, 35, SPECIES_NOIBAT,
+
+
+SeafloorCavern_Entrance_WaterMonsInfo =  4, gSeafloorCavern_Entrance_WaterMons 
+SeafloorCavern_Entrance_FishingMons
+
+     5, 10, SPECIES_MAGIKARP,
+     5, 10, SPECIES_TENTACOOL,
+     10, 30, SPECIES_MAGIKARP,
+     10, 30, SPECIES_TENTACOOL,
+     10, 30, SPECIES_WAILMER,
+     25, 30, SPECIES_WAILMER,
+     30, 35, SPECIES_WAILMER,
+     20, 25, SPECIES_WAILMER,
+     35, 40, SPECIES_WAILMER,
+     40, 45, SPECIES_WAILMER,
+
+
+SeafloorCavern_Entrance_FishingMonsInfo =  10, gSeafloorCavern_Entrance_FishingMons 
+
+
+CaveOfOrigin_Entrance_LandMons
+
+     30, 30, SPECIES_ZUBAT,
+     31, 31, SPECIES_ZUBAT,
+     32, 32, SPECIES_ZUBAT,
+     33, 33, SPECIES_ZUBAT,
+     28, 28, SPECIES_ZUBAT,
+     29, 29, SPECIES_ZUBAT,
+     34, 34, SPECIES_ZUBAT,
+     35, 35, SPECIES_ZUBAT,
+     34, 34, SPECIES_NOIBAT,
+     35, 35, SPECIES_NOIBAT,
+     33, 33, SPECIES_NOIBAT,
+     36, 36, SPECIES_NOIBAT,
+
+
+CaveOfOrigin_Entrance_LandMonsInfo =  4, gCaveOfOrigin_Entrance_LandMons 
+
+
+CaveOfOrigin_1F_LandMons
+
+     30, 30, SPECIES_ZUBAT,
+     31, 31, SPECIES_ZUBAT,
+     32, 32, SPECIES_ZUBAT,
+     30, 30, SPECIES_SABLEYE,
+     32, 32, SPECIES_SABLEYE,
+     34, 34, SPECIES_SABLEYE,
+     33, 33, SPECIES_ZUBAT,
+     34, 34, SPECIES_ZUBAT,
+     34, 34, SPECIES_NOIBAT,
+     35, 35, SPECIES_NOIBAT,
+     33, 33, SPECIES_NOIBAT,
+     36, 36, SPECIES_NOIBAT,
+
+
+CaveOfOrigin_1F_LandMonsInfo =  4, gCaveOfOrigin_1F_LandMons 
+
+
+CaveOfOrigin_UnusedRubySapphireMap1_LandMons
+
+     30, 30, SPECIES_ZUBAT,
+     31, 31, SPECIES_ZUBAT,
+     32, 32, SPECIES_ZUBAT,
+     30, 30, SPECIES_SABLEYE,
+     32, 32, SPECIES_SABLEYE,
+     34, 34, SPECIES_SABLEYE,
+     33, 33, SPECIES_ZUBAT,
+     34, 34, SPECIES_ZUBAT,
+     34, 34, SPECIES_NOIBAT,
+     35, 35, SPECIES_NOIBAT,
+     33, 33, SPECIES_NOIBAT,
+     36, 36, SPECIES_NOIBAT,
+
+
+CaveOfOrigin_UnusedRubySapphireMap1_LandMonsInfo =  4, gCaveOfOrigin_UnusedRubySapphireMap1_LandMons 
+
+
+CaveOfOrigin_UnusedRubySapphireMap2_LandMons
+
+     30, 30, SPECIES_ZUBAT,
+     31, 31, SPECIES_ZUBAT,
+     32, 32, SPECIES_ZUBAT,
+     30, 30, SPECIES_SABLEYE,
+     32, 32, SPECIES_SABLEYE,
+     34, 34, SPECIES_SABLEYE,
+     33, 33, SPECIES_ZUBAT,
+     34, 34, SPECIES_ZUBAT,
+     34, 34, SPECIES_NOIBAT,
+     35, 35, SPECIES_NOIBAT,
+     33, 33, SPECIES_NOIBAT,
+     36, 36, SPECIES_NOIBAT,
+
+
+CaveOfOrigin_UnusedRubySapphireMap2_LandMonsInfo =  4, gCaveOfOrigin_UnusedRubySapphireMap2_LandMons 
+
+
+CaveOfOrigin_UnusedRubySapphireMap3_LandMons
+
+     30, 30, SPECIES_ZUBAT,
+     31, 31, SPECIES_ZUBAT,
+     32, 32, SPECIES_ZUBAT,
+     30, 30, SPECIES_SABLEYE,
+     32, 32, SPECIES_SABLEYE,
+     34, 34, SPECIES_SABLEYE,
+     33, 33, SPECIES_ZUBAT,
+     34, 34, SPECIES_ZUBAT,
+     34, 34, SPECIES_NOIBAT,
+     35, 35, SPECIES_NOIBAT,
+     33, 33, SPECIES_NOIBAT,
+     36, 36, SPECIES_NOIBAT,
+
+
+CaveOfOrigin_UnusedRubySapphireMap3_LandMonsInfo =  4, gCaveOfOrigin_UnusedRubySapphireMap3_LandMons 
+
+
+NewMauville_Entrance_LandMons
+
+     24, 24, SPECIES_VOLTORB,
+     24, 24, SPECIES_GEODUDE_ALOLAN,
+     25, 25, SPECIES_PIKACHU,
+     23, 25, SPECIES_MAGNEMITE,
+     23, 23, SPECIES_PIKACHU,
+     23, 23, SPECIES_MAGNEMITE,
+     26, 26, SPECIES_PIKACHU,
+     26, 26, SPECIES_PIKACHU,
+     22, 22, SPECIES_PIKACHU,
+     22, 22, SPECIES_MAGNEMITE,
+     22, 22, SPECIES_VOLTORB,
+     22, 22, SPECIES_DIGLETT,
+
+
+NewMauville_Entrance_LandMonsInfo =  10, gNewMauville_Entrance_LandMons 
+
+
+SafariZone_Southwest_LandMons
+
+     25, 25, SPECIES_ODDISH,
+     27, 27, SPECIES_ODDISH,
+     25, 25, SPECIES_GIRAFARIG,
+     27, 27, SPECIES_GIRAFARIG,
+     25, 25, SPECIES_NATU,
+     27, 27, SPECIES_DODUO,
+     25, 25, SPECIES_GLOOM,
+     27, 27, SPECIES_WOBBUFFET,
+     25, 25, SPECIES_PIKACHU,
+     27, 27, SPECIES_WOBBUFFET,
+     27, 27, SPECIES_PIKACHU,
+     29, 29, SPECIES_WOBBUFFET,
+
+
+SafariZone_Southwest_LandMonsInfo =  25, gSafariZone_Southwest_LandMons 
+SafariZone_Southwest_WaterMons
+
+     20, 30, SPECIES_PSYDUCK,
+     20, 30, SPECIES_PSYDUCK,
+     30, 35, SPECIES_PSYDUCK,
+     30, 35, SPECIES_PSYDUCK,
+     30, 35, SPECIES_PSYDUCK,
+
+
+SafariZone_Southwest_WaterMonsInfo =  9, gSafariZone_Southwest_WaterMons 
+SafariZone_Southwest_FishingMons
+
+     5, 10, SPECIES_MAGIKARP,
+     5, 10, SPECIES_GOLDEEN,
+     10, 30, SPECIES_MAGIKARP,
+     10, 25, SPECIES_GOLDEEN,
+     10, 30, SPECIES_GOLDEEN,
+     25, 30, SPECIES_GOLDEEN,
+     30, 35, SPECIES_GOLDEEN,
+     30, 35, SPECIES_SEAKING,
+     35, 40, SPECIES_SEAKING,
+     25, 30, SPECIES_SEAKING,
+
+
+SafariZone_Southwest_FishingMonsInfo =  35, gSafariZone_Southwest_FishingMons 
+
+
+SafariZone_North_LandMons
+
+     27, 27, SPECIES_PHANPY,
+     27, 27, SPECIES_ODDISH,
+     29, 29, SPECIES_PHANPY,
+     29, 29, SPECIES_ODDISH,
+     27, 27, SPECIES_NATU,
+     29, 29, SPECIES_GLOOM,
+     31, 31, SPECIES_GLOOM,
+     29, 29, SPECIES_NATU,
+     29, 29, SPECIES_XATU,
+     27, 27, SPECIES_HERACROSS,
+     31, 31, SPECIES_XATU,
+     29, 29, SPECIES_HERACROSS,
+
+
+SafariZone_North_LandMonsInfo =  25, gSafariZone_North_LandMons 
+SafariZone_North_RockSmashMons
+
+     10, 15, SPECIES_GEODUDE,
+     5, 10, SPECIES_GEODUDE,
+     15, 20, SPECIES_GEODUDE,
+     20, 25, SPECIES_GEODUDE,
+     25, 30, SPECIES_GEODUDE,
+
+
+SafariZone_North_RockSmashMonsInfo =  25, gSafariZone_North_RockSmashMons 
+
+
+SafariZone_Northwest_LandMons
+
+     27, 27, SPECIES_RHYHORN,
+     28, 29, SPECIES_ODDISH,
+     29, 29, SPECIES_RHYHORN,
+     29, 29, SPECIES_ODDISH,
+     27, 27, SPECIES_DODUO,
+     29, 29, SPECIES_GLOOM,
+     31, 31, SPECIES_GLOOM,
+     29, 29, SPECIES_DODUO,
+     29, 29, SPECIES_DODRIO,
+     27, 27, SPECIES_PINSIR,
+     31, 31, SPECIES_DODRIO,
+     29, 29, SPECIES_PINSIR,
+
+
+SafariZone_Northwest_LandMonsInfo =  25, gSafariZone_Northwest_LandMons 
+SafariZone_Northwest_WaterMons
+
+     20, 30, SPECIES_PSYDUCK,
+     20, 30, SPECIES_PSYDUCK,
+     30, 35, SPECIES_PSYDUCK,
+     30, 35, SPECIES_GOLDUCK,
+     25, 40, SPECIES_GOLDUCK,
+
+
+SafariZone_Northwest_WaterMonsInfo =  9, gSafariZone_Northwest_WaterMons 
+SafariZone_Northwest_FishingMons
+
+     5, 10, SPECIES_MAGIKARP,
+     5, 10, SPECIES_GOLDEEN,
+     10, 30, SPECIES_MAGIKARP,
+     10, 25, SPECIES_GOLDEEN,
+     10, 30, SPECIES_GOLDEEN,
+     25, 30, SPECIES_GOLDEEN,
+     30, 35, SPECIES_GOLDEEN,
+     30, 35, SPECIES_SEAKING,
+     35, 40, SPECIES_SEAKING,
+     25, 30, SPECIES_SEAKING,
+
+
+SafariZone_Northwest_FishingMonsInfo =  35, gSafariZone_Northwest_FishingMons 
+
+
+VictoryRoad_B1F_LandMons
+
+     40, 40, SPECIES_LUXIO,
+     40, 40, SPECIES_ROSERADE,
+     40, 40, SPECIES_RAMPARDOS,
+     40, 40, SPECIES_BLISSEY,
+     36, 36, SPECIES_STOUTLAND,
+     36, 36, SPECIES_MUDSDALE,
+     38, 38, SPECIES_GOLEM,
+     38, 38, SPECIES_GLISCOR,
+     36, 36, SPECIES_PILOSWINE,
+     36, 36, SPECIES_PUPITAR,
+     36, 36, SPECIES_STONJOURNER,
+     48, 50, SPECIES_GARCHOMP,
+
+
+VictoryRoad_B1F_LandMonsInfo =  10, gVictoryRoad_B1F_LandMons 
+VictoryRoad_B1F_RockSmashMons
+
+     30, 40, SPECIES_GRAVELER,
+     30, 40, SPECIES_GEODUDE,
+     35, 40, SPECIES_GRAVELER,
+     35, 40, SPECIES_GRAVELER,
+     35, 40, SPECIES_GRAVELER,
+
+
+VictoryRoad_B1F_RockSmashMonsInfo =  20, gVictoryRoad_B1F_RockSmashMons 
+
+
+VictoryRoad_B2F_LandMons
+
+     40, 40, SPECIES_LUXIO,
+     40, 40, SPECIES_ROSERADE,
+     40, 40, SPECIES_RAMPARDOS,
+     40, 40, SPECIES_BLISSEY,
+     36, 36, SPECIES_STOUTLAND,
+     36, 36, SPECIES_MUDSDALE,
+     38, 38, SPECIES_GOLEM,
+     38, 38, SPECIES_GLISCOR,
+     36, 36, SPECIES_PILOSWINE,
+     36, 36, SPECIES_PUPITAR,
+     36, 36, SPECIES_TORTERRA,
+     48, 50, SPECIES_GARCHOMP,
+
+
+VictoryRoad_B2F_LandMonsInfo =  10, gVictoryRoad_B2F_LandMons 
+VictoryRoad_B2F_FishingMons
+
+     5, 10, SPECIES_MAGIKARP,
+     5, 10, SPECIES_GOLDEEN,
+     10, 30, SPECIES_MAGIKARP,
+     10, 30, SPECIES_GOLDEEN,
+     10, 30, SPECIES_BARBOACH,
+     25, 30, SPECIES_BARBOACH,
+     30, 35, SPECIES_BARBOACH,
+     30, 35, SPECIES_WHISCASH,
+     35, 40, SPECIES_WHISCASH,
+     40, 45, SPECIES_WHISCASH,
+
+
+VictoryRoad_B2F_FishingMonsInfo =  30, gVictoryRoad_B2F_FishingMons 
+
+
+MeteorFalls_1F_1R_LandMons
+
+     16, 16, SPECIES_SWOOBAT,
+     17, 17, SPECIES_NOIBAT,
+     18, 18, SPECIES_NACLI,
+     15, 15, SPECIES_ACCELGOR,
+     14, 14, SPECIES_LITWICK,
+     16, 16, SPECIES_SOLROCK,
+     18, 18, SPECIES_LARVITAR,
+     14, 14, SPECIES_NOSEPASS,
+     19, 19, SPECIES_ROCKRUFF,
+     20, 20, SPECIES_CARBINK,
+     19, 19, SPECIES_BINACLE,
+     20, 20, SPECIES_ONIX,
+
+
+MeteorFalls_1F_1R_LandMonsInfo =  10, gMeteorFalls_1F_1R_LandMons 
+MeteorFalls_1F_1R_WaterMons
+
+     5, 35, SPECIES_ZUBAT,
+     30, 35, SPECIES_NOIBAT,
+     25, 35, SPECIES_SOLROCK,
+     15, 25, SPECIES_SOLROCK,
+     5, 15, SPECIES_SOLROCK,
+
+
+MeteorFalls_1F_1R_WaterMonsInfo =  4, gMeteorFalls_1F_1R_WaterMons 
+MeteorFalls_1F_1R_FishingMons
+
+     5, 10, SPECIES_MAGIKARP,
+     5, 10, SPECIES_GOLDEEN,
+     10, 30, SPECIES_MAGIKARP,
+     10, 30, SPECIES_GOLDEEN,
+     10, 30, SPECIES_BARBOACH,
+     25, 30, SPECIES_ARROKUDA,
+     30, 35, SPECIES_BARBOACH,
+     20, 25, SPECIES_KABUTO,
+     35, 40, SPECIES_OMANYTE,
+     40, 45, SPECIES_GYARADOS,
+
+
+MeteorFalls_1F_1R_FishingMonsInfo =  30, gMeteorFalls_1F_1R_FishingMons 
+
+
+MeteorFalls_1F_2R_LandMons
+
+     33, 33, SPECIES_NOIBAT,
+     35, 35, SPECIES_CUFANT,
+     33, 33, SPECIES_NOIBAT,
+     35, 35, SPECIES_SOLROCK,
+     33, 33, SPECIES_GLIMMET,
+     37, 37, SPECIES_SOLROCK,
+     35, 35, SPECIES_NOIBAT,
+     39, 39, SPECIES_SOLROCK,
+     38, 38, SPECIES_ORTHWORM,
+     40, 40, SPECIES_NOIBAT,
+     38, 38, SPECIES_NOIBAT,
+     40, 40, SPECIES_NOIBAT,
+
+
+MeteorFalls_1F_2R_LandMonsInfo =  10, gMeteorFalls_1F_2R_LandMons 
+MeteorFalls_1F_2R_WaterMons
+
+     30, 35, SPECIES_NOIBAT,
+     30, 35, SPECIES_NOIBAT,
+     25, 35, SPECIES_SOLROCK,
+     15, 25, SPECIES_SOLROCK,
+     5, 15, SPECIES_SOLROCK,
+
+
+MeteorFalls_1F_2R_WaterMonsInfo =  4, gMeteorFalls_1F_2R_WaterMons 
+MeteorFalls_1F_2R_FishingMons
+
+     5, 10, SPECIES_MAGIKARP,
+     5, 10, SPECIES_GOLDEEN,
+     10, 30, SPECIES_MAGIKARP,
+     10, 30, SPECIES_GOLDEEN,
+     10, 30, SPECIES_BARBOACH,
+     25, 30, SPECIES_BARBOACH,
+     30, 35, SPECIES_BARBOACH,
+     30, 35, SPECIES_WHISCASH,
+     35, 40, SPECIES_WHISCASH,
+     40, 45, SPECIES_WHISCASH,
+
+
+MeteorFalls_1F_2R_FishingMonsInfo =  30, gMeteorFalls_1F_2R_FishingMons 
+
+MeteorFalls_1F_2R_HiddenMons
+
+     35, 36, SPECIES_DURALUDON,
+     35, 36, SPECIES_TYRUNT,
+     15, 18, SPECIES_SHELLOS_EAST_SEA,
+
+
+MeteorFalls_1F_2R_HiddenMonsInfo =  0, gMeteorFalls_1F_2R_HiddenMons 
+
+MeteorFalls_B1F_1R_LandMons
+
+     33, 33, SPECIES_NOIBAT,
+     35, 35, SPECIES_PUPITAR,
+     33, 33, SPECIES_RHYHORN,
+     35, 35, SPECIES_LYCANROC,
+     33, 33, SPECIES_LYCANROC,
+     37, 37, SPECIES_SOLROCK,
+     35, 35, SPECIES_MABOSSTIFF,
+     39, 39, SPECIES_SOLROCK,
+     42, 42, SPECIES_RHYDON,
+     40, 40, SPECIES_DREDNAW,
+     38, 38, SPECIES_MINIOR,
+     48, 48, SPECIES_NOIVERN,
+
+
+MeteorFalls_B1F_1R_LandMonsInfo =  10, gMeteorFalls_B1F_1R_LandMons 
+MeteorFalls_B1F_1R_WaterMons
+
+     30, 35, SPECIES_RELICANTH,
+     30, 35, SPECIES_NOIBAT,
+     25, 35, SPECIES_SOLROCK,
+     15, 25, SPECIES_LUNATONE,
+     28, 31, SPECIES_GYARADOS,
+
+
+MeteorFalls_B1F_1R_WaterMonsInfo =  4, gMeteorFalls_B1F_1R_WaterMons 
+MeteorFalls_B1F_1R_FishingMons
+
+     5, 10, SPECIES_ARROKUDA,
+     5, 10, SPECIES_GOLDEEN,
+     10, 30, SPECIES_MAGIKARP,
+     10, 30, SPECIES_MAGIKARP,
+     10, 30, SPECIES_BARBOACH,
+     25, 30, SPECIES_BARBOACH,
+     30, 35, SPECIES_BARBOACH,
+     30, 35, SPECIES_WHISCASH,
+     35, 40, SPECIES_WHISCASH,
+     40, 45, SPECIES_GYARADOS,
+
+
+MeteorFalls_B1F_1R_FishingMonsInfo =  30, gMeteorFalls_B1F_1R_FishingMons 
+
+
+ShoalCave_LowTideStairsRoom_LandMons
+
+     26, 26, SPECIES_ZUBAT,
+     26, 26, SPECIES_SPHEAL,
+     28, 28, SPECIES_ZUBAT,
+     28, 28, SPECIES_SPHEAL,
+     30, 30, SPECIES_ZUBAT,
+     30, 30, SPECIES_SPHEAL,
+     32, 32, SPECIES_ZUBAT,
+     32, 32, SPECIES_SPHEAL,
+     32, 32, SPECIES_NOIBAT,
+     32, 32, SPECIES_SPHEAL,
+     32, 32, SPECIES_NOIBAT,
+     32, 32, SPECIES_SPHEAL,
+
+
+ShoalCave_LowTideStairsRoom_LandMonsInfo =  10, gShoalCave_LowTideStairsRoom_LandMons 
+
+
+ShoalCave_LowTideLowerRoom_LandMons
+
+     26, 26, SPECIES_ZUBAT,
+     26, 24, SPECIES_SPHEAL,
+     28, 28, SPECIES_ZUBAT,
+     28, 28, SPECIES_SPHEAL,
+     30, 30, SPECIES_ZUBAT,
+     30, 30, SPECIES_SPHEAL,
+     32, 32, SPECIES_ZUBAT,
+     32, 32, SPECIES_SPHEAL,
+     32, 32, SPECIES_NOIBAT,
+     32, 32, SPECIES_SPHEAL,
+     32, 32, SPECIES_NOIBAT,
+     32, 32, SPECIES_SPHEAL,
+
+
+ShoalCave_LowTideLowerRoom_LandMonsInfo =  10, gShoalCave_LowTideLowerRoom_LandMons 
+
+
+ShoalCave_LowTideInnerRoom_LandMons
+
+     26, 26, SPECIES_ZUBAT,
+     26, 26, SPECIES_SPHEAL,
+     28, 28, SPECIES_ZUBAT,
+     28, 28, SPECIES_SPHEAL,
+     30, 30, SPECIES_ZUBAT,
+     30, 30, SPECIES_SPHEAL,
+     32, 32, SPECIES_ZUBAT,
+     32, 32, SPECIES_SPHEAL,
+     32, 32, SPECIES_NOIBAT,
+     32, 32, SPECIES_SPHEAL,
+     32, 32, SPECIES_NOIBAT,
+     32, 32, SPECIES_SPHEAL,
+
+
+ShoalCave_LowTideInnerRoom_LandMonsInfo =  10, gShoalCave_LowTideInnerRoom_LandMons 
+ShoalCave_LowTideInnerRoom_WaterMons
+
+     5, 35, SPECIES_TENTACOOL,
+     5, 35, SPECIES_ZUBAT,
+     25, 30, SPECIES_SPHEAL,
+     25, 30, SPECIES_SPHEAL,
+     25, 35, SPECIES_SPHEAL,
+
+
+ShoalCave_LowTideInnerRoom_WaterMonsInfo =  4, gShoalCave_LowTideInnerRoom_WaterMons 
+ShoalCave_LowTideInnerRoom_FishingMons
+
+     5, 10, SPECIES_MAGIKARP,
+     5, 10, SPECIES_TENTACOOL,
+     10, 30, SPECIES_MAGIKARP,
+     10, 30, SPECIES_TENTACOOL,
+     10, 30, SPECIES_WAILMER,
+     25, 30, SPECIES_WAILMER,
+     30, 35, SPECIES_WAILMER,
+     20, 25, SPECIES_WAILMER,
+     35, 40, SPECIES_WAILMER,
+     40, 45, SPECIES_WAILMER,
+
+
+ShoalCave_LowTideInnerRoom_FishingMonsInfo =  10, gShoalCave_LowTideInnerRoom_FishingMons 
+
+
+ShoalCave_LowTideEntranceRoom_LandMons
+
+     26, 26, SPECIES_WOOBAT,
+     26, 26, SPECIES_NOIBAT,
+     28, 28, SPECIES_ZUBAT,
+     28, 28, SPECIES_SPHEAL,
+     30, 30, SPECIES_SNEASEL,
+     30, 30, SPECIES_BERGMITE,
+     32, 32, SPECIES_FROSMOTH,
+     32, 32, SPECIES_SWOOBAT,
+     32, 32, SPECIES_NOIBAT,
+     32, 32, SPECIES_SANDSLASH_ALOLAN,
+     32, 32, SPECIES_CRYOGONAL,
+     32, 32, SPECIES_GLACEON,
+
+
+ShoalCave_LowTideEntranceRoom_LandMonsInfo =  10, gShoalCave_LowTideEntranceRoom_LandMons 
+ShoalCave_LowTideEntranceRoom_WaterMons
+
+     5, 35, SPECIES_TENTACOOL,
+     5, 35, SPECIES_ZUBAT,
+     25, 30, SPECIES_SPHEAL,
+     25, 30, SPECIES_SEEL,
+     25, 35, SPECIES_VANILLITE,
+
+
+ShoalCave_LowTideEntranceRoom_WaterMonsInfo =  4, gShoalCave_LowTideEntranceRoom_WaterMons 
+ShoalCave_LowTideEntranceRoom_FishingMons
+
+     5, 10, SPECIES_MAGIKARP,
+     5, 10, SPECIES_TENTACOOL,
+     10, 30, SPECIES_MAGIKARP,
+     10, 30, SPECIES_TENTACOOL,
+     10, 30, SPECIES_WAILMER,
+     25, 30, SPECIES_WAILMER,
+     30, 35, SPECIES_WAILMER,
+     20, 25, SPECIES_WAILMER,
+     35, 40, SPECIES_WAILMER,
+     40, 45, SPECIES_WAILMER,
+
+
+ShoalCave_LowTideEntranceRoom_FishingMonsInfo =  10, gShoalCave_LowTideEntranceRoom_FishingMons 
+
+
+LilycoveCity_WaterMons
+
+     5, 35, SPECIES_TENTACOOL,
+     10, 30, SPECIES_QUAXLY,
+     15, 25, SPECIES_WINGULL,
+     25, 30, SPECIES_VELUZA,
+     25, 30, SPECIES_PELIPPER,
+
+
+LilycoveCity_WaterMonsInfo =  4, gLilycoveCity_WaterMons 
+LilycoveCity_FishingMons
+
+     5, 10, SPECIES_MAGIKARP,
+     5, 10, SPECIES_TENTACOOL,
+     10, 30, SPECIES_MAGIKARP,
+     10, 30, SPECIES_TENTACOOL,
+     10, 30, SPECIES_WAILMER,
+     25, 30, SPECIES_WAILMER,
+     30, 35, SPECIES_WAILMER,
+     25, 30, SPECIES_STARYU,
+     35, 40, SPECIES_WAILMER,
+     40, 45, SPECIES_WAILMER,
+
+
+LilycoveCity_FishingMonsInfo =  10, gLilycoveCity_FishingMons 
+
+
+DewfordTown_WaterMons
+
+     5, 29, SPECIES_INKAY,
+     10, 30, SPECIES_GOLDEEN,
+     15, 25, SPECIES_QWILFISH_HISUIAN,
+     30, 37, SPECIES_MALAMAR,
+     25, 30, SPECIES_CLOBBOPUS,
+
+
+DewfordTown_WaterMonsInfo =  4, gDewfordTown_WaterMons 
+DewfordTown_FishingMons
+
+     5, 10, SPECIES_GOLDEEN,
+     5, 10, SPECIES_BASCULIN,
+     10, 30, SPECIES_CLOBBOPUS,
+     10, 30, SPECIES_PSYDUCK,
+     10, 30, SPECIES_WAILMER,
+     25, 30, SPECIES_SHELLDER,
+     30, 35, SPECIES_ALOMOMOLA,
+     20, 25, SPECIES_ARROKUDA,
+     35, 40, SPECIES_AZURILL,
+     5, 14, SPECIES_SOBBLE,
+
+
+DewfordTown_FishingMonsInfo =  10, gDewfordTown_FishingMons 
+
+
+SlateportCity_WaterMons
+
+     5, 35, SPECIES_TENTACOOL,
+     10, 30, SPECIES_QUAXLY,
+     15, 25, SPECIES_WINGULL,
+     25, 30, SPECIES_VELUZA,
+     25, 30, SPECIES_PELIPPER,
+
+
+SlateportCity_WaterMonsInfo =  4, gSlateportCity_WaterMons 
+SlateportCity_FishingMons
+
+     5, 10, SPECIES_MAGIKARP,
+     5, 10, SPECIES_TENTACOOL,
+     10, 30, SPECIES_MAGIKARP,
+     10, 30, SPECIES_TENTACOOL,
+     10, 30, SPECIES_WAILMER,
+     25, 30, SPECIES_WAILMER,
+     30, 35, SPECIES_WAILMER,
+     20, 25, SPECIES_WAILMER,
+     35, 40, SPECIES_WAILMER,
+     40, 45, SPECIES_WAILMER,
+
+
+SlateportCity_FishingMonsInfo =  10, gSlateportCity_FishingMons 
+
+
+MossdeepCity_WaterMons
+
+     5, 35, SPECIES_TENTACOOL,
+     10, 30, SPECIES_WINGULL,
+     15, 25, SPECIES_WINGULL,
+     25, 30, SPECIES_PELIPPER,
+     25, 30, SPECIES_PELIPPER,
+
+
+MossdeepCity_WaterMonsInfo =  4, gMossdeepCity_WaterMons 
+MossdeepCity_FishingMons
+
+     5, 10, SPECIES_MAGIKARP,
+     5, 10, SPECIES_TENTACOOL,
+     10, 30, SPECIES_MAGIKARP,
+     10, 30, SPECIES_TENTACOOL,
+     10, 30, SPECIES_WAILMER,
+     30, 35, SPECIES_SHARPEDO,
+     30, 35, SPECIES_WAILMER,
+     25, 30, SPECIES_WAILMER,
+     35, 40, SPECIES_WAILMER,
+     40, 45, SPECIES_WAILMER,
+
+
+MossdeepCity_FishingMonsInfo =  10, gMossdeepCity_FishingMons 
+
+
+PacifidlogTown_WaterMons
+
+     5, 35, SPECIES_TENTACOOL,
+     10, 30, SPECIES_WINGULL,
+     15, 25, SPECIES_TATSUGIRI_STRETCHY,
+     25, 30, SPECIES_PELIPPER,
+     25, 30, SPECIES_DONDOZO,
+
+
+PacifidlogTown_WaterMonsInfo =  4, gPacifidlogTown_WaterMons 
+PacifidlogTown_FishingMons
+
+     5, 10, SPECIES_MAGIKARP,
+     5, 10, SPECIES_TENTACOOL,
+     10, 30, SPECIES_MAGIKARP,
+     10, 30, SPECIES_TENTACOOL,
+     10, 30, SPECIES_WAILMER,
+     30, 35, SPECIES_SHARPEDO,
+     30, 35, SPECIES_WAILMER,
+     25, 30, SPECIES_WAILMER,
+     35, 40, SPECIES_WAILMER,
+     40, 45, SPECIES_DONDOZO,
+
+
+PacifidlogTown_FishingMonsInfo =  10, gPacifidlogTown_FishingMons 
+
+
+EverGrandeCity_WaterMons
+
+     5, 35, SPECIES_TENTACOOL,
+     10, 30, SPECIES_WINGULL,
+     15, 25, SPECIES_WINGULL,
+     25, 30, SPECIES_PELIPPER,
+     25, 30, SPECIES_PELIPPER,
+
+
+EverGrandeCity_WaterMonsInfo =  4, gEverGrandeCity_WaterMons 
+EverGrandeCity_FishingMons
+
+     5, 10, SPECIES_MAGIKARP,
+     5, 10, SPECIES_TENTACOOL,
+     10, 30, SPECIES_MAGIKARP,
+     10, 30, SPECIES_LUVDISC,
+     10, 30, SPECIES_WAILMER,
+     30, 35, SPECIES_LUVDISC,
+     30, 35, SPECIES_WAILMER,
+     30, 35, SPECIES_CORSOLA,
+     35, 40, SPECIES_WAILMER,
+     40, 45, SPECIES_WAILMER,
+
+
+EverGrandeCity_FishingMonsInfo =  10, gEverGrandeCity_FishingMons 
+
+
+PetalburgCity_WaterMons
+
+     20, 30, SPECIES_CLODSIRE,
+     10, 20, SPECIES_QUAXLY,
+     30, 35, SPECIES_BASCULIN_WHITE_STRIPED,
+     5, 10, SPECIES_MARILL,
+     5, 10, SPECIES_MARILL,
+
+
+PetalburgCity_WaterMonsInfo =  1, gPetalburgCity_WaterMons 
+PetalburgCity_FishingMons
+
+     5, 10, SPECIES_MAGIKARP,
+     5, 10, SPECIES_GOLDEEN,
+     10, 30, SPECIES_MAGIKARP,
+     10, 30, SPECIES_GOLDEEN,
+     10, 30, SPECIES_CORPHISH,
+     25, 30, SPECIES_CORPHISH,
+     30, 35, SPECIES_CORPHISH,
+     20, 25, SPECIES_CORPHISH,
+     35, 40, SPECIES_CORPHISH,
+     40, 45, SPECIES_CORPHISH,
+
+
+PetalburgCity_FishingMonsInfo =  10, gPetalburgCity_FishingMons 
+
+
+Underwater_Route124_WaterMons
+
+     20, 30, SPECIES_SKRELP,
+     20, 30, SPECIES_CLAUNCHER,
+     30, 35, SPECIES_MAREANIE,
+     30, 35, SPECIES_PYUKUMUKU,
+     30, 35, SPECIES_BINACLE,
+
+
+Underwater_Route124_WaterMonsInfo =  4, gUnderwater_Route124_WaterMons 
+
+
+ShoalCave_LowTideIceRoom_LandMons
+
+     26, 26, SPECIES_SNEASEL,
+     26, 26, SPECIES_SWINUB,
+     28, 28, SPECIES_SNORUNT,
+     28, 28, SPECIES_SNOVER,
+     30, 30, SPECIES_VANILLITE,
+     30, 30, SPECIES_CUBCHOO,
+     26, 26, SPECIES_CRYOGONAL,
+     30, 32, SPECIES_BERGMITE,
+     30, 30, SPECIES_EISCUE,
+     28, 28, SPECIES_FRIGIBAX,
+     32, 32, SPECIES_MR_MIME_GALARIAN,
+     30, 30, SPECIES_CETODDLE,
+
+
+ShoalCave_LowTideIceRoom_LandMonsInfo =  10, gShoalCave_LowTideIceRoom_LandMons 
+
+ShoalCave_LowTideIceRoom_HiddenMons
+
+     25, 26, SPECIES_SNEASEL_HISUIAN,
+     26, 26, SPECIES_ARCTOZOLT,
+     26, 26, SPECIES_ARCTOVISH,
+
+
+ShoalCave_LowTideIceRoom_HiddenMonsInfo =  0, gShoalCave_LowTideIceRoom_HiddenMons 
+
+SkyPillar_1F_LandMons
+
+     33, 33, SPECIES_SABLEYE,
+     34, 34, SPECIES_VAROOM,
+     35, 35, SPECIES_NOIBAT,
+     34, 34, SPECIES_SABLEYE,
+     36, 36, SPECIES_CLAYDOL,
+     37, 37, SPECIES_BANETTE,
+     38, 38, SPECIES_VAROOM,
+     36, 36, SPECIES_CLAYDOL,
+     37, 37, SPECIES_CLAYDOL,
+     38, 38, SPECIES_CLAYDOL,
+     37, 37, SPECIES_CLAYDOL,
+     38, 38, SPECIES_CLAYDOL,
+
+
+SkyPillar_1F_LandMonsInfo =  10, gSkyPillar_1F_LandMons 
+
+
+SootopolisCity_WaterMons
+
+     5, 35, SPECIES_TATSUGIRI,
+     10, 30, SPECIES_MAGIKARP,
+     15, 25, SPECIES_TATSUGIRI_DROOPY,
+     25, 30, SPECIES_MAGIKARP,
+     25, 30, SPECIES_TATSUGIRI_STRETCHY,
+
+
+SootopolisCity_WaterMonsInfo =  1, gSootopolisCity_WaterMons 
+SootopolisCity_FishingMons
+
+     5, 10, SPECIES_MAGIKARP,
+     5, 10, SPECIES_TENTACOOL,
+     10, 30, SPECIES_MAGIKARP,
+     10, 30, SPECIES_MAGIKARP,
+     10, 30, SPECIES_MAGIKARP,
+     30, 35, SPECIES_MAGIKARP,
+     30, 35, SPECIES_MAGIKARP,
+     35, 40, SPECIES_GYARADOS,
+     35, 45, SPECIES_GYARADOS,
+     5, 45, SPECIES_GYARADOS,
+
+
+SootopolisCity_FishingMonsInfo =  10, gSootopolisCity_FishingMons 
+
+
+SkyPillar_3F_LandMons
+
+     33, 33, SPECIES_SABLEYE,
+     34, 34, SPECIES_VAROOM,
+     35, 35, SPECIES_NOIBAT,
+     34, 34, SPECIES_SABLEYE,
+     36, 36, SPECIES_CLAYDOL,
+     37, 37, SPECIES_BANETTE,
+     38, 38, SPECIES_VAROOM,
+     36, 36, SPECIES_CLAYDOL,
+     37, 37, SPECIES_CLAYDOL,
+     38, 38, SPECIES_CLAYDOL,
+     37, 37, SPECIES_CLAYDOL,
+     38, 38, SPECIES_CLAYDOL,
+
+
+SkyPillar_3F_LandMonsInfo =  10, gSkyPillar_3F_LandMons 
+
+
+SkyPillar_5F_LandMons
+
+     33, 33, SPECIES_SABLEYE,
+     34, 34, SPECIES_NOIBAT,
+     35, 35, SPECIES_NOIBAT,
+     34, 34, SPECIES_SABLEYE,
+     36, 36, SPECIES_CLAYDOL,
+     37, 37, SPECIES_BANETTE,
+     38, 38, SPECIES_BANETTE,
+     36, 36, SPECIES_CLAYDOL,
+     37, 37, SPECIES_REVAVROOM,
+     38, 38, SPECIES_ALTARIA,
+     39, 39, SPECIES_ALTARIA,
+     39, 39, SPECIES_ALTARIA,
+
+
+SkyPillar_5F_LandMonsInfo =  10, gSkyPillar_5F_LandMons 
+
+
+SafariZone_Southeast_LandMons
+
+     10, 10, SPECIES_BULBASAUR,
+     10, 10, SPECIES_CHARMANDER,
+     10, 10, SPECIES_SQUIRTLE,
+     10, 10, SPECIES_CHIKORITA,
+     10, 10, SPECIES_CYNDAQUIL,
+     10, 10, SPECIES_TOTODILE,
+     10, 10, SPECIES_TREECKO,
+     10, 10, SPECIES_TORCHIC,
+     10, 10, SPECIES_MUDKIP,
+     10, 10, SPECIES_TURTWIG,
+     10, 10, SPECIES_CHIMCHAR,
+     10, 10, SPECIES_PIPLUP,
+
+
+SafariZone_Southeast_LandMonsInfo =  25, gSafariZone_Southeast_LandMons 
+SafariZone_Southeast_WaterMons
+
+     25, 30, SPECIES_WOOPER,
+     25, 30, SPECIES_MARILL,
+     25, 30, SPECIES_MARILL,
+     30, 35, SPECIES_MARILL,
+     35, 40, SPECIES_QUAGSIRE,
+
+
+SafariZone_Southeast_WaterMonsInfo =  9, gSafariZone_Southeast_WaterMons 
+SafariZone_Southeast_FishingMons
+
+     25, 30, SPECIES_MAGIKARP,
+     25, 30, SPECIES_GOLDEEN,
+     25, 30, SPECIES_MAGIKARP,
+     25, 30, SPECIES_GOLDEEN,
+     30, 35, SPECIES_REMORAID,
+     25, 30, SPECIES_GOLDEEN,
+     25, 30, SPECIES_REMORAID,
+     30, 35, SPECIES_REMORAID,
+     30, 35, SPECIES_REMORAID,
+     35, 40, SPECIES_OCTILLERY,
+
+
+SafariZone_Southeast_FishingMonsInfo =  35, gSafariZone_Southeast_FishingMons 
+
+
+SafariZone_Northeast_LandMons
+
+     10, 10, SPECIES_SNIVY,
+     10, 10, SPECIES_TEPIG,
+     10, 10, SPECIES_OSHAWOTT,
+     10, 10, SPECIES_CHESPIN,
+     10, 10, SPECIES_FENNEKIN,
+     10, 10, SPECIES_FROAKIE,
+     10, 10, SPECIES_ROWLET,
+     10, 10, SPECIES_LITTEN,
+     10, 10, SPECIES_POPPLIO,
+     10, 10, SPECIES_GROOKEY,
+     10, 10, SPECIES_SCORBUNNY,
+     10, 10, SPECIES_SOBBLE,
+
+
+SafariZone_Northeast_LandMonsInfo =  25, gSafariZone_Northeast_LandMons 
+SafariZone_Northeast_RockSmashMons
+
+     25, 30, SPECIES_SHUCKLE,
+     20, 25, SPECIES_SHUCKLE,
+     30, 35, SPECIES_SHUCKLE,
+     30, 35, SPECIES_SHUCKLE,
+     35, 40, SPECIES_SHUCKLE,
+
+
+SafariZone_Northeast_RockSmashMonsInfo =  25, gSafariZone_Northeast_RockSmashMons 
+
+
+MagmaHideout_1F_LandMons
+
+     25, 28, SPECIES_GROWLITHE,
+     25, 28, SPECIES_HOUNDOUR,
+     25, 28, SPECIES_PONYTA,
+     20, 20, SPECIES_LITLEO,
+     28, 29, SPECIES_SLUGMA,
+     26, 29, SPECIES_HEATMOR,
+     26, 29, SPECIES_FLETCHINDER,
+     27, 30, SPECIES_LITLEO,
+     25, 32, SPECIES_NUMEL,
+     27, 32, SPECIES_SPOINK,
+     28, 33, SPECIES_QUILAVA,
+     27, 35, SPECIES_TORRACAT,
+
+
+MagmaHideout_1F_LandMonsInfo =  10, gMagmaHideout_1F_LandMons 
+
+
+MagmaHideout_2F_1R_LandMons
+
+     25, 28, SPECIES_GROWLITHE,
+     25, 28, SPECIES_HOUNDOUR,
+     25, 28, SPECIES_PONYTA,
+     20, 20, SPECIES_LITLEO,
+     28, 29, SPECIES_SLUGMA,
+     26, 29, SPECIES_HEATMOR,
+     26, 29, SPECIES_FLETCHINDER,
+     27, 30, SPECIES_LITLEO,
+     25, 32, SPECIES_NUMEL,
+     27, 32, SPECIES_SPOINK,
+     28, 33, SPECIES_QUILAVA,
+     27, 35, SPECIES_TORRACAT,
+
+
+MagmaHideout_2F_1R_LandMonsInfo =  10, gMagmaHideout_2F_1R_LandMons 
+
+
+MagmaHideout_2F_2R_LandMons
+
+     25, 28, SPECIES_GROWLITHE,
+     25, 28, SPECIES_HOUNDOUR,
+     25, 28, SPECIES_PONYTA,
+     20, 20, SPECIES_LITLEO,
+     28, 29, SPECIES_SLUGMA,
+     26, 29, SPECIES_HEATMOR,
+     26, 29, SPECIES_FLETCHINDER,
+     27, 30, SPECIES_LITLEO,
+     25, 32, SPECIES_NUMEL,
+     27, 32, SPECIES_SPOINK,
+     28, 33, SPECIES_QUILAVA,
+     27, 35, SPECIES_TORRACAT,
+
+
+MagmaHideout_2F_2R_LandMonsInfo =  10, gMagmaHideout_2F_2R_LandMons 
+
+
+MagmaHideout_3F_1R_LandMons
+
+     25, 28, SPECIES_GROWLITHE,
+     25, 28, SPECIES_HOUNDOUR,
+     25, 28, SPECIES_PONYTA,
+     20, 20, SPECIES_LITLEO,
+     28, 29, SPECIES_SLUGMA,
+     26, 29, SPECIES_HEATMOR,
+     26, 29, SPECIES_FLETCHINDER,
+     27, 30, SPECIES_LITLEO,
+     25, 32, SPECIES_NUMEL,
+     27, 32, SPECIES_SPOINK,
+     28, 33, SPECIES_QUILAVA,
+     27, 35, SPECIES_TORRACAT,
+
+
+MagmaHideout_3F_1R_LandMonsInfo =  10, gMagmaHideout_3F_1R_LandMons 
+
+
+MagmaHideout_3F_2R_LandMons
+
+     25, 28, SPECIES_GROWLITHE,
+     25, 28, SPECIES_HOUNDOUR,
+     25, 28, SPECIES_PONYTA,
+     20, 20, SPECIES_LITLEO,
+     28, 29, SPECIES_SLUGMA,
+     26, 29, SPECIES_HEATMOR,
+     26, 29, SPECIES_FLETCHINDER,
+     27, 30, SPECIES_LITLEO,
+     25, 32, SPECIES_NUMEL,
+     27, 32, SPECIES_SPOINK,
+     28, 33, SPECIES_QUILAVA,
+     27, 35, SPECIES_TORRACAT,
+
+
+MagmaHideout_3F_2R_LandMonsInfo =  10, gMagmaHideout_3F_2R_LandMons 
+
+
+MagmaHideout_4F_LandMons
+
+     25, 28, SPECIES_GROWLITHE,
+     25, 28, SPECIES_HOUNDOUR,
+     25, 28, SPECIES_PONYTA,
+     20, 20, SPECIES_LITLEO,
+     28, 29, SPECIES_SLUGMA,
+     26, 29, SPECIES_HEATMOR,
+     26, 29, SPECIES_FLETCHINDER,
+     27, 30, SPECIES_LITLEO,
+     25, 32, SPECIES_NUMEL,
+     27, 32, SPECIES_SPOINK,
+     28, 33, SPECIES_QUILAVA,
+     27, 35, SPECIES_TORRACAT,
+
+
+MagmaHideout_4F_LandMonsInfo =  10, gMagmaHideout_4F_LandMons 
+
+
+MagmaHideout_3F_3R_LandMons
+
+     25, 28, SPECIES_GROWLITHE,
+     25, 28, SPECIES_HOUNDOUR,
+     25, 28, SPECIES_PONYTA,
+     20, 20, SPECIES_LITLEO,
+     28, 29, SPECIES_SLUGMA,
+     26, 29, SPECIES_HEATMOR,
+     26, 29, SPECIES_FLETCHINDER,
+     27, 30, SPECIES_LITLEO,
+     25, 32, SPECIES_NUMEL,
+     27, 32, SPECIES_SPOINK,
+     28, 33, SPECIES_QUILAVA,
+     27, 35, SPECIES_TORRACAT,
+
+
+MagmaHideout_3F_3R_LandMonsInfo =  10, gMagmaHideout_3F_3R_LandMons 
+
+
+MagmaHideout_2F_3R_LandMons
+
+     25, 28, SPECIES_GROWLITHE,
+     25, 28, SPECIES_HOUNDOUR,
+     25, 28, SPECIES_PONYTA,
+     20, 20, SPECIES_LITLEO,
+     28, 29, SPECIES_SLUGMA,
+     26, 29, SPECIES_HEATMOR,
+     26, 29, SPECIES_FLETCHINDER,
+     27, 30, SPECIES_LITLEO,
+     25, 32, SPECIES_NUMEL,
+     27, 32, SPECIES_SPOINK,
+     28, 33, SPECIES_QUILAVA,
+     27, 35, SPECIES_TORRACAT,
+
+
+MagmaHideout_2F_3R_LandMonsInfo =  10, gMagmaHideout_2F_3R_LandMons 
+
+
+MirageTower_1F_LandMons
+
+     21, 21, SPECIES_SANDILE,
+     21, 21, SPECIES_SILICOBRA,
+     20, 20, SPECIES_SANDSHREW,
+     20, 20, SPECIES_TRAPINCH,
+     20, 20, SPECIES_DIGLETT_ALOLAN,
+     20, 20, SPECIES_RHYHORN,
+     22, 22, SPECIES_SANDSHREW,
+     22, 22, SPECIES_CUBONE,
+     23, 23, SPECIES_HIPPOPOTAS,
+     23, 23, SPECIES_LARVITAR,
+     24, 24, SPECIES_ONIX,
+     24, 24, SPECIES_GLIGAR,
+
+
+MirageTower_1F_LandMonsInfo =  10, gMirageTower_1F_LandMons 
+
+
+MirageTower_2F_LandMons
+
+     21, 21, SPECIES_SANDILE,
+     21, 21, SPECIES_SILICOBRA,
+     20, 20, SPECIES_SANDSHREW,
+     20, 20, SPECIES_TRAPINCH,
+     20, 20, SPECIES_DIGLETT_ALOLAN,
+     20, 20, SPECIES_RHYHORN,
+     22, 22, SPECIES_SANDSHREW,
+     22, 22, SPECIES_CUBONE,
+     23, 23, SPECIES_HIPPOPOTAS,
+     23, 23, SPECIES_LARVITAR,
+     24, 24, SPECIES_ONIX,
+     24, 24, SPECIES_GLIGAR,
+
+
+MirageTower_2F_LandMonsInfo =  10, gMirageTower_2F_LandMons 
+
+
+MirageTower_3F_LandMons
+
+     21, 21, SPECIES_SANDILE,
+     21, 21, SPECIES_SILICOBRA,
+     20, 20, SPECIES_SANDSHREW,
+     20, 20, SPECIES_TRAPINCH,
+     20, 20, SPECIES_DIGLETT_ALOLAN,
+     20, 20, SPECIES_RHYHORN,
+     22, 22, SPECIES_SANDSHREW,
+     22, 22, SPECIES_CUBONE,
+     23, 23, SPECIES_HIPPOPOTAS,
+     23, 23, SPECIES_LARVITAR,
+     24, 24, SPECIES_ONIX,
+     24, 24, SPECIES_GLIGAR,
+
+
+MirageTower_3F_LandMonsInfo =  10, gMirageTower_3F_LandMons 
+
+
+MirageTower_4F_LandMons
+
+     21, 21, SPECIES_SANDILE,
+     21, 21, SPECIES_SILICOBRA,
+     20, 20, SPECIES_SANDSHREW,
+     20, 20, SPECIES_TRAPINCH,
+     20, 20, SPECIES_DIGLETT_ALOLAN,
+     20, 20, SPECIES_RHYHORN,
+     22, 22, SPECIES_SANDSHREW,
+     22, 22, SPECIES_CUBONE,
+     23, 23, SPECIES_HIPPOPOTAS,
+     23, 23, SPECIES_LARVITAR,
+     24, 24, SPECIES_ONIX,
+     24, 24, SPECIES_GLIGAR,
+
+
+MirageTower_4F_LandMonsInfo =  10, gMirageTower_4F_LandMons 
+
+
+DesertUnderpass_LandMons
+
+     38, 38, SPECIES_DITTO,
+     35, 35, SPECIES_MR_MIME,
+     40, 40, SPECIES_MAWILE,
+     40, 40, SPECIES_TOGETIC,
+     41, 41, SPECIES_MORGREM,
+     36, 36, SPECIES_BLISSEY,
+     38, 38, SPECIES_JYNX,
+     42, 42, SPECIES_HATTERENE,
+     38, 38, SPECIES_GRANBULL,
+     43, 43, SPECIES_RAPIDASH_GALARIAN,
+     44, 44, SPECIES_WEEZING_GALARIAN,
+     45, 45, SPECIES_NINETALES_ALOLAN,
+
+
+DesertUnderpass_LandMonsInfo =  10, gDesertUnderpass_LandMons 
+
+
+ArtisanCave_B1F_LandMons
+
+     40, 40, SPECIES_SMEARGLE,
+     41, 41, SPECIES_SMEARGLE,
+     42, 42, SPECIES_SMEARGLE,
+     43, 43, SPECIES_SMEARGLE,
+     44, 44, SPECIES_SMEARGLE,
+     45, 45, SPECIES_SMEARGLE,
+     46, 46, SPECIES_SMEARGLE,
+     47, 47, SPECIES_SMEARGLE,
+     48, 48, SPECIES_SMEARGLE,
+     49, 49, SPECIES_SMEARGLE,
+     50, 50, SPECIES_SMEARGLE,
+     50, 50, SPECIES_SMEARGLE,
+
+
+ArtisanCave_B1F_LandMonsInfo =  10, gArtisanCave_B1F_LandMons 
+
+
+ArtisanCave_1F_LandMons
+
+     40, 40, SPECIES_SMEARGLE,
+     41, 41, SPECIES_SMEARGLE,
+     42, 42, SPECIES_SMEARGLE,
+     43, 43, SPECIES_SMEARGLE,
+     44, 44, SPECIES_SMEARGLE,
+     45, 45, SPECIES_SMEARGLE,
+     46, 46, SPECIES_SMEARGLE,
+     47, 47, SPECIES_SMEARGLE,
+     48, 48, SPECIES_SMEARGLE,
+     49, 49, SPECIES_SMEARGLE,
+     50, 50, SPECIES_SMEARGLE,
+     50, 50, SPECIES_SMEARGLE,
+
+
+ArtisanCave_1F_LandMonsInfo =  10, gArtisanCave_1F_LandMons 
+
+
+AlteringCave1_LandMons
+
+     10, 10, SPECIES_ZUBAT,
+     12, 12, SPECIES_ZUBAT,
+     8, 8, SPECIES_ZUBAT,
+     14, 14, SPECIES_ZUBAT,
+     10, 10, SPECIES_ZUBAT,
+     12, 12, SPECIES_ZUBAT,
+     16, 16, SPECIES_ZUBAT,
+     6, 6, SPECIES_ZUBAT,
+     8, 8, SPECIES_ZUBAT,
+     14, 14, SPECIES_ZUBAT,
+     8, 8, SPECIES_ZUBAT,
+     14, 14, SPECIES_ZUBAT,
+
+
+AlteringCave1_LandMonsInfo =  7, gAlteringCave1_LandMons 
+
+
+AlteringCave2_LandMons
+
+     7, 7, SPECIES_MAREEP,
+     9, 9, SPECIES_MAREEP,
+     5, 5, SPECIES_MAREEP,
+     11, 11, SPECIES_MAREEP,
+     7, 7, SPECIES_MAREEP,
+     9, 9, SPECIES_MAREEP,
+     13, 13, SPECIES_MAREEP,
+     3, 3, SPECIES_MAREEP,
+     5, 5, SPECIES_MAREEP,
+     11, 11, SPECIES_MAREEP,
+     5, 5, SPECIES_MAREEP,
+     11, 11, SPECIES_MAREEP,
+
+
+AlteringCave2_LandMonsInfo =  7, gAlteringCave2_LandMons 
+
+
+AlteringCave3_LandMons
+
+     23, 23, SPECIES_PINECO,
+     25, 25, SPECIES_PINECO,
+     22, 22, SPECIES_PINECO,
+     27, 27, SPECIES_PINECO,
+     23, 23, SPECIES_PINECO,
+     25, 25, SPECIES_PINECO,
+     29, 29, SPECIES_PINECO,
+     19, 19, SPECIES_PINECO,
+     21, 21, SPECIES_PINECO,
+     27, 27, SPECIES_PINECO,
+     21, 21, SPECIES_PINECO,
+     27, 27, SPECIES_PINECO,
+
+
+AlteringCave3_LandMonsInfo =  7, gAlteringCave3_LandMons 
+
+
+AlteringCave4_LandMons
+
+     16, 16, SPECIES_HOUNDOUR,
+     18, 18, SPECIES_HOUNDOUR,
+     14, 14, SPECIES_HOUNDOUR,
+     20, 20, SPECIES_HOUNDOUR,
+     16, 16, SPECIES_HOUNDOUR,
+     18, 18, SPECIES_HOUNDOUR,
+     22, 22, SPECIES_HOUNDOUR,
+     12, 12, SPECIES_HOUNDOUR,
+     14, 14, SPECIES_HOUNDOUR,
+     20, 20, SPECIES_HOUNDOUR,
+     14, 14, SPECIES_HOUNDOUR,
+     20, 20, SPECIES_HOUNDOUR,
+
+
+AlteringCave4_LandMonsInfo =  7, gAlteringCave4_LandMons 
+
+
+AlteringCave5_LandMons
+
+     10, 10, SPECIES_TEDDIURSA,
+     12, 12, SPECIES_TEDDIURSA,
+     8, 8, SPECIES_TEDDIURSA,
+     14, 14, SPECIES_TEDDIURSA,
+     10, 10, SPECIES_TEDDIURSA,
+     12, 12, SPECIES_TEDDIURSA,
+     16, 16, SPECIES_TEDDIURSA,
+     6, 6, SPECIES_TEDDIURSA,
+     8, 8, SPECIES_TEDDIURSA,
+     14, 14, SPECIES_TEDDIURSA,
+     8, 8, SPECIES_TEDDIURSA,
+     14, 14, SPECIES_TEDDIURSA,
+
+
+AlteringCave5_LandMonsInfo =  7, gAlteringCave5_LandMons 
+
+
+AlteringCave6_LandMons
+
+     22, 22, SPECIES_AIPOM,
+     24, 24, SPECIES_AIPOM,
+     20, 20, SPECIES_AIPOM,
+     26, 26, SPECIES_AIPOM,
+     22, 22, SPECIES_AIPOM,
+     24, 24, SPECIES_AIPOM,
+     28, 28, SPECIES_AIPOM,
+     18, 18, SPECIES_AIPOM,
+     20, 20, SPECIES_AIPOM,
+     26, 26, SPECIES_AIPOM,
+     20, 20, SPECIES_AIPOM,
+     26, 26, SPECIES_AIPOM,
+
+
+AlteringCave6_LandMonsInfo =  7, gAlteringCave6_LandMons 
+
+
+AlteringCave7_LandMons
+
+     22, 22, SPECIES_SHUCKLE,
+     24, 24, SPECIES_SHUCKLE,
+     20, 20, SPECIES_SHUCKLE,
+     26, 26, SPECIES_SHUCKLE,
+     22, 22, SPECIES_SHUCKLE,
+     24, 24, SPECIES_SHUCKLE,
+     28, 28, SPECIES_SHUCKLE,
+     18, 18, SPECIES_SHUCKLE,
+     20, 20, SPECIES_SHUCKLE,
+     26, 26, SPECIES_SHUCKLE,
+     20, 20, SPECIES_SHUCKLE,
+     26, 26, SPECIES_SHUCKLE,
+
+
+AlteringCave7_LandMonsInfo =  7, gAlteringCave7_LandMons 
+
+
+AlteringCave8_LandMons
+
+     22, 22, SPECIES_STANTLER,
+     24, 24, SPECIES_STANTLER,
+     20, 20, SPECIES_STANTLER,
+     26, 26, SPECIES_STANTLER,
+     22, 22, SPECIES_STANTLER,
+     24, 24, SPECIES_STANTLER,
+     28, 28, SPECIES_STANTLER,
+     18, 18, SPECIES_STANTLER,
+     20, 20, SPECIES_STANTLER,
+     26, 26, SPECIES_STANTLER,
+     20, 20, SPECIES_STANTLER,
+     26, 26, SPECIES_STANTLER,
+
+
+AlteringCave8_LandMonsInfo =  7, gAlteringCave8_LandMons 
+
+
+AlteringCave9_LandMons
+
+     22, 22, SPECIES_SMEARGLE,
+     24, 24, SPECIES_SMEARGLE,
+     20, 20, SPECIES_SMEARGLE,
+     26, 26, SPECIES_SMEARGLE,
+     22, 22, SPECIES_SMEARGLE,
+     24, 24, SPECIES_SMEARGLE,
+     28, 28, SPECIES_SMEARGLE,
+     18, 18, SPECIES_SMEARGLE,
+     20, 20, SPECIES_SMEARGLE,
+     26, 26, SPECIES_SMEARGLE,
+     20, 20, SPECIES_SMEARGLE,
+     26, 26, SPECIES_SMEARGLE,
+
+
+AlteringCave9_LandMonsInfo =  7, gAlteringCave9_LandMons 
+
+
+MeteorFalls_StevensCave_LandMons
+
+     33, 33, SPECIES_NOIBAT,
+     35, 35, SPECIES_NOIBAT,
+     33, 33, SPECIES_NOIBAT,
+     35, 35, SPECIES_SOLROCK,
+     33, 33, SPECIES_SOLROCK,
+     37, 37, SPECIES_SOLROCK,
+     35, 35, SPECIES_NOIBAT,
+     39, 39, SPECIES_SOLROCK,
+     38, 38, SPECIES_NOIBAT,
+     40, 40, SPECIES_NOIBAT,
+     38, 38, SPECIES_NOIBAT,
+     40, 40, SPECIES_NOIBAT,
+
+
+MeteorFalls_StevensCave_LandMonsInfo =  10, gMeteorFalls_StevensCave_LandMons 
+
+
+TerrakionsCave_LandMons
+
+     38, 38, SPECIES_MEDICHAM,
+     35, 35, SPECIES_BEWEAR,
+     40, 40, SPECIES_GURDURR,
+     40, 40, SPECIES_THROH,
+     41, 41, SPECIES_SAWK,
+     36, 36, SPECIES_SCRAGGY,
+     38, 38, SPECIES_MIENFOO,
+     42, 42, SPECIES_PURUGLY,
+     38, 38, SPECIES_RIOLU,
+     43, 43, SPECIES_PIGNITE,
+     44, 44, SPECIES_TOXICROAK,
+     45, 45, SPECIES_HITMONCHAN,
+
+
+TerrakionsCave_LandMonsInfo =  10, gTerrakionsCave_LandMons 
+
+
+TerrakionsCave_F1_10_LandMons
+
+     38, 38, SPECIES_MEDICHAM,
+     35, 35, SPECIES_BEWEAR,
+     40, 40, SPECIES_GURDURR,
+     40, 40, SPECIES_THROH,
+     41, 41, SPECIES_SAWK,
+     36, 36, SPECIES_SCRAGGY,
+     38, 38, SPECIES_MIENFOO,
+     42, 42, SPECIES_PURUGLY,
+     38, 38, SPECIES_RIOLU,
+     43, 43, SPECIES_PIGNITE,
+     44, 44, SPECIES_TOXICROAK,
+     45, 45, SPECIES_HITMONLEE,
+
+
+TerrakionsCave_F1_10_LandMonsInfo =  10, gTerrakionsCave_F1_10_LandMons 
+
+
+TerrakionsCave_F20_LandMons
+
+     38, 38, SPECIES_MEDICHAM,
+     35, 35, SPECIES_BEWEAR,
+     40, 40, SPECIES_GURDURR,
+     40, 40, SPECIES_THROH,
+     41, 41, SPECIES_SAWK,
+     36, 36, SPECIES_SCRAGGY,
+     38, 38, SPECIES_MIENFOO,
+     42, 42, SPECIES_PURUGLY,
+     38, 38, SPECIES_RIOLU,
+     43, 43, SPECIES_PIGNITE,
+     44, 44, SPECIES_TOXICROAK,
+     45, 45, SPECIES_PRIMEAPE,
+
+
+TerrakionsCave_F20_LandMonsInfo =  10, gTerrakionsCave_F20_LandMons 
+TerrakionsCave_F20_WaterMons
+
+     5, 35, SPECIES_SLOWPOKE,
+     28, 35, SPECIES_KINGLER,
+     34, 45, SPECIES_STARYU,
+     25, 35, SPECIES_OMANYTE,
+     25, 35, SPECIES_KABUTO,
+
