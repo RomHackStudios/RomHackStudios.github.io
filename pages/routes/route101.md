@@ -23,28 +23,28 @@ TABLE OF CONTENTS
 
 ## Wild Encounters
 
-### Grass <img src="https://cdn.discordapp.com/attachments/1069560427312332843/1091325360534212618/RSE_Grass.png">
+### Grass <img src="https://archives.bulbagarden.net/media/upload/3/33/RSE_Grass.png">
 
 <details open markdown="block">
 
 | Image                                                                                      | Pokemon             | Levels | Rate|
 |:-------------------------------------------------------------------------------------------|:--------------------|:-------|:----|
-| <img src="https://img.pokemondb.net/sprites/sword-shield/icon/skiddo.png">                 | Skiddo              | 2-2    | 20% |  
-| <img src="https://img.pokemondb.net/sprites/sword-shield/icon/blipbug.png">                | Blipbug             | 2-2    | 20% |  
-| <img src="https://img.pokemondb.net/sprites/sword-shield/icon/caterpie.png">               | Caterpie            | 3-3    | 10% |  
-| <img src="https://img.pokemondb.net/sprites/sword-shield/icon/grubbin.png">                | Grubbin             | 3-3    | 10% |  
-| <img src="https://img.pokemondb.net/sprites/sword-shield/icon/skiddo.png">                 | Skiddo              | 3-3    | 10% |  
-| <img src="https://img.pokemondb.net/sprites/sword-shield/icon/nickit.png">                 | Nickit              | 3-3    | 10% |  
-| <img src="https://img.pokemondb.net/sprites/sword-shield/icon/wooloo.png">                 | Wooloo              | 3-3    | 5%  |  
-| <img src="https://img.pokemondb.net/sprites/sword-shield/icon/hoothoot.png">               | Hoothoot            | 3-3    | 5%  |  
+| <img src="https://img.pokemondb.net/sprites/sword-shield/icon/wurmple.png">                | wurmple             | 2-2    | 20% |  
+| <img src="https://img.pokemondb.net/sprites/sword-shield/icon/blipbug.png">                | Tarountula          | 2-2    | 20% |  
+| <img src="https://img.pokemondb.net/sprites/sword-shield/icon/caterpie.png">               | Starly              | 3-3    | 10% |  
+| <img src="https://img.pokemondb.net/sprites/sword-shield/icon/grubbin.png">                | Skiddo              | 3-3    | 10% |  
+| <img src="https://img.pokemondb.net/sprites/sword-shield/icon/skiddo.png">                 | Caterpie            | 3-3    | 10% |  
+| <img src="https://img.pokemondb.net/sprites/sword-shield/icon/nickit.png">                 | Buneary             | 3-3    | 10% |  
+| <img src="https://img.pokemondb.net/sprites/sword-shield/icon/wooloo.png">                 | Pawmi               | 3-3    | 5%  |  
+| <img src="https://img.pokemondb.net/sprites/sword-shield/icon/hoothoot.png">               | Grubbin             | 3-3    | 5%  |  
 | <img src="https://img.pokemondb.net/sprites/sword-shield/icon/zigzagoon.png">              | Zigzagoon           | 3-3    | 4%  |  
-| <img src="https://img.pokemondb.net/sprites/sword-shield/icon/absol.png">                  | Absol               | 3-3    | 4%  |  
-| <img src="https://img.pokemondb.net/sprites/sword-shield/icon/grookey.png">                | Grookey             | 3-3    | 1%  |
-| <img src="https://img.pokemondb.net/sprites/sword-shield/icon/zigzagoon-galarian.png">     | Zigzagoon-Galarian  | 3-3    | 1%  |  
+| <img src="https://img.pokemondb.net/sprites/sword-shield/icon/absol.png">                  | Hoothoot            | 3-3    | 4%  |  
+| <img src="https://img.pokemondb.net/sprites/sword-shield/icon/grookey.png">                | Zigzagoon-Galarian  | 3-3    | 1%  |
+| <img src="https://img.pokemondb.net/sprites/sword-shield/icon/zigzagoon-galarian.png">     | Treecko             | 3-5    | 1%  |  
 
 </details>
 
-### Hidden <img src="https://cdn.discordapp.com/attachments/1069560427312332843/1091325360534212618/RSE_Grass.png">
+### Hidden <img src="https://archives.bulbagarden.net/media/upload/6/65/Bag_Holo_Caster_f_Sprite.png">
 
 Hidden pokemon are on the bottom of the Dexnav and will only appear once you have activated the fuction by talking to a scientist in Devoncorp. After that you can encounter extra pokemon after having already seen them before.
 
@@ -68,7 +68,7 @@ Hidden pokemon are on the bottom of the Dexnav and will only appear once you hav
 | Image                                                                                      | Pokemon             | Levels | Details         |
 |:-------------------------------------------------------------------------------------------|:--------------------|:-------|:----------------|
 | <img src="https://img.pokemondb.net/sprites/sword-shield/icon/bagon.png">                  | Bagon               |  5     | Starter Pokémon |
-| <img src="https://img.pokemondb.net/sprites/sword-shield/icon/jangmo-o.png">                | JangmoO            |  5     | Starter Pokémon |
+| <img src="https://img.pokemondb.net/sprites/sword-shield/icon/jangmo-o.png">               | JangmoO             |  5     | Starter Pokémon |
 | <img src="https://img.pokemondb.net/sprites/sword-shield/icon/goomy.png">                  | Goomy               |  5     | Starter Pokémon |
 
 </details>
