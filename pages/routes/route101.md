@@ -29,18 +29,18 @@ TABLE OF CONTENTS
 
 | Image                                                                                      | Pokemon             | Levels | Rate|
 |:-------------------------------------------------------------------------------------------|:--------------------|:-------|:----|
-| <img src="https://img.pokemondb.net/sprites/sword-shield/icon/wurmple.png">                | wurmple             | 2-2    | 20% |  
-| <img src="https://img.pokemondb.net/sprites/sword-shield/icon/blipbug.png">                | Tarountula          | 2-2    | 20% |  
-| <img src="https://img.pokemondb.net/sprites/sword-shield/icon/caterpie.png">               | Starly              | 3-3    | 10% |  
-| <img src="https://img.pokemondb.net/sprites/sword-shield/icon/grubbin.png">                | Skiddo              | 3-3    | 10% |  
-| <img src="https://img.pokemondb.net/sprites/sword-shield/icon/skiddo.png">                 | Caterpie            | 3-3    | 10% |  
-| <img src="https://img.pokemondb.net/sprites/sword-shield/icon/nickit.png">                 | Buneary             | 3-3    | 10% |  
-| <img src="https://img.pokemondb.net/sprites/sword-shield/icon/wooloo.png">                 | Pawmi               | 3-3    | 5%  |  
-| <img src="https://img.pokemondb.net/sprites/sword-shield/icon/hoothoot.png">               | Grubbin             | 3-3    | 5%  |  
+| <img src="https://img.pokemondb.net/sprites/sword-shield/icon/wurmple.png">                | Wurmple             | 2-2    | 20% |  
+| <img src="https://img.pokemondb.net/sprites/sword-shield/icon/tarountula.png">             | Tarountula          | 2-2    | 20% |  
+| <img src="https://img.pokemondb.net/sprites/sword-shield/icon/starly.png">                 | Starly              | 3-3    | 10% |  
+| <img src="https://img.pokemondb.net/sprites/sword-shield/icon/skiddo.png">                 | Skiddo              | 3-3    | 10% |  
+| <img src="https://img.pokemondb.net/sprites/sword-shield/icon/caterpie.png">               | Caterpie            | 3-3    | 10% |  
+| <img src="https://img.pokemondb.net/sprites/sword-shield/icon/buneary.png">                | Buneary             | 3-3    | 10% |  
+| <img src="https://img.pokemondb.net/sprites/sword-shield/icon/pawmi.png">                  | Pawmi               | 3-3    | 5%  |  
+| <img src="https://img.pokemondb.net/sprites/sword-shield/icon/grubbin.png">                | Grubbin             | 3-3    | 5%  |  
 | <img src="https://img.pokemondb.net/sprites/sword-shield/icon/zigzagoon.png">              | Zigzagoon           | 3-3    | 4%  |  
-| <img src="https://img.pokemondb.net/sprites/sword-shield/icon/absol.png">                  | Hoothoot            | 3-3    | 4%  |  
-| <img src="https://img.pokemondb.net/sprites/sword-shield/icon/grookey.png">                | Zigzagoon-Galarian  | 3-3    | 1%  |
-| <img src="https://img.pokemondb.net/sprites/sword-shield/icon/zigzagoon-galarian.png">     | Treecko             | 3-5    | 1%  |  
+| <img src="https://img.pokemondb.net/sprites/sword-shield/icon/hoothoot.png">               | Hoothoot            | 3-3    | 4%  |  
+| <img src="https://img.pokemondb.net/sprites/sword-shield/icon/zigzagoon-galarian.png">     | Zigzagoon-Galarian  | 3-3    | 1%  |
+| <img src="https://img.pokemondb.net/sprites/sword-shield/icon/treecko.png">                | Treecko             | 3-5    | 1%  |  
 
 </details>
 
