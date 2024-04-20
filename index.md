@@ -10,7 +10,7 @@ image: /v1.0.9.png
 Thank you for choosing Pokemon Emerald Crest! You can download the latest version of the game below.
 
 <p align="center">
-<img src="https://github.com/RomHackStudios/RomHackStudios.github.io/blob/main/v1.0.9.png?raw=true" />
+<img src="https://raw.githubusercontent.com/RomHackStudios/RomHackStudios.github.io/main/data/Adobe_Express_20240419_2349110_1.png" />
 </p>
 
 [Create Spotlight Events](https://romhackstudios.github.io/pages/spotlight.html){: .btn .btn-green } [Docs](https://romhackstudios.github.io/pages/docs.html){: .btn .btn-purple }
