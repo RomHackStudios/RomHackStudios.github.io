@@ -66,7 +66,7 @@ Thank you for choosing Pokemon Emerald Crest! You can download the latest versio
         width: 0%;
       }
       100% {
-        width: 8%;
+        width: 28%;
       }
     }
   </style>
