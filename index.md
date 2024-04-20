@@ -31,7 +31,7 @@ Thank you for choosing Pokemon Emerald Crest! You can download the latest versio
 ## **v1.1**
 {: .d-inline-block }
 
-8% complete
+28% complete
 {: .label .label-red }
 
 <html>
