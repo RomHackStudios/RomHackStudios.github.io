@@ -120,7 +120,7 @@ What's New!
 - Added new spotlight events
 - Disabled Match calls during dexnav search
 - Updated portal legends shiny odds to 1/400
-- Luxuary ball now catches shiny pokemon without fail
+- Luxury ball now catches shiny pokemon without fail
 - Fixed some minor bugs and performance issues
 - And a few more bug fixes and improvements
 
