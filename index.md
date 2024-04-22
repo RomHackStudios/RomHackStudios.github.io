@@ -100,7 +100,7 @@ New Release
 Bug Fix
 {: .label .label-yellow }
 
-[Stable v1.0.9.6.3](https://ko-fi.com/api/file-upload/7c608b13-60e8-458b-b19f-a4abb2c0c9f7/download?transactionId=97b68c68-4d4f-428e-8bdd-f891eaac717c){: .btn .btn-purple .mr-2 } [v1.0.9.6 EA](https://romhackstudios.github.io/pages/early-access.html){: .btn .btn-blue }
+[Stable v1.0.9.6.4](https://mega.nz/file/hechgQBC#SVqd6XnMqeLIW17jHk_GXLyucHD_kfTePP6SeoTNPZs){: .btn .btn-purple .mr-2 } [v1.0.9.6 EA](https://romhackstudios.github.io/pages/early-access.html){: .btn .btn-blue }
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4829462676030982"
      crossorigin="anonymous"></script>
@@ -117,12 +117,12 @@ Bug Fix
 ```
 What's New!
 
-- Fixed Rapid Spin not increasing speed
-- Fixed Gimmighoul Roaming form not evolving
-- Fixed Hoopa Portal Teleporting into a Wall
-- Fixed Claw Fossil not regenerating
-- Fixed OW Bosses freezing
-- And a few more minor bug fixes and improvements
+- Added new spotlight events
+- Disabled Match calls during dexnav search
+- Updated portal legends shiny odds to 1/400
+- Luxuary ball now catches shiny pokemon without fail
+- Fixed some minor bugs and performance issues
+- And a few more bug fixes and improvements
 
 ```
 
