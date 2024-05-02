@@ -87,7 +87,7 @@ Once you have downloaded the emulator, follow these steps to play Pokemon Emeral
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
-<iframe src="https://youtu.be/AefGC3MX1Ck?si=KYwYj1pQTA-gGXaL" title="How To Patch"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/AefGC3MX1Ck?si=FMHKIESF9RU_LAA1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 # How to Update
 
 - Backup Your Save File:
