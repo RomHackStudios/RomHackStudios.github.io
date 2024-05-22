@@ -52,7 +52,7 @@
       let result = ISO_RANDOMIZE1(value) >>> 16;
       result = Math.abs(result);
 
-      if (result < 10000) {
+      if (result <= 9999) {
         result = result * 10;
       }
       return result;
