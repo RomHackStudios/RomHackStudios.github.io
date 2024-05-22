@@ -53,12 +53,14 @@
       result = Math.abs(result);
 
       if (result <= 9999) {
-        result = result * 10;
+        if (result <= 999) {
+         result *= 100
+        } 
+        else {
+        result *= 10;
+        }
       }
-      
-      if (result <= 9999) {
-        result = result * 10;
-      }
+    
       return result;
     }
 
