@@ -31,7 +31,7 @@ Thank you for choosing Pokemon Emerald Crest! You can download the latest versio
 ## **v1.1**
 {: .d-inline-block }
 
-28% complete
+32% complete
 {: .label .label-red }
 
 <html>
@@ -66,7 +66,7 @@ Thank you for choosing Pokemon Emerald Crest! You can download the latest versio
         width: 0%;
       }
       100% {
-        width: 28%;
+        width: 32%;
       }
     }
   </style>
@@ -100,7 +100,7 @@ New Release
 Bug Fix
 {: .label .label-yellow }
 
-[Stable v1.0.9.6.4](https://mega.nz/file/hechgQBC#SVqd6XnMqeLIW17jHk_GXLyucHD_kfTePP6SeoTNPZs){: .btn .btn-purple .mr-2 } [v1.0.9.6 EA](https://romhackstudios.github.io/pages/early-access.html){: .btn .btn-blue }
+[Stable v1.0.9.6.5](https://mega.nz/file/BT8RmYaD#78eelZBXvs14qsw5xuP8ghaes9LbaeGu5MnP_KtM1q8){: .btn .btn-purple .mr-2 } [v1.0.9.6 EA](https://romhackstudios.github.io/pages/early-access.html){: .btn .btn-blue }
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4829462676030982"
      crossorigin="anonymous"></script>
