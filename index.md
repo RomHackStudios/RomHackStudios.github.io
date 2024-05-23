@@ -135,7 +135,7 @@ What's New!
 - Fixed being able to surf on land at Route 105
 - Fixed Fossil Regeneration
 - Fixed broken spotlight codes
-- Fixed trainer level sacling bugfix
+- Fixed trainer level scaling bugfix
 - Fixed some minor bugs and performance issues
 - And a few more bug fixes and improvements
 
