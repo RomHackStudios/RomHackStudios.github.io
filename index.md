@@ -117,10 +117,25 @@ Bug Fix
 ```
 What's New!
 
-- Added new spotlight events
-- Disabled Match calls during dexnav search
-- Updated portal legends shiny odds to 1/400
-- Luxury ball now catches shiny pokemon without fail
+- Added missing legends in Hoopa portal
+- Added Galar Yamask evolution method
+- Added Aurora ticket
+- Added Inverse type effectiveness
+- Updated wild encounters (check out Altering Cave)
+- Made Flash usable without learning and fixed some duplication bug
+- Enabled Z-moves in Battle Frontier, except for Battle Arena
+- Disabled Pokevial usage during the Elite Four
+- Removed the Aroma Lady from Route 123 (temporary fix)
+- Fixed Held Item duplicating on Nuzlocke Death
+- Fixed Sap Sipper not blocking Bullet Seed
+- Fixed Neutralizing Gas softlocking game mid-battle
+- Fixed item usage in double battles
+- Fixed random loss in Battle Frontier multibattle
+- Fixed Hoopa portal causing a crash
+- Fixed being able to surf on land at Route 105
+- Fixed Fossil Regeneration
+- Fixed broken spotlight codes
+- Fixed trainer level sacling bugfix
 - Fixed some minor bugs and performance issues
 - And a few more bug fixes and improvements
 
