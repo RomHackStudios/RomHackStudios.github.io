@@ -100,7 +100,7 @@ New Release
 Bug Fix
 {: .label .label-yellow }
 
-[Stable v1.0.9.6.5](https://mega.nz/file/BT8RmYaD#78eelZBXvs14qsw5xuP8ghaes9LbaeGu5MnP_KtM1q8){: .btn .btn-purple .mr-2 } [v1.0.9.6 EA](https://romhackstudios.github.io/pages/early-access.html){: .btn .btn-blue }
+[Stable v1.0.9.6.6](https://mega.nz/file/9PVEgTIT#vC6yQDHS32DzlrcLvgj48bGoFMUb6DVZbkhgJqNXUc8){: .btn .btn-purple .mr-2 } [v1.0.9.6 EA](https://romhackstudios.github.io/pages/early-access.html){: .btn .btn-blue }
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4829462676030982"
      crossorigin="anonymous"></script>
@@ -115,8 +115,12 @@ Bug Fix
 </script>
 
 ```
-What's New!
+What's New! 
 
+v1.0.9.6.6
+- Fixed a critical bug with Nuzlocke mode
+
+v1.0.9.6.5
 - Added missing legends in Hoopa portal
 - Added Galar Yamask evolution method
 - Added Aurora ticket
