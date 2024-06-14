@@ -10,19 +10,6 @@ To play Pokemon Emerald Crest, you will need to have a Game Boy Advance emulator
 
 Once you have downloaded the emulator, follow these steps to play Pokemon Emerald Crest:
 
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4829462676030982"
-     crossorigin="anonymous"></script>
-<!-- RHS howtopatch 1 -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-4829462676030982"
-     data-ad-slot="3429893360"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
 ## PC
 
 - Download the Pokemon Emerald Crest patch file from [our releases page](https://romhackstudios.github.io/).
@@ -41,19 +28,6 @@ Once you have downloaded the emulator, follow these steps to play Pokemon Emeral
 
 {: .note }
 > The patch file should end with `.bps` or `.ups` after extraction. If it doesn't, you may have missed a step. Also, after patching the game should end with `.gba`, if it ends with `.txt`, then just remove `.txt` by renaming the file.
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4829462676030982"
-     crossorigin="anonymous"></script>
-<!-- RHS Howtopatch 2 -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-4829462676030982"
-     data-ad-slot="6487301540"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
 
 ## Android/IOS
 
@@ -75,18 +49,6 @@ Once you have downloaded the emulator, follow these steps to play Pokemon Emeral
 {: .note }
 > The patch file should end with `.bps` or `.ups` after extraction. If it doesn't, you may have missed a step. Also, after patching the game should end with `.gba`, if it ends with `.txt`, then just remove `.txt` by renaming the file.
 
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4829462676030982"
-     crossorigin="anonymous"></script>
-<!-- RHS Howtoptach 3 -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-4829462676030982"
-     data-ad-slot="2728800187"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/AefGC3MX1Ck?si=FMHKIESF9RU_LAA1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 # How to Update
 
@@ -110,19 +72,6 @@ Once you have downloaded the emulator, follow these steps to play Pokemon Emeral
 
   - Now you can open the newly patched game ROM (e.g., `EmeraldCrestv1.0.7.gba`) in your emulato.
    Load your renamed save file (e.g., `EmeraldCrestv1.0.7.sav`) to continue playing from where you left off.
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4829462676030982"
-     crossorigin="anonymous"></script>
-<!-- RHS howtopatch 4 -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-4829462676030982"
-     data-ad-slot="5864485014"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
 
 ## Support
 
