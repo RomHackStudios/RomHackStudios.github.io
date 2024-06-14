@@ -11309,62 +11309,62 @@
               {
                 "min_level": 10,
                 "max_level": 10,
-                "species": "SPECIES_ZUBAT"
+                "species": "SPECIES_MELTAN"
               },
               {
                 "min_level": 12,
                 "max_level": 12,
-                "species": "SPECIES_ZUBAT"
+                "species": "SPECIES_CROAGUNK"
               },
               {
                 "min_level": 8,
                 "max_level": 8,
-                "species": "SPECIES_ZUBAT"
+                "species": "SPECIES_FERROSEED"
               },
               {
                 "min_level": 14,
                 "max_level": 14,
-                "species": "SPECIES_ZUBAT"
+                "species": "SPECIES_LILLIPUP"
               },
               {
                 "min_level": 10,
                 "max_level": 10,
-                "species": "SPECIES_ZUBAT"
+                "species": "SPECIES_TOGEPI"
               },
               {
                 "min_level": 12,
                 "max_level": 12,
-                "species": "SPECIES_ZUBAT"
+                "species": "SPECIES_SEEDOT"
               },
               {
                 "min_level": 16,
                 "max_level": 16,
-                "species": "SPECIES_ZUBAT"
+                "species": "SPECIES_PIKIPEK"
               },
               {
-                "min_level": 6,
-                "max_level": 6,
-                "species": "SPECIES_ZUBAT"
+                "min_level": 40,
+                "max_level": 40,
+                "species": "SPECIES_SANDY_SHOCKS"
               },
               {
-                "min_level": 8,
-                "max_level": 8,
-                "species": "SPECIES_ZUBAT"
+                "min_level": 40,
+                "max_level": 40,
+                "species": "SPECIES_SCREAM_TAIL"
               },
               {
-                "min_level": 14,
-                "max_level": 14,
-                "species": "SPECIES_ZUBAT"
+                "min_level": 40,
+                "max_level": 40,
+                "species": "SPECIES_BRUTE_BONNET"
               },
               {
-                "min_level": 8,
-                "max_level": 8,
-                "species": "SPECIES_ZUBAT"
+                "min_level": 40,
+                "max_level": 40,
+                "species": "SPECIES_FLUTTER_MANE"
               },
               {
-                "min_level": 14,
-                "max_level": 14,
-                "species": "SPECIES_ZUBAT"
+                "min_level": 40,
+                "max_level": 40,
+                "species": "SPECIES_SLITHER_WING"
               }
             ]
           }
