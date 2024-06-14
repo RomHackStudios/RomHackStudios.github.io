@@ -15,19 +15,6 @@ Thank you for choosing Pokemon Emerald Crest! You can download the latest versio
 
 [Create Spotlight Events](https://romhackstudios.github.io/pages/spotlight.html){: .btn .btn-green } [Docs](https://romhackstudios.github.io/pages/docs.html){: .btn .btn-purple }
 
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4829462676030982"
-     crossorigin="anonymous"></script>
-<!-- RHS main side -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-4829462676030982"
-     data-ad-slot="1990433582"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
 ## **v1.1**
 {: .d-inline-block }
 
@@ -102,18 +89,6 @@ Bug Fix
 
 [Stable v1.0.9.6.6](https://mega.nz/file/9PVEgTIT#vC6yQDHS32DzlrcLvgj48bGoFMUb6DVZbkhgJqNXUc8){: .btn .btn-purple .mr-2 } [v1.0.9.6 EA](https://romhackstudios.github.io/pages/early-access.html){: .btn .btn-blue }
 
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4829462676030982"
-     crossorigin="anonymous"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-4829462676030982"
-     data-ad-slot="4808168615"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
 ```
 What's New! 
 
@@ -171,19 +146,6 @@ Major Update
 ## Installation Instructions
 
 To play Pokemon Emerald Crest, you will need to have a Game Boy Advance emulator installed on your device. We recommend using [Mgba](https://mgba.io/downloads.html) for Windows, Linux, and Mac, or [My Boy!](https://play.google.com/store/apps/details?id=com.fastemulator.gba) for Android devices.
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4829462676030982"
-     crossorigin="anonymous"></script>
-<!-- RHS main INstructions -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-4829462676030982"
-     data-ad-slot="6247628399"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
 
 Once you have downloaded the emulator, follow these steps in [How To Patch](https://romhackstudios.github.io/pages/howtopatch.html) to play Pokemon Emerald Crest
 
