@@ -14,19 +14,6 @@ nav_order: 5
 
 ![new spotlight](https://cdn.discordapp.com/attachments/1179999589856718879/1195708660207341618/Adobe_Express_20240113_1803230_1.png?ex=65b4f977&is=65a28477&hm=a46f9971a157ad0ffbdb05768a7415bc28758473ba21afb0b3cb9ff02c5023bd&)
 
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4829462676030982"
-     crossorigin="anonymous"></script>
-<!-- spotlight -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-4829462676030982"
-     data-ad-slot="3933962848"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
 <iframe src="https://romhackstudios.github.io/pages/spotlight-gen.html" width="100%" height="400px" frameBorder="0" style="border: 0;"></iframe>
 
 ## How To Use
@@ -34,16 +21,3 @@ nav_order: 5
 An example gif showcasing how to redeem using the ticked id generated for Charmander
 
 ![emc-1 0 9 5 RHS](https://github.com/RomHackStudios/RomHackStudios.github.io/assets/109757010/bf13e62b-e9f7-40d7-99a7-ca434a80f589)
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4829462676030982"
-     crossorigin="anonymous"></script>
-<!-- spotlight -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-4829462676030982"
-     data-ad-slot="3933962848"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
