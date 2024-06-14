@@ -23,18 +23,6 @@ Early Access
 {: .warning }
 > This update will break your old save files and does not guarantee any support for future EA releases.
 
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4829462676030982"
-     crossorigin="anonymous"></script>
-<!-- RHS EA 1 -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-4829462676030982"
-     data-ad-slot="4982648182"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
 ```
 What's New:
 - Added Dynamax [does not include Gigantamaxing]
@@ -43,19 +31,6 @@ What's New:
 
 {: .warning }
 > This is an `Early Access version`, which means it is still a work in progress. As such, it may contain bugs, glitches, or unfinished features. Your feedback and bug reports are immensely valuable in helping us improve the game. Please report any issues you encounter on our [discord server].
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4829462676030982"
-     crossorigin="anonymous"></script>
-<!-- RHS EA 2 -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-4829462676030982"
-     data-ad-slot="9708361259"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
 
 ## Early Access Details
 
@@ -67,37 +42,11 @@ What's New:
 
 We appreciate your understanding and support as we work towards delivering the best possible gaming experience. Your participation in the `Early Access version` helps shape the final release and ensures that Pokemon Emerald Crest meets the expectations of our dedicated players.
 
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4829462676030982"
-     crossorigin="anonymous"></script>
-<!-- RHS EA 2 -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-4829462676030982"
-     data-ad-slot="9708361259"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
 ## Installation Instructions
 
 To play Pokemon Emerald Crest, you will need to have a Game Boy Advance emulator installed on your device. We recommend using [Mgba](https://mgba.io/downloads.html) for Windows, Linux, and Mac, or [My Boy!](https://play.google.com/store/apps/details?id=com.fastemulator.gba) for Android devices.
 
 Once you have downloaded the emulator, follow the steps in our [How To Patch](https://romhackstudios.github.io/pages/howtopatch.html) guide to apply the patch and play Pokemon Emerald Crest.
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4829462676030982"
-     crossorigin="anonymous"></script>
-<!-- RHS EA 2 -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-4829462676030982"
-     data-ad-slot="9708361259"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
 
 ## Support
 
