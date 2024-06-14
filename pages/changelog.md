@@ -6,19 +6,6 @@ nav_exclude: true
 
 ## [Emerald Crest v1.0.9](https://download1583.mediafire.com/lrtcbl6a2pfg3zpwgwXqXDvtNOXRQQ8FPJxNe5DmqJlpn070DwFbkfdFq3CO8cBY9_lIlOTPZHcXMrjyiFag0NoNZpH2qkKQjl7CkNfoVcs0H-acNYr0YL0sz78YMAlBsmOIvmRbzZkn_XtXzRgwGK0EjRZA5n7spAJgJJ_AwzX_Buj7/uoe6kyv7ouq6irq/Crest_v1.0.9.zip)
 
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4829462676030982"
-     crossorigin="anonymous"></script>
-<!-- RHS Changelog -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-4829462676030982"
-     data-ad-slot="5581413983"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
 ```
 What's New!
 
@@ -64,19 +51,6 @@ What's New!
 keep an eye out for the roaming Ho0pa! (Hoopa Loves to lead the party!)
 ```
 
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4829462676030982"
-     crossorigin="anonymous"></script>
-<!-- RHS Changelog -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-4829462676030982"
-     data-ad-slot="5581413983"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
 ## [Emerald Crest v1.0.8.9 Early Access UPS Patch](https://download942.mediafire.com/xkhetmk23f0g9sH23AGlF9HTppHmYBkr3Sg3iuq6-buOCj1cMhmqcdgyzKcgg0maw_cLStSskDciIs7zsxsIedUSF97xdm6o2R249MZRWH2PBqjnsB5v1sEcUk3l4VKt1g-ltC1PkyLt72huNTF6thm-aAHpoAutWic1Y4eKIn4312hi/2dycqxta23dyc95/EMCrestv1.0.8.9EA.zip)
 
 ```
@@ -86,20 +60,6 @@ What's New!
 - Added Option to enable/disable followers
 - Added Gen 7 followers 
 ```
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4829462676030982"
-     crossorigin="anonymous"></script>
-<!-- RHS Changelog -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-4829462676030982"
-     data-ad-slot="5581413983"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
 ## [Emerald Crest v1.0.8.8 Early Access UPS Patch](https://download1072.mediafire.com/fb9v9b1g0wagqN_SUTCzIIzl7vjZ3Hgut47TrvGGGYmMuLR8LcTZ8hgpGNeuoSBkLVpYsNglrMak3cOzlpTNcc-St5bqgepHdFWtQUPte0BJHEC-wLPVn3JeGkfLfbW0AytkTNJnPcnS1EmxcI2B4KBd4Gw3NF1ntiHSksDvQAEqt0Qn/97d0oip3vmwtds2/EMCrestV1.0.8.8EA.zip)
 
 ```
@@ -131,19 +91,6 @@ What's New!
 {: .warning }
 > This is an `Early Access version`, which means it is still a work in progress. As such, it may contain bugs, glitches, or unfinished features. Your feedback and bug reports are immensely valuable in helping us improve the game. Please report any issues you encounter on our [discord server].
 
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4829462676030982"
-     crossorigin="anonymous"></script>
-<!-- RHS Changelog -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-4829462676030982"
-     data-ad-slot="5581413983"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
 ## Early Access Details
 
 - **Frequency of Updates:** Updates for the `Early Access version` may occur frequently, ranging from daily to weekly releases. However, please note that updates are not guaranteed and may occur less frequently or not at all during certain periods.
@@ -154,18 +101,6 @@ What's New!
 
 We appreciate your understanding and support as we work towards delivering the best possible gaming experience. Your participation in the `Early Access version` helps shape the final release and ensures that Pokemon Emerald Crest meets the expectations of our dedicated players.
 
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4829462676030982"
-     crossorigin="anonymous"></script>
-<!-- RHS Changelog -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-4829462676030982"
-     data-ad-slot="5581413983"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
 ## [Pokemon Emerald Crest v1.0.8.6 UPS Patch](https://ko-fi.com/api/file-upload/91c1350d-3ad3-4162-951d-ab35968ba302/download?transactionId=9e2882f1-5a6a-4cc3-99df-7b19257d1213)
 
 > `v1.0.9` is taking a bit longer than expected, so here's a small bug-fix release.
@@ -207,18 +142,6 @@ What's New!
 🔸Fixed several other bugs 
 🔸And a lot of minor improvements
 ```
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4829462676030982"
-     crossorigin="anonymous"></script>
-<!-- RHS Changelog -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-4829462676030982"
-     data-ad-slot="5581413983"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
 
 ## [Pokemon Emerald Crest v1.0.8.5 UPS Patch](https://ko-fi.com/api/file-upload/ea9c675b-04d6-4b67-a84b-9d27db3f564f/download?transactionId=65997c01-4f04-4858-a53f-df0362f15b51)
 
@@ -238,19 +161,6 @@ What's New!
 
 ## [Pokemon Emerald Crest v1.0.8.4 UPS Patch](https://ko-fi.com/api/file-upload/9cd230b8-ea42-4a27-8305-d744baf9ac35/download?transactionId=d254967d-8f99-44eb-890b-8860e0fde9ac)
 
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4829462676030982"
-     crossorigin="anonymous"></script>
-<!-- RHS Changelog -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-4829462676030982"
-     data-ad-slot="5581413983"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
 ```
 What's New!
 🔸Added some GEN 5 followers (41/155)
@@ -269,19 +179,6 @@ What's New!
 🔸And a lot of minor improvements
 ```
 > Before updating to  `v1.0.8.4` It is recommended that you update to `v1.0.8.3` and heal your party at the Pokemon center.
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4829462676030982"
-     crossorigin="anonymous"></script>
-<!-- RHS Changelog -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-4829462676030982"
-     data-ad-slot="5581413983"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
 
 ## [Pokemon Emerald Crest v1.0.8.3 UPS Patch](https://ko-fi.com/api/file-upload/ec54840b-a723-4647-afcb-1e35e9478b55/download?transactionId=9fd41810-c49d-42f6-aaa2-7c144cdc9e65)
 
@@ -303,19 +200,6 @@ What's New!
 ```
 > This update fixes lots of bugs, and only a few remain they are pinned `#⁠bug-reports🪲`
 > Let me know if the camera alignment issue is still happening.
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4829462676030982"
-     crossorigin="anonymous"></script>
-<!-- RHS Changelog -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-4829462676030982"
-     data-ad-slot="5581413983"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
 
 ## [Pokemon Emerald Crest v1.0.8.2 UPS Patch](https://ko-fi.com/api/file-upload/7c9e4da2-2241-4812-9a68-dda4ceb117a7/download?transactionId=7e42e4f7-9b5f-4b43-b7fc-3eade90af831)
 
@@ -344,19 +228,6 @@ What's New!
 ```
 > Let me know if the camera alignment issue is still happening.
 
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4829462676030982"
-     crossorigin="anonymous"></script>
-<!-- RHS Changelog -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-4829462676030982"
-     data-ad-slot="5581413983"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
 ## [Pokemon Emerald Crest v1.0.8.1 UPS Patch](https://ko-fi.com/api/file-upload/ac19cd89-3abb-4c8f-926a-5553413447f5/download?transactionId=2d6f01d1-e733-4529-aeb7-d4136ecf0320)
 
 ```
@@ -373,18 +244,6 @@ What's New!
 ```
 > I am not sure if this update fixes the issue with the camera alignment since I wasn't able to recreate it. But I did fix a related bug, so let me know if it's still happening.
 
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4829462676030982"
-     crossorigin="anonymous"></script>
-<!-- RHS Changelog -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-4829462676030982"
-     data-ad-slot="5581413983"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
 ## [Pokemon Emerald Crest v1.0.8 UPS Patch](https://ko-fi.com/api/file-upload/3d2db367-d8da-447b-a225-409d7e801697/download?transactionId=a802d6a5-1a04-483c-a2bd-7f72ee6f2daf)
  
 ```
@@ -424,36 +283,13 @@ What's New!
 > Currently, only followers up to Gen 3 are available the rest of the followers will be added in the next major update (It won't take that long!)
 
 **your old savefile won't work, since there are tons of huge changes in the current version.**
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4829462676030982"
-     crossorigin="anonymous"></script>
-<!-- RHS Changelog -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-4829462676030982"
-     data-ad-slot="5581413983"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+
 ## [Pokemon Emerald Crest v1.0.7.1 UPS Patch](https://ko-fi.com/api/file-upload/cbf173cb-3653-4d8d-a54a-32ac4119bc75/download?transactionId=0cf84642-cd5d-43e0-8330-a197d986be27)
 
 ```
 What's New!
 🔸Fixes some nuzlocke bugs + some other minor bugs
 ```
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4829462676030982"
-     crossorigin="anonymous"></script>
-<!-- RHS Changelog -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-4829462676030982"
-     data-ad-slot="5581413983"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
 
 ## [Pokemon Emerald Crest v1.0.7 UPS Patch](https://ko-fi.com/api/file-upload/efb7ebe6-c4d3-4d10-9e97-9940b6ca2d23/download?transactionId=0bfa4228-d4a2-4598-b3e7-6c3ec6d3c9b5)
 
@@ -465,18 +301,6 @@ what's New!
 **your old savefile should work but If you want to use the randomizer/nuzlocke features you will have to start a new save.**
 
 ---
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4829462676030982"
-     crossorigin="anonymous"></script>
-<!-- RHS Changelog -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-4829462676030982"
-     data-ad-slot="5581413983"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
 ## Support
 
 If you encounter any issues or have questions about Pokemon Emerald Crest, please contact us through our [discord server].
