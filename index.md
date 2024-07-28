@@ -87,7 +87,7 @@ New Release
 Bug Fix
 {: .label .label-yellow }
 
-[Stable v1.0.9.6.6](https://mega.nz/file/9PVEgTIT#vC6yQDHS32DzlrcLvgj48bGoFMUb6DVZbkhgJqNXUc8){: .btn .btn-purple .mr-2 } [v1.0.9.6 EA](https://romhackstudios.github.io/pages/early-access.html){: .btn .btn-blue }
+[Stable v1.0.9.6.6](https://mega.nz/file/9PVEgTIT#vC6yQDHS32DzlrcLvgj48bGoFMUb6DVZbkhgJqNXUc8){: .btn .btn-purple .mr-2 } [Crest Dex v0.1](https://thatsimpledev.itch.io/crest-dex){: .btn .btn-blue }
 
 ```
 What's New! 
