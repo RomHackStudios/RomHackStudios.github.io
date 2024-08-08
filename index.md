@@ -87,59 +87,35 @@ New Release
 Bug Fix
 {: .label .label-yellow }
 
-[Stable v1.0.9.6.6](https://mega.nz/file/9PVEgTIT#vC6yQDHS32DzlrcLvgj48bGoFMUb6DVZbkhgJqNXUc8){: .btn .btn-purple .mr-2 } [Crest Dex v0.1.1](https://thatsimpledev.itch.io/crest-dex){: .btn .btn-blue }
+[Stable v1.0.9.7](https://mega.nz/file/YD1QBbzA#_UjlbC0XtR1ThUYu9-ciM8UuduqpbkX5aO3gIW1O10c){: .btn .btn-purple .mr-2 } [Crest Dex v0.1.1](https://thatsimpledev.itch.io/crest-dex){: .btn .btn-blue }
 
 ```
-What's New! 
+What's New!
 
-v1.0.9.6.6
-- Fixed a critical bug with Nuzlocke mode
-
-v1.0.9.6.5
-- Added missing legends in Hoopa portal
-- Added Galar Yamask evolution method
-- Added Aurora ticket
-- Added Inverse type effectiveness
-- Updated wild encounters (check out Altering Cave)
-- Made Flash usable without learning and fixed some duplication bug
-- Enabled Z-moves in Battle Frontier, except for Battle Arena
-- Disabled Pokevial usage during the Elite Four
-- Removed the Aroma Lady from Route 123 (temporary fix)
-- Fixed Held Item duplicating on Nuzlocke Death
-- Fixed Sap Sipper not blocking Bullet Seed
-- Fixed Neutralizing Gas softlocking game mid-battle
-- Fixed item usage in double battles
-- Fixed random loss in Battle Frontier multibattle
-- Fixed Hoopa portal causing a crash
-- Fixed being able to surf on land at Route 105
-- Fixed Fossil Regeneration
-- Fixed broken spotlight codes
-- Fixed trainer level scaling bugfix
-- Fixed some minor bugs and performance issues
-- And a few more bug fixes and improvements
-
+- Added the N-Lunarizer and N-Solarizer
+- Added Eon Flute - Now soar on Latios/Laitas as Brendan/May
+- Added 100 Mystery gift slots
+- Added Metronome only mode - Every move is replaced with Metronome
+- Updated Spotlight Events
+- Made all static legends stay until caught
+- Made all portal legends stop spawning after capture
+- Made starters shiny rate 1/400
+- Made starter sprite show up as shiny if they are shiny during starter selection
+- Fixed Flying to wrong routes
+- Fixed Altering Cave not opening
+- Fixed dexnav showing incorrect mon for water and hidden encounters
+- Fixed showing Kyogre's transition for every legend battle
+- Fixed roamer latis spawing after capture
+- A few more minor fixes and updates
 ```
 
 ### Previous Releases
 
-- [v1.0.8.5](https://ko-fi.com/api/file-upload/ea9c675b-04d6-4b67-a84b-9d27db3f564f/download?transactionId=65997c01-4f04-4858-a53f-df0362f15b51)
+- [v1.0.9.6](https://mega.nz/file/9PVEgTIT#vC6yQDHS32DzlrcLvgj48bGoFMUb6DVZbkhgJqNXUc8)
 {: .d-inline-block }
 
 Bug Fix
 {: .label .label-yellow }
-
-- [v1.0.8.4](https://ko-fi.com/api/file-upload/9cd230b8-ea42-4a27-8305-d744baf9ac35/download?transactionId=d254967d-8f99-44eb-890b-8860e0fde9ac)
-{: .d-inline-block }
-
-Bug Fix
-{: .label .label-yellow }
-
-- [v1.0.8](https://ko-fi.com/api/file-upload/3d2db367-d8da-447b-a225-409d7e801697/download?transactionId=a802d6a5-1a04-483c-a2bd-7f72ee6f2daf)
-{: .d-inline-block }
-
-Major Update
-{: .label .label-blue }
-
 
 [see full changelog](https://romhackstudios.github.io/pages/changelog.html)
 
