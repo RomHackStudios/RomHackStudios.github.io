@@ -87,10 +87,15 @@ New Release
 Bug Fix
 {: .label .label-yellow }
 
-[Stable v1.0.9.7](https://mega.nz/file/YD1QBbzA#_UjlbC0XtR1ThUYu9-ciM8UuduqpbkX5aO3gIW1O10c){: .btn .btn-purple .mr-2 } [Crest Dex v0.1.1](https://thatsimpledev.itch.io/crest-dex){: .btn .btn-blue }
+[Stable v1.0.9.7.1](https://mega.nz/file/8T9gzKgJ#7dl3Uurnxl-vJr4R484opoonu5S5kZQ2eO-xmXaq1-M){: .btn .btn-purple .mr-2 } [Crest Dex v0.1.1](https://thatsimpledev.itch.io/crest-dex){: .btn .btn-blue }
 
 ```
 What's New!
+
+v1.0.9.7.1
+- Critical fix with Metronome only mode
+
+v1.0.9.7
 
 - Added the N-Lunarizer and N-Solarizer
 - Added Eon Flute - Now soar on Latios/Laitas as Brendan/May
