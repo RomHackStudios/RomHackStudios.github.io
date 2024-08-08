@@ -93,7 +93,7 @@ Bug Fix
 What's New!
 
 v1.0.9.7.1
-- Critical fix with Metronome only mode
+- Fixed a critical bug with Metronome only mode
 
 v1.0.9.7
 
