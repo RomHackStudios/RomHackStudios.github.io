@@ -87,7 +87,7 @@ New Release
 Bug Fix
 {: .label .label-yellow }
 
-[Stable v1.0.9.7.1](https://mega.nz/file/VPtR1CgL#LtZGjzv44n6IOKuKUIPDE58S268sUnc0kLtErF4zB4M){: .btn .btn-purple .mr-2 } [Crest Dex v0.1.1](https://thatsimpledev.itch.io/crest-dex){: .btn .btn-blue }
+[Stable v1.0.9.7.1](https://mega.nz/file/tb9DDLQL#IPbmXQT0hrmw_jVmJil337cq4-MLkvX4gMsai1SuvJE){: .btn .btn-purple .mr-2 } [Crest Dex v0.1.1](https://thatsimpledev.itch.io/crest-dex){: .btn .btn-blue }
 
 ```
 What's New!
