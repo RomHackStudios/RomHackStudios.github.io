@@ -8,6 +8,7 @@ nav_exclude: false
 
 ### You can access Crest Dex directly through your browser by visiting the itch.io page by clicking the Run Tool button below.
 
+---
 
 [Run Tool On itch.io](https://thatsimpledev.itch.io/crest-dex){: .btn .btn-purple .mr-2 }
 
