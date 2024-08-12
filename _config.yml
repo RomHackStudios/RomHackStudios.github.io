@@ -35,6 +35,3 @@ callouts:
 
     ga_tracking: G-39V22GPEHQ
     ga_tracking_anonymize_ip: true
-
-    Cross-Origin-Opener-Policy: same-origin
-    Cross-Origin-Embedder-Policy: require-corp
