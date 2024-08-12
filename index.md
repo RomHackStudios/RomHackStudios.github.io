@@ -9,7 +9,7 @@ image: /v1.0.9.png
 # **Pokemon Emerald Crest**
 Thank you for choosing Pokemon Emerald Crest! You can download the latest version of the game below.
 
-<iframe frameborder="0" src="https://itch.io/embed/2628701?linkback=true&amp;bg_color=27262b&amp;fg_color=ffffff&amp;border_color=000000" width="552" height="167"><a href="https://thatsimpledev.itch.io/crest-dex">Crest Dex by thatsimpledev</a></iframe>
+<iframe frameborder="0" src="https://itch.io/embed/2628701?linkback=true&amp;bg_color=27262b&amp;fg_color=ffffff&amp;link_color=39b62&famp;border_color=27262b" width="552" height="167"><a href="https://thatsimpledev.itch.io/crest-dex">Crest Dex by thatsimpledev</a></iframe>
 
 [Create Spotlight Events](https://romhackstudios.github.io/pages/spotlight.html){: .btn .btn-green } [Docs](https://romhackstudios.github.io/pages/docs.html){: .btn .btn-purple }
 
