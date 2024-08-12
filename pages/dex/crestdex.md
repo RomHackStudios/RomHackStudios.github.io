@@ -4,6 +4,8 @@ layout: page
 nav_exclude: false
 ---
 
-<iframe frameborder="0" src="https://itch.io/embed/2628701?linkback=true&amp;border_width=3&amp;bg_color=c3cddc&amp;link_color=02a800" width="556" height="171"><a href="https://thatsimpledev.itch.io/crest-dex">Crest Dex by thatsimpledev</a></iframe>
+### You can access Crest Dex directly through your browser by visiting the ithio page by clicking the Run on Web button below.
 
-[PLAY ON YOUR BROWSER](https://itch.io/embed-upload/11086277?color=000000){: .btn .btn-purple .mr-2 }
+[Run on Web](https://thatsimpledev.itch.io/crest-dex){: .btn .btn-purple .mr-2 }
+
+> Crest Dex might not be compatible with all devices or browsers. If you're experiencing issues, please download the appropriate version for your device (Android, Windows, or Linux).
