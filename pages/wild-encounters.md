@@ -1,7 +1,6 @@
 ---
 title: Wild Encounters
 layout: page
-nav_order: 4
 ---
 
 # Wild Encounters
