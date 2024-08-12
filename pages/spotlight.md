@@ -1,7 +1,6 @@
 ---
 title: Spotlight Events
 layout: page
-nav_order: 5
 ---
 
 # Spotlight Events
