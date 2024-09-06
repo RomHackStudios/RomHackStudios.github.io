@@ -11,68 +11,6 @@ Thank you for choosing Pokemon Emerald Crest! You can download the latest versio
 
 <iframe frameborder="0" src="https://itch.io/embed/2628701?linkback=true&amp;bg_color=27262b&amp;fg_color=ffffff&amp;link_color=39b62f&amp;border_color=27262b" width="552" height="167"><a href="https://thatsimpledev.itch.io/crest-dex">Crest Dex by thatsimpledev</a></iframe>
 
-## **v1.1**
-{: .d-inline-block }
-
-32% complete
-{: .label .label-red }
-
-<html>
-<head>
-  <style>
-    .progress-bar {
-      width: 250px;
-      height: 10px;
-      background-color: #f0f0f0;
-      border-radius: 10px;
-      position: relative;
-      overflow: hidden;
-      box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
-      visibility: hidden; /* Initially hide the progress bar */
-      opacity: 0; /* Initially set opacity to 0 */
-      transition: opacity 0.5s ease-in-out;
-    }
-
-    .progress {
-      height: 100%;
-      background-color: #4caf50;
-      width: 0%;
-      border-radius: 10px;
-      position: absolute;
-      top: 0;
-      left: 0;
-      animation: progressAnimation 2s ease-in-out forwards;
-    }
-
-    @keyframes progressAnimation {
-      0% {
-        width: 0%;
-      }
-      100% {
-        width: 32%;
-      }
-    }
-  </style>
-  <script>
-    window.addEventListener('scroll', function() {
-      var progressBar = document.querySelector('.progress-bar');
-      var progressRect = progressBar.getBoundingClientRect();
-      var windowHeight = window.innerHeight || document.documentElement.clientHeight;
-
-      if (progressRect.top < windowHeight && progressRect.bottom >= 0) {
-        progressBar.style.visibility = 'visible';
-        progressBar.style.opacity = '1';
-      }
-    });
-  </script>
-</head>
-<body>
-  <div class="progress-bar">
-    <div class="progress"></div>
-  </div>
-</body>
-</html>
-
 ## **Download**
 {: .d-inline-block }
 
@@ -83,31 +21,14 @@ New Release
 Bug Fix
 {: .label .label-yellow }
 
-[Stable v1.0.9.7.1](https://mega.nz/file/tb9DDLQL#IPbmXQT0hrmw_jVmJil337cq4-MLkvX4gMsai1SuvJE){: .btn .btn-purple .mr-2 } [Crest Dex v0.1.2](https://thatsimpledev.itch.io/crest-dex){: .btn .btn-blue }
+[Stable v1.0.9.7.2](https://mega.nz/file/ETEHgCaD#uFkjIHEahaF1W90QymMiEzBpVsua3fPw2bsciHDJa24){: .btn .btn-purple .mr-2 } [Crest Dex v0.1.2](https://thatsimpledev.itch.io/crest-dex){: .btn .btn-blue }
 
 ```
 What's New!
 
-v1.0.9.7.1
-- Fixed a critical bug with Metronome only mode
-
-v1.0.9.7
-
-- Added the N-Lunarizer and N-Solarizer
-- Added Eon Flute - Now soar on Latios/Laitas as Brendan/May
-- Added 100 Mystery gift slots
-- Added Metronome only mode - Every move is replaced with Metronome
-- Updated Spotlight Events
-- Made all static legends stay until caught
-- Made all portal legends stop spawning after capture
-- Made starters shiny rate 1/400
-- Made starter sprite show up as shiny if they are shiny during starter selection
-- Fixed Flying to wrong routes
-- Fixed Altering Cave not opening
-- Fixed dexnav showing incorrect mon for water and hidden encounters
-- Fixed showing Kyogre's transition for every legend battle
-- Fixed roamer latis spawing after capture
-- A few more minor fixes and updates
+v1.0.9.7.2
+- Added almost all the GEN 9 followers
+- Fixed some bugs with Metronome only mode
 ```
 
 ### Previous Releases
