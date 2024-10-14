@@ -21,15 +21,37 @@ New Release
 Bug Fix
 {: .label .label-yellow }
 
-[Stable v1.0.9.7.2](https://mega.nz/file/ETEHgCaD#uFkjIHEahaF1W90QymMiEzBpVsua3fPw2bsciHDJa24){: .btn .btn-purple .mr-2 } [Crest Dex v0.1.2](https://thatsimpledev.itch.io/crest-dex){: .btn .btn-blue }
+[Stable v1.0.9.8](https://mega.nz/file/NSFRDRrC#LySNKl8wH8in9dHTVE_W-z63Q1CN2UOjbzLdtLJCB7g){: .btn .btn-purple .mr-2 } [Crest Dex v0.1.2](https://thatsimpledev.itch.io/crest-dex){: .btn .btn-blue }
 
-```
-What's New!
+> Now, keep in mind this is just a preview of the seasons and the OW encounters feature. v1.1 will feature the complete version.
 
-v1.0.9.7.2
-- Added almost all the GEN 9 followers
-- Fixed some bugs with Metronome only mode
-```
+### What's new
+- **Added Seasons**
+   - Will change every 2 days by default `[Default]`
+   - Can be set to change every week `[Week]`
+   - Can be set to change based on real-time `[Auto]`
+   - Can skip to the next season by sleeping through it :sleeping_accommodation:
+     - There are 2 methods* to do so.
+   - Can be turned off `[Off]`
+   - **Seasonal Evolutions** 
+     - Some Pokémon have an alternative evolution method during seasons
+   - **Seasonal Encounters**
+     - More Pokémon will appear on routes randomly based on the season (existing encounters won't be replaced)
+- **Overworld Encounters during Spotlight Events**
+   - They can be seen as shiny in the OW and they won't charge at you like wild bosses
+- **Support for Crest Dex v0.1.4**
+   - Includes the option to see your randomized wild encounters per map (how cool is that!?)
+       - Enter the randomizer seed shown on your trainer id
+   - Generate Spotlight events
+     - Previously only the base evo could be generated, that restriction has been lifted i.e., now you can generate spotlight events for Pichu, Pikachu, Raichu or Alolan Raichu. Mythicals and legendaries won't be available but they will be unlocked on special events (you won’t have to update your game or app for them)
+   - Bug Fixes and Improvements
+
+Pretty cool features! Make sure you thank **ThatSimpleDev** on the itch.io page. Couldn't have done it without them.
+
+> Where's the Indigo Disk Pokémon, you ask?
+> - Expect v1.0.9.9 with them, bug fixes, and improvements. (Might as well round it off with v1.0.9.9 before v1.1)
+
+*Make sure you **read everything**.
 
 ### Previous Releases
 
