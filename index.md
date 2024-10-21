@@ -21,7 +21,7 @@ New Release
 Bug Fix
 {: .label .label-yellow }
 
-[Stable v1.0.9.8](https://mega.nz/file/NSFRDRrC#LySNKl8wH8in9dHTVE_W-z63Q1CN2UOjbzLdtLJCB7g){: .btn .btn-purple .mr-2 } [Crest Dex v0.1.2](https://thatsimpledev.itch.io/crest-dex){: .btn .btn-blue }
+[Stable v1.0.9.8](https://mega.nz/file/NSFRDRrC#LySNKl8wH8in9dHTVE_W-z63Q1CN2UOjbzLdtLJCB7g){: .btn .btn-purple .mr-2 } [Crest Dex v0.1.4](https://thatsimpledev.itch.io/crest-dex){: .btn .btn-blue }
 
 > Now, keep in mind this is just a preview of the seasons and the OW encounters feature. v1.1 will feature the complete version.
 
