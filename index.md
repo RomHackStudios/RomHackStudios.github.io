@@ -2,7 +2,9 @@
 title: Download
 layout: home
 nav_order: 1
-permalink: /
+permalink: /404
+nav_exclude: true
+search_exclude: true
 image: /v1.0.9.png
 ---
 
