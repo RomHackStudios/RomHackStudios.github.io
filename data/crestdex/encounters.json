@@ -92,7 +92,7 @@
             "mons": [
               {
                 "min_level": 2,
-                "max_level": 2,
+                "max_level": 23,
                 "species": "SPECIES_SKIDDO"
               },
               {
