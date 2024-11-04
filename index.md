@@ -60,13 +60,12 @@ Bug Fix
 
 <div class="announcement" style="text-align: center; margin: 2.5rem 0;">
     <h2 style="font-size: 1.5rem; font-weight: 700; background: linear-gradient(45deg, #00b4d8, #90e0ef, #48cae4); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-shadow: 0 0 15px rgba(0,180,216,0.5); animation: glow 2s ease-in-out infinite;">
-        ✨ Coming Soon: Unlimited Storage Feature! ✨
+        ✨ Coming Soon: Unlimited Storage Feature!
     </h2>
 </div>
 
-<p style="position: relative;">
-  <img src="https://img.itch.zone/aW1nLzE4NDU0Njk2LnBuZw==/original/9IfgMB.png" alt="Pokemon Storage Preview" style="position: relative; z-index: 2; box-shadow: 0 0 30px rgba(0, 180, 216, 0.6);"><br>
-  <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: radial-gradient(circle at center, rgba(0,180,216,0.3), transparent 70%); z-index: 1; filter: blur(15px);"></div>
+<p>
+  <img src="https://img.itch.zone/aW1nLzE4NDU0Njk2LnBuZw==/original/9IfgMB.png" alt="Pokemon Storage Preview" style="box-shadow: 0 0 30px rgba(0, 180, 216, 0.6), 0 0 50px rgba(0, 180, 216, 0.4), 0 0 70px rgba(0, 180, 216, 0.2);">
 </p>
 
 <p><span style="color: #90e0ef;">We're excited to announce <span style="color: lightgreen;">PokemonHomeCrest.jar</span> - our unlimited box storage tool! Currently available as a separate download, this feature will soon be integrated directly into Crest Dex. It removes all storage limitations, allowing you to create <span style="color: lightyellow;">unlimited boxes</span> for your Pokemon, going beyond the standard 14-box limit!</span></p>
