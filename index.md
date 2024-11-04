@@ -27,13 +27,46 @@ Bug Fix
 
 [Stable v1.0.9.9](https://mega.nz/file/dX1mCToR#DCFzlwjQ_2KXC7S6qqZ_LarflwR-tl9_CHaIUFOzBb4){: .btn .btn-purple .mr-2 } [Crest Dex v0.2](https://thatsimpledev.itch.io/crest-dex){: .btn .btn-blue }
 [PokemonHomeCrest.jar](https://thatsimpledev.itch.io/crest-dex){: .btn .btn-green }
-<h3 class="donate text-center"><a data-donate="true" class="button donate_btn" href="https://thatsimpledev.itch.io/crest-dex/donate">Help Us Reach Our Goal!</a></h3>
+<div class="donate-section text-center" style="margin: 2.5rem 0;">
+    <div style="background: linear-gradient(135deg, rgba(0,180,216,0.1), rgba(72,202,228,0.1)); padding: 25px; border-radius: 15px; border: 2px solid rgba(0,180,216,0.2);">
+        <div style="margin-bottom: 15px; text-align: center;">
+            <span style="font-size: 1.3rem; background: linear-gradient(45deg, #00b4d8, #90e0ef); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">🌟 Thank you for your support! 🌟</span>
+        </div>
+        <div style="text-align: center;">
+            <a data-donate="true" class="button donate_btn" href="https://thatsimpledev.itch.io/crest-dex/donate" 
+               style="display: inline-block; 
+                      padding: 15px 30px; 
+                      font-size: 1.2rem; 
+                      font-weight: 700; 
+                      text-decoration: none; 
+                      border-radius: 12px; 
+                      background: linear-gradient(135deg, #00b4d8, #48cae4); 
+                      color: white; 
+                      box-shadow: 0 6px 20px rgba(0,180,216,0.4); 
+                      transition: all 0.3s ease;
+                      animation: pulse 2s infinite;">
+                Help support the development of Crest Dex  
+            </a>
+        </div>
+        <style>
+            @keyframes pulse {
+                0% { transform: scale(1); }
+                50% { transform: scale(1.05); }
+                100% { transform: scale(1); }
+            }
+        </style>
+    </div>
+</div>
 
-<h3 style="color: #00b4d8; text-shadow: 0 0 10px #00b4d8, 0 0 20px #00b4d8; animation: glow 2s ease-in-out infinite; background: linear-gradient(45deg, #00b4d8, #90e0ef, #48cae4); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">✨ Coming Soon: Unlimited Storage Feature! ✨</h3>
+<div class="announcement" style="text-align: center; margin: 2.5rem 0;">
+    <h3 style="font-size: 1.5rem; font-weight: 700; background: linear-gradient(45deg, #00b4d8, #90e0ef, #48cae4); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-shadow: 0 0 15px rgba(0,180,216,0.5); animation: glow 2s ease-in-out infinite;">
+        ✨ Coming Soon: Unlimited Storage Feature! ✨
+    </h3>
+</div>
 
 <p><img src="https://img.itch.zone/aW1nLzE4Mzk2MDk4LmpwZw==/original/H2X%2Blw.jpg" alt="Pokemon Storage Preview"><br></p>
 
-<p><span style="color: #90e0ef;">We're excited to announce <span style="color: #00b4d8;">PokemonHomeCrest.jar</span> - our unlimited box storage tool! Currently available as a separate download, this feature will soon be integrated directly into Crest Dex. It removes all storage limitations, allowing you to create <span style="color: #48cae4;">unlimited boxes</span> for your Pokemon, going beyond the standard 14-box limit!</span></p>
+<p><span style="color: #90e0ef;">We're excited to announce <span style="color: lightgreen;">PokemonHomeCrest.jar</span> - our unlimited box storage tool! Currently available as a separate download, this feature will soon be integrated directly into Crest Dex. It removes all storage limitations, allowing you to create <span style="color: lightyellow;">unlimited boxes</span> for your Pokemon, going beyond the standard 14-box limit!</span></p>
 
 <div style="background: rgba(0, 180, 216, 0.1); padding: 15px; border-radius: 5px; margin: 20px 0;">
     <p style="margin: 0;"><strong>Note:</strong> When using PokemonHomeCrest.jar, make sure species.h is in the same folder!</p>
@@ -45,7 +78,33 @@ Bug Fix
 
 <p><span style="color:#48cae4;">Your donations directly support development and help us integrate this feature into Crest Dex sooner! <strong>Help us reach our donation goal to accelerate development!</strong></span></p>
 
-<h3 class="donate text-center"><a data-donate="true" class="button donate_btn" href="https://thatsimpledev.itch.io/crest-dex/donate">Support the Development!</a></h3>
+<div style="text-align: center; margin: 2rem 0;">
+    <a data-donate="true" class="button donate_btn" href="https://thatsimpledev.itch.io/crest-dex/donate" 
+       style="display: inline-block;
+              padding: 12px 24px;
+              font-size: 1.1rem;
+              font-weight: 600;
+              text-decoration: none;
+              border-radius: 8px;
+              background: linear-gradient(135deg, #00b4d8, #48cae4);
+              color: white;
+              box-shadow: 0 4px 15px rgba(0,180,216,0.4);
+              transition: all 0.3s ease;
+              animation: shinyWave 3s linear infinite;
+              background-size: 200% 100%;">
+        Support Development
+    </a>
+    <style>
+        @keyframes shinyWave {
+            0% {
+                background-position: 100% 0;
+            }
+            100% {
+                background-position: -100% 0;
+            }
+        }
+    </style>
+</div>
 
 ### What's new
 - Added Indigo Disk Pokémon
