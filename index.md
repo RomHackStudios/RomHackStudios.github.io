@@ -13,6 +13,8 @@ Thank you for choosing Pokemon Emerald Crest! You can download the latest versio
 
 <iframe frameborder="0" src="https://itch.io/embed/2628701?linkback=true&amp;bg_color=1a1b1e&amp;fg_color=ffffff&amp;link_color=00b4d8&amp;border_color=1a1b1e" width="552" height="167"><a href="https://thatsimpledev.itch.io/crest-dex">Crest Dex by thatsimpledev</a></iframe>
 
+---
+
 ## **Download**
 {: .d-inline-block }
 
