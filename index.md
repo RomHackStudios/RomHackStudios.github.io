@@ -59,7 +59,7 @@ Bug Fix
 </div>
 
 <div class="announcement" style="text-align: center; margin: 2.5rem 0;">
-    <h2 style="font-size: 1.5rem; font-weight: 700; background: linear-gradient(45deg, #00b4d8, #90e0ef, #48cae4); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-shadow: 0 0 15px rgba(0,180,216,0.5); animation: glow 2s ease-in-out infinite;">
+    <h2 style="font-size: 1.5rem; font-weight: 700; background: linear-gradient(45deg, #90EE90, #98FB98, #8FBC8F); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-shadow: 0 0 15px rgba(144,238,144,0.5); animation: glow 2s ease-in-out infinite;">
         ✨ Coming Soon: Unlimited Storage Feature!
     </h2>
 </div>
