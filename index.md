@@ -23,11 +23,25 @@ New Release
 Bug Fix
 {: .label .label-yellow }
 
-[Stable v1.0.9.8](https://mega.nz/file/NSFRDRrC#LySNKl8wH8in9dHTVE_W-z63Q1CN2UOjbzLdtLJCB7g){: .btn .btn-purple .mr-2 } [Crest Dex v0.1.4](https://thatsimpledev.itch.io/crest-dex){: .btn .btn-blue }
+[Stable v1.0.9.9](https://mega.nz/file/dX1mCToR#DCFzlwjQ_2KXC7S6qqZ_LarflwR-tl9_CHaIUFOzBb4){: .btn .btn-purple .mr-2 } [Crest Dex v0.2](https://thatsimpledev.itch.io/crest-dex){: .btn .btn-blue }
 
 > Now, keep in mind this is just a preview of the seasons and the OW encounters feature. v1.1 will feature the complete version.
 
 ### What's new
+- Added Indigo Disk Pokémon
+- Added Indigo Disk followers 
+- Increased rock smash item drop odds
+- Updated spotlight events
+- Updated spotlight event generator
+- Fixed some quests
+- Fixed wonder trade issues
+- Fixed spotlight ow encounter issues
+- Fixed name rater not allowing nicknames
+- Fixed seasonal encounter rates
+- Fixed seasonal evolution rate
+- A few more bug fixes and improvements
+
+v1.0.9.8
 - **Added Seasons**
    - Will change every 2 days by default `[Default]`
    - Can be set to change every week `[Week]`
@@ -49,11 +63,6 @@ Bug Fix
    - Bug Fixes and Improvements
 
 Pretty cool features! Make sure you thank **ThatSimpleDev** on the itch.io page. Couldn't have done it without them.
-
-> Where's the Indigo Disk Pokémon, you ask?
-> - Expect v1.0.9.9 with them, bug fixes, and improvements. (Might as well round it off with v1.0.9.9 before v1.1)
-
-*Make sure you **read everything**.
 
 ### Previous Releases
 
