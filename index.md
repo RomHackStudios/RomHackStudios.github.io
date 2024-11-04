@@ -26,13 +26,24 @@ Bug Fix
 [Stable v1.0.9.9](https://mega.nz/file/dX1mCToR#DCFzlwjQ_2KXC7S6qqZ_LarflwR-tl9_CHaIUFOzBb4){: .btn .btn-purple .mr-2 } [Crest Dex v0.2](https://thatsimpledev.itch.io/crest-dex){: .btn .btn-blue }
 [PokemonHomeCrest.jar](https://thatsimpledev.itch.io/crest-dex){: .btn .btn-green }
 <h3 class="donate text-center"><a data-donate="true" class="button donate_btn" href="https://thatsimpledev.itch.io/crest-dex/donate">Help Us Reach Our Goal!</a></h3>
-<h3 style="color: #FF6B6B; text-shadow: 0 0 10px #FF6B6B, 0 0 20px #FF6B6B; animation: glow 2s ease-in-out infinite; background: linear-gradient(45deg, #FF6B6B, #4ECDC4, #FFE66D); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">✨ Coming Soon: Unlimited Storage Feature! ✨</h3>
-<p><img src="https://img.itch.zone/aW1nLzE4Mzk2MDk4LmpwZw==/original/H2X%2Blw.jpg"><br></p>
-<p><span style="color: #4ECDC4;">We're excited to announce <span style="color: #FFE66D;">PokemonHomeCrest.jar</span> - our unlimited box storage tool! Currently available as a separate download, this feature will soon be integrated directly into Crest Dex. It removes all storage limitations, allowing you to create <span style="color: #FF6B6B;">unlimited boxes</span> for your Pokemon, going beyond the standard 14-box limit!</span></p>
-<p><span style="color:#95A5A6;">Your donations directly support development and help us integrate this feature into Crest Dex sooner! <strong>Help us reach our donation goal to accelerate development!</strong></span></p>
 
-> Note: When using PokemonHomeCrest.jar, make sure species.h is in the same folder!
-<blockquote>⚠️ IMPORTANT: ALWAYS CREATE A BACKUP OF YOUR SAVE FILE BEFORE USING THIS FEATURE! ⚠️</blockquote>
+<h3 style="color: #6772e5; text-shadow: 0 0 10px #6772e5, 0 0 20px #6772e5; animation: glow 2s ease-in-out infinite; background: linear-gradient(45deg, #6772e5, #4ECDC4, #7795f8); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">✨ Coming Soon: Unlimited Storage Feature! ✨</h3>
+
+<p><img src="https://img.itch.zone/aW1nLzE4Mzk2MDk4LmpwZw==/original/H2X%2Blw.jpg" alt="Pokemon Storage Preview"><br></p>
+
+<p><span style="color: #4ECDC4;">We're excited to announce <span style="color: #7795f8;">PokemonHomeCrest.jar</span> - our unlimited box storage tool! Currently available as a separate download, this feature will soon be integrated directly into Crest Dex. It removes all storage limitations, allowing you to create <span style="color: #6772e5;">unlimited boxes</span> for your Pokemon, going beyond the standard 14-box limit!</span></p>
+
+<div style="background: rgba(103, 114, 229, 0.1); padding: 15px; border-radius: 5px; margin: 20px 0;">
+    <p style="margin: 0;"><strong>Note:</strong> When using PokemonHomeCrest.jar, make sure species.h is in the same folder!</p>
+</div>
+
+<div style="background: rgba(119, 149, 248, 0.1); padding: 15px; border-radius: 5px; margin: 20px 0;">
+    <p style="margin: 0;">⚠️ <strong>IMPORTANT:</strong> ALWAYS CREATE A BACKUP OF YOUR SAVE FILE BEFORE USING THIS FEATURE!</p>
+</div>
+
+<p><span style="color:#7795f8;">Your donations directly support development and help us integrate this feature into Crest Dex sooner! <strong>Help us reach our donation goal to accelerate development!</strong></span></p>
+
+<h3 class="donate text-center"><a data-donate="true" class="button donate_btn" href="https://thatsimpledev.itch.io/crest-dex/donate">Support the Development!</a></h3>
 
 ### What's new
 - Added Indigo Disk Pokémon
