@@ -64,7 +64,7 @@ Bug Fix
     </h3>
 </div>
 
-<p><img src="https://img.itch.zone/aW1nLzE4NDU0NjE2LnBuZw==/original/tldwuS.png" alt="Pokemon Storage Preview"><br></p>
+<p><img src="https://img.itch.zone/aW1nLzE4NDU0Njk2LnBuZw==/original/9IfgMB.png" alt="Pokemon Storage Preview"><br></p>
 
 <p><span style="color: #90e0ef;">We're excited to announce <span style="color: lightgreen;">PokemonHomeCrest.jar</span> - our unlimited box storage tool! Currently available as a separate download, this feature will soon be integrated directly into Crest Dex. It removes all storage limitations, allowing you to create <span style="color: lightyellow;">unlimited boxes</span> for your Pokemon, going beyond the standard 14-box limit!</span></p>
 
