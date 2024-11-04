@@ -24,14 +24,14 @@ Bug Fix
 {: .label .label-yellow }
 
 [Stable v1.0.9.9](https://mega.nz/file/dX1mCToR#DCFzlwjQ_2KXC7S6qqZ_LarflwR-tl9_CHaIUFOzBb4){: .btn .btn-purple .mr-2 } [Crest Dex v0.2](https://thatsimpledev.itch.io/crest-dex){: .btn .btn-blue }
-
+[PokemonHomeCrest.jar](https://thatsimpledev.itch.io/crest-dex){: .btn-green }
 <h3 class="donate text-center"><a data-donate="true" class="button donate_btn" href="https://thatsimpledev.itch.io/crest-dex/donate">Help Us Reach Our Goal!</a></h3>
-<h2 style="color: #FF6B6B; text-shadow: 0 0 10px #FF6B6B, 0 0 20px #FF6B6B; animation: glow 2s ease-in-out infinite; background: linear-gradient(45deg, #FF6B6B, #4ECDC4, #FFE66D); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">✨ Coming Soon: Unlimited Storage Feature! ✨</h2>
+<h3 style="color: #FF6B6B; text-shadow: 0 0 10px #FF6B6B, 0 0 20px #FF6B6B; animation: glow 2s ease-in-out infinite; background: linear-gradient(45deg, #FF6B6B, #4ECDC4, #FFE66D); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">✨ Coming Soon: Unlimited Storage Feature! ✨</h3>
 <p><img src="https://img.itch.zone/aW1nLzE4Mzk2MDk4LmpwZw==/original/H2X%2Blw.jpg"><br></p>
 <p><span style="color: #4ECDC4;">We're excited to announce <span style="color: #FFE66D;">PokemonHomeCrest.jar</span> - our unlimited box storage tool! Currently available as a separate download, this feature will soon be integrated directly into Crest Dex. It removes all storage limitations, allowing you to create <span style="color: #FF6B6B;">unlimited boxes</span> for your Pokemon, going beyond the standard 14-box limit!</span></p>
 <p><span style="color:#95A5A6;">Your donations directly support development and help us integrate this feature into Crest Dex sooner! <strong>Help us reach our donation goal to accelerate development!</strong></span></p>
-<pre>
-Note: When using PokemonHomeCrest.jar, make sure species.h is in the same folder!</pre>
+
+> Note: When using PokemonHomeCrest.jar, make sure species.h is in the same folder!
 <blockquote>⚠️ IMPORTANT: ALWAYS CREATE A BACKUP OF YOUR SAVE FILE BEFORE USING THIS FEATURE! ⚠️</blockquote>
 
 ### What's new
@@ -71,15 +71,6 @@ v1.0.9.8
 
 Pretty cool features! Make sure you thank **ThatSimpleDev** on the itch.io page. Couldn't have done it without them.
 
-### Previous Releases
-
-- [v1.0.9.6](https://mega.nz/file/9PVEgTIT#vC6yQDHS32DzlrcLvgj48bGoFMUb6DVZbkhgJqNXUc8)
-{: .d-inline-block }
-
-Bug Fix
-{: .label .label-yellow }
-
-[see full changelog](https://romhackstudios.github.io/pages/changelog.html)
 
 ## Installation Instructions
 
