@@ -11,7 +11,7 @@ image: /v1.0.9.png
 # **Pokemon Emerald Crest**
 Thank you for choosing Pokemon Emerald Crest! You can download the latest version of the game below.
 
-<iframe frameborder="0" src="https://itch.io/embed/2628701?linkback=true&amp;bg_color=27262b&amp;fg_color=ffffff&amp;link_color=39b62f&amp;border_color=27262b" width="552" height="167"><a href="https://thatsimpledev.itch.io/crest-dex">Crest Dex by thatsimpledev</a></iframe>
+<iframe frameborder="0" src="https://itch.io/embed/2628701?linkback=true&amp;bg_color=1a1b1e&amp;fg_color=ffffff&amp;link_color=00b4d8&amp;border_color=1a1b1e" width="552" height="167"><a href="https://thatsimpledev.itch.io/crest-dex">Crest Dex by thatsimpledev</a></iframe>
 
 ## **Download**
 {: .d-inline-block }
@@ -27,21 +27,21 @@ Bug Fix
 [PokemonHomeCrest.jar](https://thatsimpledev.itch.io/crest-dex){: .btn .btn-green }
 <h3 class="donate text-center"><a data-donate="true" class="button donate_btn" href="https://thatsimpledev.itch.io/crest-dex/donate">Help Us Reach Our Goal!</a></h3>
 
-<h3 style="color: #6772e5; text-shadow: 0 0 10px #6772e5, 0 0 20px #6772e5; animation: glow 2s ease-in-out infinite; background: linear-gradient(45deg, #6772e5, #4ECDC4, #7795f8); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">✨ Coming Soon: Unlimited Storage Feature! ✨</h3>
+<h3 style="color: #00b4d8; text-shadow: 0 0 10px #00b4d8, 0 0 20px #00b4d8; animation: glow 2s ease-in-out infinite; background: linear-gradient(45deg, #00b4d8, #90e0ef, #48cae4); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">✨ Coming Soon: Unlimited Storage Feature! ✨</h3>
 
 <p><img src="https://img.itch.zone/aW1nLzE4Mzk2MDk4LmpwZw==/original/H2X%2Blw.jpg" alt="Pokemon Storage Preview"><br></p>
 
-<p><span style="color: #4ECDC4;">We're excited to announce <span style="color: #7795f8;">PokemonHomeCrest.jar</span> - our unlimited box storage tool! Currently available as a separate download, this feature will soon be integrated directly into Crest Dex. It removes all storage limitations, allowing you to create <span style="color: #6772e5;">unlimited boxes</span> for your Pokemon, going beyond the standard 14-box limit!</span></p>
+<p><span style="color: #90e0ef;">We're excited to announce <span style="color: #00b4d8;">PokemonHomeCrest.jar</span> - our unlimited box storage tool! Currently available as a separate download, this feature will soon be integrated directly into Crest Dex. It removes all storage limitations, allowing you to create <span style="color: #48cae4;">unlimited boxes</span> for your Pokemon, going beyond the standard 14-box limit!</span></p>
 
-<div style="background: rgba(103, 114, 229, 0.1); padding: 15px; border-radius: 5px; margin: 20px 0;">
+<div style="background: rgba(0, 180, 216, 0.1); padding: 15px; border-radius: 5px; margin: 20px 0;">
     <p style="margin: 0;"><strong>Note:</strong> When using PokemonHomeCrest.jar, make sure species.h is in the same folder!</p>
 </div>
 
-<div style="background: rgba(119, 149, 248, 0.1); padding: 15px; border-radius: 5px; margin: 20px 0;">
+<div style="background: rgba(144, 224, 239, 0.1); padding: 15px; border-radius: 5px; margin: 20px 0;">
     <p style="margin: 0;">⚠️ <strong>IMPORTANT:</strong> ALWAYS CREATE A BACKUP OF YOUR SAVE FILE BEFORE USING THIS FEATURE!</p>
 </div>
 
-<p><span style="color:#7795f8;">Your donations directly support development and help us integrate this feature into Crest Dex sooner! <strong>Help us reach our donation goal to accelerate development!</strong></span></p>
+<p><span style="color:#48cae4;">Your donations directly support development and help us integrate this feature into Crest Dex sooner! <strong>Help us reach our donation goal to accelerate development!</strong></span></p>
 
 <h3 class="donate text-center"><a data-donate="true" class="button donate_btn" href="https://thatsimpledev.itch.io/crest-dex/donate">Support the Development!</a></h3>
 
@@ -77,7 +77,7 @@ v1.0.9.8
    - Includes the option to see your randomized wild encounters per map (how cool is that!?)
        - Enter the randomizer seed shown on your trainer id
    - Generate Spotlight events
-     - Previously only the base evo could be generated, that restriction has been lifted i.e., now you can generate spotlight events for Pichu, Pikachu, Raichu or Alolan Raichu. Mythicals and legendaries won't be available but they will be unlocked on special events (you won’t have to update your game or app for them)
+     - Previously only the base evo could be generated, that restriction has been lifted i.e., now you can generate spotlight events for Pichu, Pikachu, Raichu or Alolan Raichu. Mythicals and legendaries won't be available but they will be unlocked on special events (you won't have to update your game or app for them)
    - Bug Fixes and Improvements
 
 Pretty cool features! Make sure you thank **ThatSimpleDev** on the itch.io page. Couldn't have done it without them.
@@ -135,39 +135,3 @@ Once you have downloaded the emulator, follow these steps in [How To Patch](http
 
 ### 15. Where can I find most of the newly added legendaries?
  - You will need to capture Hoopa first. Hoopa is a roaming encounter that you can find once you obtain the 5th badge, starting from v1.0.9.2. Hoopa likes to lead your party, and once a day, it will open up portals while you're adventuring, summoning Ultra Beasts and other legendary Pokémon. 
-
-### Hoopa Portal Locations
-
-```
-Routes: 
-  ROUTE103,
-  ROUTE104,
-  ROUTE105,
-  ROUTE110,
-  ROUTE111,
-  ROUTE113,
-  ROUTE114,
-  ROUTE117,
-  ROUTE119,
-  ROUTE120,
-  ROUTE124,
-  ROUTE126,
-
-Misc: 
-  SKY_PILLAR_OUTSIDE,
-  AQUA_HIDEOUT_B2F,
-  MT_CHIMNEY,
-  NEW_MAUVILLE_INSIDE,
-  ABANDONED_SHIP_UNDERWATER2,
-  GRANITE_CAVE_B2F,
-  MT_PYRE_EXTERIOR,
-  NEW_MAUVILLE_INSIDE,
-  PETALBURG_WOODS,
-  RUSTURF_TUNNEL
-```
-
-## Support
-
-If you encounter any issues or have questions about Pokemon Emerald Crest, please contact us through our [discord server].
-
-[discord server]: https://discord.gg/aaghat-s-server-965900074532081674 
