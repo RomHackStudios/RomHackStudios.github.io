@@ -24,7 +24,7 @@ Bug Fix
 {: .label .label-yellow }
 
 [Stable v1.0.9.9](https://mega.nz/file/dX1mCToR#DCFzlwjQ_2KXC7S6qqZ_LarflwR-tl9_CHaIUFOzBb4){: .btn .btn-purple .mr-2 } [Crest Dex v0.2](https://thatsimpledev.itch.io/crest-dex){: .btn .btn-blue }
-[PokemonHomeCrest.jar](https://thatsimpledev.itch.io/crest-dex){: .btn-green }
+[PokemonHomeCrest.jar](https://thatsimpledev.itch.io/crest-dex){: .btn .btn-green }
 <h3 class="donate text-center"><a data-donate="true" class="button donate_btn" href="https://thatsimpledev.itch.io/crest-dex/donate">Help Us Reach Our Goal!</a></h3>
 <h3 style="color: #FF6B6B; text-shadow: 0 0 10px #FF6B6B, 0 0 20px #FF6B6B; animation: glow 2s ease-in-out infinite; background: linear-gradient(45deg, #FF6B6B, #4ECDC4, #FFE66D); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">✨ Coming Soon: Unlimited Storage Feature! ✨</h3>
 <p><img src="https://img.itch.zone/aW1nLzE4Mzk2MDk4LmpwZw==/original/H2X%2Blw.jpg"><br></p>
