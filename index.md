@@ -25,7 +25,7 @@ New Release
 Bug Fix
 {: .label .label-yellow }
 
-[Stable v1.0.9.9](https://mega.nz/file/dX1mCToR#DCFzlwjQ_2KXC7S6qqZ_LarflwR-tl9_CHaIUFOzBb4){: .btn .btn-purple .mr-2 } [Crest Dex v0.2](https://thatsimpledev.itch.io/crest-dex){: .btn .btn-blue }
+[Stable v1.0.9.9.1](https://mega.nz/file/BWEgCBZT#sKXsqZ7nNdpWWM9faYWY_Ki-pWOjrCLfsdw8RVqdbb8){: .btn .btn-purple .mr-2 } [Crest Dex v0.2](https://thatsimpledev.itch.io/crest-dex){: .btn .btn-blue }
 [PokemonHomeCrest.jar](https://thatsimpledev.itch.io/crest-dex){: .btn .btn-green }
 <div class="donate-section text-center" style="margin: 2.5rem 0;">
     <div style="background: linear-gradient(135deg, rgba(0,180,216,0.1), rgba(72,202,228,0.1)); padding: 25px; border-radius: 15px; border: 2px solid rgba(0,180,216,0.2);">
@@ -109,6 +109,23 @@ Bug Fix
 </div>
 
 ### What's new
+```diff
++ Applied some critical fixes
++ Added an option to turn on/off Seasonal Encounters 
++ Added an option to turn on/off Seasonal Evolutions
++ Added mid battle evolutions
++ Added some missing HMs in open world 
++ Made Hoopa teleport after the 5th badge
++ Added some exclusive legends into the Hoopa portal
++ Adjusted wild encounter probability based on seasons
++ Fixed Wonder Trade
++ Fixed Self Trade
++ Fixed Battle Tents
++ Fixed Some Quests
++ Fixed seasons sometimes breaking the game
+- Many more fixes and improvements will be implemented with v1.0.9.9.2
+```
+v1.0.9.9
 - Added Indigo Disk Pokémon
 - Added Indigo Disk followers 
 - Increased rock smash item drop odds
