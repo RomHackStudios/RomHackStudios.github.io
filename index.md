@@ -17,7 +17,7 @@ image: /v1.0.9.png
 
 <blockquote>
 <h3>❤️ Buy Me a Coffee</h3>
-<p>Your support fuels late night coding sessions and keeps this project brewing! ☕</p>
+<p>I'm ThatSimpleDev, the main developer behind Crest Dex. I wanted to share some exciting updates about the project and ways you can help support its development!</p>
 
 <table>
   <tr>
@@ -32,12 +32,11 @@ image: /v1.0.9.png
     <td>🌐 <strong>Online Trading</strong></td>
     <td>🚧 In Development</td>
   </tr>
-  
 </table>
 
 <a href="https://thatsimpledev.itch.io/crest-dex/donate"><img src="https://img.shields.io/badge/Support%20Crest%20Dex-Donate%20%E2%9D%A4-ligreen?style=for-the-badge" alt="Support Crest Dex"></a>
 
-<p><em>While these features will be implemented regardless of donations, your support helps accelerate development significantly!</em></p>
+<p><em>Your support means the world to me! While I'm committed to implementing these features regardless, donations help me dedicate more time to development and release updates faster.</em></p>
 </blockquote>
 
 ## 🎯 Latest Releases
@@ -47,6 +46,7 @@ image: /v1.0.9.png
 | **Stable v1.0.9.9.1** | ✅ Latest Release | [Download](https://thatsimpledev.itch.io/emerald-crest/purchase) |
 | **Crest Dex v0.2** | 🚀 Companion App | [Download](https://thatsimpledev.itch.io/crest-dex) |
 | **PokemonHomeCrest.jar** | 🎁 Storage Tool | [Download](https://thatsimpledev.itch.io/crest-dex) |
+
 
 <h2>🎁 Coming Soon: Unlimited Storage System</h2>
 
