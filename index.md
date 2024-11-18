@@ -44,7 +44,7 @@ image: /v1.0.9.png
 | Version | Status | Download |
 |---------|--------|----------|
 | **Stable v1.0.9.9.1** | ✅ Latest Release | [Download](https://thatsimpledev.itch.io/emerald-crest/purchase) |
-| **Crest Dex v0.2** | 🚀 Companion App | [Download](https://thatsimpledev.itch.io/crest-dex) |
+| **Crest Dex v0.2** | 🚀 Companion App | [Download/Run on browser](https://thatsimpledev.itch.io/crest-dex) |
 | **PokemonHomeCrest.jar** | 🎁 Storage Tool | [Download](https://thatsimpledev.itch.io/crest-dex) |
 
 
