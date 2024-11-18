@@ -7,6 +7,8 @@ url: https://romhackstudios.github.io/
 aux_links:
   Discord: https://discord.gg/aaghat-s-server-965900074532081674
 
+color_scheme: light
+
 plugins:
   - jekyll-seo-tag
   
