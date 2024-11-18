@@ -10,7 +10,36 @@ image: /v1.0.9.png
 
 <h1>Emerald Crest</h1>
 
-<p><a href="https://thatsimpledev.itch.io/emerald-crest/purchase"><img src="https://img.shields.io/badge/Download-Latest%20Version-red?style=for-the-badge" alt="Download"></a></p>
+<p>
+<a href="https://thatsimpledev.itch.io/emerald-crest/purchase"><img src="https://img.shields.io/badge/Download-Latest%20Version-red?style=for-the-badge" alt="Download"></a>
+<a href="https://thatsimpledev.itch.io/crest-dex/donate"><img src="https://img.shields.io/badge/Support%20Crest%20Dex-Donate%20%E2%9D%A4-lightblue?style=for-the-badge" alt="Support Crest Dex"></a>
+</p>
+
+<blockquote>
+<h3>❤️ Buy Me a Coffee</h3>
+<p>Your support fuels late night coding sessions and keeps this project brewing! ☕</p>
+
+<table>
+  <tr>
+    <td>📦 <strong>Unlimited Storage Box</strong></td>
+    <td>✅ Coming Next Update!</td>
+  </tr>
+  <tr>
+    <td>🔄 <strong>Wonder Trade System</strong></td>
+    <td>🚧 In Development</td>
+  </tr>
+  <tr>
+    <td>🌐 <strong>Online Trading</strong></td>
+    <td>🚧 In Development</td>
+  </tr>
+  
+</table>
+
+<a href="https://thatsimpledev.itch.io/crest-dex/donate"><img src="https://img.shields.io/badge/Support%20Crest%20Dex-Donate%20%E2%9D%A4-ligreen?style=for-the-badge" alt="Support Crest Dex"></a>
+</p>
+
+<p><em>While these features will be implemented regardless of donations, your support helps accelerate development significantly!</em></p>
+</blockquote>
 
 ## 🎯 Latest Releases
 
