@@ -16,10 +16,14 @@ image: /v1.0.9.png
 </p>
 
 <blockquote>
-<h3>❤️ Buy Me a Coffee</h3>
-<p>I'm ThatSimpleDev, the main developer behind Crest Dex. I wanted to share some exciting updates about the project and ways you can help support its development!</p>
+<h3>❤️ Support Development</h3>
+<p>I'm ThatSimpleDev, the main developer behind Crest Dex. Here are some exciting features in development that your support helps make possible:</p>
 
 <table>
+  <tr>
+    <th>Feature</th>
+    <th>Status</th>
+  </tr>
   <tr>
     <td>📦 <strong>Unlimited Storage Box</strong></td>
     <td>✅ Coming Next Update!</td>
@@ -34,19 +38,35 @@ image: /v1.0.9.png
   </tr>
 </table>
 
-<a href="https://thatsimpledev.itch.io/crest-dex/donate"><img src="https://img.shields.io/badge/Support%20Crest%20Dex-Donate%20%E2%9D%A4-ligreen?style=for-the-badge" alt="Support Crest Dex"></a>
+<p><a href="https://thatsimpledev.itch.io/crest-dex/donate"><img src="https://img.shields.io/badge/Support%20Development-Donate%20%E2%9D%A4-lightgreen?style=for-the-badge" alt="Support Development"></a></p>
 
 <p><em>Your support means the world to me! While I'm committed to implementing these features regardless, donations help me dedicate more time to development and release updates faster.</em></p>
 </blockquote>
 
 ## 🎯 Latest Releases
 
-| Version | Status | Download |
-|---------|--------|----------|
-| **Stable v1.0.9.9.1** | ✅ Latest Release | [Download](https://thatsimpledev.itch.io/emerald-crest/purchase) |
-| **Crest Dex v0.2** | 🚀 Companion App | [Download OR Run On Browser](https://thatsimpledev.itch.io/crest-dex) |
-| **PokemonHomeCrest.jar** | 🎁 Storage Tool | [Download](https://thatsimpledev.itch.io/crest-dex) |
-
+<table>
+  <tr>
+    <th>Version</th>
+    <th>Status</th>
+    <th>Download</th>
+  </tr>
+  <tr>
+    <td><strong>Stable v1.0.9.9.1</strong></td>
+    <td>✅ Latest Release</td>
+    <td><a href="https://thatsimpledev.itch.io/emerald-crest/purchase">Download</a></td>
+  </tr>
+  <tr>
+    <td><strong>Crest Dex v0.2</strong></td>
+    <td>🚀 Companion App</td>
+    <td><a href="https://thatsimpledev.itch.io/crest-dex">Download OR Run On Browser</a></td>
+  </tr>
+  <tr>
+    <td><strong>PokemonHomeCrest.jar</strong></td>
+    <td>🎁 Storage Tool</td>
+    <td><a href="https://thatsimpledev.itch.io/crest-dex">Download</a></td>
+  </tr>
+</table>
 
 <h2>🎁 Coming Soon: Unlimited Storage System</h2>
 
