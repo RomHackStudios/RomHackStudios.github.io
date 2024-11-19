@@ -15,7 +15,7 @@ image: /v1.0.9.png
 </p>
 
 <blockquote>
-<h3>❤️ Buy me a Coffee</h3>
+<h3>❤️ Buy Me A Coffee ☕</h3>
 <p>I'm ThatSimpleDev, the main developer behind Crest Dex. Here are some exciting features in development that your support helps make possible:</p>
 
 <table>
