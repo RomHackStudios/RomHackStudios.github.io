@@ -15,7 +15,6 @@ image: /v1.0.9.png
 <a href="https://thatsimpledev.itch.io/crest-dex/donate"><img src="https://img.shields.io/badge/Support%20Crest%20Dex-Donate%20%E2%9D%A4-lightblue?style=for-the-badge" alt="Support Crest Dex"></a>
 </p>
 
-{: .highlight }
 <blockquote>
 <h3>❤️ Support Development</h3>
 <p>I'm ThatSimpleDev, the main developer behind Crest Dex. Here are some exciting features in development that your support helps make possible:</p>
@@ -41,6 +40,7 @@ image: /v1.0.9.png
 
 <p><a href="https://thatsimpledev.itch.io/crest-dex/donate"><img src="https://img.shields.io/badge/Support%20Development-Donate%20%E2%9D%A4-lightgreen?style=for-the-badge" alt="Support Development"></a></p>
 
+{: .new }
 <p><em>Your support means the world to me! While I'm committed to implementing these features regardless, donations help me dedicate more time to development and release updates faster.</em></p>
 </blockquote>
 
