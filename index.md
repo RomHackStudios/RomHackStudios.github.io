@@ -62,7 +62,7 @@ image: /v1.0.9.png
     <td><a href="https://thatsimpledev.itch.io/crest-dex">Download OR Run On Browser</a></td>
   </tr>
   <tr>
-    <td><strong>PokemonHomeCrest.jar</strong></td>
+    <td><strong>PkmnHomeCrest.jar</strong></td>
     <td>🎁 Storage Tool</td>
     <td><a href="https://thatsimpledev.itch.io/crest-dex">Download</a></td>
   </tr>
