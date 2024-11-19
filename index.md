@@ -39,10 +39,10 @@ image: /v1.0.9.png
 </table>
 
 <p><a href="https://thatsimpledev.itch.io/crest-dex/donate"><img src="https://img.shields.io/badge/Support%20Development-Donate%20%E2%9D%A4-lightgreen?style=for-the-badge" alt="Support Development"></a></p>
+</blockquote>
 
 {: .new }
 <p><em>Your support means the world to me! While I'm committed to implementing these features regardless, donations help me dedicate more time to development and release updates faster.</em></p>
-</blockquote>
 
 ## 🎯 Latest Releases
 
