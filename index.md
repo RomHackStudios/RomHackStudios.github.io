@@ -10,8 +10,8 @@ image: /v1.0.9.png
 
 <h1>Emerald Crest</h1>
 <p>
-<a href="https://thatsimpledev.itch.io/emerald-crest/purchase"><img src="https://img.shields.io/badge/Download-Latest%20Version-red?style=for-the-badge&alt="Download"></a>
-<a href="https://thatsimpledev.itch.io/crest-dex"><img src="https://img.shields.io/badge/Download OR Run On Browser-Crest%20Dex-cyan?style=for-the-badge&alt="Download Crest Dex"></a>
+<a href="https://thatsimpledev.itch.io/emerald-crest/purchase"><img src="https://img.shields.io/badge/Download-Latest%20Version-red?style=for-the-badge" alt="Download"></a>
+<a href="https://thatsimpledev.itch.io/crest-dex"><img src="https://img.shields.io/badge/Download%20OR%20Run%20On%20Browser-Crest%20Dex-cyan?style=for-the-badge" alt="Download Crest Dex"></a>
 </p>
 
 <blockquote>
