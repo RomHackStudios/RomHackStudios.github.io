@@ -15,6 +15,7 @@ image: /v1.0.9.png
 <a href="https://thatsimpledev.itch.io/crest-dex/donate"><img src="https://img.shields.io/badge/Support%20Crest%20Dex-Donate%20%E2%9D%A4-lightblue?style=for-the-badge" alt="Support Crest Dex"></a>
 </p>
 
+{: .highlight }
 <blockquote>
 <h3>❤️ Support Development</h3>
 <p>I'm ThatSimpleDev, the main developer behind Crest Dex. Here are some exciting features in development that your support helps make possible:</p>
@@ -84,7 +85,7 @@ image: /v1.0.9.png
 <p>⚠️ <strong>Important:</strong> Always backup your save file before using this feature!</p>
 
 {: .note }
-> Note:</strong> Ensure <code>species.h</code> is in the same directory when using PokemonHomeCrest.jar
+> Note: Ensure <code>species.h</code> is in the same directory when using PokemonHomeCrest.jar
 
 <h2>Changelog</h2>
 
