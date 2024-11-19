@@ -83,9 +83,8 @@ image: /v1.0.9.png
 
 <p>⚠️ <strong>Important:</strong> Always backup your save file before using this feature!</p>
 
-<blockquote>
-  <p><strong>Note:</strong> Ensure <code>species.h</code> is in the same directory when using PokemonHomeCrest.jar</p>
-</blockquote>
+{: .note }
+> Note:</strong> Ensure <code>species.h</code> is in the same directory when using PokemonHomeCrest.jar
 
 <h2>Changelog</h2>
 
