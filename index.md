@@ -136,11 +136,6 @@ image: /v1.0.9.png
 - [ ]  Held Item swapper
 
 <h3>PokemonHomeCrest.jar</h3>
-<ul>
-  <li>📦 <strong>Unlimited Box Creation</strong></li>
-  <li>🔄 <strong>Seamless Integration</strong></li>
-  <li>💾 <strong>Enhanced Save Management</strong></li>
-</ul>
 
 <p>⚠️ <strong>Important:</strong> Always backup your save file before using this feature!</p>
 
