@@ -68,13 +68,74 @@ image: /v1.0.9.png
   </tr>
 </table>
 
-<h2>🎁 Coming Soon: Unlimited Storage System</h2>
+<h2>🎁 Next Update: Unlimited Storage System</h2>
 
 <img src="https://img.itch.zone/aW1nLzE4NDU0Njk2LnBuZw==/original/9IfgMB.png" alt="Unlimited Storage Preview">
 
-<h3>PokemonHomeCrest.jar</h3>
-<p>Breaking the boundaries of traditional storage! This powerful tool will soon be integrated directly into Crest Dex, offering:</p>
+<h2>Unlimited Storage System Features</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Feature</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Species Swapping</strong></td>
+      <td>Move species between slots by using drag-and-drop functionality—works with both empty slots and occupied positions.</td>
+    </tr>
+    <tr>
+      <td><strong>Cross-Box Transfer</strong></td>
+      <td>Transfer species between different boxes by holding the dragged species over the box tabs.</td>
+    </tr>
+    <tr>
+      <td><strong>Cross-Save Transfer (Trade)</strong></td>
+      <td>Transfer species between different save files.</td>
+    </tr>
+    <tr>
+      <td><strong>Remove Species</strong></td>
+      <td>Delete any species in the box.</td>
+    </tr>
+    <tr>
+      <td><strong>Box Editor</strong></td>
+      <td>Access the settings menu via the top-right icon to add new boxes, clear individual boxes (using the dropdown selector), or reset all boxes at once.</td>
+    </tr>
+    <tr>
+      <td><strong>Multiple Save Files</strong></td>
+      <td>Create additional save files through the settings menu (top-right icon). Each new save file automatically adds 14 boxes, unless the 'load save file individually' option is selected.</td>
+    </tr>
+    <tr>
+      <td><strong>Species Preview</strong></td>
+      <td>View basic species information, including nicknames, by clicking on any stored species in the box.</td>
+    </tr>
+    <tr>
+      <td><strong>Shiny Indicator</strong></td>
+      <td>Shiny species are displayed with a shiny icon in both the storage box view and preview window.</td>
+    </tr>
+  </tbody>
+</table>
 
+<h2>To-Do</h2>
+
+- [ ]  Advanced Sorting
+    - [ ]  Sort species by met level
+    - [ ]  Sort by level
+    - [ ]  Sort by shiny
+    - [ ]  Sort by met map
+    - [ ]  Sort by IVs
+    - [ ]  Sort by EVs
+    - [ ]  Sort by Stats
+    - [ ]  Sort by Traded
+    - [ ]  Sort by Spotlight
+- [ ]  Advanced Search
+    - [X]  Search by species
+    - [ ]  Search by Moves
+    - [X]  Search by Nickname
+    - [ ]  Search by Held Item
+- [ ]  Held Item swapper
+
+<h3>PokemonHomeCrest.jar</h3>
 <ul>
   <li>📦 <strong>Unlimited Box Creation</strong></li>
   <li>🔄 <strong>Seamless Integration</strong></li>
