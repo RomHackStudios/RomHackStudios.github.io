@@ -25,14 +25,10 @@ image: /v1.0.9.png
   </tr>
   <tr>
     <td>📦 <strong>Unlimited Storage Box</strong></td>
-    <td>✅ Coming Next Update!</td>
+    <td>✅ Feature Released</td>
   </tr>
   <tr>
     <td>🔄 <strong>Wonder Trade System</strong></td>
-    <td>🚧 In Development</td>
-  </tr>
-  <tr>
-    <td>🌐 <strong>Online Trading</strong></td>
     <td>🚧 In Development</td>
   </tr>
 </table>
@@ -63,12 +59,12 @@ image: /v1.0.9.png
   </tr>
   <tr>
     <td><strong>PkmnHomeCrest.jar</strong></td>
-    <td>🎁 Storage Tool</td>
+    <td>🎁 Storage Tool </td>
     <td><a href="https://thatsimpledev.itch.io/crest-dex">Download</a></td>
   </tr>
 </table>
 
-<h2>🎁 Next Update: Unlimited Storage System</h2>
+<h2>🎁 Unlimited Storage System</h2>
 
 <img src="https://img.itch.zone/aW1nLzE4NDU0Njk2LnBuZw==/original/9IfgMB.png" alt="Unlimited Storage Preview">
 
