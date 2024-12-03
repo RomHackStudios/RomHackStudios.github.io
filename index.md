@@ -48,7 +48,7 @@ image: /v1.0.9.png
     <th>Download</th>
   </tr>
   <tr>
-    <td><strong>Stable v1.0.9.9.1</strong></td>
+    <td><strong>Stable v1.0.9.9.2</strong></td>
     <td>✅ Latest Release</td>
     <td><a href="https://thatsimpledev.itch.io/emerald-crest/purchase">Download</a></td>
   </tr>
@@ -145,6 +145,23 @@ image: /v1.0.9.png
   <tr>
     <th>Version</th>
     <th>Changes</th>
+  </tr>
+  <tr>
+    <td><strong>v1.0.9.9.2</strong></td>
+    <td>
+      • Applied some critical fixes<br>
+      • Added an option to choose permanent Mega evolution<br>
+      • Added support for Crest Dex online Wonder Trade<br>
+      • Updated Spotlight Events<br>
+      • Updated several trainer parties<br>
+      • Updated the dynamic trainer leveling system<br>
+      • Updated the dynamic encounters leveling system<br>
+      • Fixed Mystery gift codes breaking<br>
+      • Fixed In-game cheat codes not working<br>
+      • Fixed several bugs with open world mode<br>
+      • Fixed some issues with metronome only mode<br>
+      • Fixed various game features<br>
+    </td>
   </tr>
   <tr>
     <td><strong>v1.0.9.9.1</strong></td>
