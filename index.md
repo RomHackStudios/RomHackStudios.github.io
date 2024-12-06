@@ -53,7 +53,7 @@ image: /v1.0.9.png
     <td><a href="https://thatsimpledev.itch.io/emerald-crest/purchase">Download</a></td>
   </tr>
   <tr>
-    <td><strong>Crest Dex v0.2</strong></td>
+    <td><strong>Crest Dex v0.3</strong></td>
     <td>🚀 Companion App</td>
     <td><a href="https://thatsimpledev.itch.io/crest-dex">Download OR Run On Browser</a></td>
   </tr>
@@ -64,7 +64,7 @@ image: /v1.0.9.png
   </tr>
 </table>
 
-<h2>🎁 Unlimited Storage System</h2>
+<h2>🎁 Unlimited Storage System Is Here With Crest Dex v0.3</h2>
 
 <img src="https://img.itch.zone/aW1nLzE4NDU0Njk2LnBuZw==/original/9IfgMB.png" alt="Unlimited Storage Preview">
 
