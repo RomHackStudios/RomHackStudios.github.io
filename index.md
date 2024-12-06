@@ -13,7 +13,7 @@ image: /v1.0.9.png
 <a href="https://thatsimpledev.itch.io/emerald-crest/purchase"><img src="https://img.shields.io/badge/Download-Latest%20Version-red?style=for-the-badge" alt="Download"></a>
 <a href="https://thatsimpledev.itch.io/crest-dex"><img src="https://img.shields.io/badge/Download%20OR%20Run%20On%20Browser-Crest%20Dex-cyan?style=for-the-badge" alt="Download Crest Dex"></a>
 </p>
-[![Join Our Discord Server](https://img.shields.io/discord/965900074532081674?style=for-the-badge&logo=discord&logoColor=white&label=Join%20Our%20Discord%20Server)](https://discord.gg/wVHCQ5htxW)
+<a href="https://discord.gg/wVHCQ5htxW"><img src="https://img.shields.io/discord/965900074532081674?style=for-the-badge&logo=discord&logoColor=white&label=Join%20Our%20Discord%20Server"></a>
 <blockquote>
 <h3>❤️ Buy Me A Coffee ☕</h3>
 <p>I'm ThatSimpleDev, the main developer behind Crest Dex. Here are some exciting features in development that your support helps make possible:</p>
