@@ -14,30 +14,6 @@ image: /v1.0.9.png
 <a href="https://thatsimpledev.itch.io/crest-dex"><img src="https://img.shields.io/badge/Download%20OR%20Run%20On%20Browser-Crest%20Dex-cyan?style=for-the-badge" alt="Download Crest Dex"></a>
 </p>
 <a href="https://discord.gg/wVHCQ5htxW"><img src="https://img.shields.io/discord/965900074532081674?style=for-the-badge&logo=discord&logoColor=white&label=Join%20Our%20Discord%20Server"></a>
-<blockquote>
-<h3>❤️ Buy Me A Coffee ☕</h3>
-<p>I'm ThatSimpleDev, the main developer behind Crest Dex. Here are some exciting features in development that your support helps make possible:</p>
-
-<table>
-  <tr>
-    <th>Feature</th>
-    <th>Status</th>
-  </tr>
-  <tr>
-    <td>📦 <strong>Unlimited Storage Box</strong></td>
-    <td>✅ Feature Released</td>
-  </tr>
-  <tr>
-    <td>🔄 <strong>Wonder Trade System</strong></td>
-    <td>🚧 In Development</td>
-  </tr>
-</table>
-
-<p><a href="https://thatsimpledev.itch.io/crest-dex/donate"><img src="https://img.shields.io/badge/Support%20Development-Donate%20%E2%9D%A4-lightgreen?style=for-the-badge&labelColor=black" alt="Support Development"></a></p>
-
-<p><em>Your support means the world to me! While I'm committed to implementing these features regardless, donations help me dedicate more time to development and release updates faster.</em></p>
-
-</blockquote>
 
 ## 🎯 Latest Releases
 
@@ -111,32 +87,6 @@ image: /v1.0.9.png
     </tr>
   </tbody>
 </table>
-
-<h2>To-Do</h2>
-
-- [ ]  Advanced Sorting
-    - [ ]  Sort species by met level
-    - [ ]  Sort by level
-    - [ ]  Sort by shiny
-    - [ ]  Sort by met map
-    - [ ]  Sort by IVs
-    - [ ]  Sort by EVs
-    - [ ]  Sort by Stats
-    - [ ]  Sort by Traded
-    - [ ]  Sort by Spotlight
-- [ ]  Advanced Search
-    - [X]  Search by species
-    - [ ]  Search by Moves
-    - [X]  Search by Nickname
-    - [ ]  Search by Held Item
-- [ ]  Held Item swapper
-
-<h3>PokemonHomeCrest.jar</h3>
-
-<p>⚠️ <strong>Important:</strong> Always backup your save file before using this feature!</p>
-
-{: .note }
-> Note: Ensure <code>species.h</code> is in the same directory when using PokemonHomeCrest.jar
 
 <h2>Changelog</h2>
 
