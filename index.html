@@ -194,7 +194,8 @@
         .footer-logo { font-size: 2rem; font-weight: 900; margin-bottom: 1rem; }
         .footer-logo a { color: var(--text-primary); }
         .footer-links { list-style: none; display: flex; justify-content: center; gap: 1.5rem; margin-bottom: 2rem; }
-        .copyright { color: var(--text-secondary); font-size: 0.9rem; }
+        .copyright { color: var(--text-secondary); font-size: 0.9rem; max-width: 800px; margin-left: auto; margin-right: auto; }
+        .copyright a { font-weight: 600; }
 
         /* --- Download Modal --- */
         .modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.7); display: flex; align-items: center; justify-content: center; opacity: 0; pointer-events: none; transition: opacity 0.3s ease; z-index: 2000; }
@@ -315,7 +316,7 @@
                 <p class="subtitle">An unforgettable Pokémon adventure, crafted by RomHackStudios.</p>
                 <div class="hero-buttons">
                     <a href="#download" class="btn btn-primary">Download Latest</a>
-                    <a href="https://discord.gg/wVHCQ5htxW" class="btn btn-secondary">Join the Community</a>
+                    <a href="https://discord.gg/wVHCQ5htxW" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Join the Community</a>
                 </div>
             </div>
             <a href="#features" class="scroll-down" aria-label="Scroll down">
@@ -412,7 +413,7 @@
                         <li>You need a clean, base ROM of "Pokémon Emerald (U)(TrashMan)". We cannot provide this file.</li>
                         <li>Download a patching tool like <a href="https://www.marcrobledo.com/RomPatcher.js/" target="_blank" rel="noopener noreferrer">RomPatcher.js</a> or NUPS.</li>
                         <li>Apply the "Emerald Crest" patch file you downloaded to the base ROM.</li>
-                        <li>Enjoy the game on your favorite GBA emulator! For a detailed guide, <a href="https://romhackstudios.github.io/pages/howtopatch.html">click here</a>.</li>
+                        <li>Enjoy the game on your favorite GBA emulator! For a detailed guide, <a href="https://romhackstudios.github.io/pages/howtopatch.html" target="_blank" rel="noopener noreferrer">click here</a>.</li>
                     </ol>
                 </div>
             </div>
@@ -423,47 +424,47 @@
             <div class="container">
                  <h2 class="section-title reveal">Development & Updates</h2>
                  <div class="timeline reveal">
-                     <div class="timeline-item right">
-                         <div class="timeline-content">
-                             <h3>Version 1.0.9.9.2</h3>
-                             <p class="date">Stability & Features</p>
-                             <ul>
-                                 <li>✨ Added permanent Mega evolution option & Crest Dex Wonder Trade support.</li>
-                                 <li>🚀 Updated Spotlight Events and dynamic leveling systems.</li>
-                                 <li>🔧 Fixed Mystery Gift codes and various bugs.</li>
-                             </ul>
-                         </div>
-                     </div>
-                      <div class="timeline-item left">
-                         <div class="timeline-content">
-                             <h3>Version 1.0.9.9.1</h3>
-                             <p class="date">Content Update</p>
-                             <ul>
-                                 <li>✨ Added Seasonal toggles & mid-battle evolutions.</li>
-                                 <li>🚀 Hoopa now teleports post-5th badge with exclusive legends.</li>
-                             </ul>
-                         </div>
-                     </div>
-                      <div class="timeline-item right">
-                         <div class="timeline-content">
-                             <h3>Version 1.0.9.9</h3>
-                             <p class="date">Indigo Disk Update</p>
-                             <ul>
-                                 <li>✨ Added Indigo Disk Pokémon and followers.</li>
-                                 <li>🚀 Increased rock smash item drop odds.</li>
-                             </ul>
-                         </div>
-                     </div>
-                       <div class="timeline-item left">
-                         <div class="timeline-content">
-                             <h3>Version 1.0.9.8</h3>
-                             <p class="date">The Seasons Update</p>
-                              <ul>
-                                 <li>✨ Added Seasons system with unique encounters & evolutions.</li>
-                                 <li>🚀 Added support for Crest Dex v0.1.4.</li>
-                             </ul>
-                         </div>
-                     </div>
+                       <div class="timeline-item right">
+                           <div class="timeline-content">
+                               <h3>Version 1.0.9.9.2</h3>
+                               <p class="date">Stability & Features</p>
+                               <ul>
+                                   <li>✨ Added permanent Mega evolution option & Crest Dex Wonder Trade support.</li>
+                                   <li>🚀 Updated Spotlight Events and dynamic leveling systems.</li>
+                                   <li>🔧 Fixed Mystery Gift codes and various bugs.</li>
+                               </ul>
+                           </div>
+                       </div>
+                        <div class="timeline-item left">
+                           <div class="timeline-content">
+                               <h3>Version 1.0.9.9.1</h3>
+                               <p class="date">Content Update</p>
+                               <ul>
+                                   <li>✨ Added Seasonal toggles & mid-battle evolutions.</li>
+                                   <li>🚀 Hoopa now teleports post-5th badge with exclusive legends.</li>
+                               </ul>
+                           </div>
+                       </div>
+                        <div class="timeline-item right">
+                           <div class="timeline-content">
+                               <h3>Version 1.0.9.9</h3>
+                               <p class="date">Indigo Disk Update</p>
+                               <ul>
+                                   <li>✨ Added Indigo Disk Pokémon and followers.</li>
+                                   <li>🚀 Increased rock smash item drop odds.</li>
+                               </ul>
+                           </div>
+                       </div>
+                        <div class="timeline-item left">
+                           <div class="timeline-content">
+                               <h3>Version 1.0.9.8</h3>
+                               <p class="date">The Seasons Update</p>
+                                <ul>
+                                   <li>✨ Added Seasons system with unique encounters & evolutions.</li>
+                                   <li>🚀 Added support for Crest Dex v0.1.4.</li>
+                               </ul>
+                           </div>
+                       </div>
                  </div>
             </div>
         </section>
@@ -516,10 +517,16 @@
         <div class="container">
             <div class="footer-logo"><a href="#">RomHackStudios</a></div>
             <ul class="footer-links">
-                <li><a href="https://thatsimpledev.itch.io/emerald-crest">itch.io Page</a></li>
-                <li><a href="https://discord.gg/wVHCQ5htxW">Discord</a></li>
+                <li><a href="https://thatsimpledev.itch.io/emerald-crest" target="_blank" rel="noopener noreferrer">itch.io Page</a></li>
+                <li><a href="https://discord.gg/wVHCQ5htxW" target="_blank" rel="noopener noreferrer">Discord</a></li>
             </ul>
-            <p class="copyright">&copy; 2024 RomHackStudios. All Rights Reserved. Not affiliated with Nintendo or The Pokémon Company.</p>
+            <p class="copyright">&copy; 2025 RomHackStudios. All Rights Reserved.</p>
+            <p class="copyright" style="margin-top: 1rem;">
+                <strong>Legal Disclaimer:</strong> Pokémon and all associated names are trademarked by Nintendo, The Pokémon Company, and GAME FREAK. This is a non-profit, fan-made project created for entertainment purposes and is not affiliated with, endorsed by, or sponsored by the official rights holders.
+            </p>
+            <p class="copyright" style="margin-top: 1rem;">
+                <strong>DMCA Notice:</strong> We respect intellectual property. If you are a rights holder and believe that your work has been used in a way that constitutes copyright infringement, please contact us at <a href="mailto:romhackstudios@gmail.com">dmca.romhackstudios@gmail.com</a> to have the content addressed.
+            </p>
         </div>
     </footer>
 
