@@ -16,40 +16,53 @@
             --blur-intensity: 16px;
         }
         
-        /* --- Default Theme (Hoenn - Emerald) --- */
+        /* --- Base Theme Colors (Dark Mode Default) --- */
         body {
             --bg-primary: #0A0A0A;
             --bg-secondary: #141414;
             --border-color: #262626;
-            --primary-accent: #00E075;
-            --secondary-accent: #50C878;
-            --glow-color: rgba(0, 224, 117, 0.3);
             --text-primary: #EAEAEA;
             --text-secondary: #A0A0A0;
             --card-bg: rgba(20, 20, 20, 0.45);
             --card-border: rgba(255, 255, 255, 0.1);
+
+            /* Accent Colors - Default to Emerald */
+            --primary-accent: #00E075;
+            --secondary-accent: #50C878;
+            --glow-color: rgba(0, 224, 117, 0.3);
         }
 
-        /* --- Pokémon Game Themes --- */
-        body.theme-firered  { --primary-accent: #EE8130; --secondary-accent: #F08030; }
-        body.theme-leafgreen{ --primary-accent: #7AC74C; --secondary-accent: #A6B91A; }
-        body.theme-ruby     { --primary-accent: #C22E28; --secondary-accent: #A32621; }
-        body.theme-sapphire { --primary-accent: #6390F0; --secondary-accent: #96B9F0; }
-        body.theme-emerald  { --primary-accent: #00E075; --secondary-accent: #50C878; }
-        body.theme-gold     { --primary-accent: #DAA520; --secondary-accent: #FFD700; }
-        body.theme-silver   { --primary-accent: #C0C0C0; --secondary-accent: #A8A8A8; }
-        body.theme-diamond  { --primary-accent: #5E99D6; --secondary-accent: #98D8D8; }
-        body.theme-pearl    { --primary-accent: #D65E8B; --secondary-accent: #EE99AC; }
-        body.theme-black    { --primary-accent: #CCCCCC; --secondary-accent: #555555; }
-        body.theme-white    { --primary-accent: #333333; --secondary-accent: #555555; background-color: #fff; --bg-primary: #fff; --bg-secondary: #f6f8fa; --text-primary: #24292F; --text-secondary: #57606a; --card-bg: rgba(255, 255, 255, 0.6); --card-border: rgba(0,0,0,0.1);}
-        body.theme-x        { --primary-accent: #0075BE; --secondary-accent: #4A90E2; }
-        body.theme-y        { --primary-accent: #ED1B24; --secondary-accent: #D0021B; }
-        body.theme-sun      { --primary-accent: #F17F2E; --secondary-accent: #F5AC78; }
-        body.theme-moon     { --primary-accent: #5E4A8C; --secondary-accent: #8C6BB8; }
-        body.theme-sword    { --primary-accent: #00A1E9; --secondary-accent: #52C1F9; }
-        body.theme-shield   { --primary-accent: #E30064; --secondary-accent: #F764A1; }
-        body.theme-scarlet  { --primary-accent: #EE4B2B; --secondary-accent: #F78F7B; }
-        body.theme-violet   { --primary-accent: #6A0DAD; --secondary-accent: #9B59B6; }
+        body.light-mode {
+            --bg-primary: #F0F2F5;
+            --bg-secondary: #FFFFFF;
+            --border-color: #d0d7de;
+            --text-primary: #24292F;
+            --text-secondary: #57606a;
+            --card-bg: rgba(255, 255, 255, 0.45);
+            --card-border: rgba(0, 0, 0, 0.1);
+        }
+
+        /* --- Pokémon Game Accent Themes --- */
+        body.theme-firered  { --primary-accent: #EE8130; --secondary-accent: #F08030; --glow-color: rgba(238, 129, 48, 0.4); }
+        body.theme-leafgreen{ --primary-accent: #7AC74C; --secondary-accent: #A6B91A; --glow-color: rgba(122, 199, 76, 0.4); }
+        body.theme-ruby     { --primary-accent: #C22E28; --secondary-accent: #A32621; --glow-color: rgba(194, 46, 40, 0.4); }
+        body.theme-sapphire { --primary-accent: #6390F0; --secondary-accent: #96B9F0; --glow-color: rgba(99, 144, 240, 0.4); }
+        body.theme-emerald  { --primary-accent: #00E075; --secondary-accent: #50C878; --glow-color: rgba(0, 224, 117, 0.3); }
+        body.theme-gold     { --primary-accent: #DAA520; --secondary-accent: #FFD700; --glow-color: rgba(218, 165, 32, 0.4); }
+        body.theme-silver   { --primary-accent: #C0C0C0; --secondary-accent: #A8A8A8; --glow-color: rgba(192, 192, 192, 0.3); }
+        body.theme-diamond  { --primary-accent: #5E99D6; --secondary-accent: #98D8D8; --glow-color: rgba(94, 153, 214, 0.4); }
+        body.theme-pearl    { --primary-accent: #D65E8B; --secondary-accent: #EE99AC; --glow-color: rgba(214, 94, 139, 0.4); }
+        body.theme-black    { --primary-accent: #444444; --secondary-accent: #888888; --glow-color: rgba(100, 100, 100, 0.3); }
+        body.theme-white    { --primary-accent: #999999; --secondary-accent: #777777; --glow-color: rgba(150, 150, 150, 0.3); }
+        body.theme-x        { --primary-accent: #0075BE; --secondary-accent: #4A90E2; --glow-color: rgba(0, 117, 190, 0.4); }
+        body.theme-y        { --primary-accent: #ED1B24; --secondary-accent: #D0021B; --glow-color: rgba(237, 27, 36, 0.4); }
+        body.theme-sun      { --primary-accent: #F17F2E; --secondary-accent: #F5AC78; --glow-color: rgba(241, 127, 46, 0.4); }
+        body.theme-moon     { --primary-accent: #5E4A8C; --secondary-accent: #8C6BB8; --glow-color: rgba(94, 74, 140, 0.4); }
+        body.theme-sword    { --primary-accent: #00A1E9; --secondary-accent: #52C1F9; --glow-color: rgba(0, 161, 233, 0.4); }
+        body.theme-shield   { --primary-accent: #E30064; --secondary-accent: #F764A1; --glow-color: rgba(227, 0, 100, 0.4); }
+        body.theme-scarlet  { --primary-accent: #EE4B2B; --secondary-accent: #F78F7B; --glow-color: rgba(238, 75, 43, 0.4); }
+        body.theme-violet   { --primary-accent: #6A0DAD; --secondary-accent: #9B59B6; --glow-color: rgba(106, 13, 173, 0.4); }
+
         
         /* --- Base & Reset --- */
         * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -65,7 +78,7 @@
         .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
         section { padding: 100px 0; transition: background-color 0.3s ease; }
         h1, h2, h3 { font-weight: 700; color: var(--text-primary); transition: color 0.3s ease; }
-        h2.section-title { font-size: 3rem; text-align: center; margin-bottom: 4rem; }
+        h2.section-title { font-size: clamp(2rem, 8vw, 3rem); text-align: center; margin-bottom: 4rem; }
         p { color: var(--text-secondary); line-height: 1.8; transition: color 0.3s ease; }
         a { color: var(--primary-accent); text-decoration: none; }
         
@@ -92,9 +105,10 @@
         .btn-primary { background: var(--primary-accent); color: #000; box-shadow: 0 0 20px var(--glow-color); }
         .btn-primary:hover { transform: translateY(-3px) scale(1.05); box-shadow: 0 0 30px var(--glow-color); }
         
-        /* --- Theme Palette --- */
+        /* --- Theme UI --- */
+        .theme-controls { display: flex; align-items: center; gap: 1rem; }
         .theme-palette { position: relative; }
-        .theme-palette-btn { background: none; border: none; color: var(--text-primary); cursor: pointer; font-size: 1.5rem; }
+        .theme-btn { background: none; border: none; color: var(--text-primary); cursor: pointer; font-size: 1.5rem; padding: 0; }
         .theme-dropdown {
             position: absolute; top: calc(100% + 15px); right: 0;
             background: var(--card-bg); backdrop-filter: blur(var(--blur-intensity));
@@ -104,34 +118,25 @@
             opacity: 0; pointer-events: none; transform: translateY(-10px);
             transition: opacity 0.3s ease, transform 0.3s ease;
             z-index: 1100;
-            max-height: 70vh; /* FIX: Added max-height */
-            overflow-y: auto;  /* FIX: Added overflow-y */
+            max-height: 70vh;
+            overflow-y: auto;
         }
         .theme-dropdown::-webkit-scrollbar { width: 8px; }
         .theme-dropdown::-webkit-scrollbar-track { background: transparent; }
         .theme-dropdown::-webkit-scrollbar-thumb { background: var(--border-color); border-radius: 4px; }
         .theme-dropdown::-webkit-scrollbar-thumb:hover { background: var(--text-secondary); }
-        
         .theme-palette.active .theme-dropdown { opacity: 1; pointer-events: auto; transform: translateY(0); }
-        .theme-dropdown h4 {
-            font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px;
-            color: var(--text-secondary); margin: 0.5rem 0;
-        }
-        .theme-option {
-            display: flex; align-items: center; gap: 0.75rem;
-            width: 100%; padding: 0.5rem; border-radius: 6px;
-            background: none; border: none; color: var(--text-primary);
-            cursor: pointer; text-align: left;
-        }
+        .theme-dropdown h4 { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; color: var(--text-secondary); margin: 0.5rem 0; }
+        .theme-option { display: flex; align-items: center; gap: 0.75rem; width: 100%; padding: 0.5rem; border-radius: 6px; background: none; border: none; color: var(--text-primary); cursor: pointer; text-align: left; font-size: 0.9rem; }
         .theme-option:hover, .theme-option.active { background: rgba(255,255,255,0.1); }
-        body.theme-white .theme-option:hover, body.theme-white .theme-option.active { background: rgba(0,0,0,0.1); }
-        .theme-swatch { width: 20px; height: 20px; border-radius: 50%; }
+        body.light-mode .theme-option:hover, body.light-mode .theme-option.active { background: rgba(0,0,0,0.05); }
+        .theme-swatch { width: 20px; height: 20px; border-radius: 50%; flex-shrink: 0; }
         
         /* --- Hero Section --- */
         .hero { padding-top: var(--header-height); height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; background: linear-gradient(175deg, var(--bg-secondary), var(--bg-primary) 70%); position: relative; }
-        .hero::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(45deg, var(--primary-accent), transparent 40%), linear-gradient(-45deg, var(--secondary-accent), transparent 40%); opacity: 0.05; animation: bg-pan 20s linear infinite; z-index: -1; }
+        .hero::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(45deg, var(--primary-accent), transparent 40%), linear-gradient(-45deg, var(--secondary-accent), transparent 40%); opacity: 0.1; animation: bg-pan 20s linear infinite; z-index: -1; }
         .hero-content { animation: fadeIn 1s ease-in-out; }
-        .hero h1 { font-size: 5rem; font-weight: 900; background: linear-gradient(45deg, var(--primary-accent), var(--text-primary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 1rem; }
+        .hero h1 { font-size: clamp(3rem, 12vw, 5rem); font-weight: 900; background: linear-gradient(45deg, var(--primary-accent), var(--text-primary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 1rem; }
         .hero .subtitle { font-size: 1.5rem; color: var(--text-secondary); margin-bottom: 2rem; max-width: 600px; }
         .hero-buttons { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; }
         .btn-secondary { background: var(--card-bg); color: var(--text-primary); border: 1px solid var(--card-border); backdrop-filter: blur(5px); }
@@ -189,12 +194,18 @@
         .faq-item[open] > summary .plus-icon { transform: rotate(45deg); }
         .faq-answer { padding: 0 1.5rem 1.5rem; border-top: 1px solid var(--card-border); margin-top: -1rem; padding-top: 1.5rem; }
         
-        /* --- Footer --- */
-        .main-footer { background: var(--bg-secondary); padding: 4rem 0; text-align: center; border-top: 1px solid var(--border-color); }
-        .footer-logo { font-size: 2rem; font-weight: 900; margin-bottom: 1rem; }
-        .footer-logo a { color: var(--text-primary); }
-        .footer-links { list-style: none; display: flex; justify-content: center; gap: 1.5rem; margin-bottom: 2rem; }
-        .copyright { color: var(--text-secondary); font-size: 0.9rem; }
+        /* --- Redesigned Footer --- */
+        .main-footer { background: var(--bg-secondary); padding: 5rem 2rem 3rem; border-top: 1px solid var(--border-color); }
+        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 3rem; text-align: left; margin-bottom: 4rem; }
+        .footer-heading { font-size: 1.1rem; color: var(--text-primary); margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 1px; }
+        .footer-column p, .footer-column .footer-links { color: var(--text-secondary); font-size: 0.9rem; }
+        .footer-links { list-style: none; padding: 0; }
+        .footer-links li { margin-bottom: 0.75rem; }
+        .footer-links a { color: var(--text-secondary); transition: color 0.3s ease; }
+        .footer-links a:hover { color: var(--primary-accent); }
+        .disclaimer-text { font-size: 0.85rem; line-height: 1.6; }
+        .disclaimer-text a { font-weight: 600; }
+        .footer-bottom { text-align: center; margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border-color); color: var(--text-secondary); font-size: 0.9rem; }
 
         /* --- Download Modal --- */
         .modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.7); display: flex; align-items: center; justify-content: center; opacity: 0; pointer-events: none; transition: opacity 0.3s ease; z-index: 2000; }
@@ -226,10 +237,11 @@
             .nav-right-stack { position: fixed; inset: 0 0 0 30%; flex-direction: column; padding: 7rem 2rem; background: var(--card-bg); backdrop-filter: blur(var(--blur-intensity)); -webkit-backdrop-filter: blur(var(--blur-intensity)); transform: translateX(100%); transition: transform 350ms ease-out; z-index: 1000; }
             body.mobile-nav-open .nav-right-stack { transform: translateX(0%); }
             .nav-right-stack .nav-links { flex-direction: column; align-items: center; gap: 2rem; font-size: 1.5rem; }
+            .nav-right-stack .theme-palette { margin-top: 2rem; }
             .hero h1 { font-size: 3.5rem; }
             .hero .subtitle { font-size: 1.1rem; }
             h2.section-title { font-size: 2.2rem; }
-            .download-grid, .gameplay-grid { grid-template-columns: 1fr; }
+            .download-grid, .gameplay-grid, .footer-grid { grid-template-columns: 1fr; }
             .timeline::after { left: 20px; }
             .timeline-item { width: 100%; padding-left: 60px; padding-right: 15px; }
             .timeline-item.left, .timeline-item.right { left: 0; }
@@ -258,34 +270,37 @@
                         <li><a href="#faq">FAQ</a></li>
                     </ul>
                 </nav>
-                <div class="theme-palette">
-                    <button class="theme-palette-btn" aria-label="Open theme palette">🎨</button>
-                    <div class="theme-dropdown">
-                        <h4>Hoenn</h4>
-                        <button class="theme-option" data-theme="ruby"><span class="theme-swatch" style="background:#C22E28;"></span> Pokémon Ruby</button>
-                        <button class="theme-option" data-theme="sapphire"><span class="theme-swatch" style="background:#6390F0;"></span> Pokémon Sapphire</button>
-                        <button class="theme-option" data-theme="emerald"><span class="theme-swatch" style="background:#00E075;"></span> Pokémon Emerald</button>
-                        <h4>Kanto</h4>
-                        <button class="theme-option" data-theme="firered"><span class="theme-swatch" style="background:#EE8130;"></span> Pokémon FireRed</button>
-                        <button class="theme-option" data-theme="leafgreen"><span class="theme-swatch" style="background:#7AC74C;"></span> Pokémon LeafGreen</button>
-                        <h4>Johto</h4>
-                        <button class="theme-option" data-theme="gold"><span class="theme-swatch" style="background:#DAA520;"></span> Pokémon Gold</button>
-                        <button class="theme-option" data-theme="silver"><span class="theme-swatch" style="background:#C0C0C0;"></span> Pokémon Silver</button>
-                        <h4>Sinnoh</h4>
-                        <button class="theme-option" data-theme="diamond"><span class="theme-swatch" style="background:#5E99D6;"></span> Pokémon Diamond</button>
-                        <button class="theme-option" data-theme="pearl"><span class="theme-swatch" style="background:#D65E8B;"></span> Pokémon Pearl</button>
-                        <h4>Unova</h4>
-                        <button class="theme-option" data-theme="black"><span class="theme-swatch" style="background:#333;"></span> Pokémon Black</button>
-                        <button class="theme-option" data-theme="white"><span class="theme-swatch" style="background:#EAEAEA; border: 1px solid #ccc;"></span> Pokémon White</button>
-                         <h4>And More...</h4>
-                        <button class="theme-option" data-theme="x"><span class="theme-swatch" style="background:#0075BE;"></span> Pokémon X</button>
-                        <button class="theme-option" data-theme="y"><span class="theme-swatch" style="background:#ED1B24;"></span> Pokémon Y</button>
-                        <button class="theme-option" data-theme="sun"><span class="theme-swatch" style="background:#F17F2E;"></span> Pokémon Sun</button>
-                        <button class="theme-option" data-theme="moon"><span class="theme-swatch" style="background:#5E4A8C;"></span> Pokémon Moon</button>
-                        <button class="theme-option" data-theme="sword"><span class="theme-swatch" style="background:#00A1E9;"></span> Pokémon Sword</button>
-                        <button class="theme-option" data-theme="shield"><span class="theme-swatch" style="background:#E30064;"></span> Pokémon Shield</button>
-                        <button class="theme-option" data-theme="scarlet"><span class="theme-swatch" style="background:#EE4B2B;"></span> Pokémon Scarlet</button>
-                        <button class="theme-option" data-theme="violet"><span class="theme-swatch" style="background:#6A0DAD;"></span> Pokémon Violet</button>
+                <div class="theme-controls">
+                    <button class="theme-btn" id="mode-toggle" aria-label="Toggle Light/Dark Mode">☀️</button>
+                    <div class="theme-palette">
+                        <button class="theme-palette-btn" aria-label="Open theme palette">🎨</button>
+                        <div class="theme-dropdown">
+                            <h4>Hoenn</h4>
+                            <button class="theme-option" data-theme="ruby"><span class="theme-swatch" style="background:#C22E28;"></span> Pokémon Ruby</button>
+                            <button class="theme-option" data-theme="sapphire"><span class="theme-swatch" style="background:#6390F0;"></span> Pokémon Sapphire</button>
+                            <button class="theme-option" data-theme="emerald"><span class="theme-swatch" style="background:#00E075;"></span> Pokémon Emerald</button>
+                            <h4>Kanto</h4>
+                            <button class="theme-option" data-theme="firered"><span class="theme-swatch" style="background:#EE8130;"></span> Pokémon FireRed</button>
+                            <button class="theme-option" data-theme="leafgreen"><span class="theme-swatch" style="background:#7AC74C;"></span> Pokémon LeafGreen</button>
+                            <h4>Johto</h4>
+                            <button class="theme-option" data-theme="gold"><span class="theme-swatch" style="background:#DAA520;"></span> Pokémon Gold</button>
+                            <button class="theme-option" data-theme="silver"><span class="theme-swatch" style="background:#C0C0C0;"></span> Pokémon Silver</button>
+                            <h4>Sinnoh</h4>
+                            <button class="theme-option" data-theme="diamond"><span class="theme-swatch" style="background:#5E99D6;"></span> Pokémon Diamond</button>
+                            <button class="theme-option" data-theme="pearl"><span class="theme-swatch" style="background:#D65E8B;"></span> Pokémon Pearl</button>
+                            <h4>Unova</h4>
+                            <button class="theme-option" data-theme="black"><span class="theme-swatch" style="background:#333;"></span> Pokémon Black</button>
+                            <button class="theme-option" data-theme="white"><span class="theme-swatch" style="background:#333; border: 1px solid #ccc;"></span> Pokémon White</button>
+                            <h4>And More...</h4>
+                            <button class="theme-option" data-theme="x"><span class="theme-swatch" style="background:#0075BE;"></span> Pokémon X</button>
+                            <button class="theme-option" data-theme="y"><span class="theme-swatch" style="background:#ED1B24;"></span> Pokémon Y</button>
+                            <button class="theme-option" data-theme="sun"><span class="theme-swatch" style="background:#F17F2E;"></span> Pokémon Sun</button>
+                            <button class="theme-option" data-theme="moon"><span class="theme-swatch" style="background:#5E4A8C;"></span> Pokémon Moon</button>
+                            <button class="theme-option" data-theme="sword"><span class="theme-swatch" style="background:#00A1E9;"></span> Pokémon Sword</button>
+                            <button class="theme-option" data-theme="shield"><span class="theme-swatch" style="background:#E30064;"></span> Pokémon Shield</button>
+                            <button class="theme-option" data-theme="scarlet"><span class="theme-swatch" style="background:#EE4B2B;"></span> Pokémon Scarlet</button>
+                            <button class="theme-option" data-theme="violet"><span class="theme-swatch" style="background:#6A0DAD;"></span> Pokémon Violet</button>
+                        </div>
                     </div>
                 </div>
                 <a href="#download" class="btn btn-primary">Download</a>
@@ -514,12 +529,36 @@
 
     <footer class="main-footer">
         <div class="container">
-            <div class="footer-logo"><a href="#">RomHackStudios</a></div>
-            <ul class="footer-links">
-                <li><a href="https://thatsimpledev.itch.io/emerald-crest">itch.io Page</a></li>
-                <li><a href="https://discord.gg/wVHCQ5htxW">Discord</a></li>
-            </ul>
-            <p class="copyright">&copy; 2024 RomHackStudios. All Rights Reserved. Not affiliated with Nintendo or The Pokémon Company.</p>
+            <div class="footer-grid">
+                 <div class="footer-column">
+                    <h4 class="footer-heading">RomHackStudios</h4>
+                    <p class="disclaimer-text">Creating new adventures in familiar worlds. Passionate about fan-driven projects and community.</p>
+                </div>
+                 <div class="footer-column">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://thatsimpledev.itch.io/emerald-crest" target="_blank" rel="noopener noreferrer">itch.io Page</a></li>
+                        <li><a href="https://discord.gg/wVHCQ5htxW" target="_blank" rel="noopener noreferrer">Discord Community</a></li>
+                         <li><a href="#changelog">Changelog</a></li>
+                         <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                 <div class="footer-column">
+                    <h4 class="footer-heading">Legal Disclaimer</h4>
+                     <p class="disclaimer-text">
+                         This is a non-profit, fan-made game. RomHackStudios is not affiliated, associated, authorized, endorsed by, or in any way officially connected with Nintendo, Game Freak, or The Pokémon Company. Pokémon and all associated names are trademarks & © of Nintendo, Creatures Inc., and Game Freak Inc.
+                     </p>
+                </div>
+                 <div class="footer-column">
+                    <h4 class="footer-heading">DMCA & Takedown</h4>
+                    <p class="disclaimer-text">
+                        We respect intellectual property rights. If you are a copyright holder and believe your work is being used improperly, please contact us for immediate removal at <a href="mailto:dmca@example.com">dmca@example.com</a>.
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 RomHackStudios. A fan project for educational and entertainment purposes only.</p>
+            </div>
         </div>
     </footer>
 
@@ -538,38 +577,59 @@
             });
             revealElements.forEach(element => observer.observe(element));
 
-            // --- Theme Switcher ---
+            // --- Theme System ---
+            const modeToggle = document.getElementById('mode-toggle');
             const themePaletteBtn = document.querySelector('.theme-palette-btn');
             const themePalette = document.querySelector('.theme-palette');
             const themeOptions = document.querySelectorAll('.theme-option');
-            
-            const applyTheme = (theme) => {
-                document.body.className = ''; // Clear existing theme classes
-                if (theme) {
-                    document.body.classList.add(`theme-${theme}`);
+
+            const applyMode = (mode) => {
+                document.body.classList.remove('light-mode');
+                if (mode === 'light') {
+                    document.body.classList.add('light-mode');
                 }
-                localStorage.setItem('theme', theme);
-                // Update active button
+                modeToggle.textContent = mode === 'light' ? '🌙' : '☀️';
+                localStorage.setItem('mode', mode);
+            };
+
+            const applyAccentTheme = (theme) => {
+                const classList = document.body.classList;
+                for (let i = classList.length - 1; i >= 0; i--) {
+                    const className = classList[i];
+                    if (className.startsWith('theme-')) {
+                        classList.remove(className);
+                    }
+                }
+                document.body.classList.add(`theme-${theme}`);
+                localStorage.setItem('accentTheme', theme);
                 themeOptions.forEach(opt => {
                     opt.classList.toggle('active', opt.dataset.theme === theme);
                 });
             };
-
-            const currentTheme = localStorage.getItem('theme') || 'emerald'; // Default to Emerald
-            applyTheme(currentTheme);
             
+            // Load saved themes
+            const savedMode = localStorage.getItem('mode') || 'dark';
+            const savedAccent = localStorage.getItem('accentTheme') || 'emerald';
+            applyMode(savedMode);
+            applyAccentTheme(savedAccent);
+
+            // Mode toggle event
+            modeToggle.addEventListener('click', () => {
+                const newMode = document.body.classList.contains('light-mode') ? 'dark' : 'light';
+                applyMode(newMode);
+            });
+            
+            // Accent theme palette events
             themePaletteBtn.addEventListener('click', (e) => {
                 e.stopPropagation();
                 themePalette.classList.toggle('active');
             });
-            
             themeOptions.forEach(option => {
                 option.addEventListener('click', () => {
-                    applyTheme(option.dataset.theme);
+                    applyAccentTheme(option.dataset.theme);
                     themePalette.classList.remove('active');
                 });
             });
-            
             document.addEventListener('click', (e) => {
                 if (!themePalette.contains(e.target)) {
                     themePalette.classList.remove('active');
@@ -578,7 +638,6 @@
 
             // --- Mobile Navigation ---
             const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
-            const mobileNavContainer = document.querySelector('.nav-right-stack');
             const mobileNavLinks = document.querySelectorAll('.nav-right-stack .nav-links a');
             
             mobileNavToggle.addEventListener('click', () => {
@@ -630,7 +689,6 @@
                     closeModal();
                 }
             });
-
         });
     </script>
 </body>
