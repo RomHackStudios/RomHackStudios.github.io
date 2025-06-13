@@ -136,8 +136,8 @@
         .hero { padding-top: var(--header-height); height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; background: linear-gradient(175deg, var(--bg-secondary), var(--bg-primary) 70%); position: relative; }
         .hero::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(45deg, var(--primary-accent), transparent 40%), linear-gradient(-45deg, var(--secondary-accent), transparent 40%); opacity: 0.1; animation: bg-pan 20s linear infinite; z-index: -1; }
         .hero-content { animation: fadeIn 1s ease-in-out; }
-        .hero h1 { font-size: clamp(3rem, 12vw, 5rem); font-weight: 900; background: linear-gradient(45deg, var(--primary-accent), var(--text-primary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 1rem; }
-        .hero .subtitle { font-size: 1.5rem; color: var(--text-secondary); margin-bottom: 2rem; max-width: 600px; }
+        .hero h1 { font-size: clamp(2.8rem, 12vw, 5rem); font-weight: 900; background: linear-gradient(45deg, var(--primary-accent), var(--text-primary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 1rem; }
+        .hero .subtitle { font-size: clamp(1rem, 4vw, 1.5rem); color: var(--text-secondary); margin-bottom: 2rem; max-width: 600px; }
         .hero-buttons { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; }
         .btn-secondary { background: var(--card-bg); color: var(--text-primary); border: 1px solid var(--card-border); backdrop-filter: blur(5px); }
         .btn-secondary:hover { background-color: var(--border-color); }
@@ -195,17 +195,20 @@
         .faq-answer { padding: 0 1.5rem 1.5rem; border-top: 1px solid var(--card-border); margin-top: -1rem; padding-top: 1.5rem; }
         
         /* --- Redesigned Footer --- */
-        .main-footer { background: var(--bg-secondary); padding: 5rem 2rem 3rem; border-top: 1px solid var(--border-color); }
-        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 3rem; text-align: left; margin-bottom: 4rem; }
-        .footer-heading { font-size: 1.1rem; color: var(--text-primary); margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 1px; }
-        .footer-column p, .footer-column .footer-links { color: var(--text-secondary); font-size: 0.9rem; }
-        .footer-links { list-style: none; padding: 0; }
-        .footer-links li { margin-bottom: 0.75rem; }
-        .footer-links a { color: var(--text-secondary); transition: color 0.3s ease; }
-        .footer-links a:hover { color: var(--primary-accent); }
-        .disclaimer-text { font-size: 0.85rem; line-height: 1.6; }
+        .main-footer { padding: 5rem 2rem 3rem; border-top: 1px solid var(--border-color); }
+        .footer-content { display: flex; flex-direction: column; align-items: center; text-align: center; max-width: 800px; margin: 0 auto; }
+        .footer-logo { font-size: 2.5rem; font-weight: 900; margin-bottom: 1rem; }
+        .footer-logo a { color: var(--text-primary); }
+        .footer-tagline { font-size: 1.1rem; max-width: 600px; margin-bottom: 2rem; color: var(--text-secondary); }
+        .social-links { display: flex; gap: 1.5rem; margin-bottom: 3rem; }
+        .social-links a { color: var(--text-secondary); transition: color 0.3s ease, transform 0.3s ease; }
+        .social-links a:hover { color: var(--primary-accent); transform: scale(1.1); }
+        .social-links svg { width: 28px; height: 28px; }
+        .footer-legal { border-top: 1px solid var(--border-color); padding-top: 2rem; margin-top: 2rem; width: 100%; }
+        .disclaimer-text { font-size: 0.85rem; line-height: 1.6; color: var(--text-secondary); max-width: 700px; margin: 0 auto 1rem; }
         .disclaimer-text a { font-weight: 600; }
-        .footer-bottom { text-align: center; margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border-color); color: var(--text-secondary); font-size: 0.9rem; }
+        .footer-copyright { color: var(--text-secondary); font-size: 0.9rem; margin-top: 2rem; }
+        
 
         /* --- Download Modal --- */
         .modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.7); display: flex; align-items: center; justify-content: center; opacity: 0; pointer-events: none; transition: opacity 0.3s ease; z-index: 2000; }
@@ -219,7 +222,7 @@
         #modal-confirm-btn { display: block; width: 100%; text-align: center; }
         
         /* --- Mobile Navigation --- */
-        .mobile-nav-toggle { display: none; background: transparent; border: 0; cursor: pointer; z-index: 1002; }
+        .mobile-nav-toggle { display: none; background: transparent; border: 0; cursor: pointer; position: relative; z-index: 1002; }
         .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border-width: 0; }
         .hamburger-icon { width: 25px; height: 2px; background: var(--text-primary); display: block; position: relative; transition: background 0.3s ease-out; }
         .hamburger-icon::before, .hamburger-icon::after { content: ''; position: absolute; width: 100%; height: 100%; background: var(--text-primary); left: 0; transition: transform 0.3s ease-out; }
@@ -234,11 +237,11 @@
         @media (max-width: 768px) {
             .desktop-nav { display: none; }
             .mobile-nav-toggle { display: block; }
-            .nav-right-stack { position: fixed; inset: 0 0 0 30%; flex-direction: column; padding: 7rem 2rem; background: var(--card-bg); backdrop-filter: blur(var(--blur-intensity)); -webkit-backdrop-filter: blur(var(--blur-intensity)); transform: translateX(100%); transition: transform 350ms ease-out; z-index: 1000; }
+            .nav-right-stack { position: fixed; inset: 0 0 0 30%; flex-direction: column; justify-content: center; align-items: center; padding: 2rem; background: var(--card-bg); backdrop-filter: blur(var(--blur-intensity)); -webkit-backdrop-filter: blur(var(--blur-intensity)); transform: translateX(100%); transition: transform 350ms ease-out; z-index: 1000; }
             body.mobile-nav-open .nav-right-stack { transform: translateX(0%); }
-            .nav-right-stack .nav-links { flex-direction: column; align-items: center; gap: 2rem; font-size: 1.5rem; }
-            .nav-right-stack .theme-palette { margin-top: 2rem; }
-            .hero h1 { font-size: 3.5rem; }
+            .nav-right-stack .nav-links { flex-direction: column; align-items: center; gap: 2rem; font-size: 1.5rem; text-align: center; margin-bottom: 2rem; }
+            .nav-right-stack .theme-controls { margin-top: 3rem; }
+            .hero h1 { font-size: clamp(2.5rem, 12vw, 3.5rem); }
             .hero .subtitle { font-size: 1.1rem; }
             h2.section-title { font-size: 2.2rem; }
             .download-grid, .gameplay-grid, .footer-grid { grid-template-columns: 1fr; }
@@ -271,7 +274,7 @@
                     </ul>
                 </nav>
                 <div class="theme-controls">
-                    <button class="theme-btn" id="mode-toggle" aria-label="Toggle Light/Dark Mode">☀️</button>
+                    <button class="theme-btn mode-toggle" aria-label="Toggle Light/Dark Mode">☀️</button>
                     <div class="theme-palette">
                         <button class="theme-palette-btn" aria-label="Open theme palette">🎨</button>
                         <div class="theme-dropdown">
@@ -303,7 +306,6 @@
                         </div>
                     </div>
                 </div>
-                <a href="#download" class="btn btn-primary">Download</a>
             </div>
         </div>
     </header>
@@ -319,6 +321,28 @@
                 <li><a href="#faq">FAQ</a></li>
             </ul>
         </nav>
+        <div class="theme-controls">
+             <button class="theme-btn mode-toggle" aria-label="Toggle Light/Dark Mode">☀️</button>
+            <div class="theme-palette">
+                <button class="theme-palette-btn" aria-label="Open theme palette">🎨</button>
+                <div class="theme-dropdown">
+                    <!-- Same theme options as desktop -->
+                    <h4>Hoenn</h4>
+                    <button class="theme-option" data-theme="ruby"><span class="theme-swatch" style="background:#C22E28;"></span> Pokémon Ruby</button>
+                    <button class="theme-option" data-theme="sapphire"><span class="theme-swatch" style="background:#6390F0;"></span> Pokémon Sapphire</button>
+                    <button class="theme-option" data-theme="emerald"><span class="theme-swatch" style="background:#00E075;"></span> Pokémon Emerald</button>
+                    <h4>Kanto</h4>
+                    <button class="theme-option" data-theme="firered"><span class="theme-swatch" style="background:#EE8130;"></span> Pokémon FireRed</button>
+                    <button class="theme-option" data-theme="leafgreen"><span class="theme-swatch" style="background:#7AC74C;"></span> Pokémon LeafGreen</button>
+                    <h4>Johto</h4>
+                    <button class="theme-option" data-theme="gold"><span class="theme-swatch" style="background:#DAA520;"></span> Pokémon Gold</button>
+                    <button class="theme-option" data-theme="silver"><span class="theme-swatch" style="background:#C0C0C0;"></span> Pokémon Silver</button>
+                    <h4>And More...</h4>
+                    <button class="theme-option" data-theme="diamond"><span class="theme-swatch" style="background:#5E99D6;"></span> Pokémon Diamond</button>
+                    <button class="theme-option" data-theme="pearl"><span class="theme-swatch" style="background:#D65E8B;"></span> Pokémon Pearl</button>
+                </div>
+            </div>
+        </div>
     </div>
 
 
@@ -415,7 +439,7 @@
                     </div>
                     <div class="download-card reveal" style="transition-delay: 200ms;">
                         <h3>Crest Dex</h3>
-                        <p class="version">Version 0.3 (PC/Web)</p>
+                        <p class="version">Version 0.3 (Andriod/PC/Linux/Mac/Web)</p>
                         <p class="description">The companion app for unlimited storage, cross-save trading, and Pokémon management.</p>
                         <button class="btn-download-trigger" data-title="Download Crest Dex" data-description="You are about to download Crest Dex v0.3. You will be redirected to itch.io to get the companion app." data-url="https://thatsimpledev.itch.io/crest-dex">Get Crest Dex</button>
                     </div>
@@ -578,9 +602,9 @@
             revealElements.forEach(element => observer.observe(element));
 
             // --- Theme System ---
-            const modeToggle = document.getElementById('mode-toggle');
-            const themePaletteBtn = document.querySelector('.theme-palette-btn');
-            const themePalette = document.querySelector('.theme-palette');
+            const modeToggles = document.querySelectorAll('.mode-toggle');
+            const themePaletteBtns = document.querySelectorAll('.theme-palette-btn');
+            const themePalettes = document.querySelectorAll('.theme-palette');
             const themeOptions = document.querySelectorAll('.theme-option');
 
             const applyMode = (mode) => {
@@ -588,7 +612,7 @@
                 if (mode === 'light') {
                     document.body.classList.add('light-mode');
                 }
-                modeToggle.textContent = mode === 'light' ? '🌙' : '☀️';
+                modeToggles.forEach(toggle => toggle.textContent = mode === 'light' ? '🌙' : '☀️');
                 localStorage.setItem('mode', mode);
             };
 
@@ -614,30 +638,41 @@
             applyAccentTheme(savedAccent);
 
             // Mode toggle event
-            modeToggle.addEventListener('click', () => {
-                const newMode = document.body.classList.contains('light-mode') ? 'dark' : 'light';
-                applyMode(newMode);
+            modeToggles.forEach(toggle => {
+                toggle.addEventListener('click', () => {
+                    const newMode = document.body.classList.contains('light-mode') ? 'dark' : 'light';
+                    applyMode(newMode);
+                });
             });
             
+            
             // Accent theme palette events
-            themePaletteBtn.addEventListener('click', (e) => {
-                e.stopPropagation();
-                themePalette.classList.toggle('active');
+            themePaletteBtns.forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    const palette = btn.closest('.theme-palette');
+                    palette.classList.toggle('active');
+                });
             });
+
             themeOptions.forEach(option => {
                 option.addEventListener('click', () => {
                     applyAccentTheme(option.dataset.theme);
-                    themePalette.classList.remove('active');
+                    themePalettes.forEach(p => p.classList.remove('active'));
                 });
             });
+
             document.addEventListener('click', (e) => {
-                if (!themePalette.contains(e.target)) {
-                    themePalette.classList.remove('active');
-                }
+                themePalettes.forEach(palette => {
+                    if (!palette.contains(e.target)) {
+                        palette.classList.remove('active');
+                    }
+                });
             });
 
             // --- Mobile Navigation ---
             const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
+            const mobileNavContainer = document.querySelector('.nav-right-stack');
             const mobileNavLinks = document.querySelectorAll('.nav-right-stack .nav-links a');
             
             mobileNavToggle.addEventListener('click', () => {
