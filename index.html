@@ -16,21 +16,32 @@
             --blur-intensity: 16px;
         }
         
-        /* --- Default Theme (Hoenn - Emerald) --- */
+        /* --- Default Theme (Dark Mode) --- */
         body {
             --bg-primary: #0A0A0A;
             --bg-secondary: #141414;
             --border-color: #262626;
             --primary-accent: #00E075;
             --secondary-accent: #50C878;
-            --glow-color: rgba(0, 224, 117, 0.5); /* Increased glow opacity */
+            --glow-color: rgba(0, 224, 117, 0.5); 
             --text-primary: #EAEAEA;
             --text-secondary: #A0A0A0;
             --card-bg: rgba(20, 20, 20, 0.45);
             --card-border: rgba(255, 255, 255, 0.1);
         }
 
-        /* --- Pokémon Game Themes with specific glow colors --- */
+        /* --- Light Mode Theme --- */
+        body.light-mode {
+            --bg-primary: #f8f9fa;
+            --bg-secondary: #ffffff;
+            --border-color: #dee2e6;
+            --text-primary: #212529;
+            --text-secondary: #6c757d;
+            --card-bg: rgba(255, 255, 255, 0.6);
+            --card-border: rgba(0, 0, 0, 0.1);
+        }
+
+        /* --- Pokémon Game Themes (Accent Colors) --- */
         body.theme-firered  { --primary-accent: #EE8130; --secondary-accent: #F08030; --glow-color: rgba(238, 129, 48, 0.5); }
         body.theme-leafgreen{ --primary-accent: #7AC74C; --secondary-accent: #A6B91A; --glow-color: rgba(122, 199, 76, 0.5); }
         body.theme-ruby     { --primary-accent: #C22E28; --secondary-accent: #A32621; --glow-color: rgba(194, 46, 40, 0.5); }
@@ -41,7 +52,7 @@
         body.theme-diamond  { --primary-accent: #5E99D6; --secondary-accent: #98D8D8; --glow-color: rgba(94, 153, 214, 0.5); }
         body.theme-pearl    { --primary-accent: #D65E8B; --secondary-accent: #EE99AC; --glow-color: rgba(214, 94, 139, 0.5); }
         body.theme-black    { --primary-accent: #CCCCCC; --secondary-accent: #555555; --glow-color: rgba(204, 204, 204, 0.5); }
-        body.theme-white    { --primary-accent: #333333; --secondary-accent: #555555; background-color: #fff; --bg-primary: #fff; --bg-secondary: #f6f8fa; --text-primary: #24292F; --text-secondary: #57606a; --card-bg: rgba(255, 255, 255, 0.6); --card-border: rgba(0,0,0,0.1); --glow-color: rgba(51, 51, 51, 0.4);}
+        body.theme-white    { --primary-accent: #333333; --secondary-accent: #555555; --glow-color: rgba(51, 51, 51, 0.4);}
         body.theme-x        { --primary-accent: #0075BE; --secondary-accent: #4A90E2; --glow-color: rgba(0, 117, 190, 0.5); }
         body.theme-y        { --primary-accent: #ED1B24; --secondary-accent: #D0021B; --glow-color: rgba(237, 27, 36, 0.5); }
         body.theme-sun      { --primary-accent: #F17F2E; --secondary-accent: #F5AC78; --glow-color: rgba(241, 127, 46, 0.5); }
@@ -65,15 +76,13 @@
         .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
         section { padding: 100px 0; transition: background-color 0.3s ease; }
         h1, h2, h3 { font-weight: 700; color: var(--text-primary); transition: color 0.3s ease; }
-        h2.section-title { font-size: 3rem; text-align: center; margin-bottom: 4rem; text-shadow: 0 0 15px var(--glow-color); } /* Added glow to section titles */
+        h2.section-title { font-size: 3rem; text-align: center; margin-bottom: 4rem; /* No glow by default */ }
         p { color: var(--text-secondary); line-height: 1.8; transition: color 0.3s ease; }
         a { color: var(--primary-accent); text-decoration: none; }
         
-        /* --- NEW: Pop-In Animation Class --- */
         .reveal { opacity: 0; transform: translateY(50px) scale(0.95); transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
         .reveal.visible { opacity: 1; transform: translateY(0) scale(1); }
 
-        /* --- Header / Navigation --- */
         .main-header {
             position: fixed; top: 0; left: 0; width: 100%; height: var(--header-height);
             background: var(--card-bg); backdrop-filter: blur(var(--blur-intensity));
@@ -82,18 +91,18 @@
         }
         .main-nav { display: flex; justify-content: space-between; align-items: center; height: 100%; }
         .logo { font-size: 1.5rem; font-weight: 900; }
-        .logo a { color: var(--text-primary); text-shadow: 0 0 10px var(--glow-color); transition: all 0.3s ease; } /* Added glow */
-        .logo a:hover { color: var(--primary-accent); text-shadow: 0 0 20px var(--glow-color); }
+        .logo a { color: var(--text-primary); transition: all 0.3s ease; }
+        .logo a:hover { color: var(--primary-accent); text-shadow: 0 0 15px var(--glow-color); }
         .nav-right-stack { display: flex; align-items: center; gap: 1.5rem; }
         .desktop-nav { display: flex; align-items: center; gap: 1.5rem;}
         .nav-links { display: flex; gap: 2rem; list-style: none; }
-        .nav-links a { font-weight: 600; transition: color 0.3s ease, text-shadow 0.3s ease; color: var(--text-primary); } /* Added text-shadow transition */
-        .nav-links a:hover { color: var(--primary-accent); text-shadow: 0 0 10px var(--glow-color); } /* Added glow on hover */
+        .nav-links a { font-weight: 600; transition: color 0.3s ease, text-shadow 0.3s ease; color: var(--text-primary); }
+        .nav-links a:hover { color: var(--primary-accent); } /* Subtle hover, no glow */
         .btn { display: inline-block; padding: 0.75rem 1.5rem; border-radius: 8px; font-weight: 600; transition: all 0.3s ease; }
-        .btn-primary { background: var(--primary-accent); color: #000; box-shadow: 0 0 25px var(--glow-color); animation: pulse-glow 2.5s infinite ease-in-out; } /* Enhanced glow and added pulse animation */
+        .btn-primary { background: var(--primary-accent); color: #000; box-shadow: 0 0 25px var(--glow-color); animation: pulse-glow 2.5s infinite ease-in-out; }
         .btn-primary:hover { transform: translateY(-5px) scale(1.1); box-shadow: 0 0 40px var(--glow-color); }
         
-        /* --- Theme Palette --- */
+        /* --- Theme & Mode Palette --- */
         .theme-palette { position: relative; }
         .theme-palette-btn { background: none; border: none; color: var(--text-primary); cursor: pointer; font-size: 1.5rem; transition: transform 0.3s ease; }
         .theme-palette-btn:hover { transform: scale(1.2) rotate(15deg); }
@@ -117,49 +126,48 @@
         .theme-palette.active .theme-dropdown { opacity: 1; pointer-events: auto; transform: translateY(0); }
         .theme-dropdown h4 {
             font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px;
-            color: var(--text-secondary); margin: 0.5rem 0;
+            color: var(--text-secondary); margin: 1rem 0 0.5rem 0;
         }
-        .theme-option {
+        .theme-dropdown h4:first-child { margin-top: 0; }
+        .theme-option, .mode-option {
             display: flex; align-items: center; gap: 0.75rem;
             width: 100%; padding: 0.5rem; border-radius: 6px;
             background: none; border: none; color: var(--text-primary);
             cursor: pointer; text-align: left;
+            font-size: 1rem;
         }
-        .theme-option:hover, .theme-option.active { background: rgba(255,255,255,0.1); }
-        body.theme-white .theme-option:hover, body.theme-white .theme-option.active { background: rgba(0,0,0,0.1); }
+        .theme-option:hover, .theme-option.active, .mode-option:hover, .mode-option.active { background: rgba(255,255,255,0.1); }
+        body.light-mode .theme-option:hover, body.light-mode .theme-option.active, body.light-mode .mode-option:hover, body.light-mode .mode-option.active { background: rgba(0,0,0,0.05); }
         .theme-swatch { width: 20px; height: 20px; border-radius: 50%; }
         
         /* --- Hero Section --- */
         .hero { padding-top: var(--header-height); height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; background: linear-gradient(175deg, var(--bg-secondary), var(--bg-primary) 70%); position: relative; }
         .hero::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(45deg, var(--primary-accent), transparent 40%), linear-gradient(-45deg, var(--secondary-accent), transparent 40%); opacity: 0.08; animation: bg-pan 20s linear infinite; z-index: -1; }
         .hero-content { animation: fadeIn 1s ease-in-out; }
-        /* ENHANCED Hero Title */
         .hero h1 {
             font-size: 5rem; font-weight: 900;
             background: linear-gradient(45deg, var(--primary-accent), var(--text-primary));
             -webkit-background-clip: text; -webkit-text-fill-color: transparent;
             margin-bottom: 1rem;
-            text-shadow: 0 0 10px var(--glow-color), 0 0 40px var(--glow-color); /* Intense glow effect */
+            text-shadow: 0 0 10px var(--glow-color), 0 0 40px var(--glow-color); /* Intense glow for main title */
         }
         .hero .subtitle { font-size: 1.5rem; color: var(--text-secondary); margin-bottom: 2rem; max-width: 600px; }
         .hero-buttons { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; }
         .btn-secondary { background: var(--card-bg); color: var(--text-primary); border: 1px solid var(--card-border); backdrop-filter: blur(5px); }
-        .btn-secondary:hover { background-color: var(--border-color); transform: translateY(-5px) scale(1.1); } /* Added pop effect */
+        .btn-secondary:hover { background-color: var(--border-color); transform: translateY(-5px) scale(1.1); }
         .scroll-down { position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%); color: var(--text-secondary); animation: pulse 2s infinite; }
         .scroll-down span { font-size: 2.5rem; }
 
         @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
         @keyframes pulse { 0% { opacity: 0.5; transform: translateY(0); } 50% { opacity: 1; transform: translateY(5px); } 100% { opacity: 0.5; transform: translateY(0); } }
         @keyframes bg-pan { 0% { background-position: 0% 0%; } 100% { background-position: 200% 200%; } }
-        
-        /* NEW: Pulse Glow Animation */
         @keyframes pulse-glow {
             0% { box-shadow: 0 0 25px var(--glow-color); }
             50% { box-shadow: 0 0 45px var(--glow-color); }
             100% { box-shadow: 0 0 25px var(--glow-color); }
         }
         
-        /* --- ENHANCED Glassy Cards & Grids --- */
+        /* --- Glassy Cards & Grids --- */
         .features-grid, .gameplay-grid, .download-grid { display: grid; gap: 2rem; }
         .features-grid { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
         .gameplay-grid { grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); }
@@ -168,9 +176,8 @@
         .feature-card, .gameplay-item, .download-card, .instructions-card, .timeline-content, .faq-item {
             background: var(--card-bg); backdrop-filter: blur(var(--blur-intensity)); -webkit-backdrop-filter: blur(var(--blur-intensity));
             border-radius: 12px; padding: 2rem; border: 1px solid var(--card-border);
-            transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 0.4s ease, border-color 0.4s ease; /* Smoother transition */
+            transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 0.4s ease, border-color 0.4s ease;
         }
-        /* NEW: 3D Pop-out effect on hover */
         .feature-card:hover {
             transform: perspective(1000px) translateY(-10px) rotateX(5deg) scale(1.05);
             border-color: var(--primary-accent);
@@ -178,31 +185,27 @@
         }
         .feature-card .icon { font-size: 2.5rem; color: var(--primary-accent); margin-bottom: 1rem; display: inline-block; transition: transform 0.3s ease; text-shadow: 0 0 15px var(--glow-color); }
         .feature-card:hover .icon { transform: scale(1.2) rotate(-10deg); }
-        .gameplay-item h3 { color: var(--primary-accent); margin-bottom: 0.5rem; text-shadow: 0 0 8px var(--glow-color); }
+        .gameplay-item h3, .instructions-card h3, .timeline-content h3 { color: var(--primary-accent); margin-bottom: 0.5rem; } /* Removed glow */
         .download-card { display: flex; flex-direction: column; }
-        .download-card:hover { transform: translateY(-8px); box-shadow: 0 10px 30px rgba(0,0,0,0.2); } /* Simpler hover for download cards */
+        .download-card:hover { transform: translateY(-8px); box-shadow: 0 10px 30px rgba(0,0,0,0.2); }
         .download-card h3 { font-size: 1.8rem; }
         .download-card .version { color: var(--text-secondary); margin-bottom: 1rem; }
         .download-card .description { flex-grow: 1; margin-bottom: 2rem;}
         .btn-download-trigger { display: block; text-align: center; background-color: var(--primary-accent); color: #000; padding: 1rem; border-radius: 8px; font-weight: 700; margin-top: auto; cursor: pointer; border: none; transition: transform 0.3s ease, box-shadow 0.3s ease; }
         .btn-download-trigger:hover { transform: scale(1.05); box-shadow: 0 0 20px var(--glow-color); }
-        .instructions-card h3 { color: var(--primary-accent); margin-bottom: 1rem; text-shadow: 0 0 8px var(--glow-color); }
         .instructions-card ol { padding-left: 20px; }
         .instructions-card li { margin-bottom: 0.5rem; }
 
-        /* --- Sections with Contrast --- */
         #gameplay, #changelog, #faq { background: var(--bg-secondary); }
         
-        /* --- Redesigned Changelog Section --- */
         .timeline { position: relative; max-width: 900px; margin: 0 auto; }
-        .timeline::after { content: ''; position: absolute; width: 4px; background-color: var(--border-color); top: 0; bottom: 0; left: 50%; margin-left: -2px; border-radius: 2px; box-shadow: 0 0 15px var(--border-color); } /* Added glow to timeline */
+        .timeline::after { content: ''; position: absolute; width: 4px; background-color: var(--border-color); top: 0; bottom: 0; left: 50%; margin-left: -2px; border-radius: 2px; }
         .timeline-item { padding: 10px 40px; position: relative; width: 50%; margin: 20px 0; }
-        /* ENHANCED Timeline Dot */
         .timeline-item::after {
             content: ''; position: absolute; width: 20px; height: 20px; right: -10px;
             background-color: var(--primary-accent); border: 4px solid var(--bg-secondary);
             top: 15px; border-radius: 50%; z-index: 1;
-            box-shadow: 0 0 15px var(--glow-color);
+            box-shadow: 0 0 15px var(--glow-color); /* Keep glow on timeline dots */
             transition: transform 0.3s ease;
         }
         .timeline-item:hover::after { transform: scale(1.3); }
@@ -210,13 +213,11 @@
         .timeline-item.right { left: 50%; }
         .timeline-item.right::after { left: -10px; }
         .timeline-content { padding: 1.5rem 2rem; }
-        .timeline-content:hover { transform: translateY(-5px); } /* Subtle lift on hover */
-        .timeline-content h3 { font-size: 1.5rem; color: var(--primary-accent); margin-bottom: 0.25rem; text-shadow: 0 0 8px var(--glow-color); }
+        .timeline-content:hover { transform: translateY(-5px); }
         .timeline-content .date { font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1rem; }
         .timeline-content ul { list-style: none; padding: 0; }
         .timeline-content li { margin-bottom: 0.5rem; }
 
-        /* --- Redesigned FAQ Section --- */
         .faq-accordion { max-width: 800px; margin: 0 auto; }
         .faq-item { margin-bottom: 1rem; padding: 0; }
         .faq-item:hover { transform: translateY(-5px); box-shadow: 0 5px 20px rgba(0,0,0,0.2); }
@@ -226,27 +227,26 @@
         .faq-item[open] > summary .plus-icon { transform: rotate(45deg); }
         .faq-answer { padding: 0 1.5rem 1.5rem; border-top: 1px solid var(--card-border); margin-top: -1rem; padding-top: 1.5rem; }
         
-        /* --- Footer --- */
         .main-footer { background: var(--bg-secondary); padding: 4rem 0; text-align: center; border-top: 1px solid var(--border-color); }
         .footer-logo { font-size: 2rem; font-weight: 900; margin-bottom: 1rem; }
-        .footer-logo a { color: var(--text-primary); text-shadow: 0 0 10px var(--glow-color); } /* Added glow */
+        .footer-logo a { color: var(--text-primary); }
+        .footer-logo a:hover { color: var(--primary-accent); text-shadow: 0 0 10px var(--glow-color); }
         .footer-links { list-style: none; display: flex; justify-content: center; gap: 1.5rem; margin-bottom: 2rem; }
         .copyright { color: var(--text-secondary); font-size: 0.9rem; max-width: 800px; margin-left: auto; margin-right: auto; }
         .copyright a { font-weight: 600; }
 
-        /* --- Download Modal --- */
         .modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.7); display: flex; align-items: center; justify-content: center; opacity: 0; pointer-events: none; transition: opacity 0.3s ease; z-index: 2000; }
         .modal-overlay.active { opacity: 1; pointer-events: auto; }
-        .modal { background: var(--card-bg); backdrop-filter: blur(var(--blur-intensity)); -webkit-backdrop-filter: blur(var(--blur-intensity)); border-radius: 12px; padding: 2rem; border: 1px solid var(--primary-accent); width: 90%; max-width: 500px; transform: scale(0.9); transition: transform 0.3s ease; position: relative; box-shadow: 0 0 50px var(--glow-color); } /* Added glow to modal */
+        .modal { background: var(--card-bg); backdrop-filter: blur(var(--blur-intensity)); -webkit-backdrop-filter: blur(var(--blur-intensity)); border-radius: 12px; padding: 2rem; border: 1px solid var(--primary-accent); width: 90%; max-width: 500px; transform: scale(0.9); transition: transform 0.3s ease; position: relative; box-shadow: 0 0 50px var(--glow-color); }
         .modal-overlay.active .modal { transform: scale(1); }
         .modal-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; }
-        #modal-title { font-size: 1.8rem; color: var(--text-primary); text-shadow: 0 0 8px var(--glow-color); }
+        #modal-title { font-size: 1.8rem; color: var(--text-primary); }
         .modal-close-btn { background: none; border: none; font-size: 2rem; color: var(--text-secondary); cursor: pointer; transition: color 0.3s ease, transform 0.3s ease; }
         .modal-close-btn:hover { color: var(--text-primary); transform: rotate(90deg); }
         #modal-description { margin-bottom: 2rem; }
         #modal-confirm-btn { display: block; width: 100%; text-align: center; }
         
-        /* --- Mobile Navigation --- */
+        /* --- Mobile Navigation & Mode Switcher --- */
         .mobile-nav-toggle { display: none; background: transparent; border: 0; cursor: pointer; z-index: 1002; }
         .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border-width: 0; }
         .hamburger-icon { width: 25px; height: 2px; background: var(--text-primary); display: block; position: relative; transition: background 0.3s ease-out; }
@@ -257,14 +257,49 @@
         body.mobile-nav-open .hamburger-icon::before { transform: rotate(45deg) translate(5px, 6px); }
         body.mobile-nav-open .hamburger-icon::after { transform: rotate(-45deg) translate(5px, -6px); }
 
+        .mobile-mode-switcher { display: none; } /* Initially hide mobile switcher */
 
         /* --- Responsive Design --- */
         @media (max-width: 768px) {
-            .desktop-nav { display: none; }
+            .desktop-nav .theme-palette { display: none; }
+            .desktop-nav .btn-primary { display: none; }
+
             .mobile-nav-toggle { display: block; }
-            .nav-right-stack { position: fixed; inset: 0 0 0 30%; flex-direction: column; padding: 7rem 2rem; background: var(--card-bg); backdrop-filter: blur(var(--blur-intensity)); -webkit-backdrop-filter: blur(var(--blur-intensity)); transform: translateX(100%); transition: transform 350ms ease-out; z-index: 1000; border-left: 1px solid var(--card-border); }
+            .nav-right-stack { 
+                position: fixed; inset: 0 0 0 30%; 
+                flex-direction: column; 
+                padding: 7rem 2rem; 
+                background: var(--card-bg); 
+                backdrop-filter: blur(var(--blur-intensity)); 
+                -webkit-backdrop-filter: blur(var(--blur-intensity)); 
+                transform: translateX(100%); 
+                transition: transform 350ms ease-out; 
+                z-index: 1000; 
+                border-left: 1px solid var(--card-border); 
+                align-items: center;
+                gap: 3rem;
+            }
             body.mobile-nav-open .nav-right-stack { transform: translateX(0%); }
             .nav-right-stack .nav-links { flex-direction: column; align-items: center; gap: 2rem; font-size: 1.5rem; }
+            
+            .mobile-mode-switcher {
+                display: flex;
+                gap: 1rem;
+                border: 1px solid var(--card-border);
+                padding: 0.5rem;
+                border-radius: 8px;
+            }
+            .mobile-mode-switcher .mode-option {
+                padding: 0.5rem 1rem;
+            }
+            .mobile-mode-switcher .mode-option.active {
+                background: var(--primary-accent);
+                color: #000;
+            }
+             body.light-mode .mobile-mode-switcher .mode-option.active {
+                color: #fff;
+             }
+
             .hero h1 { font-size: 3.5rem; }
             .hero .subtitle { font-size: 1.1rem; }
             h2.section-title { font-size: 2.2rem; }
@@ -300,6 +335,10 @@
                 <div class="theme-palette">
                     <button class="theme-palette-btn" aria-label="Open theme palette">🎨</button>
                     <div class="theme-dropdown">
+                        <h4>Mode</h4>
+                        <button class="mode-option" data-mode="light">☀️ Light</button>
+                        <button class="mode-option" data-mode="dark">🌙 Dark</button>
+
                         <h4>Hoenn</h4>
                         <button class="theme-option" data-theme="ruby"><span class="theme-swatch" style="background:#C22E28;"></span> Pokémon Ruby</button>
                         <button class="theme-option" data-theme="sapphire"><span class="theme-swatch" style="background:#6390F0;"></span> Pokémon Sapphire</button>
@@ -343,6 +382,11 @@
                 <li><a href="#faq">FAQ</a></li>
             </ul>
         </nav>
+        <div class="mobile-mode-switcher">
+             <button class="mode-option" data-mode="light">☀️ Light</button>
+             <button class="mode-option" data-mode="dark">🌙 Dark</button>
+        </div>
+        <a href="#download" class="btn btn-primary">Download</a>
     </div>
 
 
@@ -583,43 +627,49 @@
             });
             revealElements.forEach(element => observer.observe(element));
 
-            // --- Theme Switcher ---
+            // --- Theme & Mode Switcher Logic ---
             const themePaletteBtn = document.querySelector('.theme-palette-btn');
             const themePalette = document.querySelector('.theme-palette');
             const themeOptions = document.querySelectorAll('.theme-option');
-            
+            const modeOptions = document.querySelectorAll('.mode-option');
+
+            // Function to apply color theme
             const applyTheme = (theme) => {
-                document.body.className = ''; // Clear existing theme classes
+                // Remove any existing theme-* class
+                document.body.className = document.body.className.replace(/theme-[\w-]+/g, '');
                 if (theme) {
                     document.body.classList.add(`theme-${theme}`);
                 }
-                localStorage.setItem('theme', theme);
-                // Update active button
+                localStorage.setItem('colorTheme', theme);
                 themeOptions.forEach(opt => {
                     opt.classList.toggle('active', opt.dataset.theme === theme);
                 });
             };
-
-            // Set default theme or load from storage
-            const savedTheme = localStorage.getItem('theme');
-            if (savedTheme) {
-                applyTheme(savedTheme);
-            } else {
-                // If no theme is saved, find the active one from the class list or default.
-                const initialTheme = Array.from(document.body.classList).find(c => c.startsWith('theme-'))?.replace('theme-', '') || 'emerald';
-                applyTheme(initialTheme);
-            }
             
+            // Function to apply light/dark mode
+            const applyMode = (mode) => {
+                if (mode === 'light') {
+                    document.body.classList.add('light-mode');
+                } else {
+                    document.body.classList.remove('light-mode');
+                }
+                localStorage.setItem('colorMode', mode);
+                modeOptions.forEach(opt => {
+                    opt.classList.toggle('active', opt.dataset.mode === mode);
+                });
+            };
+
+            // --- Initialization from localStorage ---
+            const savedTheme = localStorage.getItem('colorTheme') || 'emerald';
+            const savedMode = localStorage.getItem('colorMode') || 'dark';
+
+            applyTheme(savedTheme);
+            applyMode(savedMode);
+            
+            // --- Event Listeners ---
             themePaletteBtn.addEventListener('click', (e) => {
                 e.stopPropagation();
                 themePalette.classList.toggle('active');
-            });
-            
-            themeOptions.forEach(option => {
-                option.addEventListener('click', () => {
-                    applyTheme(option.dataset.theme);
-                    themePalette.classList.remove('active');
-                });
             });
             
             document.addEventListener('click', (e) => {
@@ -628,9 +678,20 @@
                 }
             });
 
+            themeOptions.forEach(option => {
+                option.addEventListener('click', () => {
+                    applyTheme(option.dataset.theme);
+                });
+            });
+
+            modeOptions.forEach(option => {
+                option.addEventListener('click', () => {
+                    applyMode(option.dataset.mode);
+                });
+            });
+
             // --- Mobile Navigation ---
             const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
-            const mobileNavContainer = document.querySelector('.nav-right-stack');
             const mobileNavLinks = document.querySelectorAll('.nav-right-stack .nav-links a');
             
             mobileNavToggle.addEventListener('click', () => {
@@ -638,12 +699,16 @@
                 mobileNavToggle.setAttribute('aria-expanded', isOpened);
             });
             
+            const closeMobileNav = () => {
+                 document.body.classList.remove('mobile-nav-open');
+                 mobileNavToggle.setAttribute('aria-expanded', 'false');
+            };
+
             mobileNavLinks.forEach(link => {
-                link.addEventListener('click', () => {
-                    document.body.classList.remove('mobile-nav-open');
-                    mobileNavToggle.setAttribute('aria-expanded', 'false');
-                });
+                link.addEventListener('click', closeMobileNav);
             });
+            document.querySelector('.nav-right-stack .btn-primary').addEventListener('click', closeMobileNav);
+
 
             // --- Download Modal Logic ---
             const modalOverlay = document.getElementById('download-modal');
