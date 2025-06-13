@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emerald Crest by Aaghat</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #0A0A0A;
+            --bg-secondary: #141414;
+            --border-color: #262626;
+            --primary-accent: #00E075; /* A vibrant emerald/mint green */
+            --glow-color: rgba(0, 224, 117, 0.3);
+            --text-primary: #EAEAEA;
+            --text-secondary: #A0A0A0;
+            --font-family: 'Inter', sans-serif;
+            --header-height: 70px;
+            --shadow-color: rgba(0,0,0,0.5);
+            /* Glassmorphism Styles */
+            --card-bg: rgba(20, 20, 20, 0.45);
+            --card-border: rgba(255, 255, 255, 0.1);
+            --blur-intensity: 16px;
+        }
+        
+        body.light-theme {
+            --bg-primary: #F0F2F5;
+            --bg-secondary: #FFFFFF;
+            --border-color: #d0d7de;
+            --text-primary: #24292F;
+            --text-secondary: #57606a;
+            --primary-accent: #28a745;
+            --glow-color: rgba(40, 167, 69, 0.3);
+            --shadow-color: rgba(0,0,0,0.1);
+            /* Glassmorphism Styles for Light Theme */
+            --card-bg: rgba(255, 255, 255, 0.45);
+            --card-border: rgba(0, 0, 0, 0.1);
+        }
+
+
+        /* --- Base & Reset --- */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: var(--font-family);
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            overflow-x: hidden;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+        section { padding: 100px 0; transition: background-color 0.3s ease; }
+        h1, h2, h3 { font-weight: 700; color: var(--text-primary); transition: color 0.3s ease; }
+        h2.section-title {
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+        p { color: var(--text-secondary); line-height: 1.8; transition: color 0.3s ease; }
+        a { color: var(--primary-accent); text-decoration: none; }
+        
+        /* --- Animation Classes --- */
+        .reveal {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 0.8s ease-out, transform 0.6s ease-out;
+        }
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* --- Header / Navigation --- */
+        .main-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: var(--header-height);
+            background: rgba(10, 10, 10, 0.65);
+            backdrop-filter: blur(var(--blur-intensity));
+            -webkit-backdrop-filter: blur(var(--blur-intensity));
+            border-bottom: 1px solid var(--card-border);
+            z-index: 1000;
+        }
+        body.light-theme .main-header {
+             background: rgba(255, 255, 255, 0.65);
+        }
+        .main-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+        }
+        .logo { font-size: 1.5rem; font-weight: 900; }
+        .logo a { color: var(--text-primary); }
+        
+        .nav-right-stack {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+        
+        .desktop-nav { display: flex; align-items: center; gap: 1.5rem;}
+        .nav-links { display: flex; gap: 2rem; list-style: none; }
+        .nav-links a { font-weight: 600; transition: color 0.3s ease; color: var(--text-primary); }
+        .nav-links a:hover { color: var(--primary-accent); }
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        .btn-primary {
+            background: var(--primary-accent);
+            color: #000;
+            box-shadow: 0 0 20px var(--glow-color);
+        }
+        .btn-primary:hover { 
+            transform: translateY(-3px) scale(1.05); 
+            box-shadow: 0 0 30px var(--glow-color);
+        }
+        
+        /* --- Theme Switcher --- */
+        .theme-switcher { position: relative; }
+        .theme-toggle-checkbox { display: none; }
+        .theme-toggle-label {
+            display: block;
+            width: 50px;
+            height: 26px;
+            background: var(--bg-secondary);
+            border-radius: 2em;
+            cursor: pointer;
+            border: 1px solid var(--border-color);
+        }
+        .theme-toggle-label::after {
+            content: '🌙';
+            position: absolute;
+            top: 2px;
+            left: 4px;
+            width: 22px;
+            height: 22px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: var(--bg-primary);
+            transition: all 0.3s ease;
+        }
+        .theme-toggle-checkbox:checked + .theme-toggle-label::after {
+            content: '☀️';
+            transform: translateX(24px);
+        }
+
+
+        /* --- Hero Section --- */
+        .hero {
+            padding-top: var(--header-height);
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(175deg, #101010, var(--bg-primary) 50%);
+            position: relative;
+        }
+        body.light-theme .hero {
+            background: linear-gradient(175deg, #e8ebf0, var(--bg-primary) 50%);
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: linear-gradient(45deg, rgba(0, 224, 117, 0.05), transparent 30%),
+                        linear-gradient(-45deg, rgba(0, 224, 117, 0.05), transparent 30%);
+            animation: bg-pan 20s linear infinite;
+            z-index: -1;
+        }
+
+        .hero-content { animation: fadeIn 1s ease-in-out; }
+        .hero h1 {
+            font-size: 5rem;
+            font-weight: 900;
+            background: linear-gradient(45deg, var(--primary-accent), var(--text-primary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1rem;
+        }
+        .hero .subtitle {
+            font-size: 1.5rem;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            max-width: 600px;
+        }
+        .hero-buttons { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; }
+        .btn-secondary { background: var(--card-bg); color: var(--text-primary); border: 1px solid var(--card-border); backdrop-filter: blur(5px); }
+        .btn-secondary:hover { background-color: var(--border-color); }
+        
+        .scroll-down {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: var(--text-secondary);
+            animation: pulse 2s infinite;
+        }
+        .scroll-down span { font-size: 2.5rem; }
+
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes pulse { 0% { opacity: 0.5; transform: translateY(0); } 50% { opacity: 1; transform: translateY(5px); } 100% { opacity: 0.5; transform: translateY(0); } }
+        @keyframes bg-pan { 0% { background-position: 0% 0%; } 100% { background-position: 200% 200%; } }
+        
+        /* --- Glassy Cards & Grids --- */
+        .features-grid, .gameplay-grid, .download-grid { display: grid; gap: 2rem; }
+        .features-grid { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+        .gameplay-grid { grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); }
+        .download-grid { grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); margin-bottom: 4rem; }
+
+        .feature-card, .gameplay-item, .download-card, .instructions-card {
+            background: var(--card-bg);
+            backdrop-filter: blur(var(--blur-intensity));
+            -webkit-backdrop-filter: blur(var(--blur-intensity));
+            border-radius: 12px;
+            padding: 2rem;
+            border: 1px solid var(--card-border);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease, background-color 0.3s ease;
+        }
+        
+        .feature-card:hover { transform: translateY(-5px); border-color: var(--primary-accent); box-shadow: 0 0 25px var(--glow-color); }
+        .feature-card .icon { font-size: 2.5rem; color: var(--primary-accent); margin-bottom: 1rem; display: inline-block; transition: transform 0.3s ease; }
+        .feature-card:hover .icon { transform: scale(1.1) rotate(-5deg); }
+        .gameplay-item h3 { color: var(--primary-accent); margin-bottom: 0.5rem; }
+        .download-card { display: flex; flex-direction: column; }
+        .download-card h3 { font-size: 1.8rem; }
+        .download-card .version { color: var(--text-secondary); margin-bottom: 1rem; }
+        .download-card .description { flex-grow: 1; margin-bottom: 2rem;}
+        .download-card .btn-download { display: block; text-align: center; background-color: var(--primary-accent); color: #000; padding: 1rem; border-radius: 8px; font-weight: 700; margin-top: auto; }
+        .instructions-card h3 { color: var(--primary-accent); margin-bottom: 1rem; }
+        .instructions-card ol { padding-left: 20px; }
+        .instructions-card li { margin-bottom: 0.5rem; }
+
+        /* --- Sections with Contrast --- */
+        #gameplay { background: var(--bg-secondary); }
+        
+        /* --- Redesigned Changelog Section --- */
+        #changelog { background-color: var(--bg-secondary); }
+        .timeline {
+            position: relative;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 4px;
+            background-color: var(--border-color);
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -2px;
+            border-radius: 2px;
+        }
+        .timeline-item {
+            padding: 10px 40px;
+            position: relative;
+            width: 50%;
+            margin: 20px 0;
+        }
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            right: -10px;
+            background-color: var(--primary-accent);
+            border: 4px solid var(--bg-secondary);
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+        .timeline-item.left { left: 0; }
+        .timeline-item.right { left: 50%; }
+        .timeline-item.right::after { left: -10px; }
+        .timeline-content {
+            background: var(--card-bg);
+            backdrop-filter: blur(var(--blur-intensity));
+            -webkit-backdrop-filter: blur(var(--blur-intensity));
+            border: 1px solid var(--card-border);
+            padding: 1.5rem 2rem;
+            border-radius: 12px;
+        }
+        .timeline-content h3 { font-size: 1.5rem; color: var(--primary-accent); margin-bottom: 0.25rem; }
+        .timeline-content .date { font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1rem; }
+        .timeline-content ul { list-style: none; padding: 0; }
+        .timeline-content li { margin-bottom: 0.5rem; }
+
+
+        /* --- Redesigned FAQ Section --- */
+        .faq-accordion { max-width: 800px; margin: 0 auto; }
+        .faq-item {
+            background: var(--card-bg);
+            backdrop-filter: blur(var(--blur-intensity));
+            -webkit-backdrop-filter: blur(var(--blur-intensity));
+            border: 1px solid var(--card-border);
+            border-radius: 12px;
+            margin-bottom: 1rem;
+        }
+        .faq-item summary {
+            font-size: 1.2rem;
+            font-weight: 600;
+            padding: 1.5rem;
+            cursor: pointer;
+            list-style: none; /* Hide default marker */
+            position: relative;
+        }
+        .faq-item summary::-webkit-details-marker { display: none; }
+        .faq-item summary::after {
+            content: '+';
+            position: absolute;
+            right: 1.5rem;
+            top: 50%;
+            transform: translateY(-50%) rotate(0deg);
+            font-size: 1.8rem;
+            color: var(--primary-accent);
+            transition: transform 0.3s ease-out;
+        }
+        .faq-item[open] > summary::after {
+            transform: translateY(-50%) rotate(45deg);
+        }
+        .faq-answer {
+            padding: 0 1.5rem 1.5rem;
+            border-top: 1px solid var(--card-border);
+            margin-top: -1px;
+        }
+        
+        /* --- Footer --- */
+        .main-footer { background: var(--bg-secondary); padding: 4rem 0; text-align: center; border-top: 1px solid var(--border-color); }
+        .footer-logo { font-size: 2rem; font-weight: 900; margin-bottom: 1rem; }
+        .footer-logo a { color: var(--text-primary); }
+        .footer-links { list-style: none; display: flex; justify-content: center; gap: 1.5rem; margin-bottom: 2rem; }
+        .copyright { color: var(--text-secondary); font-size: 0.9rem; }
+        
+        /* --- Mobile Navigation --- */
+        .mobile-nav-toggle { display: none; background: transparent; border: 0; cursor: pointer; z-index: 1001; }
+        .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border-width: 0; }
+        .hamburger-icon { width: 25px; height: 2px; background: var(--text-primary); display: block; position: relative; transition: background 0.3s ease-out; }
+        .hamburger-icon::before, .hamburger-icon::after { content: ''; position: absolute; width: 100%; height: 100%; background: var(--text-primary); left: 0; transition: transform 0.3s ease-out; }
+        .hamburger-icon::before { top: -8px; }
+        .hamburger-icon::after { top: 8px; }
+        body.mobile-nav-open .hamburger-icon { background: transparent; }
+        body.mobile-nav-open .hamburger-icon::before { transform: rotate(45deg) translate(5px, 6px); }
+        body.mobile-nav-open .hamburger-icon::after { transform: rotate(-45deg) translate(5px, -6px); }
+
+
+        /* --- Responsive Design --- */
+        @media (max-width: 768px) {
+            .desktop-nav { display: none; }
+            .mobile-nav-toggle { display: block; }
+            .nav-right-stack {
+                position: fixed;
+                inset: 0 0 0 30%;
+                flex-direction: column;
+                padding: 7rem 2rem;
+                background: var(--card-bg);
+                backdrop-filter: blur(var(--blur-intensity));
+                -webkit-backdrop-filter: blur(var(--blur-intensity));
+                transform: translateX(100%);
+                transition: transform 350ms ease-out;
+                z-index: 1000;
+            }
+            body.mobile-nav-open .nav-right-stack {
+                transform: translateX(0%);
+            }
+            .nav-right-stack .nav-links {
+                flex-direction: column;
+                align-items: center;
+                gap: 2rem;
+                font-size: 1.5rem;
+            }
+             .nav-right-stack .theme-switcher {
+                margin-top: 2rem;
+            }
+
+            .hero h1 { font-size: 3.5rem; }
+            .hero .subtitle { font-size: 1.1rem; }
+            h2.section-title { font-size: 2.2rem; }
+            .download-grid, .gameplay-grid { grid-template-columns: 1fr; }
+            
+            .timeline::after { left: 20px; }
+            .timeline-item { width: 100%; padding-left: 60px; padding-right: 15px; }
+            .timeline-item.left, .timeline-item.right { left: 0; }
+            .timeline-item.right::after, .timeline-item.left::after { left: 10px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container main-nav">
+            <div class="logo"><a href="#">RomHackStudios</a></div>
+            
+            <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+                <span class="sr-only">Menu</span>
+                <div class="hamburger-icon"></div>
+            </button>
+            
+            <div class="desktop-nav">
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#gameplay">Gameplay</a></li>
+                        <li><a href="#download">Download</a></li>
+                        <li><a href="#changelog">Changelog</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </nav>
+                 <div class="theme-switcher">
+                    <input type="checkbox" id="theme-toggle-desktop" class="theme-toggle-checkbox">
+                    <label for="theme-toggle-desktop" class="theme-toggle-label"></label>
+                </div>
+                <a href="#download" class="btn btn-primary">Download</a>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Mobile Navigation Content -->
+    <div class="nav-right-stack">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#gameplay">Gameplay</a></li>
+                <li><a href="#download">Download</a></li>
+                <li><a href="#changelog">Changelog</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </nav>
+        <div class="theme-switcher">
+            <input type="checkbox" id="theme-toggle-mobile" class="theme-toggle-checkbox">
+            <label for="theme-toggle-mobile" class="theme-toggle-label"></label>
+        </div>
+    </div>
+
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container hero-content">
+                <h1>Emerald Crest</h1>
+                <p class="subtitle">An unforgettable Pokémon adventure, crafted by RomHackStudios.</p>
+                <div class="hero-buttons">
+                    <a href="#download" class="btn btn-primary">Download Latest</a>
+                    <a href="https://discord.gg/wVHCQ5htxW" class="btn btn-secondary">Join the Community</a>
+                </div>
+            </div>
+            <a href="#features" class="scroll-down" aria-label="Scroll down">
+                <span>&darr;</span>
+            </a>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features">
+            <div class="container">
+                <h2 class="section-title reveal">A Reimagined World</h2>
+                <div class="features-grid">
+                    <div class="feature-card reveal" style="transition-delay: 100ms;">
+                        <div class="icon">🌌</div>
+                        <h3>Expanded Universe</h3>
+                        <p>Explore new regions, encounter Pokémon from all generations, and uncover stories beyond the original game.</p>
+                    </div>
+                    <div class="feature-card reveal" style="transition-delay: 200ms;">
+                        <div class="icon">⚔️</div>
+                        <h3>Dynamic Systems</h3>
+                        <p>Experience modern features like Mega Evolution, Z-Moves, and dynamic difficulty scaling for a fresh challenge.</p>
+                    </div>
+                    <div class="feature-card reveal" style="transition-delay: 300ms;">
+                        <div class="icon">📦</div>
+                        <h3>Crest Dex Companion</h3>
+                        <p>Manage your collection with our unlimited storage app, featuring cross-save trading and a user-friendly interface.</p>
+                    </div>
+                    <div class="feature-card reveal" style="transition-delay: 100ms;">
+                        <div class="icon">🗺️</div>
+                        <h3>Advanced DexNav</h3>
+                        <p>Hunt for specific Pokémon with hidden abilities and perfect stats. Chain encounters to increase shiny odds!</p>
+                    </div>
+                    <div class="feature-card reveal" style="transition-delay: 200ms;">
+                        <div class="icon">☀️</div>
+                        <h3>Seasonal Systems</h3>
+                        <p>The world changes with the seasons, bringing unique Pokémon encounters and evolutions depending on the time of year.</p>
+                    </div>
+                     <div class="feature-card reveal" style="transition-delay: 300ms;">
+                        <div class="icon">🎁</div>
+                        <h3>Community & Events</h3>
+                        <p>Engage with Spotlight Events, use Mystery Gift codes for special rewards, and trade with others via Wonder Trade.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Gameplay Section -->
+        <section id="gameplay">
+            <div class="container">
+                <h2 class="section-title reveal">Immersive Gameplay</h2>
+                <div class="gameplay-grid">
+                    <div class="gameplay-item reveal" style="transition-delay: 100ms;">
+                        <h3>Battle in Style</h3>
+                        <p>Unleash the full potential of your team with access to powerful Mega Evolutions and spectacular Z-Moves from the start of your journey.</p>
+                    </div>
+                     <div class="gameplay-item reveal" style="transition-delay: 200ms;">
+                        <h3>Become a Shiny Hunter</h3>
+                        <p>Master the DexNav to chain encounters with the same Pokémon, dramatically increasing your chances of finding a rare shiny variant.</p>
+                    </div>
+                     <div class="gameplay-item reveal" style="transition-delay: 100ms;">
+                        <h3>Legendary Encounters</h3>
+                        <p>After proving your strength, capture the mischievous Hoopa. It will open portals to other dimensions, summoning Ultra Beasts and other legendary foes to challenge you.</p>
+                    </div>
+                     <div class="gameplay-item reveal" style="transition-delay: 200ms;">
+                        <h3>A World of Secrets</h3>
+                        <p>The region is filled with secrets. From hidden Pokémon that only appear after long treks, to special cheat codes found on items in your own house, there's always something new to discover.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Download Section -->
+        <section id="download">
+             <div class="container">
+                <h2 class="section-title reveal">Get the Game</h2>
+                <div class="download-grid">
+                    <div class="download-card reveal" style="transition-delay: 100ms;">
+                        <h3>Emerald Crest</h3>
+                        <p class="version">Version 1.0.9.9.2 (Patch File)</p>
+                        <p class="description">The main game file. You will need a base ROM and a patching tool to play.</p>
+                        <a href="https://thatsimpledev.itch.io/emerald-crest/purchase" class="btn-download">Download Game Patch</a>
+                    </div>
+                    <div class="download-card reveal" style="transition-delay: 200ms;">
+                        <h3>Crest Dex</h3>
+                        <p class="version">Version 0.3 (PC/Web)</p>
+                        <p class="description">The companion app for unlimited storage, cross-save trading, and Pokémon management.</p>
+                        <a href="https://thatsimpledev.itch.io/crest-dex" class="btn-download">Get Crest Dex</a>
+                    </div>
+                </div>
+                <div class="instructions-card reveal" style="transition-delay: 300ms;">
+                    <h3>How to Patch</h3>
+                    <p>Playing Emerald Crest is easy, but it requires a one-time setup:</p>
+                    <ol>
+                        <li>You need a clean, base ROM of "Pokémon Emerald (U)(TrashMan)". We cannot provide this file.</li>
+                        <li>Download a patching tool like <a href="https://www.marcrobledo.com/RomPatcher.js/" target="_blank" rel="noopener noreferrer">RomPatcher.js</a> or NUPS.</li>
+                        <li>Apply the "Emerald Crest" patch file you downloaded to the base ROM.</li>
+                        <li>Enjoy the game on your favorite GBA emulator! For a detailed guide, <a href="https://romhackstudios.github.io/pages/howtopatch.html">click here</a>.</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- Changelog Section -->
+        <section id="changelog">
+            <div class="container">
+                 <h2 class="section-title reveal">Development & Updates</h2>
+                 <div class="timeline reveal">
+                     <div class="timeline-item right">
+                         <div class="timeline-content">
+                             <h3>Version 1.0.9.9.2</h3>
+                             <p class="date">Stability & Features</p>
+                             <ul>
+                                 <li>✨ Added permanent Mega evolution option & Crest Dex Wonder Trade support.</li>
+                                 <li>🚀 Updated Spotlight Events and dynamic leveling systems.</li>
+                                 <li>🔧 Fixed Mystery Gift codes and various bugs.</li>
+                             </ul>
+                         </div>
+                     </div>
+                      <div class="timeline-item left">
+                         <div class="timeline-content">
+                             <h3>Version 1.0.9.9.1</h3>
+                             <p class="date">Content Update</p>
+                             <ul>
+                                 <li>✨ Added Seasonal toggles & mid-battle evolutions.</li>
+                                 <li>🚀 Hoopa now teleports post-5th badge with exclusive legends.</li>
+                             </ul>
+                         </div>
+                     </div>
+                      <div class="timeline-item right">
+                         <div class="timeline-content">
+                             <h3>Version 1.0.9.9</h3>
+                             <p class="date">Indigo Disk Update</p>
+                             <ul>
+                                 <li>✨ Added Indigo Disk Pokémon and followers.</li>
+                                 <li>🚀 Increased rock smash item drop odds.</li>
+                             </ul>
+                         </div>
+                     </div>
+                       <div class="timeline-item left">
+                         <div class="timeline-content">
+                             <h3>Version 1.0.9.8</h3>
+                             <p class="date">The Seasons Update</p>
+                              <ul>
+                                 <li>✨ Added Seasons system with unique encounters & evolutions.</li>
+                                 <li>🚀 Added support for Crest Dex v0.1.4.</li>
+                             </ul>
+                         </div>
+                     </div>
+                 </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq">
+            <div class="container">
+                <h2 class="section-title reveal">Got Questions?</h2>
+                <div class="faq-accordion reveal">
+                    <details class="faq-item">
+                        <summary>How do I patch the game?</summary>
+                        <div class="faq-answer"><p>Please see the <a href="#download">Download</a> section above for a step-by-step guide and links to patching tools.</p></div>
+                    </details>
+                    <details class="faq-item">
+                        <summary>How do trade evolutions work?</summary>
+                        <div class="faq-answer"><p>Visit the helpful man in Devon Corp. He will trade your Pokémon and then trade it right back to trigger its evolution.</p></div>
+                    </details>
+                     <details class="faq-item">
+                        <summary>My DexNav says the Pokémon 'got away'?</summary>
+                        <div class="faq-answer"><p>To successfully sneak up on a Pokémon found with the DexNav, you must hold the 'A' button to walk slowly. Running will scare it away.</p></div>
+                    </details>
+                    <details class="faq-item">
+                        <summary>How can I find the new legendary Pokémon?</summary>
+                        <div class="faq-answer"><p>First, capture Hoopa (a roaming encounter after the 5th badge). Once a day, it may open a portal to summon Ultra Beasts and other legendaries.</p></div>
+                    </details>
+                     <details class="faq-item">
+                        <summary>Where is the save button?</summary>
+                        <div class="faq-answer"><p>Open the main menu, then press left or right on the D-Pad to navigate to the save screen option.</p></div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-logo"><a href="#">RomHackStudios</a></div>
+            <ul class="footer-links">
+                <li><a href="https://thatsimpledev.itch.io/emerald-crest">itch.io Page</a></li>
+                <li><a href="https://discord.gg/wVHCQ5htxW">Discord</a></li>
+            </ul>
+            <p class="copyright">&copy; 2024 RomHackStudios. All Rights Reserved. Not affiliated with Nintendo or The Pokémon Company.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // --- On-Scroll Animations ---
+            const revealElements = document.querySelectorAll('.reveal');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+            revealElements.forEach(element => observer.observe(element));
+
+            // --- Theme Switcher ---
+            const themeToggles = document.querySelectorAll('.theme-toggle-checkbox');
+            const currentTheme = localStorage.getItem('theme');
+
+            const applyTheme = (theme) => {
+                if (theme === 'light') {
+                    document.body.classList.add('light-theme');
+                    themeToggles.forEach(toggle => toggle.checked = true);
+                } else {
+                    document.body.classList.remove('light-theme');
+                    themeToggles.forEach(toggle => toggle.checked = false);
+                }
+            };
+
+            if (currentTheme) {
+                applyTheme(currentTheme);
+            } else {
+                if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+                    applyTheme('light');
+                }
+            }
+
+            themeToggles.forEach(toggle => {
+                toggle.addEventListener('change', () => {
+                    let theme = toggle.checked ? 'light' : 'dark';
+                    localStorage.setItem('theme', theme);
+                    applyTheme(theme);
+                });
+            });
+            
+            // --- Mobile Navigation ---
+            const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
+            const mobileNavContainer = document.querySelector('.nav-right-stack');
+            const mobileNavLinks = document.querySelectorAll('.nav-right-stack .nav-links a');
+            
+            mobileNavToggle.addEventListener('click', () => {
+                const isOpened = document.body.classList.toggle('mobile-nav-open');
+                mobileNavToggle.setAttribute('aria-expanded', isOpened);
+            });
+            
+            mobileNavLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    document.body.classList.remove('mobile-nav-open');
+                    mobileNavToggle.setAttribute('aria-expanded', 'false');
+                });
+            });
+
+        });
+    </script>
+</body>
+</html>
