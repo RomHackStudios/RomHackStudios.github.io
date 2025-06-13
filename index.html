@@ -3,43 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emerald Crest by Aaghat</title>
+    <title>Emerald Crest by RomHackStudios</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4829462676030982"
+     crossorigin="anonymous"></script>
     <style>
         :root {
-            --bg-primary: #0A0A0A;
-            --bg-secondary: #141414;
-            --border-color: #262626;
-            --primary-accent: #00E075; /* A vibrant emerald/mint green */
-            --glow-color: rgba(0, 224, 117, 0.3);
-            --text-primary: #EAEAEA;
-            --text-secondary: #A0A0A0;
             --font-family: 'Inter', sans-serif;
             --header-height: 70px;
-            --shadow-color: rgba(0,0,0,0.5);
-            /* Glassmorphism Styles */
-            --card-bg: rgba(20, 20, 20, 0.45);
-            --card-border: rgba(255, 255, 255, 0.1);
             --blur-intensity: 16px;
         }
         
-        body.light-theme {
-            --bg-primary: #F0F2F5;
-            --bg-secondary: #FFFFFF;
-            --border-color: #d0d7de;
-            --text-primary: #24292F;
-            --text-secondary: #57606a;
-            --primary-accent: #28a745;
-            --glow-color: rgba(40, 167, 69, 0.3);
-            --shadow-color: rgba(0,0,0,0.1);
-            /* Glassmorphism Styles for Light Theme */
-            --card-bg: rgba(255, 255, 255, 0.45);
-            --card-border: rgba(0, 0, 0, 0.1);
+        /* --- Default Theme (Hoenn - Emerald) --- */
+        body {
+            --bg-primary: #0A0A0A;
+            --bg-secondary: #141414;
+            --border-color: #262626;
+            --primary-accent: #00E075;
+            --secondary-accent: #50C878;
+            --glow-color: rgba(0, 224, 117, 0.3);
+            --text-primary: #EAEAEA;
+            --text-secondary: #A0A0A0;
+            --card-bg: rgba(20, 20, 20, 0.45);
+            --card-border: rgba(255, 255, 255, 0.1);
         }
 
-
+        /* --- Pokémon Game Themes --- */
+        body.theme-firered  { --primary-accent: #EE8130; --secondary-accent: #F08030; }
+        body.theme-leafgreen{ --primary-accent: #7AC74C; --secondary-accent: #A6B91A; }
+        body.theme-ruby     { --primary-accent: #C22E28; --secondary-accent: #A32621; }
+        body.theme-sapphire { --primary-accent: #6390F0; --secondary-accent: #96B9F0; }
+        body.theme-emerald  { --primary-accent: #00E075; --secondary-accent: #50C878; }
+        body.theme-gold     { --primary-accent: #DAA520; --secondary-accent: #FFD700; }
+        body.theme-silver   { --primary-accent: #C0C0C0; --secondary-accent: #A8A8A8; }
+        body.theme-diamond  { --primary-accent: #5E99D6; --secondary-accent: #98D8D8; }
+        body.theme-pearl    { --primary-accent: #D65E8B; --secondary-accent: #EE99AC; }
+        body.theme-black    { --primary-accent: #CCCCCC; --secondary-accent: #555555; }
+        body.theme-white    { --primary-accent: #333333; --secondary-accent: #555555; background-color: #fff; --bg-primary: #fff; --bg-secondary: #f6f8fa; --text-primary: #24292F; --text-secondary: #57606a; --card-bg: rgba(255, 255, 255, 0.6); --card-border: rgba(0,0,0,0.1);}
+        body.theme-x        { --primary-accent: #0075BE; --secondary-accent: #4A90E2; }
+        body.theme-y        { --primary-accent: #ED1B24; --secondary-accent: #D0021B; }
+        body.theme-sun      { --primary-accent: #F17F2E; --secondary-accent: #F5AC78; }
+        body.theme-moon     { --primary-accent: #5E4A8C; --secondary-accent: #8C6BB8; }
+        body.theme-sword    { --primary-accent: #00A1E9; --secondary-accent: #52C1F9; }
+        body.theme-shield   { --primary-accent: #E30064; --secondary-accent: #F764A1; }
+        body.theme-scarlet  { --primary-accent: #EE4B2B; --secondary-accent: #F78F7B; }
+        body.theme-violet   { --primary-accent: #6A0DAD; --secondary-accent: #9B59B6; }
+        
         /* --- Base & Reset --- */
         * { box-sizing: border-box; margin: 0; padding: 0; }
         html { scroll-behavior: smooth; }
@@ -50,165 +61,82 @@
             overflow-x: hidden;
             transition: background-color 0.3s ease, color 0.3s ease;
         }
+        body.modal-open { overflow: hidden; }
         .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
         section { padding: 100px 0; transition: background-color 0.3s ease; }
         h1, h2, h3 { font-weight: 700; color: var(--text-primary); transition: color 0.3s ease; }
-        h2.section-title {
-            font-size: 3rem;
-            text-align: center;
-            margin-bottom: 4rem;
-        }
+        h2.section-title { font-size: 3rem; text-align: center; margin-bottom: 4rem; }
         p { color: var(--text-secondary); line-height: 1.8; transition: color 0.3s ease; }
         a { color: var(--primary-accent); text-decoration: none; }
         
         /* --- Animation Classes --- */
-        .reveal {
-            opacity: 0;
-            transform: translateY(50px);
-            transition: opacity 0.8s ease-out, transform 0.6s ease-out;
-        }
-        .reveal.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
+        .reveal { opacity: 0; transform: translateY(50px); transition: opacity 0.8s ease-out, transform 0.6s ease-out; }
+        .reveal.visible { opacity: 1; transform: translateY(0); }
 
         /* --- Header / Navigation --- */
         .main-header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: var(--header-height);
-            background: rgba(10, 10, 10, 0.65);
-            backdrop-filter: blur(var(--blur-intensity));
-            -webkit-backdrop-filter: blur(var(--blur-intensity));
-            border-bottom: 1px solid var(--card-border);
-            z-index: 1000;
+            position: fixed; top: 0; left: 0; width: 100%; height: var(--header-height);
+            background: var(--card-bg); backdrop-filter: blur(var(--blur-intensity));
+            -webkit-backdrop-filter: blur(var(--blur-intensity)); border-bottom: 1px solid var(--card-border);
+            z-index: 1001;
         }
-        body.light-theme .main-header {
-             background: rgba(255, 255, 255, 0.65);
-        }
-        .main-nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            height: 100%;
-        }
+        .main-nav { display: flex; justify-content: space-between; align-items: center; height: 100%; }
         .logo { font-size: 1.5rem; font-weight: 900; }
         .logo a { color: var(--text-primary); }
-        
-        .nav-right-stack {
-            display: flex;
-            align-items: center;
-            gap: 1.5rem;
-        }
-        
+        .nav-right-stack { display: flex; align-items: center; gap: 1.5rem; }
         .desktop-nav { display: flex; align-items: center; gap: 1.5rem;}
         .nav-links { display: flex; gap: 2rem; list-style: none; }
         .nav-links a { font-weight: 600; transition: color 0.3s ease; color: var(--text-primary); }
         .nav-links a:hover { color: var(--primary-accent); }
-        .btn {
-            display: inline-block;
-            padding: 0.75rem 1.5rem;
-            border-radius: 8px;
-            font-weight: 600;
-            transition: all 0.3s ease;
-        }
-        .btn-primary {
-            background: var(--primary-accent);
-            color: #000;
-            box-shadow: 0 0 20px var(--glow-color);
-        }
-        .btn-primary:hover { 
-            transform: translateY(-3px) scale(1.05); 
-            box-shadow: 0 0 30px var(--glow-color);
-        }
+        .btn { display: inline-block; padding: 0.75rem 1.5rem; border-radius: 8px; font-weight: 600; transition: all 0.3s ease; }
+        .btn-primary { background: var(--primary-accent); color: #000; box-shadow: 0 0 20px var(--glow-color); }
+        .btn-primary:hover { transform: translateY(-3px) scale(1.05); box-shadow: 0 0 30px var(--glow-color); }
         
-        /* --- Theme Switcher --- */
-        .theme-switcher { position: relative; }
-        .theme-toggle-checkbox { display: none; }
-        .theme-toggle-label {
-            display: block;
-            width: 50px;
-            height: 26px;
-            background: var(--bg-secondary);
-            border-radius: 2em;
-            cursor: pointer;
-            border: 1px solid var(--border-color);
+        /* --- Theme Palette --- */
+        .theme-palette { position: relative; }
+        .theme-palette-btn { background: none; border: none; color: var(--text-primary); cursor: pointer; font-size: 1.5rem; }
+        .theme-dropdown {
+            position: absolute; top: calc(100% + 15px); right: 0;
+            background: var(--card-bg); backdrop-filter: blur(var(--blur-intensity));
+            border: 1px solid var(--card-border); border-radius: 8px;
+            padding: 1rem; list-style: none;
+            width: 250px;
+            opacity: 0; pointer-events: none; transform: translateY(-10px);
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            z-index: 1100;
+            max-height: 70vh; /* FIX: Added max-height */
+            overflow-y: auto;  /* FIX: Added overflow-y */
         }
-        .theme-toggle-label::after {
-            content: '🌙';
-            position: absolute;
-            top: 2px;
-            left: 4px;
-            width: 22px;
-            height: 22px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 50%;
-            background: var(--bg-primary);
-            transition: all 0.3s ease;
+        .theme-dropdown::-webkit-scrollbar { width: 8px; }
+        .theme-dropdown::-webkit-scrollbar-track { background: transparent; }
+        .theme-dropdown::-webkit-scrollbar-thumb { background: var(--border-color); border-radius: 4px; }
+        .theme-dropdown::-webkit-scrollbar-thumb:hover { background: var(--text-secondary); }
+        
+        .theme-palette.active .theme-dropdown { opacity: 1; pointer-events: auto; transform: translateY(0); }
+        .theme-dropdown h4 {
+            font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px;
+            color: var(--text-secondary); margin: 0.5rem 0;
         }
-        .theme-toggle-checkbox:checked + .theme-toggle-label::after {
-            content: '☀️';
-            transform: translateX(24px);
+        .theme-option {
+            display: flex; align-items: center; gap: 0.75rem;
+            width: 100%; padding: 0.5rem; border-radius: 6px;
+            background: none; border: none; color: var(--text-primary);
+            cursor: pointer; text-align: left;
         }
-
-
+        .theme-option:hover, .theme-option.active { background: rgba(255,255,255,0.1); }
+        body.theme-white .theme-option:hover, body.theme-white .theme-option.active { background: rgba(0,0,0,0.1); }
+        .theme-swatch { width: 20px; height: 20px; border-radius: 50%; }
+        
         /* --- Hero Section --- */
-        .hero {
-            padding-top: var(--header-height);
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            background: linear-gradient(175deg, #101010, var(--bg-primary) 50%);
-            position: relative;
-        }
-        body.light-theme .hero {
-            background: linear-gradient(175deg, #e8ebf0, var(--bg-primary) 50%);
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0; left: 0; right: 0; bottom: 0;
-            background: linear-gradient(45deg, rgba(0, 224, 117, 0.05), transparent 30%),
-                        linear-gradient(-45deg, rgba(0, 224, 117, 0.05), transparent 30%);
-            animation: bg-pan 20s linear infinite;
-            z-index: -1;
-        }
-
+        .hero { padding-top: var(--header-height); height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; background: linear-gradient(175deg, var(--bg-secondary), var(--bg-primary) 70%); position: relative; }
+        .hero::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(45deg, var(--primary-accent), transparent 40%), linear-gradient(-45deg, var(--secondary-accent), transparent 40%); opacity: 0.05; animation: bg-pan 20s linear infinite; z-index: -1; }
         .hero-content { animation: fadeIn 1s ease-in-out; }
-        .hero h1 {
-            font-size: 5rem;
-            font-weight: 900;
-            background: linear-gradient(45deg, var(--primary-accent), var(--text-primary));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            margin-bottom: 1rem;
-        }
-        .hero .subtitle {
-            font-size: 1.5rem;
-            color: var(--text-secondary);
-            margin-bottom: 2rem;
-            max-width: 600px;
-        }
+        .hero h1 { font-size: 5rem; font-weight: 900; background: linear-gradient(45deg, var(--primary-accent), var(--text-primary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 1rem; }
+        .hero .subtitle { font-size: 1.5rem; color: var(--text-secondary); margin-bottom: 2rem; max-width: 600px; }
         .hero-buttons { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; }
         .btn-secondary { background: var(--card-bg); color: var(--text-primary); border: 1px solid var(--card-border); backdrop-filter: blur(5px); }
         .btn-secondary:hover { background-color: var(--border-color); }
-        
-        .scroll-down {
-            position: absolute;
-            bottom: 30px;
-            left: 50%;
-            transform: translateX(-50%);
-            color: var(--text-secondary);
-            animation: pulse 2s infinite;
-        }
+        .scroll-down { position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%); color: var(--text-secondary); animation: pulse 2s infinite; }
         .scroll-down span { font-size: 2.5rem; }
 
         @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
@@ -221,16 +149,7 @@
         .gameplay-grid { grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); }
         .download-grid { grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); margin-bottom: 4rem; }
 
-        .feature-card, .gameplay-item, .download-card, .instructions-card {
-            background: var(--card-bg);
-            backdrop-filter: blur(var(--blur-intensity));
-            -webkit-backdrop-filter: blur(var(--blur-intensity));
-            border-radius: 12px;
-            padding: 2rem;
-            border: 1px solid var(--card-border);
-            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease, background-color 0.3s ease;
-        }
-        
+        .feature-card, .gameplay-item, .download-card, .instructions-card, .timeline-content, .faq-item { background: var(--card-bg); backdrop-filter: blur(var(--blur-intensity)); -webkit-backdrop-filter: blur(var(--blur-intensity)); border-radius: 12px; padding: 2rem; border: 1px solid var(--card-border); transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease, background-color 0.3s ease; }
         .feature-card:hover { transform: translateY(-5px); border-color: var(--primary-accent); box-shadow: 0 0 25px var(--glow-color); }
         .feature-card .icon { font-size: 2.5rem; color: var(--primary-accent); margin-bottom: 1rem; display: inline-block; transition: transform 0.3s ease; }
         .feature-card:hover .icon { transform: scale(1.1) rotate(-5deg); }
@@ -239,104 +158,36 @@
         .download-card h3 { font-size: 1.8rem; }
         .download-card .version { color: var(--text-secondary); margin-bottom: 1rem; }
         .download-card .description { flex-grow: 1; margin-bottom: 2rem;}
-        .download-card .btn-download { display: block; text-align: center; background-color: var(--primary-accent); color: #000; padding: 1rem; border-radius: 8px; font-weight: 700; margin-top: auto; }
+        .btn-download-trigger { display: block; text-align: center; background-color: var(--primary-accent); color: #000; padding: 1rem; border-radius: 8px; font-weight: 700; margin-top: auto; cursor: pointer; border: none; }
         .instructions-card h3 { color: var(--primary-accent); margin-bottom: 1rem; }
         .instructions-card ol { padding-left: 20px; }
         .instructions-card li { margin-bottom: 0.5rem; }
 
         /* --- Sections with Contrast --- */
-        #gameplay { background: var(--bg-secondary); }
+        #gameplay, #changelog, #faq { background: var(--bg-secondary); }
         
         /* --- Redesigned Changelog Section --- */
-        #changelog { background-color: var(--bg-secondary); }
-        .timeline {
-            position: relative;
-            max-width: 900px;
-            margin: 0 auto;
-        }
-        .timeline::after {
-            content: '';
-            position: absolute;
-            width: 4px;
-            background-color: var(--border-color);
-            top: 0;
-            bottom: 0;
-            left: 50%;
-            margin-left: -2px;
-            border-radius: 2px;
-        }
-        .timeline-item {
-            padding: 10px 40px;
-            position: relative;
-            width: 50%;
-            margin: 20px 0;
-        }
-        .timeline-item::after {
-            content: '';
-            position: absolute;
-            width: 20px;
-            height: 20px;
-            right: -10px;
-            background-color: var(--primary-accent);
-            border: 4px solid var(--bg-secondary);
-            top: 15px;
-            border-radius: 50%;
-            z-index: 1;
-        }
+        .timeline { position: relative; max-width: 900px; margin: 0 auto; }
+        .timeline::after { content: ''; position: absolute; width: 4px; background-color: var(--border-color); top: 0; bottom: 0; left: 50%; margin-left: -2px; border-radius: 2px; }
+        .timeline-item { padding: 10px 40px; position: relative; width: 50%; margin: 20px 0; }
+        .timeline-item::after { content: ''; position: absolute; width: 20px; height: 20px; right: -10px; background-color: var(--primary-accent); border: 4px solid var(--bg-secondary); top: 15px; border-radius: 50%; z-index: 1; }
         .timeline-item.left { left: 0; }
         .timeline-item.right { left: 50%; }
         .timeline-item.right::after { left: -10px; }
-        .timeline-content {
-            background: var(--card-bg);
-            backdrop-filter: blur(var(--blur-intensity));
-            -webkit-backdrop-filter: blur(var(--blur-intensity));
-            border: 1px solid var(--card-border);
-            padding: 1.5rem 2rem;
-            border-radius: 12px;
-        }
+        .timeline-content { padding: 1.5rem 2rem; }
         .timeline-content h3 { font-size: 1.5rem; color: var(--primary-accent); margin-bottom: 0.25rem; }
         .timeline-content .date { font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1rem; }
         .timeline-content ul { list-style: none; padding: 0; }
         .timeline-content li { margin-bottom: 0.5rem; }
 
-
         /* --- Redesigned FAQ Section --- */
         .faq-accordion { max-width: 800px; margin: 0 auto; }
-        .faq-item {
-            background: var(--card-bg);
-            backdrop-filter: blur(var(--blur-intensity));
-            -webkit-backdrop-filter: blur(var(--blur-intensity));
-            border: 1px solid var(--card-border);
-            border-radius: 12px;
-            margin-bottom: 1rem;
-        }
-        .faq-item summary {
-            font-size: 1.2rem;
-            font-weight: 600;
-            padding: 1.5rem;
-            cursor: pointer;
-            list-style: none; /* Hide default marker */
-            position: relative;
-        }
+        .faq-item { margin-bottom: 1rem; padding: 0; }
+        .faq-item summary { font-size: 1.2rem; font-weight: 600; padding: 1.5rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 1rem; }
         .faq-item summary::-webkit-details-marker { display: none; }
-        .faq-item summary::after {
-            content: '+';
-            position: absolute;
-            right: 1.5rem;
-            top: 50%;
-            transform: translateY(-50%) rotate(0deg);
-            font-size: 1.8rem;
-            color: var(--primary-accent);
-            transition: transform 0.3s ease-out;
-        }
-        .faq-item[open] > summary::after {
-            transform: translateY(-50%) rotate(45deg);
-        }
-        .faq-answer {
-            padding: 0 1.5rem 1.5rem;
-            border-top: 1px solid var(--card-border);
-            margin-top: -1px;
-        }
+        .faq-item summary .plus-icon { font-size: 1.8rem; color: var(--primary-accent); transition: transform 0.3s ease-out; flex-shrink: 0; }
+        .faq-item[open] > summary .plus-icon { transform: rotate(45deg); }
+        .faq-answer { padding: 0 1.5rem 1.5rem; border-top: 1px solid var(--card-border); margin-top: -1rem; padding-top: 1.5rem; }
         
         /* --- Footer --- */
         .main-footer { background: var(--bg-secondary); padding: 4rem 0; text-align: center; border-top: 1px solid var(--border-color); }
@@ -344,9 +195,20 @@
         .footer-logo a { color: var(--text-primary); }
         .footer-links { list-style: none; display: flex; justify-content: center; gap: 1.5rem; margin-bottom: 2rem; }
         .copyright { color: var(--text-secondary); font-size: 0.9rem; }
+
+        /* --- Download Modal --- */
+        .modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.7); display: flex; align-items: center; justify-content: center; opacity: 0; pointer-events: none; transition: opacity 0.3s ease; z-index: 2000; }
+        .modal-overlay.active { opacity: 1; pointer-events: auto; }
+        .modal { background: var(--card-bg); backdrop-filter: blur(var(--blur-intensity)); -webkit-backdrop-filter: blur(var(--blur-intensity)); border-radius: 12px; padding: 2rem; border: 1px solid var(--card-border); width: 90%; max-width: 500px; transform: scale(0.9); transition: transform 0.3s ease; position: relative; }
+        .modal-overlay.active .modal { transform: scale(1); }
+        .modal-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; }
+        #modal-title { font-size: 1.8rem; color: var(--text-primary); }
+        .modal-close-btn { background: none; border: none; font-size: 2rem; color: var(--text-secondary); cursor: pointer; }
+        #modal-description { margin-bottom: 2rem; }
+        #modal-confirm-btn { display: block; width: 100%; text-align: center; }
         
         /* --- Mobile Navigation --- */
-        .mobile-nav-toggle { display: none; background: transparent; border: 0; cursor: pointer; z-index: 1001; }
+        .mobile-nav-toggle { display: none; background: transparent; border: 0; cursor: pointer; z-index: 1002; }
         .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border-width: 0; }
         .hamburger-icon { width: 25px; height: 2px; background: var(--text-primary); display: block; position: relative; transition: background 0.3s ease-out; }
         .hamburger-icon::before, .hamburger-icon::after { content: ''; position: absolute; width: 100%; height: 100%; background: var(--text-primary); left: 0; transition: transform 0.3s ease-out; }
@@ -361,36 +223,13 @@
         @media (max-width: 768px) {
             .desktop-nav { display: none; }
             .mobile-nav-toggle { display: block; }
-            .nav-right-stack {
-                position: fixed;
-                inset: 0 0 0 30%;
-                flex-direction: column;
-                padding: 7rem 2rem;
-                background: var(--card-bg);
-                backdrop-filter: blur(var(--blur-intensity));
-                -webkit-backdrop-filter: blur(var(--blur-intensity));
-                transform: translateX(100%);
-                transition: transform 350ms ease-out;
-                z-index: 1000;
-            }
-            body.mobile-nav-open .nav-right-stack {
-                transform: translateX(0%);
-            }
-            .nav-right-stack .nav-links {
-                flex-direction: column;
-                align-items: center;
-                gap: 2rem;
-                font-size: 1.5rem;
-            }
-             .nav-right-stack .theme-switcher {
-                margin-top: 2rem;
-            }
-
+            .nav-right-stack { position: fixed; inset: 0 0 0 30%; flex-direction: column; padding: 7rem 2rem; background: var(--card-bg); backdrop-filter: blur(var(--blur-intensity)); -webkit-backdrop-filter: blur(var(--blur-intensity)); transform: translateX(100%); transition: transform 350ms ease-out; z-index: 1000; }
+            body.mobile-nav-open .nav-right-stack { transform: translateX(0%); }
+            .nav-right-stack .nav-links { flex-direction: column; align-items: center; gap: 2rem; font-size: 1.5rem; }
             .hero h1 { font-size: 3.5rem; }
             .hero .subtitle { font-size: 1.1rem; }
             h2.section-title { font-size: 2.2rem; }
             .download-grid, .gameplay-grid { grid-template-columns: 1fr; }
-            
             .timeline::after { left: 20px; }
             .timeline-item { width: 100%; padding-left: 60px; padding-right: 15px; }
             .timeline-item.left, .timeline-item.right { left: 0; }
@@ -419,9 +258,35 @@
                         <li><a href="#faq">FAQ</a></li>
                     </ul>
                 </nav>
-                 <div class="theme-switcher">
-                    <input type="checkbox" id="theme-toggle-desktop" class="theme-toggle-checkbox">
-                    <label for="theme-toggle-desktop" class="theme-toggle-label"></label>
+                <div class="theme-palette">
+                    <button class="theme-palette-btn" aria-label="Open theme palette">🎨</button>
+                    <div class="theme-dropdown">
+                        <h4>Hoenn</h4>
+                        <button class="theme-option" data-theme="ruby"><span class="theme-swatch" style="background:#C22E28;"></span> Pokémon Ruby</button>
+                        <button class="theme-option" data-theme="sapphire"><span class="theme-swatch" style="background:#6390F0;"></span> Pokémon Sapphire</button>
+                        <button class="theme-option" data-theme="emerald"><span class="theme-swatch" style="background:#00E075;"></span> Pokémon Emerald</button>
+                        <h4>Kanto</h4>
+                        <button class="theme-option" data-theme="firered"><span class="theme-swatch" style="background:#EE8130;"></span> Pokémon FireRed</button>
+                        <button class="theme-option" data-theme="leafgreen"><span class="theme-swatch" style="background:#7AC74C;"></span> Pokémon LeafGreen</button>
+                        <h4>Johto</h4>
+                        <button class="theme-option" data-theme="gold"><span class="theme-swatch" style="background:#DAA520;"></span> Pokémon Gold</button>
+                        <button class="theme-option" data-theme="silver"><span class="theme-swatch" style="background:#C0C0C0;"></span> Pokémon Silver</button>
+                        <h4>Sinnoh</h4>
+                        <button class="theme-option" data-theme="diamond"><span class="theme-swatch" style="background:#5E99D6;"></span> Pokémon Diamond</button>
+                        <button class="theme-option" data-theme="pearl"><span class="theme-swatch" style="background:#D65E8B;"></span> Pokémon Pearl</button>
+                        <h4>Unova</h4>
+                        <button class="theme-option" data-theme="black"><span class="theme-swatch" style="background:#333;"></span> Pokémon Black</button>
+                        <button class="theme-option" data-theme="white"><span class="theme-swatch" style="background:#EAEAEA; border: 1px solid #ccc;"></span> Pokémon White</button>
+                         <h4>And More...</h4>
+                        <button class="theme-option" data-theme="x"><span class="theme-swatch" style="background:#0075BE;"></span> Pokémon X</button>
+                        <button class="theme-option" data-theme="y"><span class="theme-swatch" style="background:#ED1B24;"></span> Pokémon Y</button>
+                        <button class="theme-option" data-theme="sun"><span class="theme-swatch" style="background:#F17F2E;"></span> Pokémon Sun</button>
+                        <button class="theme-option" data-theme="moon"><span class="theme-swatch" style="background:#5E4A8C;"></span> Pokémon Moon</button>
+                        <button class="theme-option" data-theme="sword"><span class="theme-swatch" style="background:#00A1E9;"></span> Pokémon Sword</button>
+                        <button class="theme-option" data-theme="shield"><span class="theme-swatch" style="background:#E30064;"></span> Pokémon Shield</button>
+                        <button class="theme-option" data-theme="scarlet"><span class="theme-swatch" style="background:#EE4B2B;"></span> Pokémon Scarlet</button>
+                        <button class="theme-option" data-theme="violet"><span class="theme-swatch" style="background:#6A0DAD;"></span> Pokémon Violet</button>
+                    </div>
                 </div>
                 <a href="#download" class="btn btn-primary">Download</a>
             </div>
@@ -439,10 +304,6 @@
                 <li><a href="#faq">FAQ</a></li>
             </ul>
         </nav>
-        <div class="theme-switcher">
-            <input type="checkbox" id="theme-toggle-mobile" class="theme-toggle-checkbox">
-            <label for="theme-toggle-mobile" class="theme-toggle-label"></label>
-        </div>
     </div>
 
 
@@ -470,7 +331,7 @@
                     <div class="feature-card reveal" style="transition-delay: 100ms;">
                         <div class="icon">🌌</div>
                         <h3>Expanded Universe</h3>
-                        <p>Explore new regions, encounter Pokémon from all generations, and uncover stories beyond the original game.</p>
+                        <p>Encounter Pokémon from all generations (1- 9), and uncover stories beyond the original game.</p>
                     </div>
                     <div class="feature-card reveal" style="transition-delay: 200ms;">
                         <div class="icon">⚔️</div>
@@ -495,7 +356,7 @@
                      <div class="feature-card reveal" style="transition-delay: 300ms;">
                         <div class="icon">🎁</div>
                         <h3>Community & Events</h3>
-                        <p>Engage with Spotlight Events, use Mystery Gift codes for special rewards, and trade with others via Wonder Trade.</p>
+                        <p>Engage with Spotlight Events, use Mystery Gift codes for special rewards, and trade with others via Wonder Trade*.</p>
                     </div>
                 </div>
             </div>
@@ -535,13 +396,13 @@
                         <h3>Emerald Crest</h3>
                         <p class="version">Version 1.0.9.9.2 (Patch File)</p>
                         <p class="description">The main game file. You will need a base ROM and a patching tool to play.</p>
-                        <a href="https://thatsimpledev.itch.io/emerald-crest/purchase" class="btn-download">Download Game Patch</a>
+                        <button class="btn-download-trigger" data-title="Download Emerald Crest" data-description="You are about to download the patch file for Emerald Crest v1.0.9.9.2. You will be redirected to itch.io to complete the download." data-url="https://thatsimpledev.itch.io/emerald-crest/purchase">Download Game Patch</button>
                     </div>
                     <div class="download-card reveal" style="transition-delay: 200ms;">
                         <h3>Crest Dex</h3>
                         <p class="version">Version 0.3 (PC/Web)</p>
                         <p class="description">The companion app for unlimited storage, cross-save trading, and Pokémon management.</p>
-                        <a href="https://thatsimpledev.itch.io/crest-dex" class="btn-download">Get Crest Dex</a>
+                        <button class="btn-download-trigger" data-title="Download Crest Dex" data-description="You are about to download Crest Dex v0.3. You will be redirected to itch.io to get the companion app." data-url="https://thatsimpledev.itch.io/crest-dex">Get Crest Dex</button>
                     </div>
                 </div>
                 <div class="instructions-card reveal" style="transition-delay: 300ms;">
@@ -613,23 +474,23 @@
                 <h2 class="section-title reveal">Got Questions?</h2>
                 <div class="faq-accordion reveal">
                     <details class="faq-item">
-                        <summary>How do I patch the game?</summary>
+                        <summary>How do I patch the game? <span class="plus-icon">+</span></summary>
                         <div class="faq-answer"><p>Please see the <a href="#download">Download</a> section above for a step-by-step guide and links to patching tools.</p></div>
                     </details>
                     <details class="faq-item">
-                        <summary>How do trade evolutions work?</summary>
+                        <summary>How do trade evolutions work? <span class="plus-icon">+</span></summary>
                         <div class="faq-answer"><p>Visit the helpful man in Devon Corp. He will trade your Pokémon and then trade it right back to trigger its evolution.</p></div>
                     </details>
                      <details class="faq-item">
-                        <summary>My DexNav says the Pokémon 'got away'?</summary>
+                        <summary>My DexNav says the Pokémon 'got away'? <span class="plus-icon">+</span></summary>
                         <div class="faq-answer"><p>To successfully sneak up on a Pokémon found with the DexNav, you must hold the 'A' button to walk slowly. Running will scare it away.</p></div>
                     </details>
                     <details class="faq-item">
-                        <summary>How can I find the new legendary Pokémon?</summary>
+                        <summary>How can I find the new legendary Pokémon? <span class="plus-icon">+</span></summary>
                         <div class="faq-answer"><p>First, capture Hoopa (a roaming encounter after the 5th badge). Once a day, it may open a portal to summon Ultra Beasts and other legendaries.</p></div>
                     </details>
                      <details class="faq-item">
-                        <summary>Where is the save button?</summary>
+                        <summary>Where is the save button? <span class="plus-icon">+</span></summary>
                         <div class="faq-answer"><p>Open the main menu, then press left or right on the D-Pad to navigate to the save screen option.</p></div>
                     </details>
                 </div>
@@ -637,6 +498,19 @@
         </section>
 
     </main>
+    
+    <!-- Download Modal -->
+    <div class="modal-overlay" id="download-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <div class="modal">
+            <div class="modal-header">
+                <h3 id="modal-title">Download</h3>
+                <button class="modal-close-btn">&times;</button>
+            </div>
+            <p id="modal-description">Description goes here.</p>
+            <a href="#" id="modal-confirm-btn" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Confirm Download</a>
+        </div>
+    </div>
+
 
     <footer class="main-footer">
         <div class="container">
@@ -665,35 +539,43 @@
             revealElements.forEach(element => observer.observe(element));
 
             // --- Theme Switcher ---
-            const themeToggles = document.querySelectorAll('.theme-toggle-checkbox');
-            const currentTheme = localStorage.getItem('theme');
-
+            const themePaletteBtn = document.querySelector('.theme-palette-btn');
+            const themePalette = document.querySelector('.theme-palette');
+            const themeOptions = document.querySelectorAll('.theme-option');
+            
             const applyTheme = (theme) => {
-                if (theme === 'light') {
-                    document.body.classList.add('light-theme');
-                    themeToggles.forEach(toggle => toggle.checked = true);
-                } else {
-                    document.body.classList.remove('light-theme');
-                    themeToggles.forEach(toggle => toggle.checked = false);
+                document.body.className = ''; // Clear existing theme classes
+                if (theme) {
+                    document.body.classList.add(`theme-${theme}`);
                 }
+                localStorage.setItem('theme', theme);
+                // Update active button
+                themeOptions.forEach(opt => {
+                    opt.classList.toggle('active', opt.dataset.theme === theme);
+                });
             };
 
-            if (currentTheme) {
-                applyTheme(currentTheme);
-            } else {
-                if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
-                    applyTheme('light');
-                }
-            }
-
-            themeToggles.forEach(toggle => {
-                toggle.addEventListener('change', () => {
-                    let theme = toggle.checked ? 'light' : 'dark';
-                    localStorage.setItem('theme', theme);
-                    applyTheme(theme);
+            const currentTheme = localStorage.getItem('theme') || 'emerald'; // Default to Emerald
+            applyTheme(currentTheme);
+            
+            themePaletteBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                themePalette.classList.toggle('active');
+            });
+            
+            themeOptions.forEach(option => {
+                option.addEventListener('click', () => {
+                    applyTheme(option.dataset.theme);
+                    themePalette.classList.remove('active');
                 });
             });
             
+            document.addEventListener('click', (e) => {
+                if (!themePalette.contains(e.target)) {
+                    themePalette.classList.remove('active');
+                }
+            });
+
             // --- Mobile Navigation ---
             const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
             const mobileNavContainer = document.querySelector('.nav-right-stack');
@@ -709,6 +591,44 @@
                     document.body.classList.remove('mobile-nav-open');
                     mobileNavToggle.setAttribute('aria-expanded', 'false');
                 });
+            });
+
+            // --- Download Modal Logic ---
+            const modalOverlay = document.getElementById('download-modal');
+            const modalTitle = document.getElementById('modal-title');
+            const modalDescription = document.getElementById('modal-description');
+            const modalConfirmBtn = document.getElementById('modal-confirm-btn');
+            const modalCloseBtn = document.querySelector('.modal-close-btn');
+            const downloadTriggers = document.querySelectorAll('.btn-download-trigger');
+
+            const openModal = (title, description, url) => {
+                modalTitle.textContent = title;
+                modalDescription.textContent = description;
+                modalConfirmBtn.href = url;
+                modalOverlay.classList.add('active');
+                document.body.classList.add('modal-open');
+            };
+
+            const closeModal = () => {
+                modalOverlay.classList.remove('active');
+                 document.body.classList.remove('modal-open');
+            };
+
+            downloadTriggers.forEach(trigger => {
+                trigger.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const title = trigger.dataset.title;
+                    const description = trigger.dataset.description;
+                    const url = trigger.dataset.url;
+                    openModal(title, description, url);
+                });
+            });
+
+            modalCloseBtn.addEventListener('click', closeModal);
+            modalOverlay.addEventListener('click', (e) => {
+                if (e.target === modalOverlay) {
+                    closeModal();
+                }
             });
 
         });
