@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotlight Event Generator - Emerald Crest</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --font-family: 'Inter', sans-serif;
+            --font-mono: 'Roboto Mono', monospace;
+            --header-height: 70px;
+            --blur-intensity: 16px;
+        }
+
+        /* --- Default Theme (Dark Mode) --- */
+        body {
+            --bg-primary: #0A0A0A;
+            --bg-secondary: #141414;
+            --border-color: #262626;
+            --primary-accent: #00E075;
+            --secondary-accent: #50C878;
+            --glow-color: rgba(0, 224, 117, 0.5);
+            --text-primary: #EAEAEA;
+            --text-secondary: #A0A0A0;
+            --card-bg: rgba(20, 20, 20, 0.45);
+            --card-border: rgba(255, 255, 255, 0.1);
+            --input-bg: #1a1a1a;
+        }
+
+        /* --- Light Mode Theme --- */
+        body.light-mode {
+            --bg-primary: #f8f9fa;
+            --bg-secondary: #ffffff;
+            --border-color: #e9ecef;
+            --text-primary: #212529;
+            --text-secondary: #6c757d;
+            --card-bg: rgba(255, 255, 255, 0.7);
+            --card-border: rgba(0, 0, 0, 0.1);
+            --input-bg: #f1f1f1;
+        }
+
+        /* --- Pokémon Game Themes --- */
+        body.theme-firered  { --primary-accent: #EE8130; --secondary-accent: #F08030; --glow-color: rgba(238, 129, 48, 0.5); }
+        body.theme-leafgreen{ --primary-accent: #7AC74C; --secondary-accent: #A6B91A; --glow-color: rgba(122, 199, 76, 0.5); }
+        body.theme-ruby     { --primary-accent: #C22E28; --secondary-accent: #A32621; --glow-color: rgba(194, 46, 40, 0.5); }
+        body.theme-sapphire { --primary-accent: #6390F0; --secondary-accent: #96B9F0; --glow-color: rgba(99, 144, 240, 0.5); }
+        body.theme-emerald  { --primary-accent: #00E075; --secondary-accent: #50C878; --glow-color: rgba(0, 224, 117, 0.5); }
+        /* Other themes omitted for brevity */
+
+        /* --- Base & Reset --- */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: var(--font-family);
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            overflow-x: hidden;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 2rem; }
+        section { padding: calc(var(--header-height) + 40px) 0 60px; }
+        h1, h2, h3 { font-weight: 700; color: var(--text-primary); transition: color 0.3s ease; }
+        p { color: var(--text-secondary); line-height: 1.8; transition: color 0.3s ease; }
+        a { color: var(--primary-accent); text-decoration: none; }
+        
+        /* --- Header (Reused) --- */
+        .main-header { position: fixed; top: 0; left: 0; width: 100%; height: var(--header-height); background: var(--card-bg); backdrop-filter: blur(var(--blur-intensity)); -webkit-backdrop-filter: blur(var(--blur-intensity)); border-bottom: 1px solid var(--card-border); z-index: 1001; }
+        .main-nav { max-width: 1200px; margin: 0 auto; padding: 0 2rem; display: flex; justify-content: space-between; align-items: center; height: 100%; }
+        .logo { font-size: 1.5rem; font-weight: 900; }
+        .logo a { color: var(--text-primary); transition: all 0.3s ease; }
+        .logo a:hover { color: var(--primary-accent); text-shadow: 0 0 15px var(--glow-color); }
+        .desktop-nav, .nav-links { display: flex; align-items: center; gap: 2rem; list-style:none; }
+        .nav-links a { font-weight: 600; color: var(--text-primary); transition: color 0.3s ease; }
+        .nav-links a:hover { color: var(--primary-accent); }
+
+        /* --- Page Titles --- */
+        .page-title { font-size: 4rem; text-align: center; background: linear-gradient(45deg, var(--primary-accent), var(--text-primary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 1rem; text-shadow: 0 0 20px var(--glow-color); }
+        .page-subtitle { text-align: center; font-size: 1.5rem; color: var(--text-secondary); margin-bottom: 4rem; max-width: 600px; margin-left: auto; margin-right: auto; }
+
+        /* --- Redesigned Generator Layout --- */
+        .generator-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.25fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .controls-panel {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 12px;
+            padding: 2.5rem;
+            backdrop-filter: blur(5px);
+            height: 100%;
+        }
+
+        .form-group { margin-bottom: 1.5rem; }
+        .form-group label { display: block; margin-bottom: 0.75rem; font-weight: 600; color: var(--text-secondary); }
+        .input-field, .select-field { width: 100%; padding: 0.8rem 1rem; background-color: var(--input-bg); border: 1px solid var(--border-color); border-radius: 8px; color: var(--text-primary); font-size: 1rem; transition: all 0.3s ease; }
+        .input-field:focus, .select-field:focus { outline: none; border-color: var(--primary-accent); box-shadow: 0 0 0 3px var(--glow-color); }
+        .select-field { height: 48px; }
+        
+        .btn-primary { 
+            display: flex; align-items: center; justify-content: center; gap: 0.75rem;
+            width: 100%; padding: 1rem; background: var(--primary-accent); color: #000; font-size: 1.1rem;
+            font-weight: 700; border-radius: 8px; border: none; cursor: pointer;
+            box-shadow: 0 4px 20px -5px var(--glow-color); transition: all 0.3s ease;
+            margin-top: 1.5rem; /* Added margin to compensate for progress bar removal */
+        }
+        body.light-mode .btn-primary { color: #fff; }
+        .btn-primary:hover:not(:disabled) { transform: translateY(-3px) scale(1.02); filter: brightness(1.1); box-shadow: 0 8px 25px -5px var(--glow-color); }
+        .btn-primary:disabled { background: var(--border-color); color: var(--text-secondary); cursor: not-allowed; box-shadow: none; }
+        
+        /* --- Event Pass / Ticket --- */
+        .ticket-panel { perspective: 1500px; }
+        .event-pass {
+            position: relative;
+            background: linear-gradient(135deg, var(--bg-secondary) 0%, #1a1a1a 100%);
+            border: 1px solid var(--card-border);
+            border-radius: 16px;
+            padding: 2rem;
+            transform-style: preserve-3d;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            display: flex; flex-direction: column; justify-content: center; /* Adjusted alignment */
+            min-height: 450px;
+            overflow: hidden;
+        }
+        .event-pass:before { /* Holographic effect overlay */
+            content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+            background: radial-gradient(circle at var(--bg-pos-x, 50%) var(--bg-pos-y, 50%), rgba(255,255,255,0.3) 0%, rgba(255,255,255,0) 50%);
+            opacity: var(--holo-opacity, 0); 
+            transition: opacity 0.4s ease; 
+            mix-blend-mode: overlay; 
+            pointer-events: none;
+        }
+        .ticket-panel:hover .event-pass { 
+            box-shadow: 0 15px 50px -10px var(--glow-color);
+        }
+
+        .pass-body { text-align: center; flex-grow: 1; display:flex; flex-direction:column; justify-content:center; }
+        .pokemon-sprite { image-rendering: pixelated; width: 128px; height: 128px; margin: 1rem auto; transition: transform 0.3s ease; }
+        .pokemon-name { font-size: 2.5rem; font-weight: 900; color: var(--text-primary); text-transform: capitalize; }
+        .pokemon-id { font-family: var(--font-mono); font-weight: 500; color: var(--text-secondary); }
+
+        .pass-footer { text-align: center; margin-top: 2rem; }
+        .ticket-id-label { font-family: var(--font-mono); font-size: 0.9rem; color: var(--text-secondary); letter-spacing: 1px; }
+        .ticket-id {
+            font-family: var(--font-mono); font-size: 3rem; font-weight: 700;
+            color: var(--primary-accent); letter-spacing: 4px;
+            cursor: pointer; position: relative; padding: 0.5rem;
+        }
+        .copy-feedback {
+            position: absolute; bottom: 100%; left: 50%; transform: translateX(-50%);
+            background: var(--primary-accent); color: var(--bg-primary); padding: 0.3rem 0.8rem;
+            border-radius: 6px; font-size: 0.8rem; font-weight: 600;
+            opacity: 0; transition: all 0.3s ease; pointer-events: none; white-space:nowrap;
+        }
+        .ticket-id:hover .copy-feedback { opacity: 1; transform: translate(-50%, -5px); }
+
+        /* Mobile Adjustments */
+        @media (max-width: 900px) {
+            .generator-grid { grid-template-columns: 1fr; }
+            .ticket-panel { margin-top: 2rem; }
+        }
+        @media (max-width: 768px) {
+            /* Reuse mobile nav styles from previous version */
+            .desktop-nav { display: none; } .mobile-nav-toggle { display: block; }
+            /* ... (mobile nav styles would go here) ... */
+            .page-title { font-size: 2.5rem; }
+            .page-subtitle { font-size: 1.1rem; }
+            .controls-panel { padding: 1.5rem; }
+            .event-pass { padding: 1.5rem; min-height: 400px; }
+            .pokemon-name { font-size: 2rem; }
+            .ticket-id { font-size: 2.2rem; }
+        }
+
+    </style>
+</head>
+<body class="theme-emerald">
+
+    <header class="main-header">
+        <!-- Header content remains the same -->
+        <div class="main-nav">
+            <div class="logo"><a href="#">RomHackStudios</a></div>
+            <div class="desktop-nav">
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Gameplay</a></li>
+                        <li><a href="#">Download</a></li>
+                        <li><a href="#">Changelog</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="spotlight-generator">
+            <div class="container">
+                <h1 class="page-title">Spotlight Event Generator</h1>
+                <h2 class="page-subtitle">Craft a unique Spotlight Event Pass. Use this ticket code to access special encounters the in-game safari zone.</h2>
+
+                <div class="generator-grid">
+                    <div class="controls-panel">
+                        <div class="form-group">
+                            <label for="pokemonSearch">1. Find Your Pokémon</label>
+                            <input type="text" id="pokemonSearch" class="input-field" placeholder="E.g., Pikachu or 25">
+                        </div>
+                        <div class="form-group">
+                            <label for="pokemonDropdown">2. Confirm Selection</label>
+                            <select id="pokemonDropdown" class="select-field"></select>
+                        </div>
+                        
+                        <button id="generateBtn" class="btn-primary">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path d="M8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/><path d="M13.468 12.37C12.758 11.226 11.195 10 8 10s-4.757 1.225-5.468 2.37A6.987 6.987 0 0 0 8 15a6.987 6.987 0 0 0 5.468-2.63z"/><path fill-rule="evenodd" d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z"/></svg>
+                            Generate Pass
+                        </button>
+                    </div>
+                    
+                    <div class="ticket-panel" id="ticketPanel">
+                        <div class="event-pass" id="eventPass">
+                            <div class="pass-body">
+                                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png" alt="Pokémon Sprite" class="pokemon-sprite" id="pokemonSprite" onerror="this.style.display='none'">
+                                <h3 class="pokemon-name" id="pokemonName">Pikachu</h3>
+                                <p class="pokemon-id" id="pokemonId">#25</p>
+                            </div>
+                            <div class="pass-footer">
+                                <p class="ticket-id-label">TICKET ID</p>
+                                <div class="ticket-id" id="ticketIdContainer">
+                                    <span id="generatedCode">XXXXX</span>
+                                    <div class="copy-feedback">Click to Copy</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // --- DATA ---
+            const pokemonData = {
+                "Bulbasaur": 1, "Ivysaur": 2, "Venusaur": 3, "Charmander": 4, "Charmeleon": 5, "Charizard": 6,
+                "Squirtle": 7, "Wartortle": 8, "Blastoise": 9, "Caterpie": 10, "Pikachu": 25, "Mew": 151, "Lugia": 249, "Rayquaza": 384
+                // A larger list would be fetched from a file in a real app
+            };
+
+            // --- ELEMENTS ---
+            const searchInput = document.getElementById('pokemonSearch');
+            const dropdown = document.getElementById('pokemonDropdown');
+            const generateBtn = document.getElementById('generateBtn');
+            const spriteEl = document.getElementById('pokemonSprite');
+            const nameEl = document.getElementById('pokemonName');
+            const idEl = document.getElementById('pokemonId');
+            const ticketIdContainer = document.getElementById('ticketIdContainer');
+            const generatedCodeEl = document.getElementById('generatedCode');
+            const ticketPanel = document.getElementById('ticketPanel');
+            const eventPass = document.getElementById('eventPass');
+
+            // --- GENERATION LOGIC (Unchanged) ---
+            const ISO_RANDOMIZE1 = (val) => 1103515245 * val + 24691;
+            function randomSeeded(value) {
+                let result = ISO_RANDOMIZE1(Number(value)) >>> 16;
+                result = Math.abs(result);
+                if (result <= 9999) { result = result <= 999 ? result * 100 : result * 10; }
+                return result;
+            }
+
+            // --- FUNCTIONS ---
+            function populateDropdown() {
+                Object.entries(pokemonData).forEach(([name, id]) => {
+                    const option = document.createElement("option");
+                    option.value = id;
+                    option.textContent = `${name} (#${id})`;
+                    dropdown.appendChild(option);
+                });
+            }
+
+            function updateTicketDisplay(id) {
+                const pokemonName = Object.keys(pokemonData).find(key => pokemonData[key] === parseInt(id));
+                spriteEl.src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`;
+                spriteEl.style.display = 'block';
+                spriteEl.onerror = () => { spriteEl.style.display = 'none'; };
+                nameEl.textContent = pokemonName || 'Unknown';
+                idEl.textContent = `#${id.toString().padStart(3, '0')}`;
+            }
+
+            function filterDropdown() {
+                const searchValue = searchInput.value.toLowerCase();
+                let firstMatch = null;
+                for (const option of dropdown.options) {
+                    const isVisible = option.textContent.toLowerCase().includes(searchValue);
+                    option.hidden = !isVisible;
+                    if (isVisible && !firstMatch) firstMatch = option;
+                }
+                if (firstMatch) {
+                    dropdown.value = firstMatch.value;
+                    updateTicketDisplay(firstMatch.value);
+                }
+            }
+
+            function handleGenerateClick() {
+                generateBtn.disabled = true;
+                generateBtn.innerHTML = 'Generating...';
+                generatedCodeEl.textContent = '-----';
+                
+                // Simulate generation delay
+                setTimeout(() => {
+                    const selectedSeed = dropdown.value;
+                    const code = randomSeeded(selectedSeed);
+                    generatedCodeEl.textContent = code;
+                    
+                    generateBtn.disabled = false;
+                    generateBtn.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path d="M8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/><path d="M13.468 12.37C12.758 11.226 11.195 10 8 10s-4.757 1.225-5.468 2.37A6.987 6.987 0 0 0 8 15a6.987 6.987 0 0 0 5.468-2.63z"/><path fill-rule="evenodd" d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z"/></svg> Generate Pass';
+                }, 1000); // Shorter delay since progress bar is gone
+            }
+
+            function copyToClipboard() {
+                const codeToCopy = generatedCodeEl.textContent;
+                const feedbackEl = ticketIdContainer.querySelector('.copy-feedback');
+                if (codeToCopy && !isNaN(codeToCopy)) {
+                    navigator.clipboard.writeText(codeToCopy).then(() => {
+                        feedbackEl.textContent = 'Copied!';
+                        setTimeout(() => { feedbackEl.textContent = 'Click to Copy'; }, 2000);
+                    });
+                }
+            }
+            
+            // --- EVENT LISTENERS ---
+            searchInput.addEventListener('input', filterDropdown);
+            dropdown.addEventListener('change', () => updateTicketDisplay(dropdown.value));
+            generateBtn.addEventListener('click', handleGenerateClick);
+            ticketIdContainer.addEventListener('click', copyToClipboard);
+
+            // Holo effect for the ticket
+            ticketPanel.addEventListener('mousemove', (e) => {
+                if (!eventPass) return;
+                const rect = eventPass.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                const { width, height } = rect;
+                
+                const rotateX = (y / height - 0.5) * -20;
+                const rotateY = (x / width - 0.5) * 20;
+                
+                const bgPosX = (x / width) * 100;
+                const bgPosY = (y / height) * 100;
+
+                eventPass.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.05, 1.05, 1.05)`;
+                eventPass.style.setProperty('--glow-color', `rgba(0, 224, 117, 0.8)`);
+                eventPass.style.setProperty('--holo-opacity', '1');
+                eventPass.style.setProperty('--bg-pos-x', `${bgPosX}%`);
+                eventPass.style.setProperty('--bg-pos-y', `${bgPosY}%`);
+            });
+            
+            ticketPanel.addEventListener('mouseleave', () => {
+                if (!eventPass) return;
+                eventPass.style.transform = 'rotateX(0) rotateY(0) scale3d(1, 1, 1)';
+                eventPass.style.setProperty('--glow-color', `rgba(0, 224, 117, 0.5)`);
+                eventPass.style.setProperty('--holo-opacity', '0');
+            });
+
+            // --- INITIALIZATION ---
+            populateDropdown();
+            updateTicketDisplay(dropdown.value);
+        });
+    </script>
+</body>
+</html>
