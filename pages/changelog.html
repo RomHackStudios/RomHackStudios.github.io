@@ -89,6 +89,7 @@
         .logo { font-size: 1.5rem; font-weight: 900; }
         .logo a { color: var(--text-primary); transition: all 0.3s ease; }
         .logo a:hover { color: var(--primary-accent); text-shadow: 0 0 15px var(--glow-color); }
+        .nav-right-stack { display: flex; align-items: center; gap: 1.5rem; }
         .desktop-nav { display: flex; align-items: center; gap: 1.5rem;}
         .nav-links { display: flex; gap: 2rem; list-style: none; }
         .nav-links a { font-weight: 600; transition: color 0.3s ease, text-shadow 0.3s ease; color: var(--text-primary); }
@@ -110,11 +111,13 @@
             transition: opacity 0.3s ease, transform 0.3s ease;
             z-index: 1100; max-height: 70vh; overflow-y: auto;
         }
+        .theme-dropdown.active { opacity: 1; pointer-events: auto; transform: translateY(0); }
         .theme-dropdown h4 { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; color: var(--text-secondary); margin: 1rem 0 0.5rem 0; }
         .theme-dropdown h4:first-child { margin-top: 0; }
-        .mode-option { display: flex; align-items: center; gap: 0.75rem; width: 100%; padding: 0.5rem; border-radius: 6px; background: none; border: none; color: var(--text-primary); cursor: pointer; text-align: left; font-size: 1rem; }
-        .mode-option:hover, .mode-option.active { background: rgba(255,255,255,0.1); }
-        body.light-mode .mode-option:hover, body.light-mode .mode-option.active { background: rgba(0,0,0,0.05); }
+        .theme-option, .mode-option { display: flex; align-items: center; gap: 0.75rem; width: 100%; padding: 0.5rem; border-radius: 6px; background: none; border: none; color: var(--text-primary); cursor: pointer; text-align: left; font-size: 1rem; }
+        .theme-option:hover, .theme-option.active, .mode-option:hover, .mode-option.active { background: rgba(255,255,255,0.1); }
+        body.light-mode .theme-option:hover, body.light-mode .theme-option.active, body.light-mode .mode-option:hover, body.light-mode .mode-option.active { background: rgba(0,0,0,0.05); }
+        .theme-swatch { width: 20px; height: 20px; border-radius: 50%; }
         
         /* --- GitLens Style Changelog --- */
         .page-title { font-size: 4rem; text-align: center; background: linear-gradient(45deg, var(--primary-accent), var(--text-primary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 1rem; text-shadow: 0 0 10px var(--glow-color), 0 0 40px var(--glow-color); }
@@ -263,8 +266,14 @@
                 <div class="hamburger-icon"></div>
             </button>
             <div class="desktop-nav">
-                <nav class="nav-links">
-                    <a href="../index.html" class="btn btn-secondary">← Back to Home</a>
+                <nav>
+                     <ul class="nav-links">
+                        <li><a href="../index.html#features">Features</a></li>
+                        <li><a href="../index.html#gameplay">Gameplay</a></li>
+                        <li><a href="../index.html#download">Download</a></li>
+                        <li><a href="../index.html#changelog">Changelog</a></li>
+                        <li><a href="../index.html#faq">FAQ</a></li>
+                    </ul>
                 </nav>
                 <div class="theme-palette">
                     <button class="theme-palette-btn" aria-label="Open theme palette">🎨</button>
@@ -272,6 +281,32 @@
                         <h4>Mode</h4>
                         <button class="mode-option" data-mode="light">☀️ Light</button>
                         <button class="mode-option" data-mode="dark">🌙 Dark</button>
+
+                        <h4>Hoenn</h4>
+                        <button class="theme-option" data-theme="ruby"><span class="theme-swatch" style="background:#C22E28;"></span> Pokémon Ruby</button>
+                        <button class="theme-option" data-theme="sapphire"><span class="theme-swatch" style="background:#6390F0;"></span> Pokémon Sapphire</button>
+                        <button class="theme-option" data-theme="emerald"><span class="theme-swatch" style="background:#00E075;"></span> Pokémon Emerald</button>
+                        <h4>Kanto</h4>
+                        <button class="theme-option" data-theme="firered"><span class="theme-swatch" style="background:#EE8130;"></span> Pokémon FireRed</button>
+                        <button class="theme-option" data-theme="leafgreen"><span class="theme-swatch" style="background:#7AC74C;"></span> Pokémon LeafGreen</button>
+                        <h4>Johto</h4>
+                        <button class="theme-option" data-theme="gold"><span class="theme-swatch" style="background:#DAA520;"></span> Pokémon Gold</button>
+                        <button class="theme-option" data-theme="silver"><span class="theme-swatch" style="background:#C0C0C0;"></span> Pokémon Silver</button>
+                        <h4>Sinnoh</h4>
+                        <button class="theme-option" data-theme="diamond"><span class="theme-swatch" style="background:#5E99D6;"></span> Pokémon Diamond</button>
+                        <button class="theme-option" data-theme="pearl"><span class="theme-swatch" style="background:#D65E8B;"></span> Pokémon Pearl</button>
+                        <h4>Unova</h4>
+                        <button class="theme-option" data-theme="black"><span class="theme-swatch" style="background:#333;"></span> Pokémon Black</button>
+                        <button class="theme-option" data-theme="white"><span class="theme-swatch" style="background:#EAEAEA; border: 1px solid #ccc;"></span> Pokémon White</button>
+                         <h4>And More...</h4>
+                        <button class="theme-option" data-theme="x"><span class="theme-swatch" style="background:#0075BE;"></span> Pokémon X</button>
+                        <button class="theme-option" data-theme="y"><span class="theme-swatch" style="background:#ED1B24;"></span> Pokémon Y</button>
+                        <button class="theme-option" data-theme="sun"><span class="theme-swatch" style="background:#F17F2E;"></span> Pokémon Sun</button>
+                        <button class="theme-option" data-theme="moon"><span class="theme-swatch" style="background:#5E4A8C;"></span> Pokémon Moon</button>
+                        <button class="theme-option" data-theme="sword"><span class="theme-swatch" style="background:#00A1E9;"></span> Pokémon Sword</button>
+                        <button class="theme-option" data-theme="shield"><span class="theme-swatch" style="background:#E30064;"></span> Pokémon Shield</button>
+                        <button class="theme-option" data-theme="scarlet"><span class="theme-swatch" style="background:#EE4B2B;"></span> Pokémon Scarlet</button>
+                        <button class="theme-option" data-theme="violet"><span class="theme-swatch" style="background:#6A0DAD;"></span> Pokémon Violet</button>
                     </div>
                 </div>
             </div>
@@ -281,7 +316,11 @@
     <!-- Mobile Navigation Content -->
     <div class="nav-right-stack">
         <nav class="nav-links">
-            <a href="../index.html">← Back to Home</a>
+             <a href="../index.html#features">Features</a>
+             <a href="../index.html#gameplay">Gameplay</a>
+             <a href="../index.html#download">Download</a>
+             <a href="../index.html#changelog">Changelog</a>
+             <a href="../index.html#faq">FAQ</a>
         </nav>
         <div class="mobile-mode-switcher">
              <button class="mode-option" data-mode="light">☀️ Light</button>
@@ -397,8 +436,23 @@
             // --- Theme & Mode Switcher Logic ---
             const themePaletteBtn = document.querySelector('.theme-palette-btn');
             const themePalette = document.querySelector('.theme-palette');
+            const themeOptions = document.querySelectorAll('.theme-option');
             const modeOptions = document.querySelectorAll('.mode-option');
 
+            // Function to apply color theme
+            const applyTheme = (theme) => {
+                // Remove any existing theme-* class from body
+                document.body.className = document.body.className.replace(/theme-[\w-]+/g, '');
+                if (theme) {
+                    document.body.classList.add(`theme-${theme}`);
+                }
+                localStorage.setItem('colorTheme', theme);
+                themeOptions.forEach(opt => {
+                    opt.classList.toggle('active', opt.dataset.theme === theme);
+                });
+            };
+            
+            // Function to apply light/dark mode
             const applyMode = (mode) => {
                 document.body.classList.toggle('light-mode', mode === 'light');
                 localStorage.setItem('colorMode', mode);
@@ -407,20 +461,32 @@
                 });
             };
 
+            // --- Initialization from localStorage ---
+            const savedTheme = localStorage.getItem('colorTheme') || 'emerald';
             const savedMode = localStorage.getItem('colorMode') || 'dark';
+
+            applyTheme(savedTheme);
             applyMode(savedMode);
             
+            // --- Event Listeners ---
             if(themePaletteBtn) {
                 themePaletteBtn.addEventListener('click', (e) => {
                     e.stopPropagation();
-                    themePalette.classList.toggle('active');
+                    themePalette.querySelector('.theme-dropdown').classList.toggle('active');
                 });
             }
             
             document.addEventListener('click', (e) => {
-                if (themePalette && !themePalette.contains(e.target)) {
-                    themePalette.classList.remove('active');
+                const dropdown = document.querySelector('.theme-dropdown');
+                if (dropdown && dropdown.classList.contains('active') && !themePalette.contains(e.target)) {
+                    dropdown.classList.remove('active');
                 }
+            });
+
+            themeOptions.forEach(option => {
+                option.addEventListener('click', () => {
+                    applyTheme(option.dataset.theme);
+                });
             });
 
             modeOptions.forEach(option => {
@@ -429,9 +495,16 @@
 
             // --- Mobile Navigation ---
             const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
+            const navRightStack = document.querySelector('.nav-right-stack');
+            
             mobileNavToggle.addEventListener('click', () => {
                 const isOpened = document.body.classList.toggle('mobile-nav-open');
                 mobileNavToggle.setAttribute('aria-expanded', isOpened);
+                if (isOpened) {
+                    navRightStack.classList.add('active');
+                } else {
+                    navRightStack.classList.remove('active');
+                }
             });
         });
     </script>
