@@ -6,12 +6,13 @@
     <title>Changelog - Emerald Crest by RomHackStudios</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4829462676030982"
      crossorigin="anonymous"></script>
     <style>
         :root {
             --font-family: 'Inter', sans-serif;
+            --font-mono: 'Roboto Mono', monospace;
             --header-height: 70px;
             --blur-intensity: 16px;
         }
@@ -34,7 +35,7 @@
         body.light-mode {
             --bg-primary: #f8f9fa;
             --bg-secondary: #ffffff;
-            --border-color: #dee2e6;
+            --border-color: #e9ecef;
             --text-primary: #212529;
             --text-secondary: #6c757d;
             --card-bg: rgba(255, 255, 255, 0.7);
@@ -72,7 +73,7 @@
             overflow-x: hidden;
             transition: background-color 0.3s ease, color 0.3s ease;
         }
-        .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+        .container { max-width: 900px; margin: 0 auto; padding: 0 2rem; }
         section { padding: calc(var(--header-height) + 40px) 0 60px; }
         h1, h2, h3 { font-weight: 700; color: var(--text-primary); transition: color 0.3s ease; }
         p { color: var(--text-secondary); line-height: 1.8; transition: color 0.3s ease; }
@@ -84,11 +85,10 @@
             -webkit-backdrop-filter: blur(var(--blur-intensity)); border-bottom: 1px solid var(--card-border);
             z-index: 1001;
         }
-        .main-nav { display: flex; justify-content: space-between; align-items: center; height: 100%; }
+        .main-nav { max-width: 1200px; margin: 0 auto; padding: 0 2rem; display: flex; justify-content: space-between; align-items: center; height: 100%; }
         .logo { font-size: 1.5rem; font-weight: 900; }
         .logo a { color: var(--text-primary); transition: all 0.3s ease; }
         .logo a:hover { color: var(--primary-accent); text-shadow: 0 0 15px var(--glow-color); }
-        .nav-right-stack { display: flex; align-items: center; gap: 1.5rem; }
         .desktop-nav { display: flex; align-items: center; gap: 1.5rem;}
         .nav-links { display: flex; gap: 2rem; list-style: none; }
         .nav-links a { font-weight: 600; transition: color 0.3s ease, text-shadow 0.3s ease; color: var(--text-primary); }
@@ -105,200 +105,163 @@
             position: absolute; top: calc(100% + 15px); right: 0;
             background: var(--card-bg); backdrop-filter: blur(var(--blur-intensity));
             border: 1px solid var(--card-border); border-radius: 8px;
-            padding: 1rem; list-style: none;
-            width: 250px;
-            opacity: 0; pointer-events: none; transform: translateY(-10px);
+            padding: 1rem; list-style: none; width: 250px; opacity: 0;
+            pointer-events: none; transform: translateY(-10px);
             transition: opacity 0.3s ease, transform 0.3s ease;
-            z-index: 1100;
-            max-height: 70vh;
-            overflow-y: auto;
+            z-index: 1100; max-height: 70vh; overflow-y: auto;
         }
-        .theme-dropdown::-webkit-scrollbar { width: 8px; }
-        .theme-dropdown::-webkit-scrollbar-track { background: transparent; }
-        .theme-dropdown::-webkit-scrollbar-thumb { background: var(--border-color); border-radius: 4px; }
-        .theme-dropdown h4 {
-            font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px;
-            color: var(--text-secondary); margin: 1rem 0 0.5rem 0;
-        }
+        .theme-dropdown h4 { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; color: var(--text-secondary); margin: 1rem 0 0.5rem 0; }
         .theme-dropdown h4:first-child { margin-top: 0; }
-        .theme-option, .mode-option {
-            display: flex; align-items: center; gap: 0.75rem;
-            width: 100%; padding: 0.5rem; border-radius: 6px;
-            background: none; border: none; color: var(--text-primary);
-            cursor: pointer; text-align: left;
-            font-size: 1rem;
-        }
-        .theme-option:hover, .theme-option.active, .mode-option:hover, .mode-option.active { background: rgba(255,255,255,0.1); }
-        body.light-mode .theme-option:hover, body.light-mode .theme-option.active, body.light-mode .mode-option:hover, body.light-mode .mode-option.active { background: rgba(0,0,0,0.05); }
-        .theme-swatch { width: 20px; height: 20px; border-radius: 50%; }
+        .mode-option { display: flex; align-items: center; gap: 0.75rem; width: 100%; padding: 0.5rem; border-radius: 6px; background: none; border: none; color: var(--text-primary); cursor: pointer; text-align: left; font-size: 1rem; }
+        .mode-option:hover, .mode-option.active { background: rgba(255,255,255,0.1); }
+        body.light-mode .mode-option:hover, body.light-mode .mode-option.active { background: rgba(0,0,0,0.05); }
         
-        /* --- Changelog Page Specific Styles --- */
-        .page-title {
-            font-size: 4rem;
-            text-align: center;
-            background: linear-gradient(45deg, var(--primary-accent), var(--text-primary));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            margin-bottom: 1rem;
-            text-shadow: 0 0 10px var(--glow-color), 0 0 40px var(--glow-color);
-        }
-        .page-subtitle {
-            text-align: center;
-            font-size: 1.5rem;
-            color: var(--text-secondary);
-            margin-bottom: 4rem;
-        }
-        .changelog-table {
-            width: 100%;
-            border-collapse: separate;
-            border-spacing: 0 1rem;
-        }
-        .changelog-table th, .changelog-table td {
-            padding: 1.25rem 1.5rem;
-            text-align: left;
-            border-bottom: 1px solid var(--card-border);
-        }
-        .changelog-table thead th {
-            background-image: linear-gradient(to right, var(--primary-accent), var(--secondary-accent));
-            color: #000;
-            font-size: 1.1rem;
-            position: sticky;
-            top: var(--header-height);
-            z-index: 10;
-        }
-        .changelog-table thead th:first-child { border-radius: 8px 0 0 8px; }
-        .changelog-table thead th:last-child { border-radius: 0 8px 8px 0; }
+        /* --- GitLens Style Changelog --- */
+        .page-title { font-size: 4rem; text-align: center; background: linear-gradient(45deg, var(--primary-accent), var(--text-primary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 1rem; text-shadow: 0 0 10px var(--glow-color), 0 0 40px var(--glow-color); }
+        .page-subtitle { text-align: center; font-size: 1.5rem; color: var(--text-secondary); margin-bottom: 4rem; }
         
-        .changelog-table tbody tr {
+        .commit-history { list-style: none; padding-left: 30px; position: relative; }
+        .commit-history::before {
+            content: '';
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            bottom: 10px;
+            width: 2px;
+            background-color: var(--border-color);
+        }
+
+        .commit {
             background: var(--card-bg);
-            backdrop-filter: blur(var(--blur-intensity));
-            -webkit-backdrop-filter: blur(var(--blur-intensity));
+            border: 1px solid var(--card-border);
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+            padding: 1.5rem;
+            position: relative;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             opacity: 0;
-            transform: translateX(-30px);
-            animation: slide-in 0.5s forwards;
+            transform: translateY(30px);
+            animation: pop-in 0.5s forwards;
         }
-        @keyframes slide-in {
+        @keyframes pop-in {
             to {
                 opacity: 1;
-                transform: translateX(0);
+                transform: translateY(0);
             }
         }
-        .changelog-table tbody tr:hover {
+        .commit:hover {
             transform: translateY(-5px) scale(1.02);
             box-shadow: 0 8px 30px var(--glow-color);
         }
-        .changelog-table td:first-child { border-left: 1px solid var(--card-border); }
-        .changelog-table td:last-child { border-right: 1px solid var(--card-border); }
-        .changelog-table tr td:first-child { border-radius: 8px 0 0 8px; }
-        .changelog-table tr td:last-child { border-radius: 0 8px 8px 0; }
-        .changelog-table ul {
-            list-style: none;
-            padding-left: 0;
+
+        .commit::before {
+            content: '';
+            position: absolute;
+            left: -26px;
+            top: 24px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: var(--primary-accent);
+            border: 2px solid var(--bg-primary);
+            box-shadow: 0 0 10px var(--glow-color);
         }
-        .changelog-table li {
-            margin-bottom: 0.5rem;
-            padding-left: 1.5rem;
-            position: relative;
+        
+        .commit-header {
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--border-color);
         }
-        .changelog-table li::before {
+
+        .commit-version {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 0.75rem;
+            display: block;
+        }
+
+        .commit-tags { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+        .tag {
+            font-size: 0.7rem;
+            font-weight: 600;
+            padding: 0.2rem 0.6rem;
+            border-radius: 9999px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            line-height: 1;
+        }
+        .tag.major-update { background-color: var(--primary-accent); color: #000; }
+        .tag.feature-update { background-color: rgba(99, 144, 240, 0.2); color: #6390F0; }
+        .tag.bug-fix { background-color: rgba(238, 75, 43, 0.2); color: #EE4B2B; }
+        .tag.content { background-color: rgba(106, 13, 173, 0.2); color: #9B59B6; }
+
+
+        .commit-body ul { list-style: none; padding: 0; margin-top: 1rem; }
+        .commit-body li { margin-bottom: 0.5rem; padding-left: 1.8rem; position: relative; } /* Increased padding */
+        .commit-body li::before {
             content: var(--icon);
             color: var(--primary-accent);
             font-weight: bold;
             display: inline-block;
             width: 1em;
-            margin-left: -1.5rem;
+            margin-left: 0.1rem; /* Adjusted margin */
             position: absolute;
             left: 0;
             top: 2px;
         }
-
-
+        
+        /* Footer & Mobile */
         .main-footer { background: var(--bg-secondary); padding: 4rem 0; text-align: center; border-top: 1px solid var(--border-color); }
         .footer-logo { font-size: 2rem; font-weight: 900; margin-bottom: 1rem; }
         .footer-logo a { color: var(--text-primary); }
         .footer-logo a:hover { color: var(--primary-accent); text-shadow: 0 0 10px var(--glow-color); }
         .footer-links { list-style: none; display: flex; justify-content: center; gap: 1.5rem; margin-bottom: 2rem; }
         .copyright { color: var(--text-secondary); font-size: 0.9rem; max-width: 800px; margin-left: auto; margin-right: auto; }
-        
-        /* --- Mobile Navigation & Mode Switcher --- */
         .mobile-nav-toggle { display: none; background: transparent; border: 0; cursor: pointer; z-index: 1002; }
         .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border-width: 0; }
         .hamburger-icon { width: 25px; height: 2px; background: var(--text-primary); display: block; position: relative; transition: background 0.3s ease-out; }
         .hamburger-icon::before, .hamburger-icon::after { content: ''; position: absolute; width: 100%; height: 100%; background: var(--text-primary); left: 0; transition: transform 0.3s ease-out; }
-        .hamburger-icon::before { top: -8px; }
-        .hamburger-icon::after { top: 8px; }
+        .hamburger-icon::before { top: -8px; } .hamburger-icon::after { top: 8px; }
         body.mobile-nav-open .hamburger-icon { background: transparent; }
         body.mobile-nav-open .hamburger-icon::before { transform: rotate(45deg) translate(5px, 6px); }
         body.mobile-nav-open .hamburger-icon::after { transform: rotate(-45deg) translate(5px, -6px); }
-
         .mobile-mode-switcher { display: none; }
 
-        /* --- Responsive Design --- */
         @media (max-width: 768px) {
             .desktop-nav { display: none; }
             .mobile-nav-toggle { display: block; }
             .nav-right-stack { 
-                position: fixed; inset: 0 0 0 30%; 
-                flex-direction: column; 
-                padding: 7rem 2rem; 
-                background: var(--card-bg); 
+                position: fixed; inset: 0 0 0 30%; flex-direction: column; 
+                padding: 7rem 2rem; background: var(--card-bg); 
                 backdrop-filter: blur(var(--blur-intensity)); 
                 -webkit-backdrop-filter: blur(var(--blur-intensity)); 
-                transform: translateX(100%); 
-                transition: transform 350ms ease-out; 
-                z-index: 1000; 
-                border-left: 1px solid var(--card-border); 
-                align-items: center;
-                gap: 3rem;
+                transform: translateX(100%); transition: transform 350ms ease-out; 
+                z-index: 1000; border-left: 1px solid var(--card-border); 
+                align-items: center; gap: 3rem;
             }
             body.mobile-nav-open .nav-right-stack { transform: translateX(0%); }
             .nav-right-stack .nav-links { flex-direction: column; align-items: center; gap: 2rem; font-size: 1.5rem; }
-            
-            .mobile-mode-switcher {
-                display: flex;
-                gap: 1rem;
-                border: 1px solid var(--card-border);
-                padding: 0.5rem;
-                border-radius: 8px;
-            }
+            .mobile-mode-switcher { display: flex; gap: 1rem; border: 1px solid var(--card-border); padding: 0.5rem; border-radius: 8px; }
             .mobile-mode-switcher .mode-option { padding: 0.5rem 1rem; }
             .mobile-mode-switcher .mode-option.active { background: var(--primary-accent); color: #000; }
             body.light-mode .mobile-mode-switcher .mode-option.active { color: #fff; }
-
             .page-title { font-size: 2.5rem; }
             .page-subtitle { font-size: 1.1rem; }
-            
-            .changelog-table thead { display: none; }
-            .changelog-table, .changelog-table tbody, .changelog-table tr, .changelog-table td { display: block; width: 100%; }
-            .changelog-table tr { margin-bottom: 1.5rem; border: 1px solid var(--card-border); border-radius: 8px; }
-            .changelog-table td { border: none; border-bottom: 1px solid var(--card-border); }
-            .changelog-table td:last-child { border-bottom: none; }
-            .changelog-table td[data-label="Version"] {
-                background: linear-gradient(to right, var(--primary-accent), var(--secondary-accent));
-                color: #000;
-                border-radius: 8px 8px 0 0;
-                font-size: 1.1rem;
-            }
-             .changelog-table td[data-label]:before {
-                content: '';
-                margin-right: 0;
-            }
-
+            .commit-header { text-align: left; }
+            .commit-version { width: 100%; }
         }
     </style>
 </head>
-<body class="theme-emerald"> <!-- Default theme -->
+<body class="theme-emerald">
 
     <header class="main-header">
-        <div class="container main-nav">
+        <div class="main-nav">
             <div class="logo"><a href="index.html">RomHackStudios</a></div>
-            
             <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
                 <span class="sr-only">Menu</span>
                 <div class="hamburger-icon"></div>
             </button>
-            
             <div class="desktop-nav">
                 <nav class="nav-links">
                     <a href="index.html" class="btn btn-secondary">← Back to Home</a>
@@ -331,75 +294,78 @@
         <section id="changelog-details">
             <div class="container">
                 <h1 class="page-title">Changelog</h1>
-                <h2 class="page-subtitle">Version History</h2>
+                <h2 class="page-subtitle">Latest Updates & Fixes</h2>
 
-                <table class="changelog-table">
-                    <thead>
-                        <tr>
-                            <th>Version</th>
-                            <th>Changes</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr style="animation-delay: 0.1s;">
-                            <td data-label="Version"><strong>v1.0.9.9.2</strong></td>
-                            <td data-label="Changes">
-                                <ul>
-                                    <li style="--icon: '✨'">Added an option to choose permanent Mega evolution</li>
-                                    <li style="--icon: '✨'">Added support for Crest Dex online Wonder Trade</li>
-                                    <li style="--icon: '🚀'">Updated Spotlight Events</li>
-                                    <li style="--icon: '🚀'">Updated several trainer parties</li>
-                                    <li style="--icon: '🚀'">Updated the dynamic trainer leveling system</li>
-                                    <li style="--icon: '🚀'">Updated the dynamic encounters leveling system</li>
-                                    <li style="--icon: '🔧'">Applied some critical fixes</li>
-                                    <li style="--icon: '🔧'">Fixed Mystery gift codes breaking</li>
-                                    <li style="--icon: '🔧'">Fixed In-game cheat codes not working</li>
-                                    <li style="--icon: '🔧'">Fixed several bugs with open world mode</li>
-                                    <li style="--icon: '🔧'">Fixed some issues with metronome only mode</li>
-                                </ul>
-                            </td>
-                        </tr>
-                        <tr style="animation-delay: 0.2s;">
-                            <td data-label="Version"><strong>v1.0.9.9.1</strong></td>
-                            <td data-label="Changes">
-                                <ul>
-                                    <li style="--icon: '✨'">Added Seasonal Encounters toggle</li>
-                                    <li style="--icon: '✨'">Added Seasonal Evolutions toggle</li>
-                                    <li style="--icon: '✨'">Added mid battle evolutions</li>
-                                    <li style="--icon: '✨'">Added missing HMs in open world</li>
-                                    <li style="--icon: '🚀'">Made Hoopa teleport after 5th badge</li>
-                                    <li style="--icon: '🚀'">Added exclusive legends to Hoopa portal</li>
-                                    <li style="--icon: '🔧'">Applied critical fixes</li>
-                                    <li style="--icon: '🔧'">Fixed various game features</li>
-                                </ul>
-                            </td>
-                        </tr>
-                        <tr style="animation-delay: 0.3s;">
-                            <td data-label="Version"><strong>v1.0.9.9</strong></td>
-                            <td data-label="Changes">
-                                <ul>
-                                    <li style="--icon: '✨'">Added Indigo Disk Pokémon</li>
-                                    <li style="--icon: '✨'">Added Indigo Disk followers</li>
-                                    <li style="--icon: '🚀'">Increased rock smash item drop odds</li>
-                                    <li style="--icon: '🚀'">Updated spotlight events</li>
-                                    <li style="--icon: '🔧'">Various bug fixes and improvements</li>
-                                </ul>
-                            </td>
-                        </tr>
-                        <tr style="animation-delay: 0.4s;">
-                            <td data-label="Version"><strong>v1.0.9.8</strong></td>
-                            <td data-label="Changes">
-                                <ul>
-                                    <li style="--icon: '✨'">Added Seasons system</li>
-                                    <li style="--icon: '✨'">Added Seasonal Evolutions</li>
-                                    <li style="--icon: '✨'">Added Seasonal Encounters</li>
-                                    <li style="--icon: '✨'">Added Overworld Encounters during Spotlight Events</li>
-                                    <li style="--icon: '✨'">Added Support for Crest Dex v0.1.4</li>
-                                </ul>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <ul class="commit-history">
+                    <li class="commit">
+                        <div class="commit-header">
+                            <span class="commit-version">v1.0.9.9.2</span>
+                            <div class="commit-tags">
+                                <span class="tag feature-update">Feature Update</span>
+                                <span class="tag bug-fix">Bug Fix</span>
+                            </div>
+                        </div>
+                        <div class="commit-body">
+                            <ul>
+                                <li style="--icon: '✨'">Added an option to choose permanent Mega evolution</li>
+                                <li style="--icon: '✨'">Added support for Crest Dex online Wonder Trade</li>
+                                <li style="--icon: '🚀'">Updated Spotlight Events & various trainer parties</li>
+                                <li style="--icon: '🚀'">Updated dynamic leveling for trainers & encounters</li>
+                                <li style="--icon: '🔧'">Fixed Mystery Gift, cheat codes, and open world bugs</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="commit">
+                         <div class="commit-header">
+                            <span class="commit-version">v1.0.9.9.1</span>
+                             <div class="commit-tags">
+                                <span class="tag feature-update">Feature Update</span>
+                                <span class="tag bug-fix">Bug Fix</span>
+                            </div>
+                        </div>
+                        <div class="commit-body">
+                            <ul>
+                                <li style="--icon: '✨'">Added Seasonal Encounters/Evolutions toggle</li>
+                                <li style="--icon: '✨'">Added mid-battle evolutions & missing HMs</li>
+                                <li style="--icon: '🚀'">Hoopa now teleports post-5th badge with exclusive legends</li>
+                                <li style="--icon: '🔧'">Applied various critical fixes</li>
+                            </ul>
+                        </div>
+                    </li>
+                     <li class="commit">
+                         <div class="commit-header">
+                            <span class="commit-version">v1.0.9.9</span>
+                            <div class="commit-tags">
+                                <span class="tag major-update">Major Update</span>
+                                <span class="tag content">Content</span>
+                            </div>
+                        </div>
+                        <div class="commit-body">
+                            <ul>
+                                <li style="--icon: '✨'">Added Indigo Disk Pokémon and followers</li>
+                                <li style="--icon: '🚀'">Increased rock smash item drop odds</li>
+                                <li style="--icon: '🚀'">Updated spotlight events</li>
+                                <li style="--icon: '🔧'">Various bug fixes and improvements</li>
+                            </ul>
+                        </div>
+                    </li>
+                     <li class="commit">
+                         <div class="commit-header">
+                            <span class="commit-version">v1.0.9.8</span>
+                            <div class="commit-tags">
+                                <span class="tag major-update">Major Update</span>
+                                <span class="tag feature-update">Feature</span>
+                            </div>
+                        </div>
+                        <div class="commit-body">
+                           <ul>
+                                <li style="--icon: '✨'">Added Seasons system with unique evolutions & encounters</li>
+                                <li style="--icon: '✨'">Added Overworld Encounters during Spotlight Events</li>
+                                <li style="--icon: '✨'">Added Support for Crest Dex v0.1.4</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </section>
     </main>
@@ -417,17 +383,18 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
+             // Staggered Animation for Commits
+            document.querySelectorAll('.commit').forEach((commitElement, index) => {
+                commitElement.style.animationDelay = `${index * 0.1}s`;
+            });
+
             // --- Theme & Mode Switcher Logic ---
             const themePaletteBtn = document.querySelector('.theme-palette-btn');
             const themePalette = document.querySelector('.theme-palette');
             const modeOptions = document.querySelectorAll('.mode-option');
 
             const applyMode = (mode) => {
-                if (mode === 'light') {
-                    document.body.classList.add('light-mode');
-                } else {
-                    document.body.classList.remove('light-mode');
-                }
+                document.body.classList.toggle('light-mode', mode === 'light');
                 localStorage.setItem('colorMode', mode);
                 modeOptions.forEach(opt => {
                     opt.classList.toggle('active', opt.dataset.mode === mode);
@@ -451,14 +418,11 @@
             });
 
             modeOptions.forEach(option => {
-                option.addEventListener('click', () => {
-                    applyMode(option.dataset.mode);
-                });
+                option.addEventListener('click', () => applyMode(option.dataset.mode));
             });
 
             // --- Mobile Navigation ---
             const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
-            
             mobileNavToggle.addEventListener('click', () => {
                 const isOpened = document.body.classList.toggle('mobile-nav-open');
                 mobileNavToggle.setAttribute('aria-expanded', isOpened);
