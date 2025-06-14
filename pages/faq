@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Emerald Crest by RomHackStudios</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4829462676030982"
+     crossorigin="anonymous"></script>
+    <style>
+        :root {
+            --font-family: 'Inter', sans-serif;
+            --header-height: 70px;
+            --blur-intensity: 16px;
+        }
+        
+        /* --- Default Theme (Dark Mode) --- */
+        body {
+            --bg-primary: #0A0A0A;
+            --bg-secondary: #141414;
+            --border-color: #262626;
+            --primary-accent: #00E075;
+            --secondary-accent: #50C878;
+            --glow-color: rgba(0, 224, 117, 0.5); 
+            --text-primary: #EAEAEA;
+            --text-secondary: #A0A0A0;
+            --card-bg: rgba(20, 20, 20, 0.45);
+            --card-border: rgba(255, 255, 255, 0.1);
+        }
+
+        /* --- Light Mode Theme --- */
+        body.light-mode {
+            --bg-primary: #f8f9fa;
+            --bg-secondary: #ffffff;
+            --border-color: #e9ecef;
+            --text-primary: #212529;
+            --text-secondary: #6c757d;
+            --card-bg: rgba(255, 255, 255, 0.7);
+            --card-border: rgba(0, 0, 0, 0.1);
+        }
+
+        /* --- Pokémon Game Themes (Accent Colors) --- */
+        body.theme-firered  { --primary-accent: #EE8130; --secondary-accent: #F08030; --glow-color: rgba(238, 129, 48, 0.5); }
+        body.theme-leafgreen{ --primary-accent: #7AC74C; --secondary-accent: #A6B91A; --glow-color: rgba(122, 199, 76, 0.5); }
+        body.theme-ruby     { --primary-accent: #C22E28; --secondary-accent: #A32621; --glow-color: rgba(194, 46, 40, 0.5); }
+        body.theme-sapphire { --primary-accent: #6390F0; --secondary-accent: #96B9F0; --glow-color: rgba(99, 144, 240, 0.5); }
+        body.theme-emerald  { --primary-accent: #00E075; --secondary-accent: #50C878; --glow-color: rgba(0, 224, 117, 0.5); }
+        /* ... other themes ... */
+        
+        /* --- Base & Reset --- */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: var(--font-family);
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            overflow-x: hidden;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .container { max-width: 900px; margin: 0 auto; padding: 0 2rem; }
+        section { padding: calc(var(--header-height) + 40px) 0 60px; }
+        h1, h2, h3 { font-weight: 700; color: var(--text-primary); transition: color 0.3s ease; }
+        p { color: var(--text-secondary); line-height: 1.8; transition: color 0.3s ease; }
+        a { color: var(--primary-accent); text-decoration: none; font-weight: 600; }
+        a:hover { text-decoration: underline; }
+        
+        /* --- Header --- */
+        .main-header {
+            position: fixed; top: 0; left: 0; width: 100%; height: var(--header-height);
+            background: var(--card-bg); backdrop-filter: blur(var(--blur-intensity));
+            -webkit-backdrop-filter: blur(var(--blur-intensity)); border-bottom: 1px solid var(--card-border);
+            z-index: 1001;
+        }
+        .main-nav { max-width: 1200px; margin: 0 auto; padding: 0 2rem; display: flex; justify-content: space-between; align-items: center; height: 100%; }
+        .logo { font-size: 1.5rem; font-weight: 900; }
+        .logo a { color: var(--text-primary); transition: all 0.3s ease; }
+        .logo a:hover { color: var(--primary-accent); text-shadow: 0 0 15px var(--glow-color); }
+        .desktop-nav { display: flex; align-items: center; gap: 1.5rem;}
+        .nav-links a { font-weight: 600; transition: color 0.3s ease; color: var(--text-primary); }
+        .btn { display: inline-block; padding: 0.75rem 1.5rem; border-radius: 8px; font-weight: 600; transition: all 0.3s ease; border: none; }
+        .btn-secondary { background: var(--card-bg); color: var(--text-primary); border: 1px solid var(--card-border); backdrop-filter: blur(5px); }
+        .btn-secondary:hover { background-color: var(--border-color); transform: translateY(-2px); }
+        
+        /* --- Theme & Mode Palette --- */
+        .theme-palette { position: relative; }
+        .theme-palette-btn { background: none; border: none; color: var(--text-primary); cursor: pointer; font-size: 1.5rem; transition: transform 0.3s ease; }
+        .theme-palette-btn:hover { transform: scale(1.2) rotate(15deg); }
+        .theme-dropdown {
+            position: absolute; top: calc(100% + 15px); right: 0;
+            background: var(--card-bg); backdrop-filter: blur(var(--blur-intensity));
+            border: 1px solid var(--card-border); border-radius: 8px;
+            padding: 1rem; list-style: none; width: 250px; opacity: 0;
+            pointer-events: none; transform: translateY(-10px);
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            z-index: 1100; max-height: 70vh; overflow-y: auto;
+        }
+        .theme-dropdown h4 { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; color: var(--text-secondary); margin: 1rem 0 0.5rem 0; }
+        .theme-dropdown h4:first-child { margin-top: 0; }
+        .mode-option { display: flex; align-items: center; gap: 0.75rem; width: 100%; padding: 0.5rem; border-radius: 6px; background: none; border: none; color: var(--text-primary); cursor: pointer; text-align: left; font-size: 1rem; }
+        .mode-option:hover, .mode-option.active { background: rgba(255,255,255,0.1); }
+        body.light-mode .mode-option:hover, body.light-mode .mode-option.active { background: rgba(0,0,0,0.05); }
+        
+        /* --- FAQ Page Styles --- */
+        .page-title { font-size: 4rem; text-align: center; background: linear-gradient(45deg, var(--primary-accent), var(--text-primary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 1rem; text-shadow: 0 0 10px var(--glow-color), 0 0 40px var(--glow-color); }
+        .page-subtitle { text-align: center; font-size: 1.5rem; color: var(--text-secondary); margin-bottom: 4rem; }
+        
+        .faq-accordion {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .faq-item {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 8px;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: pop-in 0.5s forwards;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+         .faq-item:hover {
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 8px 30px var(--glow-color);
+        }
+        @keyframes pop-in {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .faq-item summary {
+            font-size: 1.2rem;
+            font-weight: 600;
+            padding: 1.5rem;
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+        }
+        .faq-item summary::-webkit-details-marker { display: none; }
+        .faq-item summary .plus-icon {
+            font-size: 1.8rem;
+            color: var(--primary-accent);
+            transition: transform 0.3s ease-out;
+            flex-shrink: 0;
+        }
+        .faq-item[open] > summary .plus-icon { transform: rotate(45deg); }
+        .faq-answer {
+            padding: 0 1.5rem 1.5rem;
+            border-top: 1px solid var(--card-border);
+            margin: -0.5rem 1.5rem 0;
+            padding-top: 1.5rem;
+        }
+
+        /* Footer & Mobile */
+        .main-footer { background: var(--bg-secondary); padding: 4rem 0; text-align: center; border-top: 1px solid var(--border-color); }
+        .footer-logo { font-size: 2rem; font-weight: 900; margin-bottom: 1rem; }
+        .footer-logo a { color: var(--text-primary); }
+        .footer-logo a:hover { color: var(--primary-accent); text-shadow: 0 0 10px var(--glow-color); }
+        .footer-links { list-style: none; display: flex; justify-content: center; gap: 1.5rem; margin-bottom: 2rem; }
+        .copyright { color: var(--text-secondary); font-size: 0.9rem; max-width: 800px; margin-left: auto; margin-right: auto; }
+        .mobile-nav-toggle { display: none; background: transparent; border: 0; cursor: pointer; z-index: 1002; }
+        .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border-width: 0; }
+        .hamburger-icon { width: 25px; height: 2px; background: var(--text-primary); display: block; position: relative; transition: background 0.3s ease-out; }
+        .hamburger-icon::before, .hamburger-icon::after { content: ''; position: absolute; width: 100%; height: 100%; background: var(--text-primary); left: 0; transition: transform 0.3s ease-out; }
+        .hamburger-icon::before { top: -8px; } .hamburger-icon::after { top: 8px; }
+        body.mobile-nav-open .hamburger-icon { background: transparent; }
+        body.mobile-nav-open .hamburger-icon::before { transform: rotate(45deg) translate(5px, 6px); }
+        body.mobile-nav-open .hamburger-icon::after { transform: rotate(-45deg) translate(5px, -6px); }
+        .mobile-mode-switcher { display: none; }
+
+        @media (max-width: 768px) {
+            .desktop-nav { display: none; }
+            .mobile-nav-toggle { display: block; }
+            .nav-right-stack { 
+                position: fixed; inset: 0 0 0 30%; flex-direction: column; 
+                padding: 7rem 2rem; background: var(--card-bg); 
+                backdrop-filter: blur(var(--blur-intensity)); 
+                -webkit-backdrop-filter: blur(var(--blur-intensity)); 
+                transform: translateX(100%); transition: transform 350ms ease-out; 
+                z-index: 1000; border-left: 1px solid var(--card-border); 
+                align-items: center; gap: 3rem;
+            }
+            body.mobile-nav-open .nav-right-stack { transform: translateX(0%); }
+            .nav-right-stack .nav-links { flex-direction: column; align-items: center; gap: 2rem; font-size: 1.5rem; }
+            .mobile-mode-switcher { display: flex; gap: 1rem; border: 1px solid var(--card-border); padding: 0.5rem; border-radius: 8px; }
+            .mobile-mode-switcher .mode-option { padding: 0.5rem 1rem; }
+            .mobile-mode-switcher .mode-option.active { background: var(--primary-accent); color: #000; }
+            body.light-mode .mobile-mode-switcher .mode-option.active { color: #fff; }
+            .page-title { font-size: 2.5rem; }
+            .page-subtitle { font-size: 1.1rem; }
+            .commit-header { text-align: left; }
+            .commit-version { width: 100%; }    
+        }
+    </style>
+</head>
+<body class="theme-emerald">
+
+    <header class="main-header">
+        <div class="main-nav">
+            <div class="logo"><a href="../index.html">RomHackStudios</a></div>
+            <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+                <span class="sr-only">Menu</span>
+                <div class="hamburger-icon"></div>
+            </button>
+            <div class="desktop-nav">
+                <nav class="nav-links">
+                    <a href="../index.html" class="btn btn-secondary">← Back to Home</a>
+                </nav>
+                <div class="theme-palette">
+                    <button class="theme-palette-btn" aria-label="Open theme palette">🎨</button>
+                    <div class="theme-dropdown">
+                        <h4>Mode</h4>
+                        <button class="mode-option" data-mode="light">☀️ Light</button>
+                        <button class="mode-option" data-mode="dark">🌙 Dark</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Mobile Navigation Content -->
+    <div class="nav-right-stack">
+        <nav class="nav-links">
+            <a href="../index.html">← Back to Home</a>
+        </nav>
+        <div class="mobile-mode-switcher">
+             <button class="mode-option" data-mode="light">☀️ Light</button>
+             <button class="mode-option" data-mode="dark">🌙 Dark</button>
+        </div>
+    </div>
+
+
+    <main>
+        <section id="faq-details">
+            <div class="container">
+                <h1 class="page-title">Frequently Asked Questions</h1>
+                <h2 class="page-subtitle">Your Questions, Answered</h2>
+
+                <div class="faq-accordion">
+                    <details class="faq-item" style="animation-delay: 0.1s;">
+                        <summary>How do I patch the game? <span class="plus-icon">+</span></summary>
+                        <div class="faq-answer"><p>Follow the instructions provided <a href="https://romhackstudios.github.io/pages/howtopatch.html" target="_blank" rel="noopener noreferrer">here</a>.</p></div>
+                    </details>
+                    <details class="faq-item" style="animation-delay: 0.15s;">
+                        <summary>Pokemon keep 'getting away' when I use the Dexnav? <span class="plus-icon">+</span></summary>
+                        <div class="faq-answer"><p>You must hold the 'A' button to walk slowly. Running will scare the Pokémon away, so sneak up on it carefully.</p></div>
+                    </details>
+                    <details class="faq-item" style="animation-delay: 0.2s;">
+                        <summary>How do trade evolutions work? <span class="plus-icon">+</span></summary>
+                        <div class="faq-answer"><p>Visit the helpful man in Devon Corp. He will trade your Pokémon and then trade it right back to trigger its evolution.</p></div>
+                    </details>
+                    <details class="faq-item" style="animation-delay: 0.25s;">
+                        <summary>How do I use Mega Evolution? <span class="plus-icon">+</span></summary>
+                        <div class="faq-answer"><p>Obtain the Mega Ring from your PC at home, give a Mega Stone to a compatible Pokémon, and in battle, press 'Fight', then 'Start', and choose your move.</p></div>
+                    </details>
+                    <details class="faq-item" style="animation-delay: 0.3s;">
+                        <summary>How do I use Z-Moves? <span class="plus-icon">+</span></summary>
+                        <div class="faq-answer"><p>Acquire the Z-Ring from your father, give a Z-Crystal to a compatible Pokémon, and in battle, press 'Fight', then 'Start', and pick your move.</p></div>
+                    </details>
+                    <details class="faq-item" style="animation-delay: 0.35s;">
+                        <summary>Where can I find a specific Pokémon? <span class="plus-icon">+</span></summary>
+                        <div class="faq-answer"><p>Please refer to the "Wild Encounters" document included in the original game download to locate specific Pokémon.</p></div>
+                    </details>
+                    <details class="faq-item" style="animation-delay: 0.4s;">
+                        <summary>How do I use Mystery Gift? <span class="plus-icon">+</span></summary>
+                        <div class="faq-answer"><p>Go to the second floor of any Pokémon Center and talk to the man on the left. Ensure you save before using a code and check for correct typing.</p></div>
+                    </details>
+                     <details class="faq-item" style="animation-delay: 0.45s;">
+                        <summary>Where do I get the EXP Share? <span class="plus-icon">+</span></summary>
+                        <div class="faq-answer"><p>After delivering the letter to Steven for Mr. Stone, return to Mr. Stone in Devon Corp to receive the Exp. Share.</p></div>
+                    </details>
+                     <details class="faq-item" style="animation-delay: 0.5s;">
+                        <summary>How do I shiny hunt effectively? <span class="plus-icon">+</span></summary>
+                        <div class="faq-answer"><p>Increase your chances of encountering a shiny Pokémon by creating an encounter 'chain' using the DexNav. Each successful encounter in the chain boosts the odds.</p></div>
+                    </details>
+                    <details class="faq-item" style="animation-delay: 0.55s;">
+                        <summary>Where are the new legendaries? <span class="plus-icon">+</span></summary>
+                        <div class="faq-answer"><p>You must capture Hoopa first, which is a roaming encounter after the 5th badge. Once a day, Hoopa may open a portal while you're adventuring, summoning Ultra Beasts and other legendaries.</p></div>
+                    </details>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-logo"><a href="#">RomHackStudios</a></div>
+            <ul class="footer-links">
+                <li><a href="https://thatsimpledev.itch.io/emerald-crest" target="_blank" rel="noopener noreferrer">itch.io Page</a></li>
+                <li><a href="https://discord.gg/wVHCQ5htxW" target="_blank" rel="noopener noreferrer">Discord</a></li>
+            </ul>
+            <p class="copyright">&copy; 2025 RomHackStudios. All Rights Reserved.</p>
+            <p class="copyright" style="margin-top: 1rem;">
+                <strong>Legal Disclaimer:</strong> Pokémon and all associated names are trademarked by Nintendo, The Pokémon Company, and GAME FREAK. This is a non-profit, fan-made project created for entertainment purposes and is not affiliated with, endorsed by, or sponsored by the official rights holders.
+            </p>
+            <p class="copyright" style="margin-top: 1rem;">
+                <strong>DMCA Notice:</strong> We respect intellectual property. If you are a rights holder and believe that your work has been used in a way that constitutes copyright infringement, please contact us at <a href="mailto:romhackstudios@gmail.com">dmca@romhackstudios.com</a> to have the content addressed.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+             // Staggered Animation for FAQ Items
+            document.querySelectorAll('.faq-item').forEach((item, index) => {
+                item.style.animationDelay = `${index * 0.05}s`;
+            });
+
+            // --- Theme & Mode Switcher Logic ---
+            const themePaletteBtn = document.querySelector('.theme-palette-btn');
+            const themePalette = document.querySelector('.theme-palette');
+            const modeOptions = document.querySelectorAll('.mode-option');
+
+            const applyMode = (mode) => {
+                document.body.classList.toggle('light-mode', mode === 'light');
+                localStorage.setItem('colorMode', mode);
+                modeOptions.forEach(opt => {
+                    opt.classList.toggle('active', opt.dataset.mode === mode);
+                });
+            };
+
+            const savedMode = localStorage.getItem('colorMode') || 'dark';
+            applyMode(savedMode);
+            
+            if(themePaletteBtn) {
+                themePaletteBtn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    themePalette.classList.toggle('active');
+                });
+            }
+            
+            document.addEventListener('click', (e) => {
+                if (themePalette && !themePalette.contains(e.target)) {
+                    themePalette.classList.remove('active');
+                }
+            });
+
+            modeOptions.forEach(option => {
+                option.addEventListener('click', () => applyMode(option.dataset.mode));
+            });
+
+            // --- Mobile Navigation ---
+            const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
+            mobileNavToggle.addEventListener('click', () => {
+                const isOpened = document.body.classList.toggle('mobile-nav-open');
+                mobileNavToggle.setAttribute('aria-expanded', isOpened);
+            });
+        });
+    </script>
+</body>
+</html>
