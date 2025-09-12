@@ -1,4 +1,4 @@
-<!DOCTYPE html>More actions
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -167,6 +167,68 @@
             100% { box-shadow: 0 0 25px var(--glow-color); }
         }
 
+        /* --- Countdown Section --- */
+        #countdown {
+            position: relative;
+            overflow: hidden;
+            background: var(--bg-secondary);
+            text-align: center;
+        }
+        .countdown-container {
+            position: relative;
+            z-index: 2;
+        }
+        .background-number {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 40rem;
+            font-weight: 900;
+            color: transparent;
+            -webkit-text-stroke: 1px var(--primary-accent);
+            text-shadow: 0 0 20px var(--glow-color), 0 0 40px var(--glow-color);
+            opacity: 0.6;
+            z-index: 1;
+            user-select: none;
+            pointer-events: none;
+        }
+        #timer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        .time-box {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            min-width: 140px;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            transition: transform 0.3s ease;
+        }
+        .time-box:hover {
+            transform: translateY(-5px);
+        }
+        .time-box span {
+            display: block;
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: var(--primary-accent);
+            text-shadow: 0 0 15px var(--glow-color);
+        }
+        .time-box p {
+            margin-top: 0.5rem;
+            font-size: 1rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+
         /* --- Glassy Cards & Grids --- */
         .features-grid, .gameplay-grid, .download-grid { display: grid; gap: 2rem; }
         .features-grid { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
@@ -197,6 +259,8 @@
         .instructions-card li { margin-bottom: 0.5rem; }
 
         #gameplay, #changelog, #faq { background: var(--bg-secondary); }
+        #features { background: var(--bg-primary); } /* Ensure features has a bg for contrast */
+
 
         .timeline { position: relative; max-width: 900px; margin: 0 auto; }
         .timeline::after { content: ''; position: absolute; width: 4px; background-color: var(--border-color); top: 0; bottom: 0; left: 50%; margin-left: -2px; border-radius: 2px; }
@@ -296,7 +360,7 @@
                 color: #000;
             }
              body.light-mode .mobile-mode-switcher .mode-option.active {
-                color: #fff;
+                 color: #fff;
              }
 
             .hero h1 { font-size: 3.5rem; }
@@ -307,6 +371,10 @@
             .timeline-item { width: 100%; padding-left: 60px; padding-right: 15px; }
             .timeline-item.left, .timeline-item.right { left: 0; }
             .timeline-item.right::after, .timeline-item.left::after { left: 10px; }
+            
+            .background-number { font-size: 20rem; }
+            .time-box { min-width: 100px; padding: 1rem; }
+            .time-box span { font-size: 2.5rem; }
         }
     </style>
 </head>
@@ -400,9 +468,34 @@
                     <a href="https://discord.gg/wVHCQ5htxW" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Join the Community</a>
                 </div>
             </div>
-            <a href="#features" class="scroll-down" aria-label="Scroll down">
+            <a href="#countdown" class="scroll-down" aria-label="Scroll down">
                 <span>&darr;</span>
             </a>
+        </section>
+
+        <!-- Countdown Section -->
+        <section id="countdown">
+            <div class="container countdown-container">
+                <div class="background-number">3</div>
+                <div id="timer" class="reveal">
+                    <div class="time-box">
+                        <span id="days">00</span>
+                        <p>Days</p>
+                    </div>
+                    <div class="time-box">
+                        <span id="hours">00</span>
+                        <p>Hours</p>
+                    </div>
+                    <div class="time-box">
+                        <span id="minutes">00</span>
+                        <p>Minutes</p>
+                    </div>
+                    <div class="time-box">
+                        <span id="seconds">00</span>
+                        <p>Seconds</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- Features Section -->
@@ -612,7 +705,7 @@
             <p class="copyright" style="margin-top: 1rem;">
                 <strong>Legal Disclaimer:</strong> Pokémon and all associated names are trademarked by Nintendo, The Pokémon Company, and GAME FREAK. This is a non-profit, fan-made project created for entertainment purposes and is not affiliated with, endorsed by, or sponsored by the official rights holders.
             </p>
-            <p class="copyright" style="margin-top: 1rem;">
+             <p class="copyright" style="margin-top: 1rem;">
                 <strong>DMCA Notice:</strong> We respect intellectual property. If you are a rights holder and believe that your work has been used in a way that constitutes copyright infringement, please contact us at <a href="mailto:dmca@romhackstudios.com">dmca@romhackstudios.com</a> to have the content addressed.
             </p>
         </div>
@@ -632,6 +725,36 @@
                 threshold: 0.1
             });
             revealElements.forEach(element => observer.observe(element));
+
+            // --- Countdown Timer ---
+            const countDownDate = new Date("Oct 16, 2025 00:00:00").getTime();
+            const daysEl = document.getElementById('days');
+            const hoursEl = document.getElementById('hours');
+            const minutesEl = document.getElementById('minutes');
+            const secondsEl = document.getElementById('seconds');
+
+            const countdownInterval = setInterval(() => {
+                const now = new Date().getTime();
+                const distance = countDownDate - now;
+
+                if (distance < 0) {
+                    clearInterval(countdownInterval);
+                    document.getElementById('timer').innerHTML = "<h4>The wait is over!</h4>";
+                    return;
+                }
+
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                daysEl.textContent = String(days).padStart(2, '0');
+                hoursEl.textContent = String(hours).padStart(2, '0');
+                minutesEl.textContent = String(minutes).padStart(2, '0');
+                secondsEl.textContent = String(seconds).padStart(2, '0');
+
+            }, 1000);
+
 
             // --- Theme & Mode Switcher Logic ---
             const themePaletteBtn = document.querySelector('.theme-palette-btn');
@@ -758,3 +881,4 @@
     </script>
 </body>
 </html>
+
